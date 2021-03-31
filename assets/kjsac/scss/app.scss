@@ -1,0 +1,658 @@
+@import "../../default_asset/uni-scss/base";
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+}
+.library .wrapper .img.overview {
+  background-image: url(/assets/kjsac/images/library/library_banner.jpg) !important;
+  background-size: cover;
+  background-position: center;
+}
+.kjsac-libov {
+  margin: 0 0 40px 0;
+}
+.obj-para {
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+.advauto {
+  margin: 50px 0;
+}
+.libov-counersec {
+  background: $whitelight;
+  padding: 40px 0;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: $whitelight;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: -20%;
+    top: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background-color: $whitelight;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: -20%;
+    top: 0;
+    z-index: -1;
+  }
+  .Count,
+  i {
+    @extend %herotitle38;
+    color: $black;
+    font-style: inherit;
+  }
+  p {
+    margin: 10px 0 0 0;
+
+    float: left;
+  }
+}
+.subheading {
+  color: $black;
+}
+.othresorces_library_timing {
+  .box_border {
+    border: solid 1px #ddd;
+    padding: 30px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  .blue-link {
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 12px;
+      font-family: FontAwesome;
+      color: $linkblue;
+      transition: all ease 0.5s;
+      content: "\f08e";
+    }
+  }
+  .library_timings_wrap {
+    background-color: $lightbrown;
+    padding: 30px;
+    height: 100%;
+    * {
+      color: white;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    .list li {
+      font-size: 20px;
+      position: relative;
+      padding-left: 30px;
+
+      &:before {
+        content: "\f017";
+        font-family: FontAwesome;
+        position: absolute;
+        top: 6px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        line-height: 1;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.timing-list {
+  li {
+    font-size: 20px;
+    position: relative;
+    padding-left: 30px;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 10px;
+
+    &:before {
+      content: "\f017";
+      font-family: FontAwesome;
+      position: absolute;
+      top: 6px;
+      left: 0;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      line-height: 1;
+      font-weight: 400;
+      font-size: 18px;
+    }
+  }
+}
+//Explore Somaiaya Section
+.explore-somaiya-wrap {
+  background-color: $whitelight;
+  padding: 50px 0;
+  margin-top: 0;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+  a {
+    width: 100%;
+    background-color: $grey;
+    height: 50px;
+    padding-left: 15px;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    font-family: "FiraSans-Medium";
+    color: #ffffff;
+
+    line-height: 2.7;
+    font-size: 18px;
+    text-align: left;
+    &:hover {
+      text-decoration: none;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background-image: url(/assets/default_asset/img/arrow-white-next.svg);
+
+      width: 30px;
+      height: 50px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      right: 5px;
+      background-size: 15px;
+      background-position: center;
+    }
+  }
+}
+.library .library_team {
+  margin: 0px 0px 0px 0px;
+}
+.structure-box {
+  background: $whitelight;
+  padding: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: $whitelight;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: -20%;
+    top: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background-color: $whitelight;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: -20%;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.grey-select {
+  background: url(/assets/default_asset/img/downwhite-arrow.svg) no-repeat $grey;
+  color: $white;
+  -webkit-appearance: none;
+  padding: 8px 20px;
+  width: 175px;
+  background-position: 150px 18px;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  margin-left: 10px;
+}
+.reports-main {
+  margin: 0 0 50px 0;
+  .reports0box {
+    margin-top: 40px;
+  }
+  .blue-link {
+    font-size: 20px;
+  }
+
+  .label_wrap {
+    border: 1px solid #ddd;
+    background: $whitelight;
+    padding: 20px;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+  }
+}
+
+.subtext {
+  font-weight: 500;
+  font-size: 18px;
+  color: $grey;
+  font-family: "Fira Sans", sans-serif;
+}
+.loansec {
+  background-image: url(/assets/kjsac/images/library/book_bg1.png);
+  float: left;
+  width: 100%;
+  padding: 30px 30px;
+  position: relative;
+  background-position: center top;
+  margin-bottom: 70px;
+  &::before {
+    content: "";
+    background-color: $whitelight;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: -20%;
+    top: 0;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    background-color: $whitelight;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: -20%;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.services-main {
+  .sv-imgbox {
+    &.right img {
+      width: calc(100% + 90px);
+      position: relative;
+      left: -90px;
+    }
+    &.left img {
+      width: calc(100% + 90px);
+      position: relative;
+    }
+  }
+  .sv-contbox {
+    background-color: $whitelight;
+    float: left;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    &.left {
+      padding: 30px 100px 30px 30px;
+    }
+    &.right {
+      padding: 30px 30px 30px 50px;
+    }
+  }
+  .borrow-return {
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .idsec {
+    background-color: $lightbrown;
+    margin: 130px 0 0 0;
+    padding: 0 70px 70px 70px;
+
+    position: relative;
+    .iconbox {
+      margin-top: -50px;
+      text-align: center;
+      img {
+        border: 1px solid #a25723;
+        border-radius: 50%;
+        background-color: #a25723;
+        margin-bottom: 40px;
+        box-shadow: #8b3a04 0px 5px 16px 0px;
+      }
+    }
+    * {
+      color: $white;
+    }
+    p {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+    }
+    &::before {
+      content: "";
+      background-color: $lightbrown;
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      left: -20%;
+      top: 0;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      background-color: $lightbrown;
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      right: -20%;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  .Lossec {
+    margin: 0 0 50px 0;
+    background-color: $brown;
+    padding: 70px;
+    position: relative;
+    * {
+      color: $white;
+    }
+    &::before {
+      content: "";
+      background-color: $brown;
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      left: -20%;
+      top: 0;
+      z-index: -1;
+    }
+    &::after {
+      content: "";
+      background-color: $brown;
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      right: -20%;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  .elborrowsec {
+    .custom-inner-header {
+      padding: 30px;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      background: #f3f9fc;
+      position: relative;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      small {
+        font-size: 14px;
+      }
+      &.grey {
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: $whitelight;
+        height: 100%;
+
+        &:after {
+          display: none;
+        }
+      }
+      .subheading {
+        margin: 0 0 0 20px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 55px;
+        height: 43px;
+        bottom: 0;
+        right: 0;
+        background: url("../images/library/lib_studentAft_bg.png");
+        background-size: 100% 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 1;
+      }
+    }
+  }
+}
+.facsrow {
+  display: flex;
+
+  .col-md-6 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.facilities-box {
+  border: 1px solid #ddd;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: $whitelight;
+}
+@media (max-width: 1024px) {
+  .obj-para {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0;
+  }
+  .services-main {
+    #borrow-return {
+      margin-top: 30px;
+    }
+  }
+  .services-main,
+  .resources-main {
+    &.mt-0 {
+      margin-top: 30px !important;
+    }
+  }
+  .resources-main {
+    .mt-5,
+    .my-5 {
+      margin-top: 1rem !important;
+    }
+    img {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .explore-somaiya-wrap a {
+    margin-bottom: 20px;
+  }
+  .libov-counersec {
+    padding: 40px 0 20px 0;
+  }
+  .kjsac-libov {
+    .countbox {
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .library .top_section {
+    margin-bottom: 50px;
+  }
+  .services-main,
+  .resources-main {
+    &.mt-0 {
+      margin-top: 10px !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .intrn-loan {
+    .borrow-return {
+      margin-top: 20px;
+    }
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  .services-main {
+    margin-bottom: 0;
+    .width-50 {
+      width: 100%;
+    }
+    .sv-imgbox.right img {
+      width: 100%;
+      left: 0;
+    }
+    .sv-contbox.right,
+    .sv-contbox.left {
+      padding: 20px;
+    }
+
+    .Lossec {
+      padding: 40px 0;
+    }
+    .elborrowsec .custom-inner-header {
+      justify-content: center;
+      p {
+        text-align: center;
+      }
+    }
+    .idsec {
+      margin: 100px 0 0 0;
+      padding: 0 30px 50px 30px;
+
+      p {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+
+    .sv-imgbox.left img {
+      width: 100%;
+    }
+  }
+  .services-main,
+  .resources-main {
+    &.mt-0 {
+      margin-top: 10px !important;
+    }
+  }
+  .facilities-box{
+    padding: 20px;
+
+  }
+  .reports-main {
+    margin: 0 0 20px 0;
+    &.activitiesmain{
+      .subheading {
+        text-align: left;
+      }
+    }
+    .subheading {
+      text-align: center;
+    }
+    .lists {
+      margin-top: 20px;
+    }
+  }
+
+  .library .top_section {
+    margin-bottom: 10px;
+  }
+  .loansec {
+    margin: 0 0 50px 0;
+    padding: 30px 0;
+    background-position: center center;
+    .mtop40 {
+      margin-top: 0px;
+    }
+  }
+  .rulesimg1 {
+    margin-top: 10px;
+  }
+  .rulesimg2 {
+    margin-bottom: 10px;
+  }
+  #rules-onlinereserve {
+    margin-bottom: 10px;
+  }
+  .mtopbtm50 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .obj-para,
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .Llist-main li {
+    padding-right: 20px;
+  }
+  .explore-somaiya-wrap {
+    padding: 30px 0;
+    a {
+      line-height: 3;
+      font-size: 16px;
+    }
+  }
+  .collection-main {
+    img {
+      margin-top: 30px;
+    }
+    .mainherotitle-48 {
+      margin-bottom: 0;
+    }
+  }
+  .campaign .counter .border {
+    .title {
+      margin-bottom: 0;
+    }
+  }
+  .obj-para {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .libov-counersec {
+    margin: 0 0 15px 0;
+  }
+  .kjsac-libov {
+    .objimg1 {
+      margin-top: 30px;
+    }
+    .objimg2 {
+      margin-bottom: 30px;
+    }
+  }
+  .timing-list li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .library .eresources {
+    margin: 0px 0px 0 0px;
+  }
+  .services-main,
+  .resources-main {
+    &.mt-0 {
+      margin-top: 0 !important;
+    }
+  }
+  .kjsac-libov {
+    .countbox {
+      width: 50%;
+      text-align: center;
+      p {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
