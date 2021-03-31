@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Media Coverage Listing BS4</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/media-press.css">
+  <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section class="mediacoverage aboutpanel newssearch mar-top-0" role="main">
+    <div class="container">
+      <div class="title txtcenter common-title">
+        <h2 class="wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Media Coverage</h2>
+        <img src="https://www.somaiya.edu/assets/common_img/title_bar.png" alt="">
+      </div>
+    </div>
+    <div role="main">
+      <div class="container">
+        <form action="" class="newsearchform searchbars4" role="form" aria-label="refine your search">
+          <div class="input-group stylish-input-group">
+            <input type="text" name="keyword_media" class="form-control" placeholder="Search" id="searchkeyword"
+              onkeyup="searchFilter()">
+            <span class="input-group-addon">
+              <button type="button" onclick="searchFilter()">
+                <img alt="" src="https://www.somaiya.edu//assets/arigel_general/img/homepage/search_bar_icon.png">
+              </button>
+            </span>
+          </div>
+        </form>
+        <div class="row detailbs4row">
+          <div class="col-lg-3 col-md-4  col-sm-12 refineserach sidefilter">
+            <h3 class="refhead refheadbs4">Refine Your Search</h3>
+            <form action="" class="newsearchform searchbars4" role="form" aria-label="refine your search">
+              <div class="input-group stylish-input-group">
+                <input type="text" name="keyword_media" class="form-control" placeholder="Search" id="searchkeyword"
+                  onkeyup="searchFilter()">
+                <span class="input-group-addon">
+                  <button type="button" onclick="searchFilter()">
+                    <img alt="" src="https://kjssc.somaiya.edu//assets/arigel_general/img/homepage/search_bar_icon.png">
+                  </button>
+                </span>
+              </div>
+            </form>
+
+            <form action="" method="get" name="frmFilters" id="frmFilters" role="form" aria-label="refine your search">
+
+              <div class="relabel">Institute</div>
+              <div class="repaddleft">
+                <select class="js-institute-multiple select2-hidden-accessible" name="institute_check[]"
+                  id="institute_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                  <option value=""></option>
+                  <option value="23">K J Somaiya Bharatiya Sanskriti Peetham</option>
+                  <option value="26">K J Somaiya Centre for Buddhist Studies</option>
+                  <option value="28">K J Somaiya Centre for Studies In Jainism</option>
+                  <option value="12">K J Somaiya College of Arts and Commerce</option>
+                  <option value="18">K J Somaiya College of Education</option>
+                  <option value="16">K J Somaiya College of Engineering</option>
+                  <option value="73">K J Somaiya College of Nursing</option>
+                  <option value="72">K J Somaiya College of Physiotherapy</option>
+                  <option value="14" selected="selected">K J Somaiya College of Science and Commerce</option>
+                  <option value="53">K J Somaiya English Medium School</option>
+                  <option value="17">K J Somaiya Institute of Management</option>
+                  <option value="22">K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )
+                  </option>
+                  <option value="37">K J Somaiya Institute of Journalism and Mass communication</option>
+                  <option value="71">K J Somaiya Medical College and Research Centre</option>
+                  <option value="19">K J Somaiya Polytechnic</option>
+                  <option value="95">K J Somaiya Private Industrial Training Institute</option>
+                  <option value="54">K.J.Somaiya Secondary School,Nareshwadi</option>
+                  <option value="49">Research Innovation Incubation Design Labs</option>
+                  <option value="31">S K Somaiya College</option>
+                  <option value="15">S K Somaiya College of Arts, Science and Commerce</option>
+                  <option value="13">S K Somaiya Vinay Mandir Junior College</option>
+                  <option value="55">Shri Sharda English Medium School</option>
+                  <option value="35">Somaiya Institute of Research and Consultancy</option>
+                  <option value="34">Somaiya Sports Academy</option>
+                  <option value="50">Somaiya Vidyavihar</option>
+                  <option value="21">Somaiya Vidyavihar University</option>
+                  <option value="59">Somaiya Vinaymandir High School</option>
+                  <option value="51">The Somaiya School</option>
+                </select>
+              </div>
+
+              <div class="sub_institutes_div" style="display: block;">
+                <div class="relabel ltlabel">Sub Institute</div>
+                <select class="js-subinstitute-multiple select2-hidden-accessible" name="sub_institute_check[]"
+                  id="sub_institute_check" onchange="searchFilterBySubinstitute()" tabindex="-1">
+                  <option value="">Please select Sub-Institutes</option>
+                  <option value="10">K J Somaiya Junior College of Science and Commerce</option>
+                  <option value="14">K J Somaiya College of Science and Commerce</option>
+                </select>
+              </div>
+
+              <div class="relabel">Area of Interest</div>
+              <div class="repaddleft">
+                <select class="js-category-multiple select2-hidden-accessible" name="category_check[]"
+                  id="category_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                  <option value="11">Academic</option>
+                  <option value="6">Celebrations</option>
+                  <option value="3">Education</option>
+                  <option value="1">Environment</option>
+                  <option value="10">Extracurricular </option>
+                  <option value="8">Facilities</option>
+                  <option value="5">Health</option>
+                  <option value="13">Others</option>
+                  <option value="7">Religion and Culture</option>
+                  <option value="9">Research</option>
+                  <option value="2">Sports</option>
+                  <option value="4">Technology</option>
+                </select>
+              </div>
+
+              <div class="relabel">Source</div>
+              <div class="repaddleft">
+                <select class="js-source-multiple select2-hidden-accessible" name="source_check[]" id="source_check"
+                  multiple="" onchange="searchFilter()" tabindex="-1">
+                  <option value="50">Absolute India</option>
+                  <option value="54">Alpviram-Ahm-maker-mela</option>
+                  <option value="107">Architectural Record</option>
+                  <option value="72">Asian India</option>
+                  <option value="92">Biospectrum </option>
+                  <option value="18">BioSpectrum</option>
+                  <option value="69">Bombay Information</option>
+                  <option value="12">Bombay Times - Times of India</option>
+                  <option value="41">Business Standard</option>
+                  <option value="55">Business World</option>
+                  <option value="67">City Headlines</option>
+                  <option value="73">City Today</option>
+                  <option value="30">Curriculum</option>
+                  <option value="74">Dabang Dunia</option>
+                  <option value="110">Daily Hunt </option>
+                  <option value="58">Dakshin Mumbai</option>
+                  <option value="40">Divya Bhaskar</option>
+                  <option value="3">DNA</option>
+                  <option value="75">Dopahar</option>
+                  <option value="76">Economic Times</option>
+                  <option value="57">Education Times - Times Of India</option>
+                  <option value="27">Education World</option>
+                  <option value="22">EenaduIndia.com</option>
+                  <option value="95">eHealth</option>
+                  <option value="11">Express Healthcare</option>
+                  <option value="2">Financial Express</option>
+                  <option value="63">FirstPost </option>
+                  <option value="13">Free press journal</option>
+                  <option value="77">Gaon Connection</option>
+                  <option value="112">Global SM News </option>
+                  <option value="29">Gujarati Midday</option>
+                  <option value="78">Gujrat Samchar</option>
+                  <option value="33">Hamara Mahanagar</option>
+                  <option value="19">Health Technology</option>
+                  <option value="113">Higher Education Digest </option>
+                  <option value="100">Higher Education Plus</option>
+                  <option value="101">Higher Education Review</option>
+                  <option value="7">Hindustan Times</option>
+                  <option value="98">India Education Diary</option>
+                  <option value="20">India Education Diary.com</option>
+                  <option value="32">indiainfoline.com</option>
+                  <option value="25">Indian Express</option>
+                  <option value="105">Indiatimes</option>
+                  <option value="61">IndiaToday</option>
+                  <option value="46">Janma Bhumi</option>
+                  <option value="45">Janpath Samachar</option>
+                  <option value="59">Khabre aaj tak</option>
+                  <option value="39">Lokmat</option>
+                  <option value="21">Loksatta</option>
+                  <option value="116">Maharashtra Dinman </option>
+                  <option value="15">Maharashtra Times</option>
+                  <option value="38">MAJHI SAHELI</option>
+                  <option value="56">Metro pulse weekly</option>
+                  <option value="47">Mi Marathi</option>
+                  <option value="16">Midday</option>
+                  <option value="102">Motoroids</option>
+                  <option value="104">Mumbai Live</option>
+                  <option value="53">Mumbai Mirror</option>
+                  <option value="36">Mumbai Samachar</option>
+                  <option value="44">Mumbai Times</option>
+                  <option value="91">My Medical Mantra</option>
+                  <option value="103">MyKhel</option>
+                  <option value="37">Navakal</option>
+                  <option value="23">Navbharat Times</option>
+                  <option value="24">Navbharat Times</option>
+                  <option value="87">Navrashtra</option>
+                  <option value="70">NDTV</option>
+                  <option value="26">New Women</option>
+                  <option value="83">News Locker</option>
+                  <option value="85">News State Times</option>
+                  <option value="108">Nyooz</option>
+                  <option value="106">Oakland News Now</option>
+                  <option value="62">Outlook</option>
+                  <option value="97">PharmaBiz</option>
+                  <option value="31">Prahaar</option>
+                  <option value="43">Pudhari</option>
+                  <option value="48">Punya Nagari</option>
+                  <option value="60">rashtriya adhikari</option>
+                  <option value="93">RobinAge</option>
+                  <option value="35">Sakal</option>
+                  <option value="84">Samna</option>
+                  <option value="28">samna Hindi</option>
+                  <option value="66">Sandesh</option>
+                  <option value="64">Shafaqna</option>
+                  <option value="99">Silicon India </option>
+                  <option value="114">Study Buzz.in</option>
+                  <option value="49">Tarun Bharat</option>
+                  <option value="89">Tech Story</option>
+                  <option value="115">Techplus Health Technology </option>
+                  <option value="82">Telegraph India</option>
+                  <option value="5">The Afternoon</option>
+                  <option value="1">The Asian Age</option>
+                  <option value="86">The Better India</option>
+                  <option value="34">The First Mail</option>
+                  <option value="96">The Health Site</option>
+                  <option value="17">The Hindu</option>
+                  <option value="94">The Teenager Today</option>
+                  <option value="51">The Week</option>
+                  <option value="14">Times of India</option>
+                  <option value="68">Times Today</option>
+                  <option value="81">Trend Scoop</option>
+                  <option value="80">Tribune India </option>
+                  <option value="42">Voice of Ghatkopar</option>
+                  <option value="111">Wn.com</option>
+                  <option value="71">World News</option>
+                  <option value="90">Your Story</option>
+                  <option value="79">Zee News</option>
+                </select>
+              </div>
+
+              <div class="relabel">Type</div>
+              <div class="repaddleft">
+                <select name="type_check[]" id="type_check" class="form-control brand-select" onchange="searchFilter()">
+                  <option value="">Select Type</option>
+                  <option value="Electronic">Electronic</option>
+                  <option value="Online">Online</option>
+                  <option value="Print">Print</option>
+                </select>
+              </div>
+
+              <div class="repaddleft">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12 col-md-12 paddleft">
+                    <div class="relabel">From Date</div>
+                    <input type="date" name="fromdate" id="fromdate" class="form-control dateclass placeholderclass"
+                      onchange="searchFilter()" onclick="$(this).removeClass('placeholderclass')">
+                  </div>
+
+                  <div class="col-lg-12 col-sm-12 col-md-12 paddleft paddright">
+                    <div class="relabel">To Date</div>
+                    <input type="date" name="todate" id="todate" class="form-control dateclass placeholderclass"
+                      onchange="searchFilter()" onclick="$(this).removeClass('placeholderclass')">
+                  </div>
+                </div>
+              </div>
+
+              <div class="repaddleft">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-12 col-md-8 paddleft">
+                    <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn" value="Clear all filters">
+                  </div>
+                </div>
+              </div>
+
+              <div class="clear"></div>
+            </form>
+
+
+            <!--New B4 Sidebar hidden-->
+
+            <div class="research_accomplishment_page d-none">
+              <div class="sidebar-wrap">
+                <div class="filter_by">
+                  <p>Filter by </p> <button class="clear_btn" id="btn_clear"><span>x</span>Clear</button>
+                </div>
+
+                <div class="search-input">
+                  <!-- Actual search box -->
+                  <div class="form-group has-feedback has-search">
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                </div>
+
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                          aria-expanded="true" aria-controls="collapseOne" class="">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          By Related Institutions
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel"
+                      aria-labelledby="headingOne" style="">
+                      <div class="panel-body">
+                        <label class="chkcontainer">K J Somaiya College of Arts and Commerce
+                          <input type="checkbox" name="institute_check" value="12">
+                          <span class="checkmark"></span>
+                        </label>
+
+
+                        <label class="chkcontainer">K J Somaiya College of Science and Commerce
+                          <input type="checkbox" name="institute_check" value="14">
+                          <span class="checkmark"></span>
+                        </label>
+
+
+                        <label class="chkcontainer">S K Somaiya Degree College of Arts, Science
+                          and Commerce <input type="checkbox" name="institute_check" value="15">
+                          <span class="checkmark"></span>
+                        </label>
+
+
+                        <label class="chkcontainer">K J Somaiya College of Engineering <input type="checkbox"
+                            name="institute_check" value="16">
+                          <span class="checkmark"></span>
+                        </label>
+
+
+                        <label class="chkcontainer">K J Somaiya Institute of Management <input type="checkbox"
+                            name="institute_check" value="17">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default sub_institutes_div" style="display: block;">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          Sub Institute
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body" id="sub_institute_check">
+                        <!-- <label class="chkcontainer">One
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                                </label> -->
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          By Area Of Interest
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <label class="chkcontainer">Academic
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Celebrations
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Education
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Environment
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingsource">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapsesource" aria-expanded="false" aria-controls="collapsesource">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          By Source
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapsesource" class="panel-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingsource">
+                      <div class="panel-body">
+                        <label class="chkcontainer">Source 1
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Source 2
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Source 3
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingtype">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapsetype" aria-expanded="false" aria-controls="collapsetype">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          By Type
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapsetype" class="panel-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingtype">
+                      <div class="panel-body">
+                        <label class="chkcontainer">Type 1
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Type 2
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+                        <label class="chkcontainer">Type 3
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingfive">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          From Date
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapsefive" class="panel-collapse collapse" role="tabpanel"
+                      aria-labelledby="headingfive">
+                      <div class="panel-body">
+
+                        <input type="date" name="fromdate" id="fromdate" class="form-control dateclass placeholderclass"
+                          onclick="$(this).removeClass('placeholderclass')">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingsix">
+                      <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                          href="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                          <i class="more-less glyphicon glyphicon-plus"></i>
+                          To Date
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
+                      <div class="panel-body">
+
+                        <input type="date" name="todate" id="todate" class="form-control dateclass placeholderclass"
+                          onclick="$(this).removeClass('placeholderclass')">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- panel-group -->
+                <button type="submit" class="search">Search</button>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-9  col-md-8 col-sm-12 refine-result refineresultbs4" id="refined">
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/998">Mumbai students
+                bags gold in International Kickboxing Tournament</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/998">
+                <h6 aria-hidden="true">Mumbai students bags gold in International Kickboxing Tournament</h6>
+                <h6 class="sr-only">Mumbai students bags gold in International Kickboxing Tournament</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>14th February 2029</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="Times of India open a new window" target="_blank" class="txtblack blue-link"
+                          href="https://timesofindia.indiatimes.com/city/mumbai/mumbai-student-bags-gold-in-international-kickboxing-tournament/articleshow/74137623.cms">
+                          Times of India<i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Sports</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya College of Science and Commerce, Somaiya Sports Academy</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1028">Biodiversity and
+                Humans</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1028">
+                <h6 aria-hidden="true">Biodiversity and Humans</h6>
+                <h6 class="sr-only">Biodiversity and Humans</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>22nd May 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="Higher Education Digest  open a new window" target="_blank"
+                          class="txtblack blue-link"
+                          href="https://www.highereducationdigest.com/biodiversity-and-humans/">
+                          Higher Education Digest <i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Environment</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya College of Science and Commerce</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1027">International Day
+                of Biological Diversity: 'Our solutions are In Nature', writes Dr Sugandha Shetye</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1027">
+                <h6 aria-hidden="true">International Day of Biological Diversity: 'Our solutions are In Nature', writes
+                  Dr Sugandha Shetye</h6>
+                <h6 class="sr-only">International Day of Biological Diversity: 'Our solutions are In Nature', writes Dr
+                  Sugandha Shetye</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>21st May 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="Free press journal open a new window" target="_blank"
+                          class="txtblack blue-link"
+                          href="https://www.freepressjournal.in/lifestyle/international-day-of-biological-diversity-our-solutions-are-in-nature-writes-dr-sugandha-shetye">
+                          Free press journal<i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Environment</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya College of Science and Commerce</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1026">Students of
+                Somiya Vidyavihar made an app to face the Challenge of Covid-19 – “Help Flare”</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1026">
+                <h6 aria-hidden="true">Students of Somiya Vidyavihar made an app to face the Challenge of Covid-19 –
+                  “Help Flare”</h6>
+                <h6 class="sr-only">Students of Somiya Vidyavihar made an app to face the Challenge of Covid-19 – “Help
+                  Flare”</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>1st May 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> Voice of Ghatkopar </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Health, Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1023">Application will
+                inform you in which area, how much and who is needed</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1023">
+                <h6 aria-hidden="true">Application will inform you in which area, how much and who is needed</h6>
+                <h6 class="sr-only">Application will inform you in which area, how much and who is needed</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>29th April 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> Gujarati Midday </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Health, Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1025">Somaiya
+                Vidyavihar Students develop app to map out needy during pandemic</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1025">
+                <h6 aria-hidden="true">Somaiya Vidyavihar Students develop app to map out needy during pandemic</h6>
+                <h6 class="sr-only">Somaiya Vidyavihar Students develop app to map out needy during pandemic</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>26th April 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="Times of India open a new window" target="_blank" class="txtblack blue-link"
+                          href="https://timesofindia.indiatimes.com/city/mumbai/somaiya-vidyavihar-students-develop-app-to-map-out-needy-during-pandemic/articleshow/75388023.cms">
+                          Times of India<i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Health, Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1024">Somaiya
+                Vidyavihar students develop “App- HELP FLARE” to deal with ongoing challenges during COVID-19</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1024">
+                <h6 aria-hidden="true">Somaiya Vidyavihar students develop “App- HELP FLARE” to deal with ongoing
+                  challenges during COVID-19</h6>
+                <h6 class="sr-only">Somaiya Vidyavihar students develop “App- HELP FLARE” to deal with ongoing
+                  challenges during COVID-19</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>23rd April 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> Higher Education Digest </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Health, Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1005">HELP FLARE APP
+                for COVID 19 affected people - Social Initiative of KJ Somaiya Institute of Engineering and Information
+                Technology, Sion, Mumbai</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1005">
+                <h6 aria-hidden="true">HELP FLARE APP for COVID 19 affected people - Social Initiative of KJ Somaiya
+                  Institute of Engineering and Information Technology, Sion, Mumbai</h6>
+                <h6 class="sr-only">HELP FLARE APP for COVID 19 affected people - Social Initiative of KJ Somaiya
+                  Institute of Engineering and Information Technology, Sion, Mumbai</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>22nd April 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="Hindustan Times open a new window" target="_blank" class="txtblack blue-link"
+                          href=" https://www.hindustantimes.com/education/mumbai-college-students-create-mobile-app-to-connect-those-seeking-food-with-help- groups/story-IHiN3Dmguupo4T1S6k9Z2K.html">
+                          Hindustan Times<i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1006">HELP FLARE APP
+                for COVID 19 affected people - Social Initiative of KJ Somaiya Institute of Engineering and Information
+                Technology, Sion, Mumbai</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1006">
+                <h6 aria-hidden="true">HELP FLARE APP for COVID 19 affected people - Social Initiative of KJ Somaiya
+                  Institute of Engineering and Information Technology, Sion, Mumbai</h6>
+                <h6 class="sr-only">HELP FLARE APP for COVID 19 affected people - Social Initiative of KJ Somaiya
+                  Institute of Engineering and Information Technology, Sion, Mumbai</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>22nd April 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="samna Hindi open a new window" target="_blank" class="txtblack blue-link"
+                          href="https://www.hindisaamana.com/somayya-collage-ka-madadgar-aip/">
+                          samna Hindi<i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dtres">
+              <a class="sr-only bs4annhead" href="https://www.somaiya.edu/en/view-media-coverage/1019">Somaiya College
+                Students Prepared Helping App</a>
+              <a class="bs4annhead" aria-label="true" href="https://www.somaiya.edu/en/view-media-coverage/1019">
+                <h6 aria-hidden="true">Somaiya College Students Prepared Helping App</h6>
+                <h6 class="sr-only">Somaiya College Students Prepared Helping App</h6>
+              </a>
+
+              <div class="row">
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Published Date</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>22nd April 2020</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Source</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p> <a aria-label="samna Hindi open a new window" target="_blank" class="txtblack blue-link"
+                          href="https://www.hindisaamana.com/somayya-collage-ka-madadgar-aip/">
+                          samna Hindi<i class="fa txtorange fa-external-link" aria-hidden="true"></i>
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-md-4">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Area of Interest</p>
+                      <p></p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>Health, Technology</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="refield">
+                    <div class="sportslabel">
+                      <p>Institution(s)</p>
+                    </div>
+                    <div class="sportslabelre">
+                      <p>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              function getData(page) {
+                $.ajax({
+                  method: "POST",
+                  url: "https://www.somaiya.edu//en/news-media/media-coverage/" + page,
+                  data: { page: page },
+                  beforeSend: function () {
+                    $('.loading').show();
+                  },
+                  success: function (data) {
+                    $('.loading').hide();
+                    $('#refined').html(data);
+                  }
+                });
+              }
+            </script>
+            <div class="pagination" role="navigation" aria-label="pagination">
+              <div class="of_result">10 of 923 | </div>&nbsp;<b>1</b>&nbsp;<a href="javascript:void(0);"
+                onclick="searchFilter(10)">2</a>&nbsp;<a href="javascript:void(0);"
+                onclick="searchFilter(20)">3</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(10)"
+                aria-hidden="true">»</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="searchFilter(920)">Last</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+  <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+  <script src="https://kjsce.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.js-institute-multiple,.js-department-multiple,.js-type-multiple,.js-source-multiple,.js-subinstitute-multiple,.js-category-multiple').select2();
+
+
+    });
+  </script>
+</body>
+
+</html>

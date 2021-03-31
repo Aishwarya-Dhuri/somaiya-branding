@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Contact Us BS4</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+  <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/header.css">
+
+  <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/contact-emergency.css">
+  <link href="http://stage-kjsce.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+  <script src="http://stage-kjsce.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+  <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+
+  <script>
+    $(function () {
+      $("#header").load("/University/header.html");
+
+    });
+  </script>
+</head>
+
+<body>
+  <div id="header"></div>
+
+  <div role="main">
+    <section class="aboutpanel map-direction contact-us">
+      <div class="container">
+        <div class="title txtcenter text-center common-title">
+          <h2 class="wow animated fadeInUp animated animated animated animated" style="visibility: visible; animation-name: fadeInUp;">Contact Us</h2>
+          <img alt="" src="https://www.somaiya.edu/assets/common_img/title_bar.png">
+        </div>
+        <div class="seeall">
+          <a class="hvr simple-link" href="https://www.somaiya.edu/en/contact-us/contact-directory">See the Contact Directory</a>
+        </div>
+      </div>
+      <div class="getintouch">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-sm-12 col-md-6 col-xs-12">
+              <form name="registration" action="https://www.somaiya.edu/en/success" method="POST" novalidate="novalidate">
+                <div class="form-group">
+                  <label class="control-label" for="selectbasic">Institute <span>*</span></label>
+                  <div>
+                    <select id="selectbasic" name="selectInstitute" class="form-control" required="">
+                      <option value="">Select Institute </option>
+                                                                              <option value="16">K J Somaiya College of Engineering</option>
+                                                        <option value="17">K J Somaiya Institute of  Management</option>
+                                                        <option value="18">K J Somaiya College of Education</option>
+                                                        <option value="21" selected="selected">Somaiya Vidyavihar University</option>
+                                                        <option value="31">S K Somaiya College</option>
+                                                        <option value="32">K J Somaiya Institute of Dharma Studies</option>
+                                                        <option value="34">Somaiya Sports Academy</option>
+                                                        <option value="35">Somaiya Institute of Research and Consultancy</option>
+                                                                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="selectbasic">Query <span>*</span></label>
+                  <div>
+                                        <!-- <select class="form-control" name="selectQuery" data-placeholder="Please select a Query" id="selectquery" required>
+                        <option value="">Please select an Query</option>
+                      </select> -->
+                                        <select class="form-control" name="selectQuery" data-placeholder="Please select a Query" id="selectquery" required="">
+                        <option value="">Please select an Query</option>
+                                                                          <option value="internationalrelations@somaiya.edu">For International Relations</option>
+                                                    <option value="communications@somaiya.edu">For Public Relations and Media Queries</option>
+                                                    <option value="svvit@somaiya.edu">For Information Technology [ I.T ]</option>
+                                                    <option value="hr@somaiya.edu">For Human Resources [ HR ]</option>
+                                                    <option value="alumnirelations@somaiya.edu">For Alumni Relations</option>
+                                                    <option value="research@somaiya.edu">For Research &amp; Consultancy</option>
+                                                                    </select>
+                                    </div>
+                </div>
+                <div class="form-group">
+                  <label class=" control-label" for="textinput">Name <span>*</span></label>  
+                  <div>
+                    <input class="form-control input-md" id="textName" name="textName" type="text" value="" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="textinput">Email <span>*</span></label>  
+                  <div>
+                    <input class="form-control input-md" id="textEmail" name="textEmail" type="email" value="" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="textinput">Mobile <span>*</span></label>  
+                  <div>
+                    <input class="form-control input-md" id="textNumber" name="textNumber" type="text" value="" minlength="10" maxlength="10" required="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="textinput">Comment <span>*</span></label>  
+                  <div>
+                    <textarea id="textComment" name="textComment" type="text" class="form-control input-md" rows="8" required=""></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="" for="textinput"></label> 
+                  <div>
+                    <input type="submit" name="contact_edu" class="hvr btn-primary grey-btn hvr-right" value="Submit">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-5 col-sm-12 col-md-6 col-xs-12 blue-bg">
+              <h3 style="color: #fff;">Frequent <span>Contacts</span></h3> 
+              <p>Select an Institute for Respective Contact Information </p>
+              <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group">
+                  <select class="js-institute-multiple select2-hidden-accessible" name="institute_check[]" id="institute_check" onchange="searchFilter()" tabindex="-1" aria-hidden="true">
+                                                                    <option value="16">K J Somaiya College of Engineering</option>
+                                                <option value="17">K J Somaiya Institute of  Management</option>
+                                                <option value="18">K J Somaiya College of Education</option>
+                                                <option value="21" selected="selected">Somaiya Vidyavihar University</option>
+                                                <option value="31">S K Somaiya College</option>
+                                                <option value="32">K J Somaiya Institute of Dharma Studies</option>
+                                                <option value="34">Somaiya Sports Academy</option>
+                                                <option value="35">Somaiya Institute of Research and Consultancy</option>
+                                                            </select><span class="select2 select2-container select2-container--default select2-container--below" dir="ltr" style="width: 353px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-institute_check-container"><span class="select2-selection__rendered" id="select2-institute_check-container" title="Somaiya Vidyavihar University">Somaiya Vidyavihar University</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+              </div> 
+              <ul class="otheremillinks" id="refined"><section class="getintouch">
+  <ul class="otheremillinks" id="">
+  
+       
+                  <li>For International Relations                	<span>
+                      <a>
+                 <div class="phNo-contacts"> 
+                                  
+                  </div>
+                 <div class="email-contacts"> internationalrelations@somaiya.edu</div>
+                  </a>
+              </span>
+          </li>                              
+                         
+                  <li>For Public Relations and Media Queries                	<span>
+                      <a>
+                 <div class="phNo-contacts"> 
+                                  
+                  </div>
+                 <div class="email-contacts"> communications@somaiya.edu</div>
+                  </a>
+              </span>
+          </li>                              
+                         
+                  <li>For Information Technology [ I.T ]                	<span>
+                      <a>
+                 <div class="phNo-contacts"> 
+                                  
+                  </div>
+                 <div class="email-contacts"> svvit@somaiya.edu</div>
+                  </a>
+              </span>
+          </li>                              
+                         
+                  <li>For Human Resources [ HR ]                	<span>
+                      <a>
+                 <div class="phNo-contacts"> 
+                                  
+                  </div>
+                 <div class="email-contacts"> hr@somaiya.edu</div>
+                  </a>
+              </span>
+          </li>                              
+                         
+                  <li>For Alumni Relations                	<span>
+                      <a>
+                 <div class="phNo-contacts"> 
+                                  
+                  </div>
+                 <div class="email-contacts"> alumnirelations@somaiya.edu</div>
+                  </a>
+              </span>
+          </li>                              
+                         
+                  <li>For Research &amp; Consultancy                	<span>
+                      <a>
+                 <div class="phNo-contacts"> 
+                                  
+                  </div>
+                 <div class="email-contacts"> research@somaiya.edu</div>
+                  </a>
+              </span>
+          </li>                              
+                    </ul>
+  </section></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title txtcenter common-title">
+        <h2 class="subheading wow  fadeInUp mb-4" >
+          How to Reach Us      </h2>
+        <img alt="" src="https://www.somaiya.edu/assets/common_img/title_bar.png">
+      </div>
+      <div class="stiky-nav instutute-nav">
+        <div class="stick-bg">
+          <div class="container">
+            <div id="nav" role="tablist">
+              <div class="container-fluid school-list-nav commonL-tabs">
+                <ul id="top-menu" class="nav nav-tabs" role="presentation" style="display: none;">
+                  <li class="active nav-item last"><a class="nav-link active" role="tab" href="#tab1" data-toggle="tab">Vidyavihar</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-primary">
+        <div class="panel-body_back">
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <!-- mumbai-Ghatkopar -start here Tab1  -->
+              <section class="home-who-can-donate">
+                <div class="container">
+                  <div class="show-grid contactusbs3">
+                    <div class="row">
+                      <div class="col-lg-5 col-sm-12 col-md-6 col-xs-12 paddleft">
+                        <div class="map-responsive">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4014.0403257231883!2d72.8965630244395!3d19.074170475304825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6279e6fa183%3A0x8b414750f755e236!2sSomaiya+Vidyavihar!5e1!3m2!1sen!2sin!4v1508835076143" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                        </div>
+                      </div>
+                      <div class="col-lg-7 col-sm-12 col-md-6 col-xs-12 how-can-white-bg paddright paddleft">
+                        <div class="faqopenclose">
+                          <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 padding0">
+                            <div class="panel-primary">
+                              <div class="panel-body">
+                                <div class="accordion">
+                                  <div class="faqtop">
+                                    <p class="accordion-toggle" aria-expanded="true">Access by Train <i class="more-less glyphicon glyphicon-plus "></i></p>
+                                    <div class="accordion-content">
+                                      <p>Somaiya Campus is located very near to Vidyavihar railway station which comes on the Central Railway of Mumbai, between Kurla and Ghatkopar. If you are planning to come from the Western Railway, like Churchgate, Bombay Central, you can change from the Western Railway to the Central Railway at Dadar station, and catch a slow local train from platform no. 1 or 2.</p>
+                                      <p>Please do not catch the train which is of Kurla destination as Vidyavihar is after Kurla. From western suburbs like Borivali, Andheri, you can also come to Dadar and change or also can travel by Metro upto Ghatkopar and then get into slow train heading towards CSTM from platform no.2, and get down at next station which is Vidyavihar. This will be very crowded during peak hours and in a span of 90 seconds you have to move to the opposite door from where you get into the train..</p>
+                                      <p>It will be convenient to reach Campus from Ghatkopar by taking an Autorickshaw to campus which is around 2 kms.If coming from Kalyan side, you may board any train which will go to Kurla, Dadar or CSMT and get down at Vidyavihar if in slow train or in Ghatkopar if coming by fast train.</p>
+                                      <p>If you are coming from Navi Mumbai side i.e. from Panvel, CBD, Vashi etc. by harbour trains, then get down at Tilak Nagar railway station which is between Chembur and Kurla. From this station, campus is at a distance of about 1.0 KM with minimum fare by auto rickshaw. Please get down from the eastern side of the platform.</p>
+                                      <p>The average time period between two consecutive trains in the central side is approximately 7 minutes. However if the trains are late, then the next train to arrive may take a long time. It takes a minimum of fifteen minutes by walking from the Vidyavihar railway station to the college. Auto-rickshaws (3 seater vehicles) are available for hire outside the Vidyavihar station (East), and they will drop you at the entrance of the Somaiya Vidyanagar campus.</p>
+                                    </div>
+                                  </div>
+                                  <div class="faqtop">
+                                    <p class="accordion-toggle" aria-expanded="true">Access by Bus <i class="more-less glyphicon glyphicon-plus "></i></p>
+                                    <div class="accordion-content">
+                                      <p>You can come to vidyavihar by using the BEST buses. The following buses come to Vidyavihar on the eastern side.</p>
+                                      <p>385 - (Mumbai Central bus depot to Ghatkopar Bus Depot)
+                                        353 - (Wadala Depot to Tagore Nagar)
+                                        399 - (Marathon Chowk(Thane) to Anushakti Nagar(Chembur))
+                                        The campus entrance is just behind the BEST bus stop. The name of the stop is Somaiya.
+                                        The following buses come to Vidyavihar from the western side and the final bus stop, where you also have to alight, is at the Vidyavihar station (West)</p>
+                                                                      <p>322 - (starts from Vile Parle)
+                                        323 - (starts from Vihar Lake)
+                                        433 - (starts from Santacruz-E)
+                                        308 - (starts from Majas Depot)
+                                        336 - (starts from Santacruz-W Bus Depot)
+                                        609 - (starts from Kohinoor Hospital)
+                                        You can come to Somaiya Vidyavihar from there by crossing the overhead pedestrian bridge that goes above the railway tracks and come to the eastern side. From there take the same path as described in 'Access by train' section.</p>
+                                    </div>
+                                  </div>
+                                  <div class="faqtop">
+                                    <p class="accordion-toggle" aria-expanded="true">Access by Road <i class="more-less glyphicon glyphicon-plus "></i></p>
+                                    <div class="accordion-content">
+                                      <p>While coming from the Eastern Express highway, take a turn at the Amar-Mahal Signal towards Ghatkopar. (When coming from Thane do not take the bridge after Vashi cross road instead turn right underneath the bridge at the Amar-Mahal signal. If coming from Dadar side, after crossing Kurla signal take the next bridge and keep left. Do not take the bridge that starts atop this bridge on the right. Instead climb down and take left at the signal towards Ghatkopar.)
+                                      Then take a left just after the second signal which will get you to the Somaiya Campus
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Tab content 1 Close here -->
+            </div>
+            <!-- content2 start here -->
+  
+            <!-- content2 start here -->
+  
+            <!-- content3 start close  here -->
+            <!-- content4 start here -->
+  
+            <!-- content4start close  here -->
+            <!-- content5 start here -->
+  
+            <!-- content5start close  here -->
+            <!-- content6 start here -->
+  
+            <!-- content6 start close  here -->
+            <!-- content7 start here -->
+  
+            <!-- content7 start close  here -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+</section>
+  <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+  <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.accordion').find('.accordion-toggle').click(function () {
+        $(this).next().slideToggle('600');
+        $(".accordion-content").not($(this).next()).slideUp('600');
+      });
+      $('.accordion-toggle').on('click', function () {
+        $(this).toggleClass('active').siblings().removeClass('active');
+      });
+      $('.js-institute-multiple').select2();
+    });
+  </script>
+</body>

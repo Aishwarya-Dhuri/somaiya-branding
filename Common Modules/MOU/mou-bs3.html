@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Mou BS3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="../../css/custom_model.css">
+    <link type="text/css" rel="stylesheet" href="https://kjsieit.somaiya.edu.in/css/module.css">
+    <link type="text/css" rel="stylesheet" href="https://kjsieit.somaiya.edu.in/assets/kjsieit/css/other.css">
+    <link type="text/css" rel="stylesheet" href="https://kjsieit.somaiya.edu.in/assets/kjsieit/css/theme.css">
+    <script type="text/javascript" src="https://kjsieit.somaiya.edu.in/assets/default_asset/js/jquery-1.11.3.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="inner_page_class" data-scrollax-parent="true">
+            <div class="institute_honor_wrap committees_wrap left_search">
+                <div class="container">
+                    <div class="section-title no_border">
+                        <h2 class="title text-center code code--small code--left aos-init aos-animate">MOU's</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-12 col-md-3 refineserach">
+                            <h3 class="refhead">Refine Your Search</h3>
+                            <form action="" method="get" role="form" id="resfilter">
+
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="">
+                                        <div class="relabel">By Location</div>
+                                        <select class="single js-department-multiple select2-hidden-accessible"
+                                            name="location_check" id="location_check" placeholder="select"
+                                            onchange="searchFilter()" tabindex="-1">
+                                            <option value="">Select Location</option>
+                                            <option value=" Nashik"> Nashik</option>
+                                            <option
+                                                value="01 Ravi Industrial Estate, near paper box, off Mahakalli caves road, Andheri (East), Mumbai ">
+                                                01 Ravi Industrial Estate, near paper box, off Mahakalli caves road,
+                                                Andheri (East), Mumbai </option>
+                                            <option value="4/31, Old Anand Nagar, BSES Road, Santacruz (W)">4/31, Old
+                                                Anand Nagar, BSES Road, Santacruz (W)</option>
+                                            <option value="AICTE, New Delhi">AICTE, New Delhi</option>
+                                            <option value="India">India</option>
+                                            <option value="Jogeshwari (E) Mumbai">Jogeshwari (E) Mumbai</option>
+                                            <option value="Karnataka">Karnataka</option>
+                                            <option value="Mumbai">Mumbai</option>
+                                            <option value="Mumbai &amp; Karnataka">Mumbai &amp; Karnataka</option>
+                                            <option value="Namangan, Uzbekistan">Namangan, Uzbekistan</option>
+                                            <option
+                                                value="Tata Power Ambernath Receiving Station, Varap Village, Kalyan-Murbad Road, Next to Sacred Heart School, Shahad 421301, Maharashtra, India">
+                                                Tata Power Ambernath Receiving Station, Varap Village, Kalyan-Murbad
+                                                Road, Next to Sacred Heart School, Shahad 421301, Maharashtra, India
+                                            </option>
+                                            <option value="Vikhroli, Mumbai">Vikhroli, Mumbai</option>
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" style="width: 246px;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-labelledby="select2-location_check-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-location_check-container"
+                                                        title="Select Location">Select Location</span><span
+                                                        class="select2-selection__arrow" role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                    <div class="">
+                                        <div class="relabel">By Department</div>
+                                        <select class="js-department-multiple select2-hidden-accessible"
+                                            name="department_check[]" id="department_check" multiple=""
+                                            onchange="searchFilter()" tabindex="-1">
+                                            <option value=""></option>
+                                            <option value="9">Information Technology</option>
+                                            <option value="37">Electronics &amp; Telecommunication</option>
+                                            <option value="38">Electronics</option>
+                                            <option value="57">Engineering</option>
+                                            <option value="73">Computer</option>
+                                            <option value="145">Mechanical</option>
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" style="width: 246px;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--multiple"
+                                                    role="combobox" aria-haspopup="true" aria-expanded="false"
+                                                    tabindex="-1">
+                                                    <ul class="select2-selection__rendered">
+                                                        <li class="select2-search select2-search--inline"><input
+                                                                class="select2-search__field" type="search" tabindex="0"
+                                                                autocomplete="off" autocorrect="off"
+                                                                autocapitalize="off" spellcheck="false" role="textbox"
+                                                                aria-autocomplete="list" placeholder=""
+                                                                style="width: 0.75em;"></li>
+                                                    </ul>
+                                                </span></span><span class="dropdown-wrapper"
+                                                aria-hidden="true"></span></span>
+                                    </div>
+                                    <div class="">
+                                        <div class="relabel">By Year</div>
+                                        <select class="single js-department-multiple select2-hidden-accessible"
+                                            name="year_check" id="year_check" onchange="searchFilter()" tabindex="-1">
+                                            <option value="">Select Year</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2004">2004</option>
+                                            <option value="1899">1899</option>
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" style="width: 246px;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-labelledby="select2-year_check-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-year_check-container" title="Select Year">Select
+                                                        Year</span><span class="select2-selection__arrow"
+                                                        role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                    <div class="repaddleft">
+                                        <div class=""> <input type="reset" name="btn_clear" id="btn_clear"
+                                                class="clearbtn" value="Clear all filters"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-9 col-sm-12 col-md-9 right_content">
+                            <div class="committees_tab_wrap">
+                                <div class="tab-content current">
+                                    <ul class="row pagesContainer" id="refined">
+
+                                        <li class="col-md-12 pageContent odd">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dd623b2cbae5.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>Namangan Institute of Engineering and Technology,
+                                                        Uzbekistan , Namangan, Uzbekistan</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                18th October 2019 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Computer,Electronics,Electronics &amp;
+                                                                Telecommunication,Information Technology</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>To exchange, students, faculty and research collaboration
+                                                            </p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent even">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dd6167b4fe66.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>Tata Power Skill Development Institute (TPSDI) , Tata
+                                                        Power Ambernath Receiving Station, Varap Village, Kalyan-Murbad
+                                                        Road, Next to Sacred Heart School, Shahad 421301, Maharashtra,
+                                                        India</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                9th October 2019 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Electronics,Electronics &amp;
+                                                                Telecommunication</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p style="text-align: justify;">TPSDI is an endeavour from
+                                                                the Tata Power Company to empower youth and others with
+                                                                employable skills, especially in th<span
+                                                                    class="moreellipses"></span></p>
+                                                            <p>...&nbsp;</p><span class="morecontent"><span>
+                                                                    <p>e Power and allied sectors, and to address the
+                                                                        skill gap challenge faced by the Indian Power
+                                                                        Sector. It provides engineering trainings
+                                                                        in&nbsp;Power sector and allied field includes
+                                                                        the courses like Power System (Transmission
+                                                                        &amp; Distribution) with sub contents as
+                                                                        Transmission and Distribution of power, SCADA
+                                                                        Communication, Overhead Transmission and
+                                                                        Distribution Lines. Also, the course like Solar
+                                                                        PV System with its sub contents as Construction
+                                                                        of Solar Panels and Solar Simulation.</p>
+
+                                                                    <p style="text-align: justify;">We have signed this
+                                                                        MOU to get services from this company like
+                                                                        Industry trainings, Industry visit, Faculty
+                                                                        development and skill development of our
+                                                                        students. Students will be considered for Jobs
+                                                                        placement if any vacancies will be there.&nbsp;
+                                                                    </p>
+                                                                    <p></p>
+                                                                </span>&nbsp;&nbsp;<a href=""
+                                                                    class="morelink">more</a></span>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent odd">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dd615aecad48.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>SMEC Automation Pvt Ltd signed on , 01 Ravi Industrial
+                                                        Estate, near paper box, off Mahakalli caves road, Andheri
+                                                        (East), Mumbai </blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                24th September 2019 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Electronics,Electronics &amp;
+                                                                Telecommunication</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p style="text-align: justify;">SMEC Automation Pvt Ltd is a
+                                                                company which provide solutions in Automation to Navy,
+                                                                and various Marine and shipping co<span
+                                                                    class="moreellipses"></span></p>
+                                                            <p>...&nbsp;</p><span class="morecontent"><span>
+                                                                    <p>mpanies. This company provides trainings in
+                                                                        Programmable Logic Controls (PLC) and
+                                                                        Supervisory controlled Data Acquisition (SCADA)
+                                                                        systems as well as Ladder programming language
+                                                                        which is used to program PLC system.</p>
+
+                                                                    <p style="text-align: justify;">We have signed this
+                                                                        MOU to get services from this company like
+                                                                        Internships, free Industry Visits, Research
+                                                                        Projects and trainings to students and
+                                                                        faculties. Students will be considered for Jobs
+                                                                        placement if any vacancies will be there.&nbsp;
+                                                                    </p>
+                                                                    <p></p>
+                                                                </span>&nbsp;&nbsp;<a href=""
+                                                                    class="morelink">more</a></span>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent even">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dd618183949b.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>Databyte Services and Systems , 4/31, Old Anand Nagar,
+                                                        BSES Road, Santacruz (W)</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                20th August 2019 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Computer,Electronics</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>To involve students and faculties in Research Project</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent odd">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dd6150e2ceac.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>Internshala , AICTE, New Delhi</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                26th June 2019 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Computer,Electronics,Electronics &amp;
+                                                                Telecommunication,Information Technology</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>To provide free internship under CSR activity of Sahu
+                                                                Technologies</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent even">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dd6141d91a5e.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>SAHU Technologies , Mumbai</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                25th February 2019 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Computer,Electronics,Electronics &amp;
+                                                                Telecommunication,Information Technology</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>To provide free internship under CSR activity of Sahu
+                                                                Technologies</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent odd">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class="backbg"
+                                                        src="https://kjsieit.somaiya.edu.in//assets/kjsac/images/mou_placeholder.jpg">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>MASTEK Ltd , Mumbai</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                1st October 2018 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Electronics &amp;
+                                                                Telecommunication</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>MoU is signed for the department of Computer Engineering
+                                                                to conduct workshops, Research Projects, Internship
+                                                                Programs and interaction with faculty <span
+                                                                    class="moreellipses"></span></p>
+                                                            <p>...&nbsp;</p><span class="morecontent"><span>
+                                                                    <p>and students.</p>
+                                                                    <p></p>
+                                                                </span>&nbsp;&nbsp;<a href=""
+                                                                    class="morelink">more</a></span>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent even">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class="backbg"
+                                                        src="https://kjsieit.somaiya.edu.in//assets/kjsac/images/mou_placeholder.jpg">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>Eduvance Vanmat Technologies Pvt. Ltd , Mumbai
+                                                    </blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                1st September 2018 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Electronics</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>Arduino Learning Lab setup, faculty development workshop,
+                                                                knowledge sharing on latest technologies, internship to
+                                                                students etc.</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent odd">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class=""
+                                                        src="https://kjsieit.somaiya.edu.in/upload_file/mou/thumbnail/5dc3c5add2b44.png">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>Eduvance Vanmat Technologies Pvt. Ltd., Mumbai , Mumbai
+                                                    </blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                1st September 2018 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Electronics,Electronics &amp;
+                                                                Telecommunication</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>Arduino Learning Lab setup, faculty development workshop,
+                                                                knowledge sharing on latest technologies, internship to
+                                                                students etc.</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="col-md-12 pageContent even">
+                                            <div class="box_section">
+                                                <div class="image_section backbgbox">
+                                                    <img alt="" class="backbg"
+                                                        src="https://kjsieit.somaiya.edu.in//assets/kjsac/images/mou_placeholder.jpg">
+
+                                                </div>
+                                                <div class="content">
+                                                    <i><b></b></i>
+                                                    <blockquote>CMP Infotech (CMP) , Mumbai</blockquote>
+                                                    <ul>
+                                                        <li class="date"><span class="small_label">Signed on:</span>
+                                                            <span class="result">
+                                                                22nd March 2018 </span>
+                                                        </li>
+                                                        <li class="date other"><span
+                                                                class="small_label">Department:</span><span
+                                                                class="result">Engineering</span></li>
+                                                    </ul>
+                                                    <div class="more_less"><span class="more">
+                                                            <p>For conduction of Guest Lectures, Student Placement,
+                                                                Projects Development, Faculty and Students Training
+                                                                Programs, Internship to students etc</p>
+                                                        </span></div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <script>
+                                            function getData(page) {
+                                                $.ajax({
+                                                    method: "POST",
+                                                    url: "https://kjsieit.somaiya.edu.in//en/mou/" + page,
+                                                    data: { page: page },
+                                                    beforeSend: function () {
+                                                        $('.loading').show();
+                                                    },
+                                                    success: function (data) {
+                                                        $('.loading').hide();
+                                                        $('#refined').html(data);
+                                                    }
+                                                });
+                                            }
+                                        </script>
+                                        <div class="pagination" role="navigation" aria-label="pagination">
+                                            <div class="of_result">10 of 29 | </div>&nbsp;<b>1</b>&nbsp;<a
+                                                href="javascript:void(0);" onclick="searchFilter(10)">2</a>&nbsp;<a
+                                                href="javascript:void(0);" onclick="searchFilter(20)">3</a>&nbsp;<a
+                                                href="javascript:void(0);" onclick="searchFilter(10)"
+                                                aria-hidden="true">»</a>&nbsp;
+                                        </div>
+
+                                        <script type="text/javascript">
+
+                                            $('.pageContent').each(function (i, t) {
+                                                var addClass = i % 2 == 0 ? 'odd' : 'even';
+                                                $(t).addClass(addClass);
+                                            })
+
+
+                                            $(document).ready(function () {
+                                                var showChar = 150;
+                                                var ellipsestext = "...";
+                                                var moretext = "more";
+                                                var lesstext = "less";
+                                                $('.more').each(function () {
+
+                                                    var content = $(this).html();
+                                                    if (content.length > showChar) {
+
+                                                        var c = content.substr(0, showChar);
+                                                        // var h = content.substr(showChar-1, content.length - showChar);
+                                                        var h = content.substr(showChar, content.length);
+
+                                                        var html = c + '<span class="moreellipses"><p>' + ellipsestext + '&nbsp;</p></span><span class="morecontent"><span><p>' + h + '</p></span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+                                                        $(this).html(html);
+                                                    }
+
+                                                });
+
+                                                $(".morelink").click(function () {
+                                                    if ($(this).hasClass("less")) {
+                                                        $(this).removeClass("less");
+                                                        $(this).html(moretext);
+                                                    } else {
+                                                        $(this).addClass("less");
+                                                        $(this).html(lesstext);
+                                                    }
+                                                    $(this).parent().prev().toggle();
+                                                    $(this).prev().toggle();
+                                                    return false;
+                                                });
+                                            });
+
+                                        </script>
+
+                                        <style type="text/css">
+                                            span.more p {
+                                                display: initial;
+                                            }
+
+                                            .inner_page_class .institute_honor_wrap .committees_tab_wrap ul li .box_section .image_section img {
+                                                display: block !important;
+                                            }
+
+                                            a.morelink {
+                                                text-decoration: none;
+                                                outline: none;
+                                            }
+
+                                            .morecontent span {
+                                                display: none;
+                                            }
+                                        </style>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script type="text/javascript" src="https://kjsieit.somaiya.edu.in/assets/default_asset/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Career Listing BS4</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+    <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <section class="inner_page_class career_scetion library_banner_wrap career-banner backpatch-right">
+        <section class="unibrand-bannersec ">
+            <div class="container brandcontwrapper">
+                <div class="title txtcenter naresh_announcement common-title">
+                    <h2 class="wow  fadeInUp">Careers</h2>
+                </div>
+                <div class="clear "></div>
+                <div class="searchbox fullwidth">
+                    <div class="input-group stylish-input-group">
+                        <input  type="text" class="form-control search-txtbox" placeholder="Keyword, job title, description" >
+                        <span class="input-group-addon">
+                            <button type="submit" id="searchForm_submit">
+                                <img src="/assets/default_asset/img/white-search.svg">
+                            </button>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="inner_page_class career_section">
+        <!-- <div class="container">
+        </div> -->
+        <div class="fliterwrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <button type="button" class="btn btn-info mob-filter" data-toggle="collapse" data-target="#filer_wrap"><i class="fa fa-filter" aria-hidden="true"></i>
+                             Filters</button>
+                        <div class="filer_wrap sidefilter collapse sh-div" id="filer_wrap">
+                            <div class="mobilecardfilter">
+                                <button type="button" class="btn btn-info mob-cross" data-toggle="collapse" data-target="#filer_wrap"><i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            <h3 class="refhead refheadbs4">Filter By</h3>
+                            <form class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="relabel">Institute</label>
+                                        <select class="js-institute-multiple form-control brand-select"
+                                            name="institute_check[]" id="institute_check" multiple=""
+                                            placeholder="Enter email" tabindex="-1"
+                                            aria-hidden="true">
+                                            <option value="0">Bscil</option>
+                                            <option value="22">K J Somaiya Institute of Engineering and Information
+                                                Technology ( KJSIEIT )</option>
+                                            <option value="21">Somaiya Vidyavihar University</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="relabel">Department</label>
+                                        <select class="js-department-multiple form-control brand-select"
+                                            name="department_check[]" id="department_check" multiple=""
+                                            placeholder="Enter email" tabindex="-1"
+                                            aria-hidden="true">
+                                            <option value="1">Administration</option>
+                                            <option value="62">Examination</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="relabel">Type</label>
+                                        <select class="js-type-multiple form-control brand-select"
+                                            name="type_check[]" id="type_check" multiple="" placeholder="Enter email"
+                                            tabindex="-1" aria-hidden="true">
+                                            <option value="1">Full Time</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 d-none hidden">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1" class="relabel">Job Title</label>
+                                        <input type="text" name="keyword_career" class="form-control" value=""
+                                            placeholder="Job Title" id="searchkeyword" onkeyup="searchFilter()"
+                                            style="height:42px;">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn"
+                                        value="Clear all filters">
+                                </div>
+                                <div class="col-md-12">
+                                   <button type="button" class="btn btn-info mob-filter aplyfilterbtn" data-toggle="collapse" data-target="#filer_wrap">Apply Filter</button>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <!-- <div class="result_no">All Jobs (4)</div> -->
+                        <div class="tab-content">
+                        <div class=" " id="refined">
+                            <div class="result_no">All Jobs <b>(1)</b></div>
+                            <div class="row cl-list">
+                            <div class="col-lg-6 col-md-6 col">
+                                <a href="http://stage-kjsce.somaiya.edu/en/view-career/2" class="carrer-boxlink">
+                                    <div class="jobwrap">
+                                        <h3 class="job_role">Deputy Registrar-Admin</h3>
+                                        <div class="job_code">(Job code - SVU0003)</div>
+                                        <div class="location">
+                                            <span class="carer-lbl">Institution(s):</span>
+                                            <p>Vidyavihar - Mumbai</p>
+                                        </div>
+                                      
+                                        <div class="job_date">
+                                            <span class="carer-lbl">Applications open till :</span><p> 31-Jul-2020</p>
+                                        </div>
+                                        <!-- <p> 
+                          </p>  -->
+
+                                       
+
+                                    </div>
+                                    <div class="btnsec">
+    <h4 class="jobbtn">Walk-in Interview</h4>
+                                    </div>
+                                    <!--jobwrap end-->
+                                </a>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col">
+                                <a href="http://stage-kjsce.somaiya.edu/en/view-career/3" class="carrer-boxlink">
+                                    <div class="jobwrap">
+                                        <h3 class="job_role">Assistant Controller of Examination</h3>
+                                        <div class="job_code">(Job code - SVU0002)</div>
+                                        <div class="location">
+                                            <span class="carer-lbl">Institution(s):</span>
+                                            <p>Vidyavihar - Mumbai</p>
+                                        </div>
+                                        <div class="job_date">
+                                            <span class="carer-lbl">Applications open till :</span><p> 31-Jul-2020</p>
+                                        </div>
+                                 
+
+                                      
+
+                                    </div>
+                                    <!--jobwrap end-->
+                                    <div class="btnsec">
+    <h4 class="jobbtn">Walk-in Interview</h4>
+                                    </div>
+                                </a>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col">
+                                <a href="http://stage-kjsce.somaiya.edu/en/view-career/4" class="carrer-boxlink">
+                                    <div class="jobwrap">
+                                        <h3 class="job_role">Executive Assistant</h3>
+                                        <div class="job_code">(Job code - SVU0001)</div>
+                                        <div class="location">
+                                            <span class="carer-lbl">Institution(s):</span>
+                                            <p>Vidyavihar - Mumbai</p>
+                                        </div>
+                                        <div class="job_date">
+                                            <span class="carer-lbl">Applications open till :</span><p> 31-Jul-2020</p>
+                                        </div>
+
+                                     
+
+                                    </div>
+                                    <div class="btnsec">
+    <h4 class="jobbtn">Walk-in Interview</h4>
+                                    </div>
+                                    <!--jobwrap end-->
+                                </a>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col">
+                                <a href="http://stage-kjsce.somaiya.edu/en/view-career/5" class="carrer-boxlink">
+                                    <div class="jobwrap">
+                                        <h3 class="job_role">Registrar</h3>
+                                        <div class="job_code">(Job code - KJSIEIT001)</div>
+                                        <div class="location">
+                                            <span class="carer-lbl">Institution(s):</span>
+                                            <p>Sion - Mumbai</p>
+                                        </div>
+                                        <div class="job_date">
+                                            <span class="carer-lbl">Applications open till :</span><p> 31-Jul-2020</p>
+                                        </div>
+
+                                        <div class="btnsec">
+                                            <h4 class="jobbtn">Apply Now</h4>
+                                        </div>
+
+                                    </div>
+                                    <!--jobwrap end-->
+                                </a>
+
+
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="fullwidth">
+                                <div class="showing-page">Showing : 4</div>
+                            </div>
+                        </div>
+                     
+                    </div>
+                        <!--  <div class="row">
+                                    <h3>Relevant Job here</h3>
+                             </div> -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+    <script src="https://kjsce.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+
+    <script>
+        $("<link/>", {
+            rel: "stylesheet",
+            href: "/assets/default_asset/uni-css/career.css"
+        }).appendTo("head");
+
+
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() 
+        {
+          $('.js-institute-multiple,.js-department-multiple,.js-type-multiple').select2();
+        
+
+        });
+      </script>
+</body>
+
+</html>

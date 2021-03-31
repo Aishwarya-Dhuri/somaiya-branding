@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Video Listing BS3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/assets/simsr/css/custom.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/assets/simsr/css/theme.css">
+    <link type="text/css" rel="stylesheet" href="../../css/custom_model.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/css/accomplishment.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/css/programme_finder.css">
+    <link href="https://kjsce.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet">
+    <script src="https://kjsce.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+</head>
+
+<body>
+    <section class="aboutpanel naresh_announcement_list newssearch">
+        <div role="main">
+            <div class="container">
+                <div class="title txtcenter naresh_announcement">
+                    <h2 class="wow animated fadeInUp animated animated animated animated"
+                        style="visibility: visible; animation-name: fadeInUp;">Videos</h2>
+                    <img src="https://kjsce.somaiya.edu/assets/common_img/$id_of_institute == 50title_bar.png" alt=""
+                        class="title_line">
+                    <span></span>
+                </div>
+            </div>
+            <div class="container">
+                <form action="" class="newsearchform d-none" role="form">
+                    <div class="input-group stylish-input-group" role="search">
+                        <input type="text" name="keyword_ann" class="form-control" value="" placeholder="Search"
+                            id="searchkeyword" onkeyup="searchFilter()">
+                        <span class="input-group-addon"></span>
+                    </div>
+                </form>
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 col-md-4 refineserach">
+                        <form action="" method="get" role="form" id="resfilter">
+                            <h3 class="refhead">Refine Your Search</h3>
+                            <div class="relabel">By Related Institutions</div>
+                            <div class="repaddleft">
+                                <select class="js-institute-multiple select2-hidden-accessible" name="institute_check[]"
+                                    id="institute_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                                    <option value="0">Select Related Institutions</option>
+                                    <option value="17">K J Somaiya Institute of Management</option>
+                                    <option value="33">Office of the President</option>
+                                    <option value="50">Somaiya Vidyavihar</option>
+                                    <option value="16" selected="selected">K J Somaiya College of Engineering</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                    style="width: 250.125px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple" role="combobox"
+                                            aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-selection__choice"
+                                                    title="K J Somaiya College of Engineering"><span
+                                                        class="select2-selection__choice__remove"
+                                                        role="presentation">×</span>K J Somaiya College of Engineering
+                                                </li>
+                                                <li class="select2-search select2-search--inline"><input
+                                                        class="select2-search__field" type="search" tabindex="0"
+                                                        autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                        spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                        placeholder="" style="width: 0.75em;"></li>
+                                            </ul>
+                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+
+                            <div class="sub_institutes_div" style="display: none;">
+                                <div class="relabel ltlabel">Sub Institute</div>
+                                <select class="js-subinstitute-multiple select2-hidden-accessible"
+                                    name="sub_institute_check[]" id="sub_institute_check"
+                                    onchange="searchFilterBySubinstitute()" tabindex="-1">
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                    style="width: auto;"><span class="selection"><span
+                                            class="select2-selection select2-selection--single" role="combobox"
+                                            aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                            aria-labelledby="select2-sub_institute_check-container"><span
+                                                class="select2-selection__rendered"
+                                                id="select2-sub_institute_check-container"></span><span
+                                                class="select2-selection__arrow" role="presentation"><b
+                                                    role="presentation"></b></span></span></span><span
+                                        class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+
+                            <div class="repaddleft">
+                                <div class="relabel">Date</div>
+                                <div class="col-lg-6 col-sm-6 col-md-6 paddleft"><input type="date" name="fromdate"
+                                        id="fromdate" class="form-control dateclass placeholderclass"
+                                        onclick="$(this).removeClass('placeholderclass')" onchange="searchFilter()">
+                                </div>
+
+                                <div class="col-lg-6 col-sm-6 col-md-6 paddleft paddright"><input type="date"
+                                        name="todate" id="todate" class="form-control dateclass placeholderclass"
+                                        onclick="$(this).removeClass('placeholderclass')" onchange="searchFilter()">
+                                </div>
+                            </div>
+
+                            <div class="repaddleft">
+                                <div class="col-lg-6 col-sm-6 col-md-6 paddleft">
+                                    <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn"
+                                        value="Clear all filters">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-8 col-sm-12 col-md-8 video-result" id="refined">
+                        <h4>There are 3 items matching your search.</h4>
+                        <div class="col-md-6 col-sm-6 col-xs-12 videogrid">
+                            <iframe width="360" height="250" src="https://www.youtube.com/embed/gDqhjZ-5q_k"></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 videogrid">
+                            <div class="vtitle">Team RedShift Racing India 2020</div>
+                            <p>
+                                Redshift Racing India is the official BAJA SAE team of K J Somaiya College of
+                                Engineering. </p>
+                            <div class="videoinstitute">
+                                <p></p>
+                            </div>
+                            <div class="vdate">
+                                18th May 2020 </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 videogrid">
+                            <iframe width="360" height="250" src="https://www.youtube.com/embed/HUihl2syDNM"></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 videogrid">
+                            <div class="vtitle">Team KJSCE Robocon</div>
+                            <p>
+                                Team KJSCE Robocon presents to you a short-video on our Journey for DD Robocon-2019.
+                            </p>
+                            <div class="videoinstitute">
+                                <p></p>
+                            </div>
+                            <div class="vdate">
+                                18th May 2020 </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 videogrid">
+                            <iframe width="360" height="250" src="https://www.youtube.com/embed/pXVeSgTJzro"></iframe>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12 videogrid">
+                            <div class="vtitle">TEAM ETA</div>
+                            <p>
+                                A fuel efficient prototype build by a group of 20 passionate students of K.J. Somaiya
+                                College Of Engineering , Mumbai. </p>
+                            <div class="videoinstitute">
+                                <p></p>
+                            </div>
+                            <div class="vdate">
+                                14th May 2020 </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="showing-page">Showing : 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>

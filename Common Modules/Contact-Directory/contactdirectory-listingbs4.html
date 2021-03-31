@@ -1,0 +1,1856 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Announcements Listing BS4</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/common.css">
+    <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+    <script src="https://simsr.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+</head>
+
+<body>
+
+    <div role="main">
+        <section class="aboutpanel newssearch margin0">
+            <div class="abrating">
+                <div class="pull-right">
+                    <ul class="breadcrumb">
+                        <li><a href="https://www.somaiya.edu/en">Home</a> <span class="rightindicatior">»</span> </li>
+                        <li class="active">Contact Directory</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="container contact_heading">
+                <div class="titles">
+                    <div class="title txtcenter common-title">
+                        <h2 class="wow animated fadeInUp animated animated animated"
+                            style="visibility: hidden; animation-name: none;">Contact Directory</h2>
+                        <img alt="" src="https://www.somaiya.edu/assets/common_img/title_bar.png">
+                    </div>
+                </div>
+                <div class="sub_heading"></div>
+                <p>Search the contact information for somaiya faculty/staff
+                    <!-- by Name, Department, Institute, Campus -->.</p>
+            </div>
+            <div class="container contactdirectory">
+                <form role="search" action="#" name="frmFilters" class="dirsearchform" id="resfilter">
+                    <div class="input-group stylish-input-group ui-widget">
+                        <input type="text" name="keyword_search" id="searchkeyword" class="mainLoginInput form-control"
+                            placeholder="Search for faculty/staff" onkeyup="searchFilter()">
+                        <span class="input-group-addon">
+                            <button type="button" aria-label="search" onclick="searchFilter()">
+                                <img src="https://www.somaiya.edu/assets/arigel_general/img/homepage/search_bar_icon.png"
+                                    alt="">
+                            </button>
+                        </span>
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 refineserach">
+                        <form action="" method="post" name="frmFilters" id="resfilter">
+                            <ul class="sidefilter">
+                                <li class="contactuslist">
+                                    <div class="relabel ltlabel">Institute</div>
+                                    <select class="js-institute-multiple select2-hidden-accessible"
+                                        name="institute_check[]" id="institute_check" multiple=""
+                                        onchange="searchFilter()" tabindex="-1">
+                                        <!-- <option value="" >                                        </option> -->
+                                        <option value="12">K J Somaiya College of Arts and Commerce</option>
+                                        <option value="13">S K Somaiya Vinay Mandir Junior College</option>
+                                        <option value="14">K J Somaiya College of Science and Commerce</option>
+                                        <option value="15">S K Somaiya Degree College of Arts, Science and Commerce
+                                        </option>
+                                        <option value="16">K J Somaiya College of Engineering</option>
+                                        <option value="17">K J Somaiya Institute of Management</option>
+                                        <option value="18">K J Somaiya College of Education</option>
+                                        <option value="19">K J Somaiya Polytechnic</option>
+                                        <option value="22">K J Somaiya Institute of Engineering and Information
+                                            Technology ( KJSIEIT )</option>
+                                        <option value="23">K J Somaiya Bharatiya Sanskriti Peetham</option>
+                                        <option value="25">S K Somaiya Vinay Mandir (Primary Section)</option>
+                                        <option value="26">K J Somaiya Centre for Buddhist Studies</option>
+                                        <option value="28">K J Somaiya Centre for Studies In Jainism</option>
+                                        <option value="41">K J Somaiya Centre For South and South East Asian Studies
+                                        </option>
+                                        <option value="49">Research Innovation Incubation Design Labs</option>
+                                        <option value="50">Somaiya Vidyavihar</option>
+                                        <option value="53">K J Somaiya English Medium School</option>
+                                        <option value="54">K.J.Somaiya Secondary School,Nareshwadi</option>
+                                        <option value="55">Shri Sharda English Medium School</option>
+                                        <option value="56">Somaiya Vidya Mandir - Laxmiwadi </option>
+                                        <option value="57">Somaiya Vidya Mandir - Sakarwadi</option>
+                                        <option value="58">Somaiya Shishu Niketan Primary School</option>
+                                        <option value="59">Somaiya Vinaymandir High School</option>
+                                        <option value="60">Somaiya Vidya Mandir and higher Secondary Vidyalay,Sakarwadi
+                                        </option>
+                                        <option value="61">K J Somaiya Polytechnic Hostel</option>
+                                        <option value="62">K J Somaiya Institute of Management Studies and Research,
+                                            Hostel</option>
+                                        <option value="63">S K Somaiya Vinay Mandir Secondary Section</option>
+                                        <option value="70">K J Somaiya Hospital and Research Centre</option>
+                                        <option value="71">K J Somaiya Medical College and Research Centre</option>
+                                        <option value="72">K J Somaiya College of Physiotherapy</option>
+                                        <option value="73">K J Somaiya College of Nursing</option>
+                                        <option value="74">K J Somaiya School of Nursing</option>
+                                        <option value="75">K J Somaiya Medical Trust</option>
+                                        <option value="78">Maganlal Mehta Charitable Trust</option>
+                                        <option value="95">K J Somaiya Private Industrial Training Institute</option>
+                                        <option value="99">SMT Sakarbai K Somaiya Junior College of Education</option>
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" style="width: 522.531px;"><span class="selection"><span
+                                                class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                <ul class="select2-selection__rendered">
+                                                    <li class="select2-search select2-search--inline"><input
+                                                            class="select2-search__field" type="search" tabindex="0"
+                                                            autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                            spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                            placeholder="" style="width: 0.75em;"></li>
+                                                </ul>
+                                            </span></span><span class="dropdown-wrapper"
+                                            aria-hidden="true"></span></span>
+                                </li>
+                                <li>
+                                    <div class="sub_institutes_div" style="display: none;">
+                                        <div class="relabel ltlabel">Sub Institute</div>
+                                        <select class="js-subinstitute-multiple select2-hidden-accessible"
+                                            name="sub_institute_check[]" id="sub_institute_check"
+                                            onchange="searchFilterBySubinstitute()" tabindex="-1">
+                                        </select><span class="select2 select2-container select2-container--default"
+                                            dir="ltr" style="width: auto;"><span class="selection"><span
+                                                    class="select2-selection select2-selection--single" role="combobox"
+                                                    aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                    aria-labelledby="select2-sub_institute_check-container"><span
+                                                        class="select2-selection__rendered"
+                                                        id="select2-sub_institute_check-container"></span><span
+                                                        class="select2-selection__arrow" role="presentation"><b
+                                                            role="presentation"></b></span></span></span><span
+                                                class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="relabel ltlabel ">Campus</div>
+                                    <select class="js-campus-multiple select2-hidden-accessible" name="campus_check[]"
+                                        id="campus_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                                        <option value=""></option>
+                                        <option value="5">Nareshwadi</option>
+                                        <option value="4">Sakarwadi</option>
+                                        <option value="3">Sameerwadi</option>
+                                        <option value="2">SOMAIYA AYURVIHAR</option>
+                                        <option value="1">SOMAIYA VIDYAVIHAR</option>
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" style="width: 193.109px;"><span class="selection"><span
+                                                class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                <ul class="select2-selection__rendered">
+                                                    <li class="select2-search select2-search--inline"><input
+                                                            class="select2-search__field" type="search" tabindex="0"
+                                                            autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                            spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                            placeholder="" style="width: 0.75em;"></li>
+                                                </ul>
+                                            </span></span><span class="dropdown-wrapper"
+                                            aria-hidden="true"></span></span>
+                                </li>
+                                <li>
+                                    <div class="relabel ltlabel">Departments</div>
+                                    <select class="js-department-multiple select2-hidden-accessible" name="dept_check[]"
+                                        id="dept_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                                        <option value="65">Academic</option>
+                                        <option value="2">Accounts</option>
+                                        <option value="55">Accounts &amp; Finance</option>
+                                        <option value="1">Administration</option>
+                                        <option value="4">AKD</option>
+                                        <option value="127">Allied</option>
+                                        <option value="7">Alumni Relations</option>
+                                        <option value="5">Anaesthesiology</option>
+                                        <option value="66">Anatomy</option>
+                                        <option value="69">Artist</option>
+                                        <option value="6">Ayurvedic</option>
+                                        <option value="155">Balvatika Section</option>
+                                        <option value="70">Banking</option>
+                                        <option value="71">Bio Medical</option>
+                                        <option value="11">Biochemistry</option>
+                                        <option value="31">Biology</option>
+                                        <option value="32">Biotechnology</option>
+                                        <option value="137">Biotechnology &amp; Microbiology</option>
+                                        <option value="10">Blood Bank</option>
+                                        <option value="68">BMM</option>
+                                        <option value="75">BMS</option>
+                                        <option value="139">Book Keeping</option>
+                                        <option value="33">Botany</option>
+                                        <option value="92">Buddhist</option>
+                                        <option value="34">Business Law</option>
+                                        <option value="12">Casualty</option>
+                                        <option value="13">Cathlab</option>
+                                        <option value="35">Chemistry</option>
+                                        <option value="109">Civil</option>
+                                        <option value="54">Commerce</option>
+                                        <option value="128">Communication</option>
+                                        <option value="77">Community Medicine</option>
+                                        <option value="138">Comp &amp; Management</option>
+                                        <option value="14">CSSD (Central Sterile Services Department)</option>
+                                        <option value="126">CT Scan</option>
+                                        <option value="16">Dental</option>
+                                        <option value="132">Drawing &amp; Craft</option>
+                                        <option value="17">E.N.T.</option>
+                                        <option value="79">ECG</option>
+                                        <option value="36">Economics</option>
+                                        <option value="76">Education</option>
+                                        <option value="81">EEG</option>
+                                        <option value="38">Electronics</option>
+                                        <option value="37">Electronics &amp; Telecommunication</option>
+                                        <option value="57">Engineering</option>
+                                        <option value="40">Engineering &amp; Architecture</option>
+                                        <option value="39">English</option>
+                                        <option value="111">Enquiry</option>
+                                        <option value="82">Environmental Science</option>
+                                        <option value="83">Envt Studies</option>
+                                        <option value="129">EVS</option>
+                                        <option value="62">Examination</option>
+                                        <option value="41">Experiential Learning</option>
+                                        <option value="56">Finance</option>
+                                        <option value="134">General</option>
+                                        <option value="85">Geology</option>
+                                        <option value="157">Girivanvasi Education Trust</option>
+                                        <option value="64">Grounds &amp; Security</option>
+                                        <option value="130">Gujarathi</option>
+                                        <option value="131">Gymkhana</option>
+                                        <option value="151">High dependency Unit</option>
+                                        <option value="42">Hindi</option>
+                                        <option value="43">History</option>
+                                        <option value="3">Human Resource</option>
+                                        <option value="18">ICU</option>
+                                        <option value="9">Information Technology</option>
+                                        <option value="60">Interns</option>
+                                        <option value="91">Jainism</option>
+                                        <option value="58">Journalism</option>
+                                        <option value="148">Labour Ward</option>
+                                        <option value="110">Law</option>
+                                        <option value="44">Legal &amp; Trust Administration</option>
+                                        <option value="8">Library</option>
+                                        <option value="153">Logic</option>
+                                        <option value="136">M.R.M.O.</option>
+                                        <option value="112">Maintainance</option>
+                                        <option value="61">Management</option>
+                                        <option value="45">Marathi</option>
+                                        <option value="30">Marketing</option>
+                                        <option value="46">Mathematics</option>
+                                        <option value="145">Mechanical</option>
+                                        <option value="15">Medicine</option>
+                                        <option value="47">Microbiology</option>
+                                        <option value="19">MRO</option>
+                                        <option value="94">MSW</option>
+                                        <option value="95">Neutracceuticals</option>
+                                        <option value="20">NICU</option>
+                                        <option value="141">Non Teaching</option>
+                                        <option value="108">Nursing</option>
+                                        <option value="29">Obstetrics and Gynaecology</option>
+                                        <option value="118">OPD</option>
+                                        <option value="59">Operations</option>
+                                        <option value="21">Ophthalmology</option>
+                                        <option value="22">Orthopaedic</option>
+                                        <option value="125">OT</option>
+                                        <option value="124">Oxygen</option>
+                                        <option value="23">Paediatric</option>
+                                        <option value="149">Passage</option>
+                                        <option value="26">Pathology</option>
+                                        <option value="49">Pharmacology</option>
+                                        <option value="96">Pharmacy</option>
+                                        <option value="50">Philosophy</option>
+                                        <option value="48">Physics</option>
+                                        <option value="24">Physiotherapy</option>
+                                        <option value="63">Placement</option>
+                                        <option value="25">Psychology</option>
+                                        <option value="53">Public Relations</option>
+                                        <option value="113">Purchase</option>
+                                        <option value="27">Radiology</option>
+                                        <option value="140">Refrigerator&amp; Air Conditioning</option>
+                                        <option value="28">Registration</option>
+                                        <option value="156">Reliver</option>
+                                        <option value="116">Research</option>
+                                        <option value="99">RIIDL</option>
+                                        <option value="100">Sanskrit</option>
+                                        <option value="115">Science</option>
+                                        <option value="159">Secondary</option>
+                                        <option value="158">Secondary School</option>
+                                        <option value="101">Skin</option>
+                                        <option value="102">Sociology</option>
+                                        <option value="103">Sport</option>
+                                        <option value="123">Statistic</option>
+                                        <option value="117">Store</option>
+                                        <option value="51">Stores &amp; Purchase</option>
+                                        <option value="122">Surgery</option>
+                                        <option value="144">Teaching</option>
+                                        <option value="120">Telephone</option>
+                                        <option value="104">USG</option>
+                                        <option value="121">Vocational Science</option>
+                                        <option value="150">Ward</option>
+                                        <option value="105">X-ray</option>
+                                        <option value="106">Yoga</option>
+                                        <option value="52">Zoology</option>
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" style="width: 304.266px;"><span class="selection"><span
+                                                class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                <ul class="select2-selection__rendered">
+                                                    <li class="select2-search select2-search--inline"><input
+                                                            class="select2-search__field" type="search" tabindex="0"
+                                                            autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                            spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                            placeholder="" style="width: 0.75em;"></li>
+                                                </ul>
+                                            </span></span><span class="dropdown-wrapper"
+                                            aria-hidden="true"></span></span>
+                                </li>
+                                <li>
+                                    <div class="relabel ltlabel">Member Type</div>
+                                    <select class="js-memtype-multiple select2-hidden-accessible" name="memtype_check[]"
+                                        id="memtype_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                                        <option value="FACULTY">FACULTY</option>
+                                        <option value="STAFF">STAFF</option>
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" style="width: 90.125px;"><span class="selection"><span
+                                                class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                <ul class="select2-selection__rendered">
+                                                    <li class="select2-search select2-search--inline"><input
+                                                            class="select2-search__field" type="search" tabindex="0"
+                                                            autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                            spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                            placeholder="" style="width: 0.75em;"></li>
+                                                </ul>
+                                            </span></span><span class="dropdown-wrapper"
+                                            aria-hidden="true"></span></span>
+                                </li>
+                                <li>
+                                    <div class="relabel ltlabel">Designation</div>
+                                    <select class="js-designation-multiple select2-hidden-accessible"
+                                        name="desig_check[]" id="desig_check" multiple="" onchange="searchFilter()"
+                                        tabindex="-1">
+                                        <option value="91">Academic Associate</option>
+                                        <option value="49">Accountant</option>
+                                        <option value="104">Accounts</option>
+                                        <option value="89">Accounts &amp; Admin Assistant</option>
+                                        <option value="53">Accounts Assistant</option>
+                                        <option value="50">Accounts Clerk</option>
+                                        <option value="54">Accounts Officer</option>
+                                        <option value="52">Acting Director</option>
+                                        <option value="90">Adjunct Faculty</option>
+                                        <option value="93">Admin Assistant</option>
+                                        <option value="94">Admin Officer</option>
+                                        <option value="64">Administrative Assistant</option>
+                                        <option value="55">Administrative Officer</option>
+                                        <option value="96">Agricultural Instructor</option>
+                                        <option value="97">Architect</option>
+                                        <option value="56">Assistant</option>
+                                        <option value="101">Assistant Compliance</option>
+                                        <option value="100">Assistant Cook</option>
+                                        <option value="65">Assistant Lecturer</option>
+                                        <option value="6">Assistant Librarian</option>
+                                        <option value="46">Assistant Manager</option>
+                                        <option value="1">Assistant Professor</option>
+                                        <option value="98">Assistant Sports</option>
+                                        <option value="66">Assistant Teacher</option>
+                                        <option value="3">Associate Professor</option>
+                                        <option value="58">Attendant</option>
+                                        <option value="105">Audio Speech Therapist (C)</option>
+                                        <option value="61">Ayah</option>
+                                        <option value="106">Ayurvedic Physician</option>
+                                        <option value="107">Back Office Executive</option>
+                                        <option value="108">Barber</option>
+                                        <option value="129">BTO</option>
+                                        <option value="111">Campus Administration and Coordination Officer</option>
+                                        <option value="110">Care Taker</option>
+                                        <option value="114">Carpenter</option>
+                                        <option value="116">Chargeman</option>
+                                        <option value="71">Chief Executive Officer</option>
+                                        <option value="70">Chief Finance Officer</option>
+                                        <option value="120">Chief Innovation Catalyst</option>
+                                        <option value="69">Chief Operating Officer</option>
+                                        <option value="117">Cleaner</option>
+                                        <option value="7">Clerk</option>
+                                        <option value="118">Clerk Cum Typist</option>
+                                        <option value="124">Clinical Psychologist(C)</option>
+                                        <option value="122">CNC Operator</option>
+                                        <option value="8">Co-ordinator</option>
+                                        <option value="57">Coach</option>
+                                        <option value="123">Compounder</option>
+                                        <option value="112">Conductor</option>
+                                        <option value="125">Consultant Paediatric Endocrinology</option>
+                                        <option value="113">Controller of Examinations</option>
+                                        <option value="163">Cook</option>
+                                        <option value="68">Counsellor</option>
+                                        <option value="212">Craft Worker</option>
+                                        <option value="127">Customer Suport</option>
+                                        <option value="60">Dean</option>
+                                        <option value="130">Deputy Administrator</option>
+                                        <option value="131">Development Consultant</option>
+                                        <option value="132">Didi</option>
+                                        <option value="133">Dietician</option>
+                                        <option value="47">Director</option>
+                                        <option value="134">Documentalist</option>
+                                        <option value="135">Draftsman</option>
+                                        <option value="136">Dresser</option>
+                                        <option value="59">Driver</option>
+                                        <option value="73">Electrician</option>
+                                        <option value="62">Engineer</option>
+                                        <option value="75">Executive</option>
+                                        <option value="74">Executive Assistant</option>
+                                        <option value="137">Foreman</option>
+                                        <option value="138">Front Desk Executive</option>
+                                        <option value="76">General Manager</option>
+                                        <option value="78">Hamal</option>
+                                        <option value="67">Head Clerk</option>
+                                        <option value="80">Head Master</option>
+                                        <option value="103">Head Mistress</option>
+                                        <option value="79">Head of Department</option>
+                                        <option value="140">Helper</option>
+                                        <option value="141">Hon. Secretary</option>
+                                        <option value="143">Honorary Assistant Professor</option>
+                                        <option value="145">Hospital Administrator</option>
+                                        <option value="99">HR</option>
+                                        <option value="146">HTML Developer</option>
+                                        <option value="147">I.T</option>
+                                        <option value="149">ICU Registrar</option>
+                                        <option value="77">In-charge</option>
+                                        <option value="81">Innovation Catalyst</option>
+                                        <option value="72">Instructor</option>
+                                        <option value="210">Intensivist</option>
+                                        <option value="150">Intensivist Consultant</option>
+                                        <option value="82">Intern</option>
+                                        <option value="2">Junior Clerk</option>
+                                        <option value="151">Junior Consultant Cardiology</option>
+                                        <option value="152">Junior Intensivist</option>
+                                        <option value="153">Junior Research Fellow</option>
+                                        <option value="154">Lab Incharge</option>
+                                        <option value="155">Lab Technician</option>
+                                        <option value="44">Laboratory Assistant</option>
+                                        <option value="156">Lead Internal Communication</option>
+                                        <option value="83">Lecturer</option>
+                                        <option value="5">Librarian</option>
+                                        <option value="157">Library Assistant</option>
+                                        <option value="158">Library Assistant Cum Clerk</option>
+                                        <option value="48">Library Attendant</option>
+                                        <option value="159">Library Clerk</option>
+                                        <option value="160">Library Superitendent</option>
+                                        <option value="161">Locum Intensivist</option>
+                                        <option value="162">Machinist</option>
+                                        <option value="164">Mali</option>
+                                        <option value="51">Manager</option>
+                                        <option value="102">Matron</option>
+                                        <option value="87">Mechanic</option>
+                                        <option value="115">Medical Officer</option>
+                                        <option value="85">Medical Social Worker</option>
+                                        <option value="168">Medical Supritendent</option>
+                                        <option value="169">Moulder</option>
+                                        <option value="170">MRO</option>
+                                        <option value="171">Mukadam</option>
+                                        <option value="172">Nurse</option>
+                                        <option value="173">Nurse Assistant</option>
+                                        <option value="174">Nursing Supritendent</option>
+                                        <option value="175">Office Assistant</option>
+                                        <option value="176">Office Supritendent</option>
+                                        <option value="177">Officer</option>
+                                        <option value="128">Operator</option>
+                                        <option value="119">Pathologist</option>
+                                        <option value="180">Pattern Maker</option>
+                                        <option value="41">Peon</option>
+                                        <option value="216">PERFUSIONIST</option>
+                                        <option value="178">Personal Assistant</option>
+                                        <option value="182">Personal Assistant to Principal</option>
+                                        <option value="184">Pharmacist</option>
+                                        <option value="183">Pharmacy Incharge</option>
+                                        <option value="215">Phlebotomist</option>
+                                        <option value="185">PHP Developer</option>
+                                        <option value="40">Placement Officer</option>
+                                        <option value="39">Plumber</option>
+                                        <option value="186">PR Consultant</option>
+                                        <option value="214">Pre-Primary Coordinator</option>
+                                        <option value="12">Principal</option>
+                                        <option value="4">Professor</option>
+                                        <option value="188">Professor (C)</option>
+                                        <option value="189">Professor (R)</option>
+                                        <option value="121">Programmer</option>
+                                        <option value="38">Provost</option>
+                                        <option value="190">Psychology Clinical(C)</option>
+                                        <option value="42">Public Relations Officer</option>
+                                        <option value="191">Pump Operator</option>
+                                        <option value="37">Purchase Officer</option>
+                                        <option value="34">Receptionist</option>
+                                        <option value="33">Rector</option>
+                                        <option value="32">Registrar</option>
+                                        <option value="31">Research Assistant</option>
+                                        <option value="36">Research Associate</option>
+                                        <option value="192">Resident</option>
+                                        <option value="35">Resident Medical Officer</option>
+                                        <option value="193">Riidl Incubatee</option>
+                                        <option value="86">Secretary</option>
+                                        <option value="194">Security</option>
+                                        <option value="27">Security Officer</option>
+                                        <option value="24">Senior Clerk</option>
+                                        <option value="200">Senior Lab Assistntat</option>
+                                        <option value="45">Senior Manager</option>
+                                        <option value="25">Senior Officer</option>
+                                        <option value="202">Senior Registrar</option>
+                                        <option value="203">Senior Resident</option>
+                                        <option value="204">Senior Software Developer</option>
+                                        <option value="197">Shikshan Sevak</option>
+                                        <option value="26">Software Engineer</option>
+                                        <option value="30">Software Support Engineer</option>
+                                        <option value="198">Special Educator</option>
+                                        <option value="206">Staff</option>
+                                        <option value="195">Staff Nurse</option>
+                                        <option value="205">Steno Cum Secretary</option>
+                                        <option value="23">Stenographer</option>
+                                        <option value="22">Storekeeper</option>
+                                        <option value="21">Supervisor</option>
+                                        <option value="207">Surveyor</option>
+                                        <option value="9">Sweeper</option>
+                                        <option value="20">System Administrator</option>
+                                        <option value="28">System Analyst</option>
+                                        <option value="19">Tailor</option>
+                                        <option value="16">Teacher</option>
+                                        <option value="18">Technical Assistant</option>
+                                        <option value="88">Technician</option>
+                                        <option value="15">Telephone Operator</option>
+                                        <option value="179">Therapist</option>
+                                        <option value="17">Time Keeper</option>
+                                        <option value="165">Trainee</option>
+                                        <option value="196">Tutor</option>
+                                        <option value="14">Typist</option>
+                                        <option value="13">UX/UI Designer</option>
+                                        <option value="11">Vice Principal</option>
+                                        <option value="142">Visiting Faculty</option>
+                                        <option value="211">Ward Boy</option>
+                                        <option value="84">Watchman</option>
+                                        <option value="213">Web/Software Developer</option>
+                                        <option value="10">Welder</option>
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" style="width: 336.891px;"><span class="selection"><span
+                                                class="select2-selection select2-selection--multiple" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                                <ul class="select2-selection__rendered">
+                                                    <li class="select2-search select2-search--inline"><input
+                                                            class="select2-search__field" type="search" tabindex="0"
+                                                            autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                            spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                            placeholder="" style="width: 0.75em;"></li>
+                                                </ul>
+                                            </span></span><span class="dropdown-wrapper"
+                                            aria-hidden="true"></span></span>
+                                </li>
+                                <li>
+                                    <div class="relabel ltlabel">Gender</div>
+                                    <select class="js-gender select2-hidden-accessible" name="gender" id="gender"
+                                        onchange="searchFilter()" tabindex="-1">
+                                        <option value="">-- Select Gender --</option>
+                                        <option value="M">Male</option>
+                                        <option value="F">Female</option>
+                                    </select><span class="select2 select2-container select2-container--default"
+                                        dir="ltr" style="width: 144px;"><span class="selection"><span
+                                                class="select2-selection select2-selection--single" role="combobox"
+                                                aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                                aria-labelledby="select2-gender-container"><span
+                                                    class="select2-selection__rendered" id="select2-gender-container"
+                                                    title="-- Select Gender --">-- Select Gender --</span><span
+                                                    class="select2-selection__arrow" role="presentation"><b
+                                                        role="presentation"></b></span></span></span><span
+                                            class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                </li>
+                                <br>
+                                <li>
+                                    <div class="paddleft"> <input type="reset" name="btn_clear" id="btn_clear"
+                                            class="clearbtn" value="Clear all filters"></div>
+                                </li>
+                            </ul>
+                        </form>
+
+                        <div class="research_accomplishment_page showbs4">
+                            <div class="sidebar-wrap">
+                                 <div class="filter_by"><p>Filter by </p> <button class="clear_btn" id="btn_clear"><span>x</span>Clear</button></div>
+                         
+                             <div class="search-input">
+                                <!-- Actual search box -->
+                                <div class="form-group has-feedback has-search">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            </div>
+                
+                             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                 <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingOne">
+                                          <h4 class="panel-title">
+                                              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+                                              <i class="more-less glyphicon glyphicon-plus"></i>
+                                               Institutions
+                                              </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne" style="">
+                                          <div class="panel-body">
+                                                <label class="chkcontainer">K J Somaiya College of Arts and Commerce
+                                                      <input type="checkbox"
+                                                          name="institute_check" value="12">
+                                                      <span class="checkmark"></span>
+                                                  </label>
+                
+                
+                                                  <label class="chkcontainer">K J Somaiya College of Science and Commerce
+                                                      <input type="checkbox"
+                                                          name="institute_check" value="14">
+                                                      <span class="checkmark"></span>
+                                                  </label>
+                
+                
+                                                  <label class="chkcontainer">S K Somaiya Degree College of Arts, Science
+                                                      and Commerce <input type="checkbox"
+                                                          name="institute_check" value="15">
+                                                      <span class="checkmark"></span>
+                                                  </label>
+                
+                
+                                                  <label class="chkcontainer">K J Somaiya College of Engineering <input
+                                                          type="checkbox" name="institute_check"
+                                                          value="16">
+                                                      <span class="checkmark"></span>
+                                                  </label>
+                
+                
+                                                  <label class="chkcontainer">K J Somaiya Institute of Management <input
+                                                          type="checkbox" name="institute_check"
+                                                          value="17">
+                                                      <span class="checkmark"></span>
+                                                  </label>
+                                          </div>
+                                      </div>
+                                  </div>
+                
+                                  <div class="panel panel-default sub_institutes_div" style="display: none;">
+                                      <div class="panel-heading" role="tab" id="headingTwo">
+                                          <h4 class="panel-title">
+                                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              <i class="more-less glyphicon glyphicon-plus"></i>
+                                              Sub Institute
+                                              </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                                          <div class="panel-body" id="sub_institute_check">
+                                              <!-- <label class="chkcontainer">One
+                                              <input type="checkbox" checked="checked">
+                                              <span class="checkmark"></span>
+                                              </label> -->
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                
+                                  <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="headingThree">
+                                          <h4 class="panel-title">
+                                              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              <i class="more-less glyphicon glyphicon-plus"></i>
+                                                Campus
+                                              </a>
+                                          </h4>
+                                      </div>
+                                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                          <div class="panel-body">
+                                              <label class="chkcontainer">Campus 1
+                                                <input type="checkbox">
+                                                      <span class="checkmark"></span>
+                                              </label>
+                
+                                              <label class="chkcontainer">Campus 2
+                                                <input type="checkbox">
+                                                      <span class="checkmark"></span>
+                                              </label>
+                
+                                                <label class="chkcontainer">Campus 3
+                                                <input type="checkbox">
+                                                      <span class="checkmark"></span>
+                                              </label>
+                
+                                               <label class="chkcontainer">Campus 4
+                                                <input type="checkbox">
+                                                      <span class="checkmark"></span>
+                                              </label>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingdept">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsedept" aria-expanded="false" aria-controls="collapsedept">
+                                            <i class="more-less glyphicon glyphicon-plus"></i>
+                                           Departments
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsedept" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdept">
+                                        <div class="panel-body">
+                                            <label class="chkcontainer">Departments 1
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                            <label class="chkcontainer">Departments 2
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                              <label class="chkcontainer">Departments 3 
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingmembtype">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsemembtype" aria-expanded="false" aria-controls="collapsemembtype">
+                                            <i class="more-less glyphicon glyphicon-plus"></i>
+                                            Member Type
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsemembtype" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingmembtype">
+                                        <div class="panel-body">
+                                            <label class="chkcontainer">Member Type 1
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                            <label class="chkcontainer">Member Type 2
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                              <label class="chkcontainer">Member Type 3 
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingdesgn">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsedesgn" aria-expanded="false" aria-controls="collapsedesgn">
+                                            <i class="more-less glyphicon glyphicon-plus"></i>
+                                             Designation
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsedesgn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdesgn">
+                                        <div class="panel-body">
+                                            <label class="chkcontainer">Designation 1
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                            <label class="chkcontainer">Designation 2
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                              <label class="chkcontainer">Designation 3 
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                          
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headinggender">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsegender" aria-expanded="false" aria-controls="collapsegender">
+                                            <i class="more-less glyphicon glyphicon-plus"></i>
+                                            Gender
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapsegender" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headinggender">
+                                        <div class="panel-body">
+                                            <label class="chkcontainer">Gender 1
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                            <label class="chkcontainer">Gender 2
+                                              <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                            </label>
+                
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                  
+                              </div>
+                
+                            <!-- panel-group -->
+                            <button type="submit" class="search">Search</button>
+                               </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="col-lg-9 col-md-9 refine-result">
+                        <div class="row">
+                            <div class="col-md-8"></div>
+                            <div class="col-md-4">
+                                <div class="depatmentsort">
+                                    <div class="label_title">SORT BY</div>
+                                    <div class="drop_list">
+                                        <select name="sort" class="custom-select" id="sort" onchange="searchFilter()">
+                                            <option value="name_ASC">Name A -&gt; Z</option>
+                                            <option value="name_DESC">Name Z -&gt; A</option>
+                                            <option value="dept_ASC">Department A -&gt; Z</option>
+                                            <option value="dept_DESC">Department Z -&gt; A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="clear"></div>
+                        <div id="refined">
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <div class="cont_per faculty-name">Mr. AAKASH J MANDADKAR</div>
+                                    <div class="topset">
+                                        <span class="designationmem">X-RAY TECHNICIAN</span><span class="at"> at</span>
+                                        <span class="designationmem">K J Somaiya Hospital and Research Centre</span>
+                                    </div>
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/708570.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox1 facultybox staff-strip">STAFF</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <div class="cont_per faculty-name">Mr. AAKASH J MANDADKAR</div>
+                                            <div class="topset">
+                                                <span class="designationmem">X-RAY TECHNICIAN</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">K J Somaiya Hospital and Research
+                                                    Centre</span>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;X-RAY</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        AYURVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aakash@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield hidebs4">
+                                            <div class="newp cdadd">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <div class="cont_per faculty-name">Dr. AAKRITI CHANDRA</div>
+                                    <div class="topset">
+                                        <span class="designationmem">Senior Resident (C)</span><span class="at">
+                                            at</span>
+                                        <span class="designationmem">K J Somaiya Medical College and Research
+                                            Centre</span>
+                                    </div>
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://www.somaiya.edu/assets/arigel_general/img/homepage/placeholder-contact-directory_1.png"
+                                            class="img-responsive">
+                                        <div class="facultybox1 facultybox staff-strip">STAFF</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <div class="cont_per faculty-name">Dr. AAKRITI CHANDRA</div>
+                                            <div class="topset">
+                                                <span class="designationmem">Senior Resident (C)</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">K J Somaiya Medical College and Research
+                                                    Centre</span>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;E.N.T.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        AYURVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aakriti@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;9650867440
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <!-- </li> -->
+                                            <!-- <li> -->
+                                            <div class="refield hidebs4">
+                                                <div class="newp cdadd">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <a aria-label="View Profile about AANCHAL SATISH LALLA"
+                                        href="https://www.somaiya.edu/en/view-member/190029?type=contact">
+                                        <div class="cont_per faculty-name"> AANCHAL SATISH LALLA</div>
+                                    </a>
+                                    <div class="topset">
+                                        <span class="designationmem">LECTURER(ENGLISH)</span><span class="at"> at</span>
+                                        <span class="designationmem">K J Somaiya Polytechnic</span>
+                                    </div>
+                                    <!--  <div><a href="">Read More</a></div> -->
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/190029.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox">FACULTY</div>
+                                    </div>
+                                    <div class="facultyprof"><a aria-label="View Profile about AANCHAL SATISH LALLA"
+                                            href="https://www.somaiya.edu/en/view-member/190029?type=contact">View
+                                            Profile &nbsp;»</a></div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <a aria-label="View Profile about AANCHAL SATISH LALLA"
+                                                href="https://www.somaiya.edu/en/view-member/190029?type=contact">
+                                                <div class="cont_per faculty-name"> AANCHAL SATISH LALLA</div>
+                                            </a>
+                                            <div class="topset">
+                                                <span class="designationmem">LECTURER(ENGLISH)</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">K J Somaiya Polytechnic</span>
+                                            </div>
+                                            <!--  <div><a href="">Read More</a></div> -->
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase"
+                                                            aria-hidden="true"></i>&nbsp;ELECTRICAL ENGINEERING</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        VIDYAVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aslalla@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield hidebs4">
+                                            <div class="newp cdadd">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <a aria-label="View Profile about AARTI PRATAP BHANUSHALI"
+                                        href="https://www.somaiya.edu/en/view-member/15400053?type=contact">
+                                        <div class="cont_per faculty-name">Ms. AARTI PRATAP BHANUSHALI</div>
+                                    </a>
+                                    <div class="topset">
+                                        <span class="designationmem">Assistant Professor</span><span class="at">
+                                            at</span>
+                                        <span class="designationmem">S K Somaiya Degree College of Arts, Science and
+                                            Commerce</span>
+                                    </div>
+                                    <!--  <div><a href="">Read More</a></div> -->
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/15400053.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox">FACULTY</div>
+                                    </div>
+                                    <div class="facultyprof"><a aria-label="View Profile about AARTI PRATAP BHANUSHALI"
+                                            href="https://www.somaiya.edu/en/view-member/15400053?type=contact">View
+                                            Profile &nbsp;»</a></div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <a aria-label="View Profile about AARTI PRATAP BHANUSHALI"
+                                                href="https://www.somaiya.edu/en/view-member/15400053?type=contact">
+                                                <div class="cont_per faculty-name">Ms. AARTI PRATAP BHANUSHALI</div>
+                                            </a>
+                                            <div class="topset">
+                                                <span class="designationmem">Assistant Professor</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">S K Somaiya Degree College of Arts, Science
+                                                    and Commerce</span>
+                                            </div>
+                                            <!--  <div><a href="">Read More</a></div> -->
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;Commerce
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        VIDYAVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aarti09@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;7208168339
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <!-- </li> -->
+                                            <!-- <li> -->
+                                            <div class="refield hidebs4">
+                                                <div class="newp cdadd">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <div class="cont_per faculty-name">Ms. AARTI DEEPAK JOSHI</div>
+                                    <div class="topset">
+                                        <span class="designationmem">Jr. Clerk</span><span class="at"> at</span>
+                                        <span class="designationmem">K J Somaiya College of Engineering</span>
+                                    </div>
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160441.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox1 facultybox staff-strip">STAFF</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <div class="cont_per faculty-name">Ms. AARTI DEEPAK JOSHI</div>
+                                            <div class="topset">
+                                                <span class="designationmem">Jr. Clerk</span><span class="at"> at</span>
+                                                <span class="designationmem">K J Somaiya College of Engineering</span>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;ETRX</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        VIDYAVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aarti.dj@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield hidebs4">
+                                            <div class="newp cdadd">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <a aria-label="View Profile about AARTI SANTOSH NAYAK"
+                                        href="https://www.somaiya.edu/en/view-member/150020?type=contact">
+                                        <div class="cont_per faculty-name">Ms. AARTI SANTOSH NAYAK</div>
+                                    </a>
+                                    <div class="topset">
+                                        <span class="designationmem">Assistant Professor</span><span class="at">
+                                            at</span>
+                                        <span class="designationmem">S K Somaiya Degree College of Arts, Science and
+                                            Commerce</span>
+                                    </div>
+                                    <!--  <div><a href="">Read More</a></div> -->
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/150020.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox">FACULTY</div>
+                                    </div>
+                                    <div class="facultyprof"><a aria-label="View Profile about AARTI SANTOSH NAYAK"
+                                            href="https://www.somaiya.edu/en/view-member/150020?type=contact">View
+                                            Profile &nbsp;»</a></div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <a aria-label="View Profile about AARTI SANTOSH NAYAK"
+                                                href="https://www.somaiya.edu/en/view-member/150020?type=contact">
+                                                <div class="cont_per faculty-name">Ms. AARTI SANTOSH NAYAK</div>
+                                            </a>
+                                            <div class="topset">
+                                                <span class="designationmem">Assistant Professor</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">S K Somaiya Degree College of Arts, Science
+                                                    and Commerce</span>
+                                            </div>
+                                            <!--  <div><a href="">Read More</a></div> -->
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;Maths(CS)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        VIDYAVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aarti.nayak@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;02267169614
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield full_width fullwidth fac_location">
+                                            <div class="newp cdadd">
+                                                <p><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Aurobindo ,
+                                                    S.K.Somaiya College of Arts, Sci &amp; Comm
+                                                    Vidyavihar, Mumbai 77</p>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <a aria-label="View Profile about AARTI B SAHITYA"
+                                        href="https://www.somaiya.edu/en/view-member/220231?type=contact">
+                                        <div class="cont_per faculty-name">Ms. AARTI B SAHITYA</div>
+                                    </a>
+                                    <div class="topset">
+                                        <span class="designationmem">ASSISTANT PROFESSOR</span><span class="at">
+                                            at</span>
+                                        <span class="designationmem">K J Somaiya Institute of Engineering and
+                                            Information Technology ( KJSIEIT )</span>
+                                    </div>
+                                    <!--  <div><a href="">Read More</a></div> -->
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/220231.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox">FACULTY</div>
+                                    </div>
+                                    <div class="facultyprof"><a aria-label="View Profile about AARTI B SAHITYA"
+                                            href="https://www.somaiya.edu/en/view-member/220231?type=contact">View
+                                            Profile &nbsp;»</a></div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <a aria-label="View Profile about AARTI B SAHITYA"
+                                                href="https://www.somaiya.edu/en/view-member/220231?type=contact">
+                                                <div class="cont_per faculty-name">Ms. AARTI B SAHITYA</div>
+                                            </a>
+                                            <div class="topset">
+                                                <span class="designationmem">ASSISTANT PROFESSOR</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">K J Somaiya Institute of Engineering and
+                                                    Information Technology ( KJSIEIT )</span>
+                                            </div>
+                                            <!--  <div><a href="">Read More</a></div> -->
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;COMPUTER
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        AYURVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aarti.sahitya@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield hidebs4">
+                                            <div class="newp cdadd">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <a aria-label="View Profile about AARTI VIDYASINDHU SEJAO"
+                                        href="https://www.somaiya.edu/en/view-member/710480?type=contact">
+                                        <div class="cont_per faculty-name">Dr. AARTI VIDYASINDHU SEJAO</div>
+                                    </a>
+                                    <div class="topset">
+                                        <span class="designationmem">Asst. Professor</span><span class="at"> at</span>
+                                        <span class="designationmem">K J Somaiya Medical College and Research
+                                            Centre</span>
+                                    </div>
+                                    <!--  <div><a href="">Read More</a></div> -->
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/710480.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox">FACULTY</div>
+                                    </div>
+                                    <div class="facultyprof"><a aria-label="View Profile about AARTI VIDYASINDHU SEJAO"
+                                            href="https://www.somaiya.edu/en/view-member/710480?type=contact">View
+                                            Profile &nbsp;»</a></div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <a aria-label="View Profile about AARTI VIDYASINDHU SEJAO"
+                                                href="https://www.somaiya.edu/en/view-member/710480?type=contact">
+                                                <div class="cont_per faculty-name">Dr. AARTI VIDYASINDHU SEJAO</div>
+                                            </a>
+                                            <div class="topset">
+                                                <span class="designationmem">Asst. Professor</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">K J Somaiya Medical College and Research
+                                                    Centre</span>
+                                            </div>
+                                            <!--  <div><a href="">Read More</a></div> -->
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;Community
+                                                        Medicine</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        AYURVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;a.sejao@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;022-24090253
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield hidebs4">
+                                            <div class="newp cdadd">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <div class="cont_per faculty-name">Ms. AASHA DILIP MAVCHI</div>
+                                    <div class="topset">
+                                        <span class="designationmem">STAFF NURSE</span><span class="at"> at</span>
+                                        <span class="designationmem">K J Somaiya Hospital and Research Centre</span>
+                                    </div>
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://www.somaiya.edu/assets/arigel_general/img/homepage/placeholder-contact-directory_1.png"
+                                            class="img-responsive">
+                                        <div class="facultybox1 facultybox staff-strip">STAFF</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <div class="cont_per faculty-name">Ms. AASHA DILIP MAVCHI</div>
+                                            <div class="topset">
+                                                <span class="designationmem">STAFF NURSE</span><span class="at">
+                                                    at</span>
+                                                <span class="designationmem">K J Somaiya Hospital and Research
+                                                    Centre</span>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;RELIVER
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        AYURVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aasha@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;7744997671
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <!-- </li> -->
+                                            <!-- <li> -->
+                                            <div class="refield hidebs4">
+                                                <div class="newp cdadd">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="dtres shadowdtres">
+                                <div class="hidebs4">
+                                    <div class="cont_per faculty-name"> AAZAZ ISMAIL KHAN</div>
+                                    <div class="topset">
+                                        <span class="designationmem">Director</span><span class="at"> at</span>
+                                        <span class="designationmem">Somaiya Vidyavihar</span>
+                                    </div>
+                                </div>
+                                <div class="cdprof">
+                                    <div class="profile_pic">
+                                        <img src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/500178.jpg"
+                                            class="img-responsive img-fluid">
+                                        <div class="facultybox1 facultybox staff-strip">STAFF</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul class="newcdli">
+                                        <li class="showbs4 fullwidth fac_namebs4">
+                                            <div class="cont_per faculty-name"> AAZAZ ISMAIL KHAN</div>
+                                            <div class="topset">
+                                                <span class="designationmem">Director</span><span class="at"> at</span>
+                                                <span class="designationmem">Somaiya Vidyavihar</span>
+                                            </div>
+
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!--   <div class="sportslabel"><p>Department<p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-briefcase" aria-hidden="true"></i>&nbsp;Sports
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                        VIDYAVIHAR</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-envelope"
+                                                            aria-hidden="true"></i>&nbsp;aazaz@somaiya.edu</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;9683</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="refield">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;67169681</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield hidebs4">
+                                                <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <div class="refield hidebs4">
+                                            <!-- <div class="sportslabel"><p>Campus Name</p></div> -->
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                        <!-- </li> -->
+                                        <!-- <li> -->
+                                        <div class="refield hidebs4">
+                                            <div class="newp cdadd">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+
+                            <div class="pagination" role="navigation" aria-label="pagination">
+                                <div class="of_result">10 of 3343 | </div>&nbsp;<b>1</b>&nbsp;<a
+                                    href="javascript:void(0);" onclick="searchFilter(10)">2</a>&nbsp;<a
+                                    href="javascript:void(0);" onclick="searchFilter(20)">3</a>&nbsp;<a
+                                    href="javascript:void(0);" onclick="searchFilter(10)"
+                                    aria-hidden="true">»</a>&nbsp;&nbsp;<a href="javascript:void(0);"
+                                    onclick="searchFilter(3340)">Last</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+</body>
+
+</html>

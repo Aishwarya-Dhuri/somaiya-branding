@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Career Detail BS3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="https://kjsieit.somaiya.edu/assets/default_asset/css/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="https://kjsieit.somaiya.edu/assets/kjsieit/css/theme.css">
+
+    <link type="text/css" rel="stylesheet" href="../.././css/module.css">
+
+    <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+    <script src="https://simsr.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+</head>
+
+<body>
+
+    <section class="inner_page_class career_scetion library_banner_wrap career-banner backpatch-right">
+        <section class="unibrand-bannersec ">
+            <div class="container brandcontwrapper">
+                <div class="title txtcenter naresh_announcement common-title">
+                    <h2 class="wow  fadeInUp">Careers</h2>
+                </div>
+                <div class="clear "></div>
+                <div class="searchbox fullwidth">
+                    <div class="input-group stylish-input-group">
+                        <input  type="text" class="form-control search-txtbox" placeholder="Keyword, job title, description" >
+                        <span class="input-group-addon">
+                            <button type="submit" id="searchForm_submit">
+                                <img src="/assets/default_asset/img/white-search.svg">
+                            </button>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="inner_page_class career_section">
+        <div class="fliterwrap">
+            <div class="container" id="exTab1">
+                        <!-- <span class="sort_by">Sort By :</span> 
+                        <ul  class="nav nav-pills">
+                            <li class="active">
+                                <a  href="#1a" data-toggle="tab">Most Recent</a>
+                            </li>
+                            <li><a href="#2a" data-toggle="tab">Most Relevant</a>
+                            </li>
+                        </ul>
+                        <div class="filrtbtn" id="filrtbtn">
+                            <a href="#"><i class="fa fa-filter" aria-hidden="true"></i>&nbsp;Filter Result</a>
+                        </div> -->
+                        <!-- <div class="filer_wrap" id="filer_wrap">
+                            <div class="row">
+                                <form>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Institute</label>
+                                            <select class="js-institute-multiple form-control" name="institute_check[]" id="institute_check" multiple="multiple" placeholder="Enter email" onchange="searchFilter()">
+                                                                                                                                    <option value="" ></option>
+                                                                                          <option value="22" >K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</option>
+                                                                                          <option value="21" >Somaiya Vidyavihar University</option>
+                                                                                                                                </select>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Department</label>
+                                            <select class="js-department-multiple form-control" name="department_check[]" id="department_check" multiple="multiple" placeholder="Enter email" onchange="searchFilter()">
+                                                                                                                                    <option value="1">Administration</option>
+                                                                                          <option value="62">Examination</option>
+                                                                                                                                </select>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Type</label>
+                                            <select class="js-type-multiple form-control" name="type_check[]" id="type_check" multiple="multiple" placeholder="Enter email" onchange="searchFilter()">
+                                                                                                                                    <option value="1">Full Time</option>
+                                                                                                                                </select>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Job Title</label>
+                                            <input type="text" name="keyword_career" class="form-control" value="" placeholder="Job Title" id='searchkeyword' onkeyup="searchFilter()">
+                                        </div>
+                                    </div>
+                                <button type="submit" class="showresult">Submit</button> 
+                                </form>
+                            </div>
+                        </div>
+                    </div> -->
+                  <div class="row">
+                       <div class="col-lg-3">
+                              <button type="button" class="btn btn-info mob-filter" data-toggle="collapse" data-target="#filer_wrap"><i class="fa fa-filter" aria-hidden="true"></i>
+                                 Filters</button>
+                             <div class="filer_wrap sidefilter collapse sh-div" id="filer_wrap">
+                   <div class="mobilecardfilter">
+                                 <button type="button" class="btn btn-info mob-cross" data-toggle="collapse" data-target="#filer_wrap"><i class="fa fa-times" aria-hidden="true"></i>
+                                  </button>
+    
+                                 <h3 class="refhead refheadbs4">Filter By</h3>
+                                <form class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="relabel">Institute</label>
+                                            <select class="js-institute-multiple form-control select2-hidden-accessible" name="institute_check[]" id="institute_check" multiple="" placeholder="Enter email" onchange="searchFilter()" tabindex="-1" aria-hidden="true">
+                                                                                                                                    <option value=""></option>
+                                                                                          <option value="22" selected="selected">K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</option>
+                                                                                          <option value="21">Somaiya Vidyavihar University</option>
+                                                                                                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )"><span class="select2-selection__choice__remove" role="presentation">×</span>K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1" class="relabel">Department</label>
+                                                    <select class="js-department-multiple form-control select2-hidden-accessible" name="department_check[]" id="department_check" multiple="" placeholder="Enter email" onchange="searchFilter()" tabindex="-1" aria-hidden="true">
+                                                                                                                                                            <option value="1">Administration</option>
+                                                                                                          <option value="62">Examination</option>
+                                                                                                                                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                                </div>
+                                       </div>
+                                     <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="relabel">Type</label>
+                                            <select class="js-type-multiple form-control select2-hidden-accessible" name="type_check[]" id="type_check" multiple="" placeholder="Enter email" onchange="searchFilter()" tabindex="-1" aria-hidden="true">
+                                                                                                                                    <option value="1">Full Time</option>
+                                                                                                                                </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12 hidden d-none">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1" class="relabel">Job Title</label>
+                                            <input type="text" name="keyword_career" class="form-control" value="" placeholder="Job Title" id="searchkeyword" onkeyup="searchFilter()" style="height:42px;">
+                                        </div>
+                                    </div>
+                                     <div class="col-md-12">
+                                        <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn" value="Clear all filters">
+                                    </div>
+                                         <div class="col-md-12">
+                                       <button type="button" class="btn btn-info mob-filter aplyfilterbtn" data-toggle="collapse" data-target="#filer_wrap">Apply Filter</button>
+                                    </div>
+                                </form>
+                              </div>
+                       </div>
+                  </div>
+                       <div class="col-lg-9">
+                        <!-- <div class="result_no">All Jobs (4)</div> -->
+                             <div class="tab-content">
+                                <div class="row cl-list " id="refined">  <div class="row result_no">All Jobs <b>(1)</b></div>
+      <!-- <h4 aria-hidden="true" class="match_result">There are 1 items matching your search.</h4> -->
+      <h3 class="sr-only result_no match_sr">There are 1 items matching your search.</h3>
+      
+      
+    
+      <div class="col-md-4 col">
+        <a href="https://kjsieit.somaiya.edu/en/view-career/5" class="carrer-boxlink">
+        <div class="jobwrap">
+          <h3 class="job_role">Registrar</h3>
+          <div class="job_code">(Job code - KJSIEIT001)</div>
+          <div class="location">
+               <span class="carer-lbl ">Institution(s):</span><p>Sion - Mumbai</p>
+          </div>
+          <div class="job_date hidden d-none">
+              <span class="carer-lbl">Date:</span><p> December 12, 2019 - January 12, 2020</p>
+          </div>
+           <div class="job_date hidden d-none">
+              <span class="carer-lbl">Time:</span><p class="time">(10am to 12pm) , (1pm to 4pm) </p>
+            </div>
+          <!-- <p> 
+                    <p>Qualification :&nbsp;Maters Degree with at least 55% of t...      </p>  -->
+          
+          <div class="btnsec">
+                      <h4 class="jobbtn txtcenter">Apply Now</h4>
+                  </div>
+    
+        </div>
+      </a>
+    
+    
+      </div>
+      
+    
+    
+    <div class="showing-page">Showing : 1</div></div>
+                            </div>
+                      <!--  <div class="row">
+                                    <h3>Relevant Job here</h3>
+                             </div> -->
+                    </div>
+                  </div>	
+    
+                   
+            </div>
+            
+        
+    </div></section>
+    <script type="text/javascript" src="https://kjsieit.somaiya.edu/assets/default_asset/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://kjsieit.somaiya.edu/assets/default_asset/js/bootstrap.min.js"></script>
+</body>
+
+</html>

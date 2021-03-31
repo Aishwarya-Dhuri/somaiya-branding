@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Faculty Listing BS4</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/faculty.css">
+    <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <section class="aboutpanel newssearch" role="main">
+        <div class="abrating">
+            <div class="pull-right">
+                <ul class="breadcrumb">
+                    <li><a href="http://stage-kjsce.somaiya.edu/en">Home</a> <span class="rightindicatior">»</span>
+                    </li>
+                    <li class="active">Faculty Directory</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="container">
+            <!--  <div class="smallabt capital"></div>
+    <div class="bigabt capital"></div> -->
+            <div class="title txtcenter common-title">
+
+                <h2 class="wow animated fadeInUp animated animated animated animated"
+                    style="visibility: visible; animation-name: fadeInUp;">Faculty Directory</h2>
+                <img alt="" src="http://stage-kjsce.somaiya.edu/assets/common_img/title_bar.png">
+            </div>
+            <!-- <div class="sub_heading"></div> -->
+            <p class="faculty-dir-para">Search the contact information for somaiya faculty by Name, Department,
+                Institute, Campus.</p>
+
+        </div>
+        <div class="container contactdirectory">
+            <form action="#" name="frmFilters" class="dirsearchform">
+                <div class="input-group stylish-input-group ui-widget" role="search">
+                    <input type="text" name="keyword_search" id="searchkeyword" class="mainLoginInput form-control"
+                        placeholder="Search for Name / Designation / Department" onkeyup="searchFilter()">
+                    <span class="input-group-addon">
+                        <button type="button" onclick="searchFilter()">
+                            <img alt=""
+                                src="http://stage-kjsce.somaiya.edu/assets/arigel_general/img/homepage/search_bar_icon.png">
+                        </button>
+                    </span>
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 refineserach">
+                    <form action="" method="post" name="frmFilters" autocomplete="off">
+                        <div class="sidefilter">
+
+                            <div class="fullwidth">
+                                <div class="relabel ltlabel">Institute</div>
+                                <select class="js-institute-multiple " name="institute_check[]"
+                                    id="institute_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="16" selected="selected">K J Somaiya College of Engineering</option>
+                                    <option value="71">K J Somaiya Medical College and Research Centre</option>
+                                    <option value="14">K J Somaiya College of Science and Commerce</option>
+                                    <option value="50">Somaiya Vidyavihar</option>
+                                    <option value="12">K J Somaiya College of Arts and Commerce</option>
+                                    <option value="17">K J Somaiya Institute of Management</option>
+                                    <option value="19">K J Somaiya Polytechnic</option>
+                                    <option value="22">K J Somaiya Institute of Engineering and Information Technology (
+                                        KJSIEIT )</option>
+                                    <option value="26">K J Somaiya Centre for Buddhist Studies</option>
+                                    <option value="57">Somaiya Vidya Mandir - Sakarwadi</option>
+                                    <option value="56">Somaiya Vidya Mandir - Laxmiwadi </option>
+                                    <option value="53">K J Somaiya English Medium School</option>
+                                    <option value="55">Shri Sharda English Medium School</option>
+                                    <option value="59">Somaiya Vinaymandir High School</option>
+                                    <option value="58">Somaiya Shishu Niketan Primary School</option>
+                                    <option value="49">Research Innovation Incubation Design Labs</option>
+                                    <option value="18">K J Somaiya College of Education</option>
+                                    <option value="95">K J Somaiya Private Industrial Training Institute</option>
+                                    <option value="72">K J Somaiya College of Physiotherapy</option>
+                                    <option value="23">K J Somaiya Bharatiya Sanskriti Peetham</option>
+                                    <option value="28">K J Somaiya Centre for Studies In Jainism</option>
+                                    <option value="13">S K Somaiya Vinay Mandir Junior College</option>
+                                    <option value="99">SMT Sakarbai K Somaiya Junior College of Education</option>
+                                    <option value="73">K J Somaiya College of Nursing</option>
+                                    <option value="37">K J Somaiya Institute of Journalism and Mass communication
+                                    </option>
+                                    <option value="15">S K Somaiya Degree College of Arts, Science and Commerce</option>
+                                    <option value="74">K J Somaiya School of Nursing</option>
+                                    <option value="25">S K Somaiya Vinay Mandir (Primary Section)</option>
+                                    <option value="54">K.J.Somaiya Secondary School,Nareshwadi</option>
+                                    <option value="63">S K Somaiya Vinay Mandir Secondary Section</option>
+                                    <option value="20">K J Somaiya Sanskrit Vidyapeeth</option>
+                                    <option value="41">K J Somaiya Centre For South and South East Asian Studies
+                                    </option>
+                                </select>
+                               
+                            </div>
+
+                            <div class="sub_institutes_div" style="display: none;">
+                                <div class="relabel ltlabel">Sub Institute</div>
+                                <select class="js-subinstitute-multiple select2-hidden-accessible"
+                                    name="sub_institute_check[]" id="sub_institute_check"
+                                    onchange="searchFilterBySubinstitute()" tabindex="-1" aria-hidden="true">
+
+                                </select>
+                            </div>
+
+                            <div class="fullwidth">
+                                <div class="relabel ltlabel ">Campus</div>
+                                <select class="js-campus-multiple select2-hidden-accessible" name="campus_check[]"
+                                    id="campus_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="1">SOMAIYA VIDYAVIHAR</option>
+                                    <option value="2">SOMAIYA AYURVIHAR</option>
+                                    <option value="3">Sameerwadi</option>
+                                    <option value="4">Sakarwadi</option>
+                                    <option value="5">Nareshwadi</option>
+                                    <option value=""></option>
+                                </select>
+                                <span class="select2 select2-container select2-container--default" dir="ltr"
+                                    style="width: 171.141px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple" role="combobox"
+                                            aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-search select2-search--inline"><input
+                                                        class="select2-search__field" type="search" tabindex="0"
+                                                        autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                        spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                        placeholder="" style="width: 0.75em;"></li>
+                                            </ul>
+                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
+                            </div>
+
+                            <div class="fullwidth">
+
+                                <div class="relabel ltlabel">Departments</div>
+                                <select class="js-department-multiple select2-hidden-accessible" name="dept_check[]"
+                                    id="dept_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="57">Engineering</option>
+                                    <option value="9">Information Technology</option>
+                                    <option value="145">Mechanical</option>
+                                    <option value="115">Science</option>
+                                    <option value="23">Paediatric</option>
+                                    <option value="21">Ophthalmology</option>
+                                    <option value="49">Pharmacology</option>
+                                    <option value="85">Geology</option>
+                                    <option value="103">Sport</option>
+                                    <option value="35">Chemistry</option>
+                                    <option value="36">Economics</option>
+                                    <option value="130">Gujarathi</option>
+                                    <option value="46">Mathematics</option>
+                                    <option value="54">Commerce</option>
+                                    <option value="48">Physics</option>
+                                    <option value="31">Biology</option>
+                                    <option value="45">Marathi</option>
+                                    <option value="139">Book Keeping</option>
+                                    <option value="39">English</option>
+                                    <option value="38">Electronics</option>
+                                    <option value="42">Hindi</option>
+                                    <option value="144">Teaching</option>
+                                    <option value="102">Sociology</option>
+                                    <option value="25">Psychology</option>
+                                    <option value="43">History</option>
+                                    <option value="100">Sanskrit</option>
+                                    <option value="129">EVS</option>
+                                    <option value="2">Accounts</option>
+                                    <option value="110">Law</option>
+                                    <option value="8">Library</option>
+                                    <option value="1">Administration</option>
+                                    <option value="123">Statistic</option>
+                                    <option value="47">Microbiology</option>
+                                    <option value="56">Finance</option>
+                                    <option value="52">Zoology</option>
+                                    <option value="33">Botany</option>
+                                    <option value="11">Biochemistry</option>
+                                    <option value="82">Environmental Science</option>
+                                    <option value="128">Communication</option>
+                                    <option value="32">Biotechnology</option>
+                                    <option value="95">Neutracceuticals</option>
+                                    <option value="59">Operations</option>
+                                    <option value="61">Management</option>
+                                    <option value="30">Marketing</option>
+                                    <option value="3">Human Resource</option>
+                                    <option value="37">Electronics &amp; Telecommunication</option>
+                                    <option value="92">Buddhist</option>
+                                    <option value="22">Orthopaedic</option>
+                                    <option value="15">Medicine</option>
+                                    <option value="5">Anaesthesiology</option>
+                                    <option value="122">Surgery</option>
+                                    <option value="27">Radiology</option>
+                                    <option value="77">Community Medicine</option>
+                                    <option value="101">Skin</option>
+                                    <option value="65">Academic</option>
+                                    <option value="159">Secondary</option>
+                                    <option value="29">Obstetrics and Gynaecology</option>
+                                    <option value="76">Education</option>
+                                    <option value="17">E.N.T.</option>
+                                    <option value="112">Maintainance</option>
+                                    <option value="24">Physiotherapy</option>
+                                    <option value="16">Dental</option>
+                                    <option value="26">Pathology</option>
+                                    <option value="66">Anatomy</option>
+                                    <option value="91">Jainism</option>
+                                    <option value="121">Vocational Science</option>
+                                    <option value="108">Nursing</option>
+                                    <option value="127">Allied</option>
+                                    <option value="131">Gymkhana</option>
+                                    <option value="132">Drawing &amp; Craft</option>
+                                    <option value="157">Girivanvasi Education Trust</option>
+                                    <option value="75">BMS</option>
+                                    <option value="141">Non Teaching</option>
+                                    <option value="34">Business Law</option>
+                                    <option value="158">Secondary School</option>
+                                    <option value="70">Banking</option>
+                                    <option value="138">Comp &amp; Management</option>
+                                    <option value="83">Envt Studies</option>
+                                    <option value="50">Philosophy</option>
+                                    <option value="68">BMM</option>
+                                    <option value="137">Biotechnology &amp; Microbiology</option>
+                                    <option value="106">Yoga</option>
+                                    <option value="55">Accounts &amp; Finance</option>
+                                    <option value="153">Logic</option>
+                                    <option value="155">Balvatika Section</option>
+                                    <option value="140">Refrigerator&amp; Air Conditioning</option>
+                                    <option value="20">NICU</option>
+                                </select>
+                            </div>
+
+
+                            <div class="fullwidth">
+                                <div class="relabel ltlabel">Designation</div>
+                                <select class="js-designation-multiple select2-hidden-accessible" name="desig_check[]"
+                                    id="desig_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="1">Assistant Professor</option>
+                                    <option value="3">Associate Professor</option>
+                                    <option value="4">Professor</option>
+                                    <option value="90">Adjunct Faculty</option>
+                                    <option value="83">Lecturer</option>
+                                    <option value="32">Registrar</option>
+                                    <option value="57">Coach</option>
+                                    <option value="16">Teacher</option>
+                                    <option value="72">Instructor</option>
+                                    <option value="197">Shikshan Sevak</option>
+                                    <option value="12">Principal</option>
+                                    <option value="5">Librarian</option>
+                                    <option value="91">Academic Associate</option>
+                                    <option value="47">Director</option>
+                                    <option value="104">Accounts</option>
+                                    <option value="79">Head of Department</option>
+                                    <option value="31">Research Assistant</option>
+                                    <option value="66">Assistant Teacher</option>
+                                    <option value="196">Tutor</option>
+                                    <option value="203">Senior Resident</option>
+                                    <option value="185">PHP Developer</option>
+                                    <option value="71">Chief Executive Officer</option>
+                                    <option value="80">Head Master</option>
+                                    <option value="21">Supervisor</option>
+                                    <option value="11">Vice Principal</option>
+                                    <option value="198">Special Educator</option>
+                                    <option value="44">Laboratory Assistant</option>
+                                    <option value="65">Assistant Lecturer</option>
+                                    <option value="189">Professor (R)</option>
+                                    <option value="188">Professor (C)</option>
+                                    <option value="192">Resident</option>
+                                    <option value="202">Senior Registrar</option>
+                                    <option value="142">Visiting Faculty</option>
+                                    <option value="143">Honorary Assistant Professor</option>
+                                    <option value="52">Acting Director</option>
+                                    <option value="68">Counsellor</option>
+                                    <option value="84">Watchman</option>
+                                    <option value="36">Research Associate</option>
+                                    <option value="10">Welder</option>
+                                    <option value="2">Junior Clerk</option>
+                                    <option value="211">Ward Boy</option>
+                                    <option value="6">Assistant Librarian</option>
+                                    <option value="56">Assistant</option>
+                                    <option value="41">Peon</option>
+                                    <option value="58">Attendant</option>
+                                    <option value="8">Co-ordinator</option>
+                                    <option value="125">Consultant Paediatric Endocrinology</option>
+                                    <option value="59">Driver</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                    style="width: 247.016px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple" role="combobox"
+                                            aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-search select2-search--inline"><input
+                                                        class="select2-search__field" type="search" tabindex="0"
+                                                        autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                        spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                        placeholder="" style="width: 0.75em;"></li>
+                                            </ul>
+                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                            <div class="paddleft"> <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn"
+                                    value="Clear all filters"></div>
+
+                        </div>
+                    </form>
+
+                    <div class="research_accomplishment_page showbs4">
+                        <div class="sidebar-wrap">
+                             <div class="filter_by"><p>Filter by </p> <button class="clear_btn" id="btn_clear"><span>x</span>Clear</button></div>
+                     
+                         <div class="search-input">
+                            <!-- Actual search box -->
+                            <div class="form-group has-feedback has-search">
+                                <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </div>
+            
+                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                             <div class="panel panel-default">
+                                  <div class="panel-heading" role="tab" id="headingOne">
+                                      <h4 class="panel-title">
+                                          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+                                          <i class="more-less glyphicon glyphicon-plus"></i>
+                                           Institutions
+                                          </a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne" style="">
+                                      <div class="panel-body">
+                                            <label class="chkcontainer">K J Somaiya College of Arts and Commerce
+                                                  <input type="checkbox"
+                                                      name="institute_check" value="12">
+                                                  <span class="checkmark"></span>
+                                              </label>
+            
+            
+                                              <label class="chkcontainer">K J Somaiya College of Science and Commerce
+                                                  <input type="checkbox"
+                                                      name="institute_check" value="14">
+                                                  <span class="checkmark"></span>
+                                              </label>
+            
+            
+                                              <label class="chkcontainer">S K Somaiya Degree College of Arts, Science
+                                                  and Commerce <input type="checkbox"
+                                                      name="institute_check" value="15">
+                                                  <span class="checkmark"></span>
+                                              </label>
+            
+            
+                                              <label class="chkcontainer">K J Somaiya College of Engineering <input
+                                                      type="checkbox" name="institute_check"
+                                                      value="16">
+                                                  <span class="checkmark"></span>
+                                              </label>
+            
+            
+                                              <label class="chkcontainer">K J Somaiya Institute of Management <input
+                                                      type="checkbox" name="institute_check"
+                                                      value="17">
+                                                  <span class="checkmark"></span>
+                                              </label>
+                                      </div>
+                                  </div>
+                              </div>
+            
+                              <div class="panel panel-default sub_institutes_div" style="display: none;">
+                                  <div class="panel-heading" role="tab" id="headingTwo">
+                                      <h4 class="panel-title">
+                                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          <i class="more-less glyphicon glyphicon-plus"></i>
+                                          Sub Institute
+                                          </a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                                      <div class="panel-body" id="sub_institute_check">
+                                          <!-- <label class="chkcontainer">One
+                                          <input type="checkbox" checked="checked">
+                                          <span class="checkmark"></span>
+                                          </label> -->
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+            
+                              <div class="panel panel-default">
+                                  <div class="panel-heading" role="tab" id="headingThree">
+                                      <h4 class="panel-title">
+                                          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          <i class="more-less glyphicon glyphicon-plus"></i>
+                                            Campus
+                                          </a>
+                                      </h4>
+                                  </div>
+                                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                      <div class="panel-body">
+                                          <label class="chkcontainer">Campus 1
+                                            <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                          </label>
+            
+                                          <label class="chkcontainer">Campus 2
+                                            <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                          </label>
+            
+                                            <label class="chkcontainer">Campus 3
+                                            <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                          </label>
+            
+                                           <label class="chkcontainer">Campus 4
+                                            <input type="checkbox">
+                                                  <span class="checkmark"></span>
+                                          </label>
+                                          
+                                      </div>
+                                  </div>
+                              </div>
+            
+                              <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingdept">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsedept" aria-expanded="false" aria-controls="collapsedept">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                       Departments
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsedept" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdept">
+                                    <div class="panel-body">
+                                        <label class="chkcontainer">Departments 1
+                                          <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                        </label>
+            
+                                        <label class="chkcontainer">Departments 2
+                                          <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                        </label>
+            
+                                          <label class="chkcontainer">Departments 3 
+                                          <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                        </label>
+            
+                                      
+                                        
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingdesgn">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsedesgn" aria-expanded="false" aria-controls="collapsedesgn">
+                                        <i class="more-less glyphicon glyphicon-plus"></i>
+                                         Designation
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapsedesgn" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingdesgn">
+                                    <div class="panel-body">
+                                        <label class="chkcontainer">Designation 1
+                                          <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                        </label>
+            
+                                        <label class="chkcontainer">Designation 2
+                                          <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                        </label>
+            
+                                          <label class="chkcontainer">Designation 3 
+                                          <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                        </label>
+            
+                                      
+                                        
+                                    </div>
+                                </div>
+                            </div>
+            
+                             
+            
+                              
+                          </div>
+            
+                        <!-- panel-group -->
+                        <button type="submit" class="search">Search</button>
+                           </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-lg-9 col-md-8 refine-result">
+                    <div class="row">
+                        <div class="col-md-9">
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="depatmentsort">
+                                <div class="label_title">SORT BY</div>
+                                <div class="drop_list">
+                                    <select name="sort" class="custom-select" id="sort" onchange="searchFilter()">
+                                        <option value="name_ASC">Name A -&gt; Z</option>
+                                        <option value="name_DESC">Name Z -&gt; A</option>
+                                        <option value="dept_ASC">Department A -&gt; Z</option>
+                                        <option value="dept_DESC">Department Z -&gt; A</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+                    <div id="refined">
+                        <div class="dtres shadowdtres">
+                            <div class="hidebs4">
+                                <a href="http://stage-kjsce.somaiya.edu/en/view-member/160543?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Dr. AMEYA K NAIK</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Professor</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya College of Engineering</span>
+                                </div>
+                            </div>
+                            <!--  <div><a href="">Read More</a></div> -->
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160543.jpg"
+                                        class="img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about AMEYA K NAIK"
+                                        href="http://stage-kjsce.somaiya.edu/en/view-member/160543?type=faculty">View
+                                        Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>Faculty</span></div>
+                                </div>
+                        
+                                <ul class="newcdli timeline">
+                                    <li class="event showbs4 fullwidth fac_namebs4">
+                                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160543?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. AMEYA K NAIK</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Professor</span><span class="at"> at</span>
+                                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                                        </div>
+                                    </li>
+                                    <li class="event">
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-newspaper-o" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>MECH</p>
+                                            </div>
+                                        </div>
+                        
+                                    </li>
+                                    <li class="event">
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA
+                                                    VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+                        
+                                    </li>
+                                    <li class="event">
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label><a href=""
+                                                        class="blue-link">ameyanaik@somaiya.edu</a></p>
+                                            </div>
+                                        </div>
+                        
+                                    </li>
+                                    <li class="hidebs4">
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;9317</p>
+                                            </div>
+                                        </div>
+                        
+                                    </li>
+                                    <li class="event">
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-phone" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Phone:</label>02266449317</p>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="full_width fullwidth event">
+                                        <div class="refield">
+                                            <div class="newp timecd">
+                                                <p><i class="fa fa-clock-o" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Timing:</label>Mon-Fri: 10.00
+                                                    am to 5.00 pm</p>
+                                            </div>
+                                        </div>
+                                        <div class="refield full_width fullwidth fac_location">
+                                            <div class="newp cdadd">
+                                                <p><i class="fa fa-address-card-o" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Location:</label>A413,
+                                                    Aryabhat Building, K. J. Somaiya College of Engineering, Vidyanagar,
+                                                    Vidyavihar (E), Mumbai 400 077</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="dtres shadowdtres">
+                            <div class="hidebs4">
+                                <a href="https://www.somaiya.edu/en/view-member/120030?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name"> ABHINAYA R KAMBLE</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Asst. Prof</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya College of Arts and Commerce</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/120030.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about ABHINAYA R KAMBLE"
+                                        href="https://www.somaiya.edu/en/view-member/120030?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/120030?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name"> ABHINAYA R KAMBLE
+                                            </h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Asst. Prof</span><span class="at"> at</span>
+                                            <span class="designationmem">K J Somaiya College of Arts and Commerce</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>POL. SCIENCE</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">abhinaya@somaiya.edu </a></p><a href=""
+                                                    class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/140332?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Mr. ABHISHEK CHHAYA MANE</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">ASSISTANT PROFESSOR</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya College of Science and Commerce</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/140332.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about ABHISHEK CHHAYA MANE"
+                                        href="https://www.somaiya.edu/en/view-member/140332?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/140332?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. ABHISHEK CHHAYA
+                                                MANE</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">ASSISTANT PROFESSOR</span><span class="at">
+                                                at</span>
+                                            <span class="designationmem">K J Somaiya College of Science and
+                                                Commerce</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>BIOTECHNOLOGY</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">abhishek.chhaya@somaiya.edu </a></p><a
+                                                    href="" class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+
+                                        <li class="full_width fullwidth">
+                                            <div class="refield">
+                                                <div class="newp timecd">
+                                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Timing:</label>Mon - Sat: 9.30 am
+                                                        to 3.30 pm</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield full_width fullwidth fac_location">
+                                                <div class="newp cdadd">
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Location:</label>Department of
+                                                        Biotechnology, 2nd Floor, Old Building,
+                                                        K.J. Somaiya College of Science and Commerce, Vidyavihar,
+                                                        Mumbai, India</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/160826?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Mr. ABHISHEK PRATAP SINGH
+                                        BHADAURIA</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Assistant Professor</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya College of Engineering</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160826.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a
+                                        aria-label="view more about ABHISHEK PRATAP SINGH  BHADAURIA"
+                                        href="https://www.somaiya.edu/en/view-member/160826?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/160826?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. ABHISHEK PRATAP
+                                                SINGH BHADAURIA</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Assistant Professor</span><span class="at">
+                                                at</span>
+                                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>MECH</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">abhishekbhaduria@somaiya.edu </a></p><a
+                                                    href="" class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/710103?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Dr. ADITYA BALAKRISHNA SATHE
+                                    </h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Professor</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya Medical College and Research Centre</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/710103.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about ADITYA BALAKRISHNA SATHE"
+                                        href="https://www.somaiya.edu/en/view-member/710103?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/710103?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. ADITYA
+                                                BALAKRISHNA SATHE</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Professor</span><span class="at"> at</span>
+                                            <span class="designationmem">K J Somaiya Medical College and Research
+                                                Centre</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>Biochemistry</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA AYURVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">aditya@somaiya.edu </a></p><a href=""
+                                                    class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <li>
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Phone:</label>02250954780</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="full_width fullwidth">
+                                            <div class="refield">
+                                                <div class="newp timecd">
+                                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Timing:</label>Monday to Friday and
+                                                        1st and 3rd Saturday
+                                                        Time 9.00 am to 4.00 pm</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield full_width fullwidth fac_location">
+                                                <div class="newp cdadd">
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Location:</label>Department of
+                                                        Biochemistry, College Building, 2nd floor, K J Somaiya Medical
+                                                        College, Somaiya Ayurvihar campus, Sion, Mumbai 400022.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/14000002?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name"> Afrin Abdul Khair </h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">K J Somaiya College of Science and Commerce</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/14000002.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about Afrin Abdul Khair "
+                                        href="https://www.somaiya.edu/en/view-member/14000002?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <div class="refield hidebs4">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+
+
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">afrin.abdulkhair@somaiya.edu </a></p><a
+                                                    href="" class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/140323?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Mr. AFSAR ALI KARAM HUSEN
+                                        SIDDIKI</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">ASSISTANT PROFESSOR</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya College of Science and Commerce</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/140323.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about AFSAR ALI KARAM HUSEN SIDDIKI"
+                                        href="https://www.somaiya.edu/en/view-member/140323?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/140323?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. AFSAR ALI KARAM
+                                                HUSEN SIDDIKI</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">ASSISTANT PROFESSOR</span><span class="at">
+                                                at</span>
+                                            <span class="designationmem">K J Somaiya College of Science and
+                                                Commerce</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>CHEMISTRY</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">afsarali@somaiya.edu </a></p><a href=""
+                                                    class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <li>
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Phone:</label>02221025919</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="full_width fullwidth">
+                                            <div class="refield">
+                                                <div class="newp timecd">
+                                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Timing:</label>Monday - Saturday:
+                                                        3-5 pm</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield full_width fullwidth fac_location">
+                                                <div class="newp cdadd">
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Location:</label>Department of
+                                                        Chemistry, K J Somaiya College of Science and Commerce,
+                                                        vidyavihar, Mumbai 400077</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/710563?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Dr. AISHWARYA RAJARAM JOSHI
+                                    </h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Registrar(C)</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya Medical College and Research Centre</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/710563.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about AISHWARYA RAJARAM JOSHI"
+                                        href="https://www.somaiya.edu/en/view-member/710563?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/710563?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. AISHWARYA RAJARAM
+                                                JOSHI</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Registrar(C)</span><span class="at"> at</span>
+                                            <span class="designationmem">K J Somaiya Medical College and Research
+                                                Centre</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>Ophthalmology</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA AYURVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">aishwarya08@somaiya.edu </a></p><a
+                                                    href="" class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="blue-link">
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;4770</p>
+                                                </div>
+                                            </div>
+
+                                        </a></li>
+                                    <li><a href="" class="blue-link">
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Phone:</label>022 24090253</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </a></li><a href="" class="blue-link">
+
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/190009?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name"> AJAY VINAYAKRAO BHANGE</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">LECTURER SELECION GRADE(MECH)</span><span class="at">
+                                        at</span>
+                                    <span class="designationmem">K J Somaiya Polytechnic</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/190009.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about AJAY VINAYAKRAO BHANGE"
+                                        href="https://www.somaiya.edu/en/view-member/190009?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/190009?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name"> AJAY VINAYAKRAO
+                                                BHANGE</h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">LECTURER SELECION GRADE(MECH)</span><span
+                                                class="at"> at</span>
+                                            <span class="designationmem">K J Somaiya Polytechnic</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>MECHANICAL
+                                                    ENGINEERING</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">avbhange@somaiya.edu </a></p><a href=""
+                                                    class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="blue-link">
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;9902</p>
+                                                </div>
+                                            </div>
+
+                                        </a></li>
+                                    <li><a href="" class="blue-link">
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Phone:</label>21021752</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </a></li><a href="" class="blue-link">
+
+                                        <li class="full_width fullwidth">
+                                            <div class="refield">
+                                                <div class="newp timecd">
+                                                    <p><i class="fa fa-clock-o" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Timing:</label>Monday - Friday :
+                                                        11.00 AM - 5.00 PM
+                                                        1st , 3rd and 5th Saturday 11.00 AM - 5.00 PM</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield full_width fullwidth fac_location">
+                                                <div class="newp cdadd">
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Location:</label>116, K. J. Somaiya
+                                                        Polytechnic</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/710142?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Dr. AJAY INDUR DUDANI</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Honorary Professor</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya Medical College and Research Centre</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://www.somaiya.edu/assets/arigel_general/img/homepage/faculty-profile.png"
+                                        class="img-responsive ">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about AJAY INDUR DUDANI"
+                                        href="https://www.somaiya.edu/en/view-member/710142?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/710142?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. AJAY INDUR DUDANI
+                                            </h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Honorary Professor</span><span class="at">
+                                                at</span>
+                                            <span class="designationmem">K J Somaiya Medical College and Research
+                                                Centre</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>Ophthalmology</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA AYURVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">ajay.dudani@somaiya.edu </a></p><a
+                                                    href="" class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li><a href="" class="blue-link">
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p></p>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="refield hidebs4">
+                                            <div class="newp">
+                                                <p>&nbsp;</p>
+                                            </div>
+                                        </div>
+
+
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                        </a>
+                        <div class="dtres shadowdtres"><a href="" class="blue-link">
+                            </a>
+                            <div class="hidebs4"><a href="" class="blue-link">
+                                </a><a href="https://www.somaiya.edu/en/view-member/160010?type=faculty">
+                                    <h3 role="heading" aria-level="2" class="faculty-name">Dr. AJAY K GANGRADE</h3>
+                                </a>
+                                <div class="topset">
+                                    <span class="designationmem">Associate Professor</span><span class="at"> at</span>
+                                    <span class="designationmem">K J Somaiya College of Engineering</span>
+                                </div>
+                                <!--  <div><a href="">Read More</a></div> -->
+                            </div>
+                            <div class="cdprof">
+                                <div class="profile_pic">
+                                    <img alt="" aria-hidden="true"
+                                        src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160010.jpg"
+                                        class=" img-responsive">
+                                    <div class="facultybox hidebs4">FACULTY</div>
+                                </div>
+                                <div class="facultyprof"><a aria-label="view more about AJAY K GANGRADE"
+                                        href="https://www.somaiya.edu/en/view-member/160010?type=faculty">View Profile
+                                        &nbsp;<span aria-hidden="true">»</span></a></div>
+                            </div>
+                            <div class="fac_contentwrapper">
+                                <div class="fac_timeline">
+                                    <div class="cutsidelbl"><span>FACULTY</span></div>
+                                </div>
+                                <ul class="newcdli">
+                                    <li class="showbs4 fullwidth fac_namebs4">
+                                        <a href="https://www.somaiya.edu/en/view-member/160010?type=faculty">
+                                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. AJAY K GANGRADE
+                                            </h3>
+                                        </a>
+                                        <div class="topset">
+                                            <span class="designationmem">Associate Professor</span><span class="at">
+                                                at</span>
+                                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                                        </div>
+                                        <!--  <div><a href="">Read More</a></div> -->
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-briefcase" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Department:</label>MECH</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-university" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Campus:</label>SOMAIYA VIDYAVIHAR</p>
+                                            </div>
+                                        </div>
+
+                                    </li>
+                                    <li>
+                                        <div class="refield">
+                                            <div class="newp">
+                                                <p><i class="fa fa-envelope" aria-hidden="true"></i><label
+                                                        class="showbs4 faclabel">Email:</label>
+                                                    <a href="" class="blue-link">akgangrade@somaiya.edu </a></p><a
+                                                    href="" class="blue-link">
+                                                </a>
+                                            </div><a href="" class="blue-link">
+                                            </a>
+                                        </div><a href="" class="blue-link">
+
+                                        </a>
+                                    </li>
+                                    <li><a href="" class="blue-link">
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;9501</p>
+                                                </div>
+                                            </div>
+
+                                        </a></li>
+                                    <li><a href="" class="blue-link">
+                                            <div class="refield">
+                                                <div class="newp">
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Phone:</label>022-66449501</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                        </a></li><a href="" class="blue-link">
+
+                                        <li class="full_width fullwidth">
+                                            <div class="refield hidebs4">
+                                                <div class="newp">
+                                                    <p>&nbsp;</p>
+                                                </div>
+                                            </div>
+                                            <div class="refield full_width fullwidth fac_location">
+                                                <div class="newp cdadd">
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i><label
+                                                            class="showbs4 faclabel">Location:</label>Vidyavihar</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul><a href="" class="blue-link">
+                                    <div class="clear"></div>
+                                </a>
+                            </div><a href="" class="blue-link">
+                            </a>
+                        </div><a href="" class="blue-link">
+                            <script>
+                                function getData(page) {
+                                    $.ajax({
+                                        method: "POST",
+                                        url: "https://www.somaiya.edu//en/contact-us/faculty-directory/" + page,
+                                        data: { page: page },
+                                        beforeSend: function () {
+                                            $('.loading').show();
+                                        },
+                                        success: function (data) {
+                                            $('.loading').hide();
+                                            $('#refined').html(data);
+                                        }
+                                    });
+                                }
+                            </script>
+                        </a>
+                        <div class="pagination" role="navigation" aria-label="pagination"><a href="" class="blue-link">
+                                <div class="of_result">20 of 1518 | </div>&nbsp;
+                            </a><a href="javascript:void(0);" onclick="searchFilter(0)" aria-hidden="true">«</a>&nbsp;<a
+                                href="javascript:void(0);" onclick="searchFilter(0)">1</a>&nbsp;<b>2</b>&nbsp;<a
+                                href="javascript:void(0);" onclick="searchFilter(20)">3</a>&nbsp;<a
+                                href="javascript:void(0);" onclick="searchFilter(30)">4</a>&nbsp;<a
+                                href="javascript:void(0);" onclick="searchFilter(20)"
+                                aria-hidden="true">»</a>&nbsp;&nbsp;<a href="javascript:void(0);"
+                                onclick="searchFilter(1510)">Last</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+    <script src="https://simsr.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+
+    <script>
+        if ($('.refield  p').is(':empty')) {
+            $(this).css("display", "none");
+        }
+    </script>
+       <script type="text/javascript">
+        $(document).ready(function() 
+        {
+          $('.js-institute-multiple,.js-department-multiple,.js-type-multiple').select2();
+        
+
+        });
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Announcements Listing BS4</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+    <!-- <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/common.css"> -->
+    <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+    <script src="https://simsr.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+</head>
+
+<body>
+    <section class="aboutpanel naresh_announcement_list newssearch mar-top-0">
+        <div class="abrating">
+          <div class="pull-right">
+            <ul class="breadcrumb">
+              <li><a href="https://kjsce.somaiya.edu/en">Home</a> <span class="rightindicatior">»</span> </li>
+              <li><a href="https://kjsce.somaiya.edu/en/events-and-updates">Events &amp; Updates</a> <span class="rightindicatior">»</span> </li>
+              <li class="active">Announcement</li>
+            </ul>
+          </div>
+        </div>
+      
+      
+        <div role="main">
+           <div class="colorwrapperbanner showbs4">
+              <section class="unibrand-bannersec backpatch-right">
+                  <div class="container brandcontwrapper">
+                      <div class="title txtcenter naresh_announcement common-title">
+                          <h2 class="wow  fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Announcements</h2>
+                          <p class="hero-para">The campus is buzzing with outstanding achievements by students &amp; faculty at various competitive fora. Stay tuned for the new updates on the campus and visit the one that interests you.</p>
+                      </div>
+                  </div>
+              </section>
+            </div>
+          <div class="container">
+            <div class="title txtcenter naresh_announcement common-title hidebs4">
+              <h2 class="wow  fadeInUp" style="visibility: hidden; animation-name: none;">Announcements</h2>
+              <img src="https://kjsce.somaiya.edu/assets/common_img/title_bar.png" alt="" class="title_line">
+              <span></span>
+            </div>
+          </div>
+          <div class="container">
+            <form action="" class="newsearchform searchbars4 hidebs4" role="form">
+              <div class="input-group stylish-input-group" role="search">
+                <input type="text" name="keyword_ann" class="form-control" value="" placeholder="Search" id="searchkeyword1" onkeyup="searchFilter()">
+                  <span class="input-group-addon">
+                      <button type="button" onclick="searchFilter()">
+                      <img alt="" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/search_bar_icon.png">
+                      </button>
+                  </span>
+              </div>
+            </form>
+            
+            <div class="row detailbs4row">
+              <div class="col-lg-3 col-sm-12 col-md-4 refineserach sidefilter">
+                <div class="">
+                 
+                <h3 class="refhead refheadbs4">Refine Your Search</h3>
+                 <form action="" class="newsearchform searchbars4 showbs4" role="form">
+                  <div class="input-group stylish-input-group" role="search">
+                    <input type="text" name="keyword_ann" class="form-control" value="" placeholder="Search" id="searchkeyword" onkeyup="searchFilter()">
+                      <span class="input-group-addon">
+                          <button type="button" onclick="searchFilter()">
+                          <img alt="" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/search_bar_icon.png">
+                          </button>
+                      </span>
+                  </div>
+                </form>
+      
+                <form action="" method="get" role="form" id="resfilter">
+                  
+                  <div class="relabel">Related Institutions</div>
+                  <div class="repaddleft">
+                    <select class="js-institute-multiple select2-hidden-accessible" name="institute_check[]" id="institute_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                      <option value="0">Select Related Institutions</option>
+                                                        <option value=""></option>
+                                        <option value="26">K J Somaiya Centre for Buddhist Studies</option>
+                                        <option value="28">K J Somaiya Centre for Studies In Jainism</option>
+                                        <option value="12">K J Somaiya College of Arts and Commerce</option>
+                                        <option value="50">Somaiya Vidyavihar</option>
+                                        <option value="18">K J Somaiya College of Education</option>
+                                        <option value="16" selected="selected">K J Somaiya College of Engineering</option>
+                                        <option value="73">K J Somaiya College of Nursing</option>
+                                        <option value="72">K J Somaiya College of Physiotherapy</option>
+                                        <option value="14">K J Somaiya College of Science and Commerce</option>
+                                        <option value="17">K J Somaiya Institute of  Management</option>
+                                        <option value="22">K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</option>
+                                        <option value="71">K J Somaiya Medical College and Research Centre</option>
+                                        <option value="19">K J Somaiya Polytechnic</option>
+                                        <option value="54">K.J.Somaiya Secondary School,Nareshwadi</option>
+                                        <option value="49">Research Innovation Incubation Design Labs</option>
+                                        <option value="31">S K Somaiya College</option>
+                                        <option value="15">S K Somaiya Degree College of Arts, Science and Commerce</option>
+                                        <option value="101">scholarships</option>
+                                        <option value="55">Shri Sharda English Medium School</option>
+                                        <option value="35">Somaiya Institute of Research and Consultancy</option>
+                                        <option value="34">Somaiya Sports Academy</option>
+                                        <option value="51">The Somaiya School</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 522.531px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-selection__choice" title="K J Somaiya College of Engineering"><span class="select2-selection__choice__remove" role="presentation">×</span>K J Somaiya College of Engineering</li><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>    
+                  </div>
+      
+                  <div class="sub_institutes_div" style="display: none;">
+                    <div class="relabel ltlabel">Sub Institute</div>
+                    <select class="js-subinstitute-multiple select2-hidden-accessible" name="sub_institute_check[]" id="sub_institute_check" onchange="searchFilterBySubinstitute()" tabindex="-1">
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-sub_institute_check-container"><span class="select2-selection__rendered" id="select2-sub_institute_check-container"></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                  </div>
+      
+                  <div class="relabel">Area of Interest</div>
+                  <div class="repaddleft">
+                   <select class="js-category-multiple select2-hidden-accessible" name="category_check[]" id="category_check" multiple="" onchange="searchFilter()" tabindex="-1">
+                                                        <option value="11">Academic</option>
+                                        <option value="6">Celebrations</option>
+                                        <option value="3">Education</option>
+                                        <option value="14">Entrepreneurship and Startup ecosystem</option>
+                                        <option value="1">Environment</option>
+                                        <option value="10">Extracurricular </option>
+                                        <option value="8">Facilities</option>
+                                        <option value="5">Health</option>
+                                        <option value="13">Others</option>
+                                        <option value="7">Religion and Culture</option>
+                                        <option value="9">Research</option>
+                                        <option value="2">Sports</option>
+                                        <option value="4">Technology</option>
+                                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 277.156px;"><span class="selection"><span class="select2-selection select2-selection--multiple" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="-1"><ul class="select2-selection__rendered"><li class="select2-search select2-search--inline"><input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" placeholder="" style="width: 0.75em;"></li></ul></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span> 
+                  </div>
+                 
+                  <div class="repaddleft">
+                  
+                  
+                        <div class="">
+                           <div class="relabel relabelbs4">From Date</div>
+                          <input type="date" name="fromdate" id="fromdate" class="form-control dateclass placeholderclass" onclick="$(this).removeClass('placeholderclass')" onchange="searchFilter()">
+                        </div>
+                       
+                        <div class="">
+                          <div class="relabel relabelbs4">To Date</div>
+                          <input type="date" name="todate" id="todate" class="form-control dateclass placeholderclass" onclick="$(this).removeClass('placeholderclass')" onchange="searchFilter()">
+                        </div>
+                      
+                  </div>
+      
+                  <div class="repaddleft">
+                      <div class="">
+                        <div class="">  
+                          <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn" value="Clear all filters">
+                        </div>
+                      </div>
+                  </div>
+                </form>
+              </div>
+      
+              <!--New B4 Sidebar hidden-->
+      
+              <div class="research_accomplishment_page d-none">
+                  <div class="sidebar-wrap">
+                       <div class="filter_by"><p>Filter by </p> <button class="clear_btn" id="btn_clear"><span>x</span>Clear</button></div>
+               
+                   <div class="search-input">
+                      <!-- Actual search box -->
+                      <div class="form-group has-feedback has-search">
+                          <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                          <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                  </div>
+      
+                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                       <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Related Institutions
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse show" role="tabpanel" aria-labelledby="headingOne" style="">
+                                <div class="panel-body">
+                                      <label class="chkcontainer">K J Somaiya College of Arts and Commerce
+                                            <input type="checkbox" name="institute_check" value="12">
+                                            <span class="checkmark"></span>
+                                        </label>
+      
+      
+                                        <label class="chkcontainer">K J Somaiya College of Science and Commerce
+                                            <input type="checkbox" name="institute_check" value="14">
+                                            <span class="checkmark"></span>
+                                        </label>
+      
+      
+                                        <label class="chkcontainer">S K Somaiya Degree College of Arts, Science
+                                            and Commerce <input type="checkbox" name="institute_check" value="15">
+                                            <span class="checkmark"></span>
+                                        </label>
+      
+      
+                                        <label class="chkcontainer">K J Somaiya College of Engineering <input type="checkbox" name="institute_check" value="16">
+                                            <span class="checkmark"></span>
+                                        </label>
+      
+      
+                                        <label class="chkcontainer">K J Somaiya Institute of Management <input type="checkbox" name="institute_check" value="17">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="panel panel-default sub_institutes_div" style="display: none;">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    Sub Institute
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body" id="sub_institute_check">
+                                    <!-- <label class="chkcontainer">One
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                    </label> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                      By Area Of Interest
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <label class="chkcontainer">Academic
+                                      <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+      
+                                    <label class="chkcontainer">Celebrations
+                                      <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+      
+                                      <label class="chkcontainer">Education
+                                      <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+      
+                                     <label class="chkcontainer">Environment
+                                      <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                    </label>
+                                    
+                                </div>
+                            </div>
+                        </div>
+      
+                    
+      
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingfive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    From Date
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                                <div class="panel-body">
+                                 
+                                <input type="date" name="fromdate" id="fromdate" class="form-control dateclass placeholderclass" onclick="$(this).removeClass('placeholderclass')">
+                                </div>
+                            </div>
+                        </div>
+      
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingsix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                    <i class="more-less glyphicon glyphicon-plus"></i>
+                                    To Date
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
+                                <div class="panel-body">
+                                  
+                                   <input type="date" name="todate" id="todate" class="form-control dateclass placeholderclass" onclick="$(this).removeClass('placeholderclass')">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                  <!-- panel-group -->
+                  <button type="submit" class="search">Search</button>
+                     </div>
+              </div>
+      
+              </div>        
+      
+              <div class="col-lg-9 col-sm-12 col-md-8 announcement-result refineresultbs4" id="refined">  <h4 class="searchmsgbs4" aria-hidden="true">There are <b>27</b> results matching your filter.</h4>
+        <h4 class="sr-only searchmsgbs4">There are <b>27</b> results matching your filter.</h4> 
+            
+             
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/202">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">SET-E last Date of application is extended.</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">SET-E last Date of application is extended.</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>8th July 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/198">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">M. Tech admission in Round -1 of Phase -1</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">M. Tech admission in Round -1 of Phase -1</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>3rd July 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/197">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">Seat Allotment of M Tech Admission</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">Seat Allotment of M Tech Admission</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>30th June 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/183">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                             
+                              <img src="https://kjsce.somaiya.edu//upload_file/images20/NIRF_2020_1.jpg" class="img-responsive img-fluid bsannimg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">NIRF - 2020</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">NIRF - 2020</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>11th June 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/182">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">Allotment of seats in Round-1 of Phase-2 is completed.&nbsp; </h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">Allotment of seats in Round-1 of Phase-2 is completed.&nbsp; </h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>8th June 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/179">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">Allotment of seats in Round-2 of Phase-1 is completed.&nbsp;</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">Allotment of seats in Round-2 of Phase-1 is completed.&nbsp;</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>27th May 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/173">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">Time table of ESE of  L.Y. B.TECH  SEM VIII @ Exam May-June 2020</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">Time table of ESE of  L.Y. B.TECH  SEM VIII @ Exam May-June 2020</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>23rd May 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>Examination In-Charge</p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/174">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                             
+                              <img src="https://kjsce.somaiya.edu//upload_file/images20/V4-Somaiya_Webinar_Social_Media_Post.jpg" class="img-responsive img-fluid bsannimg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">Webinar - 26th May 2020 4:00PM</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">Webinar - 26th May 2020 4:00PM</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>23rd May 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Education</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>Dean Students' Affairs</p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/170">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">SET-E  is rescheduled on 25th July 2020</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">SET-E  is rescheduled on 25th July 2020</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>20th May 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                            
+                      <a class="nounderline-link" href="https://kjsce.somaiya.edu/en/view-announcement/171">&nbsp;
+                        <div class="dtres ann-dtres">
+                         <div class="row">
+                          <div class="col-lg-4 col-sm-4 col-md-4">
+                                                    <img class="img-responsive img-fluid bsannimg" src="https://kjsce.somaiya.edu//assets/arigel_general/img/homepage/event-1.jpg">
+                                                </div>
+      
+                          <div class="col-lg-8 col-sm-8 col-md-8">
+                            <div class="timeline-box">
+                               <div class="refield">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="sr-only">
+                                                <h6 class="bs4annhead">M. Tech Admission Form Acceptance Started</h6>
+                                            </div>
+                                            
+                                            <h6 class="bs4annhead">M. Tech Admission Form Acceptance Started</h6>
+                                        </div>
+                                    </div>
+                              </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Date</p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>20th May 2020</p></div>
+                              </div>
+      
+                            </div>
+                          
+                           <div class="refield ann-details">
+                             <div class="row">
+                                <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Area of Interest</p><p></p></div>
+                                <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>Academic</p></div>
+                            </div>
+                          </div>
+      
+                            <div class="refield ann-details">
+                              <div class="row">
+                                  <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Institution(s)</p></div>
+                                                                  <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre"><p>K J Somaiya College of Engineering</p></div>
+                              </div>
+                            </div>
+      
+                                                  <div class="refield ann-details">
+                                 <div class="row">
+                                    <div class="col-4 col-lg-4 col-md-4 col-sm-4 sportslabel"><p>Relevant Person(s)</p></div>
+                                    <div class="col-8 col-lg-8 col-sm-8 com-md-8 sportslabelre1"><p>K. J. Somaiya College of Engineering Admission Committee </p></div>
+                                  </div>
+                            </div>
+                            
+                            </div>  
+                            </div>  
+                           </div> 
+                        </div>
+      
+                        </a>
+                        <div class="clear"></div>
+                                              <script>
+              function getData(page){  
+                  $.ajax({
+                      method: "POST",
+                      url: "https://kjsce.somaiya.edu//en/news-media/announcement/"+page,
+                      data: { page: page },
+                      beforeSend: function(){
+                          $('.loading').show();
+                      },
+                      success: function(data){
+                          $('.loading').hide();
+                          $('#refined').html(data);
+                      }
+                  });
+              }
+              </script>
+              <div class="pagination" role="navigation" aria-label="pagination"><div class="of_result">10 of 27 | </div>&nbsp;<b>1</b>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(10)">2</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(20)">3</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(10)" aria-hidden="true">»</a>&nbsp;</div>   </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+    <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+    <script>
+        $("<link/>", {
+           rel: "stylesheet",
+           href: "/assets/default_asset/uni-css/announcement.css"
+        }).appendTo("head");
+        
+        
+        </script>
+</body>
+
+</html>

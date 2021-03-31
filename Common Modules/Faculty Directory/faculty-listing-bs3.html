@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Faculty Listing BS3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/assets/simsr/css/custom.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/assets/simsr/css/theme.css">
+    <link type="text/css" rel="stylesheet" href="../../css/custom_model.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/css/accomplishment.css">
+    <link type="text/css" rel="stylesheet" href="https://simsr.somaiya.edu/css/programme_finder.css">
+</head>
+
+<body>
+
+<section class="aboutpanel newssearch" role="main">
+    <div class="abrating">
+        <div class="pull-right">
+            <ul class="breadcrumb">
+                <li><a href="http://stage-kjsce.somaiya.edu/en">Home</a> <span class="rightindicatior">»</span>
+                </li>
+                <li class="active">Faculty Directory</li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="container">
+        <!--  <div class="smallabt capital"></div>
+<div class="bigabt capital"></div> -->
+        <div class="title txtcenter">
+
+            <h2 class="wow animated fadeInUp animated animated animated animated"
+                style="visibility: visible; animation-name: fadeInUp;">Faculty Directory</h2>
+            <img alt="" src="http://stage-kjsce.somaiya.edu/assets/common_img/title_bar.png">
+        </div>
+        <!-- <div class="sub_heading"></div> -->
+        <p class="faculty-dir-para">Search the contact information for somaiya faculty by Name, Department,
+            Institute, Campus.</p>
+
+    </div>
+    <div class="container contactdirectory">
+        <form action="#" name="frmFilters" class="dirsearchform">
+            <div class="input-group stylish-input-group ui-widget" role="search">
+                <input type="text" name="keyword_search" id="searchkeyword" class="mainLoginInput form-control"
+                    placeholder="Search for Name / Designation / Department" onkeyup="searchFilter()">
+                <span class="input-group-addon">
+                    <button type="button" onclick="searchFilter()">
+                        <img alt=""
+                            src="http://stage-kjsce.somaiya.edu/assets/arigel_general/img/homepage/search_bar_icon.png">
+                    </button>
+                </span>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 refineserach">
+                <form action="" method="post" name="frmFilters" autocomplete="off">
+                    <div class="sidefilter">
+
+                        <div class="fullwidth">
+                        <div class="relabel ltlabel">Institute</div>
+                        <select class="js-institute-multiple select2-hidden-accessible" name="institute_check[]"
+                            id="institute_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                            aria-hidden="true">
+                            <option value="16" selected="selected">K J Somaiya College of Engineering</option>
+                            <option value="71">K J Somaiya Medical College and Research Centre</option>
+                            <option value="14">K J Somaiya College of Science and Commerce</option>
+                            <option value="50">Somaiya Vidyavihar</option>
+                            <option value="12">K J Somaiya College of Arts and Commerce</option>
+                            <option value="17">K J Somaiya Institute of Management</option>
+                            <option value="19">K J Somaiya Polytechnic</option>
+                            <option value="22">K J Somaiya Institute of Engineering and Information Technology (
+                                KJSIEIT )</option>
+                            <option value="26">K J Somaiya Centre for Buddhist Studies</option>
+                            <option value="57">Somaiya Vidya Mandir - Sakarwadi</option>
+                            <option value="56">Somaiya Vidya Mandir - Laxmiwadi </option>
+                            <option value="53">K J Somaiya English Medium School</option>
+                            <option value="55">Shri Sharda English Medium School</option>
+                            <option value="59">Somaiya Vinaymandir High School</option>
+                            <option value="58">Somaiya Shishu Niketan Primary School</option>
+                            <option value="49">Research Innovation Incubation Design Labs</option>
+                            <option value="18">K J Somaiya College of Education</option>
+                            <option value="95">K J Somaiya Private Industrial Training Institute</option>
+                            <option value="72">K J Somaiya College of Physiotherapy</option>
+                            <option value="23">K J Somaiya Bharatiya Sanskriti Peetham</option>
+                            <option value="28">K J Somaiya Centre for Studies In Jainism</option>
+                            <option value="13">S K Somaiya Vinay Mandir Junior College</option>
+                            <option value="99">SMT Sakarbai K Somaiya Junior College of Education</option>
+                            <option value="73">K J Somaiya College of Nursing</option>
+                            <option value="37">K J Somaiya Institute of Journalism and Mass communication</option>
+                            <option value="15">S K Somaiya Degree College of Arts, Science and Commerce</option>
+                            <option value="74">K J Somaiya School of Nursing</option>
+                            <option value="25">S K Somaiya Vinay Mandir (Primary Section)</option>
+                            <option value="54">K.J.Somaiya Secondary School,Nareshwadi</option>
+                            <option value="63">S K Somaiya Vinay Mandir Secondary Section</option>
+                            <option value="20">K J Somaiya Sanskrit Vidyapeeth</option>
+                            <option value="41">K J Somaiya Centre For South and South East Asian Studies</option>
+                        </select>
+                        <span class="select2 select2-container select2-container--default" dir="ltr"
+                            style="width: 480.594px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--multiple" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    <ul class="select2-selection__rendered">
+                                        <li class="select2-selection__choice"
+                                            title="K J Somaiya College of Engineering"><span
+                                                class="select2-selection__choice__remove"
+                                                role="presentation">×</span>K J Somaiya College of Engineering</li>
+                                        <li class="select2-search select2-search--inline"><input
+                                                class="select2-search__field" type="search" tabindex="0"
+                                                autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                placeholder="" style="width: 0.75em;"></li>
+                                    </ul>
+                                </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                        
+                        <div class="sub_institutes_div" style="display: none;">
+                            <div class="relabel ltlabel">Sub Institute</div>
+                            <select class="js-subinstitute-multiple select2-hidden-accessible"
+                                name="sub_institute_check[]" id="sub_institute_check"
+                                onchange="searchFilterBySubinstitute()" tabindex="-1" aria-hidden="true">
+
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                style="width: auto;"><span class="selection"><span
+                                        class="select2-selection select2-selection--single" role="combobox"
+                                        aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                        aria-labelledby="select2-sub_institute_check-container"><span
+                                            class="select2-selection__rendered"
+                                            id="select2-sub_institute_check-container"></span><span
+                                            class="select2-selection__arrow" role="presentation"><b
+                                                role="presentation"></b></span></span></span><span
+                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+
+                        <div class="fullwidth">
+                        <div class="relabel ltlabel ">Campus</div>
+                        <select class="js-campus-multiple select2-hidden-accessible" name="campus_check[]"
+                            id="campus_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                            aria-hidden="true">
+                            <option value="1">SOMAIYA VIDYAVIHAR</option>
+                            <option value="2">SOMAIYA AYURVIHAR</option>
+                            <option value="3">Sameerwadi</option>
+                            <option value="4">Sakarwadi</option>
+                            <option value="5">Nareshwadi</option>
+                            <option value=""></option>
+                        </select>
+                        <span class="select2 select2-container select2-container--default" dir="ltr"
+                            style="width: 171.141px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--multiple" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    <ul class="select2-selection__rendered">
+                                        <li class="select2-search select2-search--inline"><input
+                                                class="select2-search__field" type="search" tabindex="0"
+                                                autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                placeholder="" style="width: 0.75em;"></li>
+                                    </ul>
+                                </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+
+                        </div>
+
+                        <div class="fullwidth">
+
+                        <div class="relabel ltlabel">Departments</div>
+                        <select class="js-department-multiple select2-hidden-accessible" name="dept_check[]"
+                            id="dept_check" multiple="" onchange="searchFilter()" tabindex="-1" aria-hidden="true">
+                            <option value="57">Engineering</option>
+                            <option value="9">Information Technology</option>
+                            <option value="145">Mechanical</option>
+                            <option value="115">Science</option>
+                            <option value="23">Paediatric</option>
+                            <option value="21">Ophthalmology</option>
+                            <option value="49">Pharmacology</option>
+                            <option value="85">Geology</option>
+                            <option value="103">Sport</option>
+                            <option value="35">Chemistry</option>
+                            <option value="36">Economics</option>
+                            <option value="130">Gujarathi</option>
+                            <option value="46">Mathematics</option>
+                            <option value="54">Commerce</option>
+                            <option value="48">Physics</option>
+                            <option value="31">Biology</option>
+                            <option value="45">Marathi</option>
+                            <option value="139">Book Keeping</option>
+                            <option value="39">English</option>
+                            <option value="38">Electronics</option>
+                            <option value="42">Hindi</option>
+                            <option value="144">Teaching</option>
+                            <option value="102">Sociology</option>
+                            <option value="25">Psychology</option>
+                            <option value="43">History</option>
+                            <option value="100">Sanskrit</option>
+                            <option value="129">EVS</option>
+                            <option value="2">Accounts</option>
+                            <option value="110">Law</option>
+                            <option value="8">Library</option>
+                            <option value="1">Administration</option>
+                            <option value="123">Statistic</option>
+                            <option value="47">Microbiology</option>
+                            <option value="56">Finance</option>
+                            <option value="52">Zoology</option>
+                            <option value="33">Botany</option>
+                            <option value="11">Biochemistry</option>
+                            <option value="82">Environmental Science</option>
+                            <option value="128">Communication</option>
+                            <option value="32">Biotechnology</option>
+                            <option value="95">Neutracceuticals</option>
+                            <option value="59">Operations</option>
+                            <option value="61">Management</option>
+                            <option value="30">Marketing</option>
+                            <option value="3">Human Resource</option>
+                            <option value="37">Electronics &amp; Telecommunication</option>
+                            <option value="92">Buddhist</option>
+                            <option value="22">Orthopaedic</option>
+                            <option value="15">Medicine</option>
+                            <option value="5">Anaesthesiology</option>
+                            <option value="122">Surgery</option>
+                            <option value="27">Radiology</option>
+                            <option value="77">Community Medicine</option>
+                            <option value="101">Skin</option>
+                            <option value="65">Academic</option>
+                            <option value="159">Secondary</option>
+                            <option value="29">Obstetrics and Gynaecology</option>
+                            <option value="76">Education</option>
+                            <option value="17">E.N.T.</option>
+                            <option value="112">Maintainance</option>
+                            <option value="24">Physiotherapy</option>
+                            <option value="16">Dental</option>
+                            <option value="26">Pathology</option>
+                            <option value="66">Anatomy</option>
+                            <option value="91">Jainism</option>
+                            <option value="121">Vocational Science</option>
+                            <option value="108">Nursing</option>
+                            <option value="127">Allied</option>
+                            <option value="131">Gymkhana</option>
+                            <option value="132">Drawing &amp; Craft</option>
+                            <option value="157">Girivanvasi Education Trust</option>
+                            <option value="75">BMS</option>
+                            <option value="141">Non Teaching</option>
+                            <option value="34">Business Law</option>
+                            <option value="158">Secondary School</option>
+                            <option value="70">Banking</option>
+                            <option value="138">Comp &amp; Management</option>
+                            <option value="83">Envt Studies</option>
+                            <option value="50">Philosophy</option>
+                            <option value="68">BMM</option>
+                            <option value="137">Biotechnology &amp; Microbiology</option>
+                            <option value="106">Yoga</option>
+                            <option value="55">Accounts &amp; Finance</option>
+                            <option value="153">Logic</option>
+                            <option value="155">Balvatika Section</option>
+                            <option value="140">Refrigerator&amp; Air Conditioning</option>
+                            <option value="20">NICU</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            style="width: 226px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--multiple" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    <ul class="select2-selection__rendered">
+                                        <li class="select2-search select2-search--inline"><input
+                                                class="select2-search__field" type="search" tabindex="0"
+                                                autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                placeholder="" style="width: 0.75em;"></li>
+                                    </ul>
+                                </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+
+
+                        <div class="fullwidth">
+                        <div class="relabel ltlabel">Designation</div>
+                        <select class="js-designation-multiple select2-hidden-accessible" name="desig_check[]"
+                            id="desig_check" multiple="" onchange="searchFilter()" tabindex="-1" aria-hidden="true">
+                            <option value="1">Assistant Professor</option>
+                            <option value="3">Associate Professor</option>
+                            <option value="4">Professor</option>
+                            <option value="90">Adjunct Faculty</option>
+                            <option value="83">Lecturer</option>
+                            <option value="32">Registrar</option>
+                            <option value="57">Coach</option>
+                            <option value="16">Teacher</option>
+                            <option value="72">Instructor</option>
+                            <option value="197">Shikshan Sevak</option>
+                            <option value="12">Principal</option>
+                            <option value="5">Librarian</option>
+                            <option value="91">Academic Associate</option>
+                            <option value="47">Director</option>
+                            <option value="104">Accounts</option>
+                            <option value="79">Head of Department</option>
+                            <option value="31">Research Assistant</option>
+                            <option value="66">Assistant Teacher</option>
+                            <option value="196">Tutor</option>
+                            <option value="203">Senior Resident</option>
+                            <option value="185">PHP Developer</option>
+                            <option value="71">Chief Executive Officer</option>
+                            <option value="80">Head Master</option>
+                            <option value="21">Supervisor</option>
+                            <option value="11">Vice Principal</option>
+                            <option value="198">Special Educator</option>
+                            <option value="44">Laboratory Assistant</option>
+                            <option value="65">Assistant Lecturer</option>
+                            <option value="189">Professor (R)</option>
+                            <option value="188">Professor (C)</option>
+                            <option value="192">Resident</option>
+                            <option value="202">Senior Registrar</option>
+                            <option value="142">Visiting Faculty</option>
+                            <option value="143">Honorary Assistant Professor</option>
+                            <option value="52">Acting Director</option>
+                            <option value="68">Counsellor</option>
+                            <option value="84">Watchman</option>
+                            <option value="36">Research Associate</option>
+                            <option value="10">Welder</option>
+                            <option value="2">Junior Clerk</option>
+                            <option value="211">Ward Boy</option>
+                            <option value="6">Assistant Librarian</option>
+                            <option value="56">Assistant</option>
+                            <option value="41">Peon</option>
+                            <option value="58">Attendant</option>
+                            <option value="8">Co-ordinator</option>
+                            <option value="125">Consultant Paediatric Endocrinology</option>
+                            <option value="59">Driver</option>
+                        </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                            style="width: 247.016px;"><span class="selection"><span
+                                    class="select2-selection select2-selection--multiple" role="combobox"
+                                    aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    <ul class="select2-selection__rendered">
+                                        <li class="select2-search select2-search--inline"><input
+                                                class="select2-search__field" type="search" tabindex="0"
+                                                autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                placeholder="" style="width: 0.75em;"></li>
+                                    </ul>
+                                </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+                        <div class="paddleft"> <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn"
+                                value="Clear all filters"></div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-9 col-md-9 refine-result">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p class="searchmsg">There are 175 people matching your search.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="depatmentsort">
+                            <div class="label_title">SORT BY</div>
+                            <div class="drop_list">
+                                <select name="sort" class="custom-select" id="sort" onchange="searchFilter()">
+                                    <option value="name_ASC">Name A -&gt; Z</option>
+                                    <option value="name_DESC">Name Z -&gt; A</option>
+                                    <option value="dept_ASC">Department A -&gt; Z</option>
+                                    <option value="dept_DESC">Department Z -&gt; A</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="refined">
+                  
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160932?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. ABHIJEET UDAY KARMARKAR</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Assistant Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160932.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about ABHIJEET UDAY KARMARKAR"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160932?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;MECH</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;abhijeet@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160826?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. ABHISHEK PRATAP SINGH
+                                BHADAURIA</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Assistant Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160826.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a
+                                    aria-label="view more about ABHISHEK PRATAP SINGH  BHADAURIA"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160826?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;MECH</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;abhishekbhaduria@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160010?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. AJAY K GANGRADE</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Associate Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160010.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about AJAY K GANGRADE"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160010?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;MECH</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;akgangrade@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;9501</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;022-66449501</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p>&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="full_width">
+                                    <div class="refield ">
+                                        <div class="newp">
+                                            <p>&nbsp;</p>
+                                        </div>
+                                    </div>
+                                    <div class="refield full_width">
+                                        <div class="newp cdadd">
+                                            <p><i class="fa fa-address-card-o"
+                                                    aria-hidden="true"></i>&nbsp;Vidyavihar</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160981?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Miss. AKSHATA NARASIMHA PRABHU
+                            </h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Asst. Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160981.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about AKSHATA NARASIMHA PRABHU"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160981?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;EXTC</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;akshata.prabhu@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160080?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. ALGONDA S DESAI</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Associate Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160080.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about ALGONDA S DESAI"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160080?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;SCI AND H
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;algondadesai@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160883?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. AMEY SANATKUMAR GAWDE</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Assistant Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160883.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about AMEY SANATKUMAR GAWDE"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160883?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;EXTC</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;amey.gawde@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160543?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Dr. AMEYA K NAIK</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160543.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about AMEYA K NAIK"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160543?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;EXTC</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;ameyanaik@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-fax" aria-hidden="true"></i>&nbsp;9317</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;02266449317</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p>&nbsp;</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="full_width">
+                                    <div class="refield">
+                                        <div class="newp timecd">
+                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Mon-Fri: 10.00
+                                                am to 5.00 pm</p>
+                                        </div>
+                                    </div>
+                                    <div class="refield full_width">
+                                        <div class="newp cdadd">
+                                            <p><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp;A413,
+                                                Aryabhat Building, K. J. Somaiya College of Engineering, Vidyanagar,
+                                                Vidyavihar (E), Mumbai 400 077</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160592?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mrs. AMRITA YOGESH NAIKSATAM</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Assistant Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160592.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about AMRITA YOGESH NAIKSATAM"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160592?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;ETRX</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;aynaiksatam@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160950?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mrs. ANAGHA RAJIV RAICH</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Asst. Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160950.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about ANAGHA RAJIV RAICH"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160950?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;IT</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;anagha.raich@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="dtres">
+                        <a href="http://stage-kjsce.somaiya.edu/en/view-member/160569?type=faculty">
+                            <h3 role="heading" aria-level="2" class="faculty-name">Mr. ANAND BAPURAO BODHALE</h3>
+                        </a>
+                        <div class="topset">
+                            <span class="designationmem">Assistant Professor</span><span class="at"> at</span>
+                            <span class="designationmem">K J Somaiya College of Engineering</span>
+                        </div>
+                        <!--  <div><a href="">Read More</a></div> -->
+                        <div class="cdprof">
+                            <div class="profile_pic">
+                                <img alt="" aria-hidden="true"
+                                    src="https://s3.ap-south-1.amazonaws.com/svv-public-data/faculty/160569.jpg"
+                                    class="img-responsive">
+                                <div class="facultybox">FACULTY</div>
+                            </div>
+                            <div class="facultyprof"><a aria-label="view more about ANAND BAPURAO BODHALE"
+                                    href="http://stage-kjsce.somaiya.edu/en/view-member/160569?type=faculty">View
+                                    Profile &nbsp;<span aria-hidden="true">»</span></a></div>
+                        </div>
+                        <div>
+                            <ul class="newcdli">
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-newspaper-o" aria-hidden="true"></i>&nbsp;SCI AND H
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-university" aria-hidden="true"></i>&nbsp;SOMAIYA
+                                                VIDYAVIHAR</p>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p><i class="fa fa-envelope"
+                                                    aria-hidden="true"></i>&nbsp;anandbodhale@somaiya.edu</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="refield">
+                                        <div class="newp">
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="refield">
+                                    <div class="newp">
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+
+
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="pagination" role="navigation" aria-label="pagination">10 of 175 |
+                        &nbsp;<b>1</b>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(10)">2</a>&nbsp;<a
+                            href="javascript:void(0);" onclick="searchFilter(20)">3</a>&nbsp;<a
+                            href="javascript:void(0);" onclick="searchFilter(10)"
+                            aria-hidden="true">»</a>&nbsp;&nbsp;<a href="javascript:void(0);"
+                            onclick="searchFilter(170)">Last</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="/assets/default_asset/js/jquery.min.js"></script>
+<script src="/assets/default_asset/js/bootstrap.min.js"></script>
+</body>
+
+</html>

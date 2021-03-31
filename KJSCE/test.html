@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KJSCE Cultural Teams</title>
+    <link rel="stylesheet" href="../assets/kjsce/css/kjsce.css" />
+    <script src="../assets/default_asset/js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <style>
+        .block {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1.3s;
+  animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+    </style>
+</head>
+<div id="header"></div>
+<div class="block">
+    <img data-src="https://placeimg.com/200/200/tech">
+  </div>
+  
+  <div class="block">
+    <img data-src="https://placeimg.com/200/200/nature">
+  </div>
+  
+  <div class="block">
+    <img data-src="https://placeimg.com/200/200/people">
+  </div>
+
+
+
+<div id="footer"></div>
+<script>
+    const images = document.querySelectorAll('img[data-src]');
+const config = {
+  rootMargin: '50px 0px',
+  threshold: 0.01
+};
+
+let observer;
+
+if ('IntersectionObserver' in window) {
+  observer = new IntersectionObserver(onChange, config);
+  images.forEach(img => observer.observe(img));
+} else {
+  console.log('%cIntersection Observers not supported', 'color: red');
+  images.forEach(image => loadImage(image));
+}
+
+const loadImage = image => {
+  image.classList.add('fade-in');
+  image.src = image.dataset.src;
+}
+
+function onChange(changes, observer) {
+  changes.forEach(change => {
+    if (change.intersectionRatio > 0) {
+      // Stop watching and load the image
+      loadImage(change.target);
+      observer.unobserve(change.target);
+    }
+    
+  });
+}
+</script>

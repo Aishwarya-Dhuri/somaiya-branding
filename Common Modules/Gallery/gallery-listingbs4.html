@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Gallery Listing BS4</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/default_asset/css/bootstrap4.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/assets/default_asset/uni-css/master.css">
+    <!-- <link type="text/css" rel="stylesheet" href="../../assets/default_asset/uni-css/common.css"> -->
+    <script src="/assets/default_asset/js/jquery-3.4.1.min.js"></script>
+    <link href="https://simsr.somaiya.edu/assets/arigel_general/css/select2.min.css" rel="stylesheet" />
+    <script src="https://simsr.somaiya.edu/assets/arigel_general/js/select2.min.js"></script>
+</head>
+
+<body>
+
+    <section class="aboutpanel  Gallery-all-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12 searchClass mobp">
+
+                    <!-- <div class="title txtcenter">
+                <h2 class="wow animated fadeInUp animated animated animated" style="visibility: visible; animation-name: fadeInUp;">Galleries</h2>
+                <img alt="" src="https://www.somaiya.edu/assets/common_img/title_bar.png">
+              </div> -->
+                    <div class="title txtcenter common-title">
+                        <h2 class="wow animated fadeInUp animated animated animated animated"
+                            style="visibility: visible; animation-name: fadeInUp;">Galleries</h2>
+                        <img alt="" src="https://www.somaiya.edu/assets/common_img/title_bar.png">
+                    </div>
+
+                    <!-- Gallery search  bar -->
+                    <form class="gallerysearch searchbars4 d-none" role="search">
+                        <div class="input-group stylish-input-group">
+                            <input type="text" name="keywordgal" class="form-control mb0" placeholder="Search"
+                                required="" id="searchkeyword" onkeyup="searchFilter()">
+                            <span class="input-group-addon">
+                                <button type="button" onclick="searchFilter()">
+                                    <img alt=""
+                                        src="https://kjsce.somaiya.edu/assets/arigel_general/img/homepage/search_bar_icon.png">
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row detailbs4row">
+                <div class="col-lg-3  col-md-4 filter-search mobp sidefilter">
+                    <form action="" method="get" role="form">
+                        <h3 class="refhead gpdbtm refheadbs4">Refine Your Search</h3>
+                        <div class="relabel relabelbs4">Institute</div>
+                        <div class="repaddleft">
+                            <select class="js-institute-multiple select2-hidden-accessible" name="institute_check[]"
+                                id="institute_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                aria-hidden="true">
+                                <option value="1">Bscil</option>
+                                <option value="23">K J Somaiya Bharatiya Sanskriti Peetham</option>
+                                <option value="26">K J Somaiya Centre for Buddhist Studies</option>
+                                <option value="28">K J Somaiya Centre for Studies In Jainism</option>
+                                <option value="12">K J Somaiya College of Arts and Commerce</option>
+                                <option value="18">K J Somaiya College of Education</option>
+                                <option value="16">K J Somaiya College of Engineering</option>
+                                <option value="73">K J Somaiya College of Nursing</option>
+                                <option value="72">K J Somaiya College of Physiotherapy</option>
+                                <option value="14">K J Somaiya College of Science and Commerce</option>
+                                <option value="53">K J Somaiya English Medium School</option>
+                                <option value="17">K J Somaiya Institute of Management</option>
+                                <option value="22">K J Somaiya Institute of Engineering and Information Technology (
+                                    KJSIEIT
+                                    )</option>
+                                <option value="37">K J Somaiya Institute of Journalism and Mass communication</option>
+                                <option value="71">K J Somaiya Medical College and Research Centre</option>
+                                <option value="19">K J Somaiya Polytechnic</option>
+                                <option value="95">K J Somaiya Private Industrial Training Institute</option>
+                                <option value="54">K.J.Somaiya Secondary School,Nareshwadi</option>
+                                <option value="49">Research Innovation Incubation Design Labs</option>
+                                <option value="13">S K Somaiya Vinay Mandir Junior College</option>
+                                <option value="55">Shri Sharda English Medium School</option>
+                                <option value="58">Somaiya Shishu Niketan Primary School</option>
+                                <option value="56">Somaiya Vidya Mandir - Laxmiwadi </option>
+                                <option value="57">Somaiya Vidya Mandir - Sakarwadi</option>
+                                <option value="50">Somaiya Vidyavihar</option>
+                                <option value="59">Somaiya Vinaymandir High School</option>
+                                <option value="51">The Somaiya School</option>
+                            </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                style="width: 480.594px;"><span class="selection"><span
+                                        class="select2-selection select2-selection--multiple" role="combobox"
+                                        aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                        <ul class="select2-selection__rendered">
+                                            <li class="select2-search select2-search--inline"><input
+                                                    class="select2-search__field" type="search" tabindex="0"
+                                                    autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                    spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                    placeholder="" style="width: 0.75em;"></li>
+                                        </ul>
+                                    </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+
+                        <div class="sub_institutes_div" style="display: none;">
+                            <div class="relabel relabelbs4 ltlabel">Sub Institute</div>
+                            <select class="js-subinstitute-multiple select2-hidden-accessible"
+                                name="sub_institute_check[]" id="sub_institute_check"
+                                onchange="searchFilterBySubinstitute()" tabindex="-1" aria-hidden="true"></select><span
+                                class="select2 select2-container select2-container--default" dir="ltr"
+                                style="width: auto;"><span class="selection"><span
+                                        class="select2-selection select2-selection--single" role="combobox"
+                                        aria-haspopup="true" aria-expanded="false" tabindex="0"
+                                        aria-labelledby="select2-sub_institute_check-container"><span
+                                            class="select2-selection__rendered"
+                                            id="select2-sub_institute_check-container"></span><span
+                                            class="select2-selection__arrow" role="presentation"><b
+                                                role="presentation"></b></span></span></span><span
+                                    class="dropdown-wrapper" aria-hidden="true"></span></span>
+                        </div>
+
+                        <div id="galtype">
+                            <div class="relabel relabelbs4">Type</div>
+                            <div class="repaddleft">
+                                <select class="js-type-multiple select2-hidden-accessible" name="type_check[]"
+                                    id="type_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="0"></option>
+                                    <option value="22">Abhiyantriki</option>
+                                    <option value="12">Activity</option>
+                                    <option value="37">Alumni</option>
+                                    <option value="28">Alumni Meet</option>
+                                    <option value="1">Annual Day</option>
+                                    <option value="31">Awards</option>
+                                    <option value="13">Camp</option>
+                                    <option value="6">Celebrations</option>
+                                    <option value="38">Championship</option>
+                                    <option value="15">Competitions</option>
+                                    <option value="42">convocation</option>
+                                    <option value="35">Cultural</option>
+                                    <option value="25">Degree Distribution Ceremony</option>
+                                    <option value="46">Fashion Show</option>
+                                    <option value="10">Field Visits/Trips</option>
+                                    <option value="43">Fine Arts</option>
+                                    <option value="33">Foundation Day</option>
+                                    <option value="19">Guest Lecture</option>
+                                    <option value="11">Health &amp; Medicine</option>
+                                    <option value="23">Important Visits</option>
+                                    <option value="24">Inauguration</option>
+                                    <option value="44">Indoor Sports</option>
+                                    <option value="39">Lecture</option>
+                                    <option value="7">lnternational</option>
+                                    <option value="21">Meeting</option>
+                                    <option value="34">Orientation</option>
+                                    <option value="8">Other</option>
+                                    <option value="45">Outdoor Sports</option>
+                                    <option value="47">Poster Making</option>
+                                    <option value="32">Republic Day</option>
+                                    <option value="30">Robo Festival</option>
+                                    <option value="20">Seminar</option>
+                                    <option value="18">Speech</option>
+                                    <option value="2">Sports</option>
+                                    <option value="9">Technical</option>
+                                    <option value="16">Training</option>
+                                    <option value="14">Women's Day</option>
+                                    <option value="17">Workshop</option>
+                                    <option value="29">Year book</option>
+                                    <option value="26">Yoga</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                    style="width: 212.297px;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple" role="combobox"
+                                            aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-search select2-search--inline"><input
+                                                        class="select2-search__field" type="search" tabindex="0"
+                                                        autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                        spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                        placeholder="" style="width: 0.75em;"></li>
+                                            </ul>
+                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+
+                        <div id="newgaltype">
+                            <div class="relabel relabelbs4">Type</div>
+                            <div class="repaddleft">
+                                <select class="js-type-multiple gal select2-hidden-accessible" name="type_check[]"
+                                    id="type_check" multiple="" onchange="searchFilter()" tabindex="-1"
+                                    aria-hidden="true">
+                                    <option value="">Select Gallery Type</option>
+                                </select><span class="select2 select2-container select2-container--default" dir="ltr"
+                                    style="width: auto;"><span class="selection"><span
+                                            class="select2-selection select2-selection--multiple" role="combobox"
+                                            aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                            <ul class="select2-selection__rendered">
+                                                <li class="select2-search select2-search--inline"><input
+                                                        class="select2-search__field" type="search" tabindex="0"
+                                                        autocomplete="off" autocorrect="off" autocapitalize="off"
+                                                        spellcheck="false" role="textbox" aria-autocomplete="list"
+                                                        placeholder="" style="width: 0.75em;"></li>
+                                            </ul>
+                                        </span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                            </div>
+                        </div>
+
+                        <div class="repaddleft">
+                            <div class="row">
+                                <div class="col-lg-12 paddleft fromDT">
+                                    <div class="relabel relabelbs4">From Date</div>
+                                    <input type="date" name="fromdate" id="fromdate"
+                                        class="form-control dateclass placeholderclass"
+                                        onclick="$(this).removeClass('placeholderclass')" onchange="searchFilter()">
+                                </div>
+                                <div class="col-lg-12  col-sm-6 col-md-6 col-xs-6 paddright toDT">
+                                    <div class="relabel relabelbs4">To Date</div>
+                                    <input type="date" name="todate" id="todate"
+                                        class="form-control dateclass placeholderclass"
+                                        onclick="$(this).removeClass('placeholderclass')" onchange="searchFilter()">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="repaddleft">
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-md-6 paddleft">
+                                    <input type="reset" name="btn_clear" id="btn_clear" class="clearbtn"
+                                        value="Clear all filters">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-9 col-sm-12 col-md-8  g-bdrleft mobp" id="refined">    
+  
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/429" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade fade" data-lazy="http://stage.somaiya.edu/upload_file/images20//5df75dd1c4098.jpeg" src="http://stage.somaiya.edu/upload_file/images20//5df75dd1c4098.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">6 images</p>
+                                <p class="gtype" aria-hidden="true"></p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Graduation Day - 2018</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/428" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Graduation_Day_2019/5df7483a3acc4.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Graduation_Day_2019/5df7483a3acc4.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">7 images</p>
+                                <p class="gtype" aria-hidden="true"></p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Graduation Day 2019</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya Institute of Engineering and Information Technology ( KJSIEIT )</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/426" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Blood_Donation_Camp_Sep_2019/5d8dd2dad3ceb.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Blood_Donation_Camp_Sep_2019/5d8dd2dad3ceb.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">6 images</p>
+                                <p class="gtype" aria-hidden="true">Camp</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Blood Donation Camp Sep 2019</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/425" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Ganpati_Celebration_Sep_2019/5d8a0cb3d3fbb.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Ganpati_Celebration_Sep_2019/5d8a0cb3d3fbb.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">8 images</p>
+                                <p class="gtype" aria-hidden="true">Cultural</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Ganpati Celebration Sep 2019</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/424" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Nonviolent_Communication_NVC_Workshop/5ce4dea35e67c.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Nonviolent_Communication_NVC_Workshop/5ce4dea35e67c.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">2 images</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Nonviolent Communication (NVC) Workshop</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/421" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/School_Health_Centre/5ce4dabeadcb4.jpeg" src="http://stage.somaiya.edu/upload_file/images20/School_Health_Centre/5ce4dabeadcb4.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">2 images</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">School Health Center</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/420" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/School_Farm_Nursery/5ce4da11f3834.jpeg" src="http://stage.somaiya.edu/upload_file/images20/School_Farm_Nursery/5ce4da11f3834.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">School Farm &amp; Nursery</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/419" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Nareshwadi_Ventures/5ce4d81abace6.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Nareshwadi_Ventures/5ce4d81abace6.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Nareshwadi Ventures</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/418" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Henna_Project/5ce4d6576ea7b.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Henna_Project/5ce4d6576ea7b.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Henna Project</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/417" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Moringa/5ce4d23fc3a6e.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Moringa/5ce4d23fc3a6e.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Moringa</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/416" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Banana_Project/5ce3914403733.png" src="http://stage.somaiya.edu/upload_file/images20/Banana_Project/5ce3914403733.png">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">3 images</p>
+                                <p class="gtype" aria-hidden="true">Activity</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Banana Project</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K.J.Somaiya Secondary School,Nareshwadi</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/415" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Fashion_Show/5cd511d90b899.png" src="http://stage.somaiya.edu/upload_file/images20/Fashion_Show/5cd511d90b899.png">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Fashion Show</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Fashion Show</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/414" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Poster_Making/5cd51179748db.png" src="http://stage.somaiya.edu/upload_file/images20/Poster_Making/5cd51179748db.png">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Poster Making</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Poster Making</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/413" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Outdoor_Sports/5cd511532d7b1.png" src="http://stage.somaiya.edu/upload_file/images20/Outdoor_Sports/5cd511532d7b1.png">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Outdoor Sports</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Outdoor Sports</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/412" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Indoor_Sports/5cd5112c909ae.png" src="http://stage.somaiya.edu/upload_file/images20/Indoor_Sports/5cd5112c909ae.png">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Indoor Sports</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Indoor Sports</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/411" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Fine_Arts/5cd511001e6d8.png" src="http://stage.somaiya.edu/upload_file/images20/Fine_Arts/5cd511001e6d8.png">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">1 image</p>
+                                <p class="gtype" aria-hidden="true">Fine Arts</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Fine Arts</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/409" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Convocation/5d8dd4cabe265.jpeg" src="http://stage.somaiya.edu/upload_file/images20/Convocation/5d8dd4cabe265.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">11 images</p>
+                                <p class="gtype" aria-hidden="true">convocation</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Convocation</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Physiotherapy</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/406" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/International_Symposium_on_Jainism_Past_Present_Future_/5bdad962a9411.jpeg" src="http://stage.somaiya.edu/upload_file/images20/International_Symposium_on_Jainism_Past_Present_Future_/5bdad962a9411.jpeg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">5 images</p>
+                                <p class="gtype" aria-hidden="true"></p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">International Symposium on Jainism: Past, Present &amp; Future </p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya Centre for Studies In Jainism</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/404" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Workshop_On_/1510134061Final_year_students_mentoring_the_students.JPG" src="http://stage.somaiya.edu/upload_file/images20/Workshop_On_/1510134061Final_year_students_mentoring_the_students.JPG">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">4 images</p>
+                                <p class="gtype" aria-hidden="true">Workshop</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Workshop On </p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">K J Somaiya College of Engineering</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+           
+                    <div class="col-lg-6 w50float">
+                      <div class="fullwidth  videlist-itm full-height mobp">
+                         <a href="http://stage.somaiya.edu/en/gallery-view/403" class="blue-link">
+                          <div class="view view-first">              
+                            <center>
+                              <div class="thumbs-listinggrd">
+                                 <img class="img-responsive img-fluid width-100 lazyloadimg fade" data-lazy="http://stage.somaiya.edu/upload_file/images20/Year_Book_2015-16/151013299920.jpg" src="http://stage.somaiya.edu/upload_file/images20/Year_Book_2015-16/151013299920.jpg">
+                              </div>
+          
+                              <div class="img-topcontent">
+                                <p class="gcount" aria-hidden="true">96 images</p>
+                                <p class="gtype" aria-hidden="true">Other</p>
+                              </div>
+          
+                              <div class="img-bottomcontent">
+                                <p class="gtitle-name">Year Book 2015-16</p>
+                                <p class="g-view-album">View Album</p>
+                              </div>
+                            </center>
+                          </div>
+          
+                          <div class="inst-wrapper">
+                                             <div class="institute-name">Shri Sharda English Medium School</div>
+                                          </div>
+                      </a>
+                    </div>
+                  </div>
+                    
+                           <script>
+                  function getData(page){  
+                      $.ajax({
+                          method: "POST",
+                          url: "http://stage.somaiya.edu//en/events-and-updates/galleries/"+page,
+                          data: { page: page },
+                          beforeSend: function(){
+                              $('.loading').show();
+                          },
+                          success: function(data){
+                              $('.loading').hide();
+                              $('#refined').html(data);
+                          }
+                      });
+                  }
+                  </script>
+                  <div class="pagination" role="navigation" aria-label="pagination"><div class="of_result">20 of 374 | </div>&nbsp;<b>1</b>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(20)">2</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(40)">3</a>&nbsp;<a href="javascript:void(0);" onclick="searchFilter(20)" aria-hidden="true">»</a>&nbsp;&nbsp;<a href="javascript:void(0);" onclick="searchFilter(360)">Last</a></div>  
+                   <div class="clear"></div></div>
+            </div>
+
+
+            <div class="clear"></div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="/assets/default_asset/js/bootstrap4.min.js"></script>
+    <script>
+      $("<link/>", {
+         rel: "stylesheet",
+         href: "/assets/default_asset/uni-css/gallery.css"
+      }).appendTo("head");
+      
+      
+      </script>
+</body>
+
+</html>
