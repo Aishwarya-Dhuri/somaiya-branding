@@ -1,0 +1,1035 @@
+@import "../../default_asset/uni-scss/base";
+/*principal Message Page css*/
+.principal-introbox {
+  .mainherotitle-45 {
+    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+  .width-75 {
+    padding-left: 15px;
+  }
+  .width-25 {
+    padding-right: 15px;
+  }
+  .principal-greybox {
+    background-color: #f1f1f1;
+    width: 85%;
+    float: left;
+    padding: 50px;
+    margin-top: 70px;
+    position: absolute;
+    .main-para18 {
+      line-height: 30px;
+      width: 70%;
+    }
+  }
+  .principal-imgbox {
+    max-height: 320px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+}
+.princi-middlebox.backpatch-left {
+  margin-top: 30px;
+  &:before,
+  &:after {
+    height: 90%;
+  }
+}
+.princi-middlebox {
+  margin-top: 0;
+
+  p {
+    @extend %para16;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .combineimgbox {
+    position: relative;
+    z-index: 1;
+    bottom: 30px;
+  }
+  .middle-greybox {
+    background-color: #f1f1f1;
+    width: 75%;
+    left: 25%;
+    z-index: -1;
+    margin-bottom: 30px;
+    float: left;
+    padding: 27px 50px;
+
+    position: absolute;
+    p {
+      @extend %para16;
+      line-height: 28px;
+      width: 87%;
+      float: right;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.princi-signature-box {
+  .princi-name {
+    font-size: 28px;
+    line-height: 31px;
+    color: $darkred;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 25px;
+    color: $darkred;
+    font-weight: 400;
+  }
+}
+//Explore Somaiaya Section
+.explore_somaiya_wrap {
+  background-color: $whitelight;
+  padding: 50px 0;
+  h2 {
+    @extend %mainheading;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    li {
+      margin: 0px 0px 10px;
+      width: calc(100% / 4.4);
+      a {
+        width: 100%;
+        background-color: $grey;
+        height: 50px;
+        padding-left: 15px;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        font-family: "FiraSans-Medium";
+
+        span {
+          color: #ffffff;
+          min-width: calc(100% - 30px);
+          line-height: 2.7;
+          font-size: 18px;
+
+          text-align: left;
+          float: left;
+        }
+        img {
+          width: 15px;
+          /* height: 20px; */
+          height: 50px;
+          vertical-align: middle;
+          position: absolute;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+/****Introduction Page css*****/
+.page-subheading {
+  color: $black;
+  font-size: 24px;
+  font-family: FiraSans-Medium;
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+.intromain {
+  p {
+    margin-bottom: 15px;
+  }
+}
+.homemain {
+  .hm-notices {
+    position: relative;
+    padding: 70px 0 55px 0;
+    margin: 0 0 70px 0;
+    &:before {
+      content: "";
+      width: 50%;
+      height: 100%;
+      background-image: url(/assets/polytechnique/images/homepage/whatsnewbg.svg);
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      width: 20%;
+      height: 75%;
+      background-image: url(/assets/polytechnique/images/homepage/gridbox.svg);
+      background-size: cover;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .container {
+      background: $white;
+      z-index: 3;
+      padding: 30px;
+
+      position: relative;
+    }
+
+    .mainherotitle-48 {
+      text-align: left;
+    }
+    .noticeboardlist {
+      li {
+        width: 50%;
+        float: left;
+        padding: 20px 10px 0 30px;
+        // &:nth-child(odd) {
+        //   border-right: 1px solid #ddd;
+        // }
+      }
+    }
+
+    .dateno,
+    .datetext {
+      padding: 8px;
+      color: $white;
+      background-color: $grey;
+      display: inline-block;
+      margin: 0;
+      float: left;
+      margin-bottom: 15px;
+    }
+    .datetext {
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "FiraSans-Medium";
+    }
+    .dateno {
+      font-family: "FiraSans-Bold";
+      font-size: 24px;
+      line-height: 20px;
+      background-color: #6d6e70;
+    }
+    .noticetype {
+      font-size: 16px;
+      line-height: 25px;
+      font-family: "FiraSans-Medium";
+      color: $black;
+      text-transform: uppercase;
+    }
+    .noticelink {
+      font-size: 20px;
+      line-height: 30px;
+
+      font-family: "FiraSans-Medium";
+      color: $black;
+      &:hover {
+        text-decoration: underline;
+        color: $linkblue;
+      }
+    }
+    .notice-prev,
+    .notice-next {
+      position: absolute;
+      display: inline-flex;
+      width: fit-content;
+      float: right;
+      top: auto;
+      bottom: -70px;
+      right: 0;
+      border-radius: 0;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      background-color: $grey;
+
+      &:focus,
+      &:hover {
+        border-radius: 0;
+        outline: none;
+        border: none;
+        background-color: $darkred;
+      }
+      &::before {
+        line-height: 20px;
+        color: $white;
+        padding: 8px 15px;
+        opacity: 1;
+        border: none;
+        outline: none;
+        font-size: 25px;
+      }
+    }
+    .notice-next {
+      right: 39px;
+    }
+    .notice-prev:before {
+      content: "\f105";
+      font-family: "FontAwesome";
+    }
+    .notice-next::before {
+      content: "\f104";
+      font-family: "FontAwesome";
+    }
+  }
+
+  .whypolytech {
+    background-color: $brown;
+    padding: 50px 0 200px 0;
+    margin: 0 0 70px 0;
+    position: relative;
+    &:after {
+      content: "";
+      background-image: url(/assets/polytechnique/images/homepage/browngrid.svg);
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      bottom: -50px;
+      background-size: cover;
+    }
+    .toprow {
+      display: flex;
+      align-items: center;
+    }
+    .mainherotitle-48 {
+      text-align: left;
+      color: $white;
+      margin: 0;
+    }
+    p {
+      color: $white;
+    }
+  }
+  .ftcard {
+    border: 4px solid $lightbrown;
+    padding: 20px 20px 70px 20px;
+    position: inherit;
+
+    &:hover {
+      &:after {
+        content: "";
+        background-image: url(/assets/polytechnique/images/homepage/orangevector.svg);
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-size: cover;
+      }
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .middlerow {
+    margin: 40px 0;
+  }
+  .ftheading {
+    color: $white;
+    font-family: "FiraSans-Medium";
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  .studexp {
+    position: relative;
+    margin-top: -220px;
+    margin: -220px 0 70px 0;
+  }
+
+  .studcard {
+    background-color: $white;
+    padding: 50px 30px 30px 30px;
+    box-shadow: 0px 2px 4px #00000026;
+    position: relative;
+    border: 4px solid transparent;
+    z-index: 1;
+    &:hover {
+      border: 4px solid #985a2f66;
+      box-shadow: none;
+    }
+    &:before {
+      content: "";
+      background-image: url(/assets/polytechnique/images/homepage/quotes.svg);
+      width: 65px;
+      height: 58px;
+      position: absolute;
+      left: -15px;
+      top: -30px;
+    }
+    p {
+      font-style: italic;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: "FiraSans-Medium";
+      text-align: center;
+    }
+    .stream {
+      font-size: 16px;
+      line-height: 24px;
+      font-family: "FiraSans-Medium";
+      color: $grey;
+      font-style: normal;
+    }
+  }
+
+  .studentname {
+    font-size: 22px;
+    line-height: 27px;
+    font-family: "FiraSans-Medium";
+    color: $black;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .studentimg {
+    margin: 20px auto 20px auto;
+    display: block;
+  }
+  .leftprgms {
+    padding-right: 0;
+  }
+  .rightprgms {
+    padding-left: 0;
+    background-color: #000000b3;
+    padding: 30px;
+    bottom: 30px;
+    &:after {
+      content: "";
+      background-color: #000000b3;
+      position: absolute;
+      height: 100%;
+
+      width: 20%;
+      right: -20%;
+
+      top: 0;
+      z-index: -1;
+    }
+    p {
+      color: $white;
+    }
+  }
+  .prgmsadmns {
+    width: 100%;
+    position: relative;
+    background-image: url(/assets/polytechnique/images/homepage/binarytree.svg);
+    background-position-y: -215px;
+    padding-top: 130px;
+    margin-top: -128px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    .mainherotitle-48 {
+      text-align: left;
+      margin-bottom: 0;
+      color: $white;
+    }
+  }
+  .tabimgbox {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 30px 30px 0;
+    &:after {
+      content: "";
+      background-image: url(/assets/polytechnique/images/homepage/gridbox.svg);
+      position: absolute;
+      bottom: -25px;
+      width: 50%;
+      height: 118px;
+      right: -30px;
+    }
+  }
+  .blackbox {
+    padding: 30px 30px 30px 0;
+    background-color: $black;
+    &:before {
+      content: "";
+      background-color: $black;
+      position: absolute;
+      height: 100%;
+
+      width: 50%;
+      left: -20%;
+
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  .hmabout {
+    margin: 40px 0 70px 0;
+    .mainherotitle-48 {
+      text-align: left;
+    }
+    .outline-grey-btn {
+      margin-bottom: 0;
+    }
+  }
+  .vismisbox {
+    width: 50%;
+    float: left;
+    flex-direction: row;
+    align-items: flex-start;
+    display: flex;
+    margin: 30px 0 50px 0;
+    .viscontwrap {
+      padding-left: 10px;
+    }
+    .heading {
+      font-size: 22px;
+      line-height: 27px;
+      color: $black;
+      font-family: "FiraSans-Medium";
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .achievements {
+    padding: 40px 0;
+    background-color: $whitelight;
+    margin: 30px 0 40px 0;
+
+    background-image: url(/assets/polytechnique/images/homepage/mapbg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    .toprow {
+      margin-bottom: 30px;
+    }
+  }
+  .intropara {
+    text-align: center;
+  }
+
+  .achievelist {
+    // width: 95%;
+    // margin: 0 auto;
+    li {
+      width: 50%;
+      float: left;
+    }
+  }
+  .achvcard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $white;
+    padding: 30px 30px 30px 0;
+    border: 4px solid transparent;
+
+    box-shadow: 0px 2px 4px #00000026;
+    &:hover {
+      border: 4px solid #985a2f66;
+    }
+    .achvcontwrap {
+      padding-left: 20px;
+    }
+  }
+  .achvhead {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "FiraSans-Medium";
+    color: $black;
+    margin-bottom: 10px;
+  }
+  .achvpara {
+    font-size: 14px;
+    line-height: 32px;
+    font-family: "FiraSans-Medium";
+
+    .subtext {
+      font-family: "Fira Sans", sans-serif;
+      color: $grey;
+      font-weight: 400;
+
+      margin-right: 5px;
+    }
+  }
+  .trophyimg {
+    margin-left: -50px;
+  }
+}
+@media (min-width: 768px) {
+  .jointabsec {
+    align-items: flex-end;
+    .descpcont {
+      height: 100%;
+    }
+    .simple-link {
+      color: $white;
+      margin-top: 15px;
+      display: block;
+      width: 80%;
+      text-decoration: none;
+      border-bottom: 1px solid;
+      line-height: 36px;
+
+      &::before {
+        content: "\f105";
+        font-family: FontAwesome;
+        background-image: none;
+        margin-top: 0;
+      }
+    }
+    .tabhead {
+      font-size: 22px;
+      color: $white;
+      font-family: "FiraSans-Medium";
+      line-height: 33px;
+      margin-bottom: 15px;
+    }
+    .jn-navtabs {
+      padding-top: 40px;
+    }
+    img {
+      width: 100%;
+    }
+
+    .nav-tabs {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 90%;
+
+      border-bottom: none;
+      &.jn-navtabs {
+        .nav-item {
+          &:last-child {
+            .nav-link {
+              border-bottom: none;
+            }
+          }
+        }
+        .nav-link {
+          position: relative;
+          padding: 12px 0 12px 30px;
+          border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+          color: $white;
+          &:hover {
+            border-bottom: solid 3px #ddd;
+            background-color: #2e2e2f;
+          }
+          &.active {
+            background-image: url(/assets/polytechnique/images/homepage/traingletab.svg);
+            background-color: transparent;
+            background-position-x: right;
+            background-position-y: center;
+            background-size: cover;
+
+            &:hover {
+              border-bottom: none;
+              background-color: transparent;
+            }
+            &::before {
+              color: $black;
+            }
+          }
+          &:before {
+            font-family: fontAwesome;
+            font-size: 6px;
+            position: absolute;
+            content: "\f111";
+            color: $white;
+            left: 15px;
+
+            top: auto;
+          }
+        }
+      }
+      .nav-link {
+        border: none;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        line-height: 30px;
+        border-bottom: 1px solid #ddd;
+        color: $grey;
+        opacity: 0.8;
+        &.active {
+          border: none;
+          background-color: $white;
+          border-radius: 0;
+          color: $black;
+          opacity: 1;
+        }
+      }
+    }
+    .nav-tabs .nav-item + .nav-item {
+      margin-top: 0;
+    }
+    .jn-tabcontent {
+      .card-body {
+        padding: 0 0 0 30px;
+      }
+    }
+    .card {
+      border: none;
+      border-radius: 0;
+      background: transparent;
+
+      .card-body {
+        .card-header {
+          display: block;
+        }
+        .collapse {
+          display: none;
+          &.show {
+            display: block;
+          }
+        }
+      }
+    }
+    .card .card-header {
+      display: none;
+    }
+    .card .collapse {
+      display: block;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .principal-introbox .principal-greybox {
+    padding: 30px;
+  }
+  .princi-middlebox .middle-greybox p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  section.top_section.principal-introbox {
+    padding: 0px 0px 70px 0px;
+    .principal-greybox {
+      padding: 20px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .princi-middlebox .middle-greybox {
+    padding: 27px 50px;
+    margin-top: 0;
+    p {
+      width: 73%;
+    }
+  }
+  .princi-middlebox.backpatch-left {
+    margin-bottom: 160px;
+  }
+  .explore_somaiya_wrap ul li a {
+    padding-left: 5px;
+    span {
+      min-width: calc(100% - 25px);
+      font-size: 16px;
+      line-height: 50px;
+    }
+    i {
+      width: 15px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .principal-introbox .principal-greybox .main-para18 {
+    width: 77%;
+  }
+  .homemain {
+    .hm-notices {
+      margin: 40px 0;
+      .noticeboardlist {
+        margin-top: 30px;
+      }
+      .noticelink {
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .notice-next,
+      .notice-prev {
+        bottom: -50px;
+      }
+      .dateno {
+        font-size: 16px;
+      }
+      .noticeboardlist li {
+        padding: 0;
+        border: none;
+      }
+      .noticetype {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .princi-middlebox.backpatch-left {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    &:before,
+    &:after {
+      height: 56%;
+    }
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 72px 0px;
+    .principal-greybox {
+      margin-top: 20px;
+    }
+  }
+  .princi-middlebox.backpatch-left {
+    margin-top: 0;
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  .princi-middlebox {
+    .width-25,
+    .width-75 {
+      width: 100%;
+      padding: 0 15px;
+    }
+    .combineimgbox {
+      width: 100%;
+      bottom: 0;
+      img {
+        width: 100%;
+      }
+    }
+    .middle-greybox {
+      position: relative;
+      width: 100%;
+      left: 0;
+      margin-top: 0;
+      padding: 20px;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .explore_somaiya_wrap {
+    margin: 0;
+
+    ul li {
+      width: calc(100% / 2);
+
+      text-align: center;
+      a {
+        width: 95%;
+        margin-bottom: 10px;
+        padding-left: 15px;
+
+        span {
+          min-width: calc(100% - 50px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-subheading {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .introsec {
+    margin: 10px 0;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .link-right-section {
+    right: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+  section.top_section.principal-introbox {
+    // padding: 0px 0px 215px 0px;
+    padding: 0px 0px 130px 0px;
+
+    &:before,
+    &:after {
+      height: 106vh;
+      display: none;
+    }
+    .Lrespimgbox {
+      width: 100%;
+      img {
+        top: 0;
+      }
+    }
+    .mainherotitle-45 {
+      margin: 20px 0px;
+      margin-bottom: 0;
+    }
+    .princi-content-respbox {
+      position: relative;
+      background: #fff;
+      width: 100%;
+      float: left;
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+      top: 30%;
+      left: 5%;
+      transform: translate(0, -30%);
+
+      z-index: 1;
+      .principal-greybox {
+        background: #fff;
+        width: 95%;
+        padding: 0;
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .explore_somaiya_wrap ul {
+    margin-top: 30px;
+    padding: 30px 0;
+
+    li {
+      width: calc(100% / 1);
+      a {
+        width: 100%;
+        padding-left: 15px;
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .homemain {
+    .hm-notices {
+      .noticelink {
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 10px;
+        display: block;
+      }
+      .dateno,
+      .datetext {
+        float: none;
+      }
+      .notice-next,
+      .notice-prev {
+        background: transparent;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        display: block;
+        &:hover {
+          background: transparent;
+        }
+
+        &:before {
+          font-size: 20px;
+          padding: 5px 10px;
+        }
+      }
+      .notice-next {
+        right: auto;
+      }
+      .noticeboardlist li {
+        text-align: center;
+        padding: 0 30px;
+        .fullwidth {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  section.top_section.principal-introbox:before,
+  section.top_section.principal-introbox:after {
+    height: 420px;
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 220px 0px;
+    padding: 0px 0px 70px 0px;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -230%);
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 32%;
+  }
+}
+
+@media (max-width: 375px) {
+  .princi-signature-box .princi-name {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -290%);
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  section.top_section.principal-introbox:before,
+  section.top_section.principal-introbox:after {
+    height: 375px;
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 27%;
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 40px 0px;
+  }
+}
+@media (max-width: 360px) {
+  section.top_section.principal-introbox:before,
+  section.top_section.principal-introbox:after {
+    height: 360px;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -310%);
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 20px 0px;
+  }
+  .princi-middlebox .combineimgbox img {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  section.top_section.principal-introbox {
+    padding: 0px 0px 0 0px;
+
+    &:before,
+    &:after {
+      height: 312px;
+    }
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 28%;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -440%);
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 28%;
+  }
+}
