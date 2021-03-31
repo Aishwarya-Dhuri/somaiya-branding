@@ -1,0 +1,2931 @@
+@import "../../default_asset/uni-scss/base";
+@import "examination";
+
+.principal-msgmain {
+  .slider-wrapper .university-slider .carousel-caption {
+    width: 45%;
+
+    .uni-banner-heading {
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      &:after {
+        content: "";
+        width: 210px;
+        height: 4px;
+
+        background: #b7202e;
+        position: absolute;
+        bottom: -3px;
+        left: 0px;
+      }
+    }
+  }
+  .princi-introbox {
+    margin: 60px 0;
+    p {
+      margin-bottom: 15px;
+    }
+  }
+  .colorwrap {
+    position: relative;
+    width: 95%;
+    float: left;
+    &:after {
+      position: absolute;
+      width: 131%;
+      right: -125px;
+      float: right;
+      height: 100%;
+      content: "";
+      z-index: -1;
+      top: 0;
+      background-color: $orange;
+    }
+    &:before {
+      content: "";
+      width: 100px;
+      height: 100%;
+      border-right: solid 115px $orange;
+      border-bottom: solid 145px transparent;
+      border-top: solid 158px transparent;
+      position: absolute;
+      left: -185px;
+    }
+  }
+  .princi-herosec {
+    margin: 0 0 50px 0;
+    position: relative;
+    .right-content {
+      width: 85%;
+      float: right;
+      padding-top: 30px;
+      margin-bottom: 50px;
+
+      img {
+        margin-bottom: 5px;
+      }
+    }
+    .contents {
+      background-color: $orange;
+      padding: 30px 30px 30px 10px;
+      width: 88%;
+
+      p {
+        color: $white;
+      }
+    }
+    .descpbpx {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .princi-greetings {
+    margin: 0;
+    margin-bottom: -20px;
+
+    padding: 50px 0;
+    background-image: url(/assets/kjsscsr/img/principal-message/shapes-bg.svg);
+    background-size: cover;
+    img {
+      margin: 15px 0;
+    }
+  }
+  .greet-para {
+    font-family: "FiraSans-Medium";
+  }
+}
+.slider-wrapper
+  .university-slider
+  .carousel-caption
+  .uni-banner-heading.underline-banner-heading {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
+
+  &:after {
+    content: "";
+    width: 210px;
+    height: 6px;
+    background: $darkred;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+  }
+}
+
+/******************************Vission Mission Page Css******************************/
+.vismis-main {
+  width: 100%;
+  background-image: url(/assets/kjsscsr/img/vission-mission/vission-mission-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  float: left;
+  height: 100%;
+  .inner-contentwrapper {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    padding: 50px 0;
+    clear: both;
+  }
+  .vmsubheading {
+    color: $white;
+    font-size: 22px;
+    font-family: "FiraSans-Medium";
+    margin: 20px 0;
+  }
+  p,
+  .Llist-main li {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .missionbox,
+  .vissionbox,
+  .goalsbox {
+    background: #f58220;
+    padding: 30px;
+    width: 100%;
+    float: left;
+    margin: 20px 0;
+
+    p {
+      color: $white;
+    }
+  }
+  .vissionbox {
+    background: #ffcb05;
+    p,
+    .vmsubheading {
+      color: $black;
+    }
+  }
+  .holisticbox {
+    background: #603312;
+  }
+  .Llist-main {
+    margin-left: 0;
+    li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 20px;
+      height: 100%;
+      &:before {
+        content: "";
+        background-image: url(/assets/kjsscsr/img/vission-mission/black-arrow.svg);
+        width: 20px;
+        height: 15px;
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: 9;
+        left: 0px;
+        top: 8px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .goalsbox {
+    background-color: $lightbrown;
+    margin-top: 0;
+    p,
+    .Llist-main li {
+      color: $white;
+    }
+    .Llist-main li {
+      &::before {
+        background-image: url(/assets/kjsscsr/img/vission-mission/white-arrow.svg);
+      }
+    }
+  }
+
+  .fndcontentbox {
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 30px;
+    width: 100%;
+    float: left;
+    display: block;
+    background: $white;
+  }
+  .founder-link {
+    background-color: $darkred;
+    color: $white;
+    padding: 15px;
+    float: left;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 20px;
+    padding-left: 35px;
+    &:hover {
+      text-decoration: none;
+      background-color: lighten($color: $darkred, $amount: 10%);
+    }
+    &:before {
+      content: "";
+      background-image: url(/assets/kjsscsr/img/vission-mission/white-arrow.svg);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: 9;
+      left: 15px;
+      top: 20px;
+    }
+  }
+}
+
+/**************Examination Pages CSS Starts*************/
+
+//Examination Overview
+.page-heading {
+  @extend %herotitle;
+  margin-bottom: 20px;
+}
+.page-heading38 {
+  @extend %herotitle38;
+  margin-bottom: 30px;
+}
+.page-subheading {
+  color: $black;
+  font-size: 24px;
+  font-family: FiraSans-Medium;
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+.exam-ov-main {
+  .intro-sec {
+    margin-top: 30px;
+    p {
+      margin-bottom: 20px;
+    }
+    img {
+      box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  .ov-rulesbox {
+    margin: 70px 0 30px 0;
+    background-color: #f5f6f6;
+    padding: 50px 0 70px 0;
+    .rules-content {
+      background: $white;
+      padding: 30px;
+      height: 100%;
+      float: left;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .popular-box {
+    background: $grey;
+    width: 100%;
+    float: left;
+    padding: 30px;
+    height: 100%;
+    ul.list {
+      li {
+        position: relative;
+        a {
+          font-family: FiraSans-Medium;
+          font-size: 16px;
+          line-height: 27px;
+          color: #fff;
+          padding: 15px 10px 5px 0;
+          float: left;
+          display: block;
+          width: 100%;
+          border-bottom: 1px solid #ffffff75;
+          text-decoration: none;
+          transform: perspective(1px) translateZ(0);
+          box-shadow: 0 0 1px transparent;
+          position: relative;
+          overflow: hidden;
+          &:hover {
+            &:before {
+              right: 0;
+            }
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            right: 100%;
+            bottom: 0;
+            height: 4px;
+            -webkit-transition-property: right;
+            transition-property: right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            background: #ffffff;
+            height: 1px;
+            margin-top: -1px !important;
+          }
+          &:after {
+            content: "";
+            width: 25px;
+            height: 30px;
+            background-image: url(/assets/default_asset/img/arrow-white-next.svg);
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            background-repeat: no-repeat;
+            background-size: 12px;
+            background-position: 0px 22px;
+            transition: all ease 0.5s;
+          }
+        }
+      }
+    }
+
+    .page-subheading,
+    ul.li a {
+      color: $white;
+    }
+  }
+
+  .hallticket-box {
+    background: $white;
+    padding: 30px 130px;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.16);
+    margin-top: 30px;
+    .inst-para {
+      color: $grey;
+      font-family: FiraSans-Medium;
+      text-align: center;
+    }
+    .steps {
+      padding-bottom: 15px;
+      p {
+        font-size: 18px;
+        font-family: FiraSans-Medium;
+        color: $black;
+        .no {
+          background-color: #58595bb3;
+          color: $white;
+          font-size: 14px;
+          font-family: FiraSans-Medium;
+          padding: 7px 12px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      }
+    }
+    .btnwrapper {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
+
+  .result-analys {
+    margin: 0;
+    .graph-box {
+      box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16);
+      margin: 30px 0 70px 0;
+      padding: 30px;
+    }
+  }
+  .helpbox {
+    background-color: $grey;
+    padding: 40px 0;
+    p {
+      color: $white;
+      font-size: 24px;
+      line-height: 40px;
+    }
+    .outline-grey-btn {
+      background-color: transparent;
+      border: 1px solid $white;
+      color: $white;
+      float: right;
+    }
+  }
+  .convos {
+    .convSlider {
+      margin: 30px 0 70px 0;
+      height: auto;
+      img {
+        position: relative;
+      }
+    }
+    .convs-caption {
+      min-height: 60px;
+      background-color: #58595b;
+      padding: 20px;
+      width: 20%;
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      p {
+        color: $white;
+        font-size: 24px;
+        font-family: FiraSans-Medium;
+      }
+    }
+    .controls-wrapper {
+      width: 8%;
+      float: right;
+      position: relative;
+      bottom: 20px;
+      top: auto;
+      right: 0;
+      a {
+        width: 45px;
+        height: 40px;
+      }
+    }
+  }
+  #chartdiv {
+    width: 80%;
+    height: 500px;
+    background-color: #fff;
+    padding-top: 30px;
+    margin: 0 auto;
+
+    * {
+      font-family: "Fira Sans", sans-serif;
+    }
+  }
+}
+
+//Forms page examination
+.exam-forms-main {
+  table {
+    th,
+    td {
+      padding: 20px 40px;
+      .simple-link:before {
+        float: left;
+        transform: rotate(90deg);
+        margin-left: 0;
+        margin-right: 10px;
+        margin-top: 2px;
+        border: 1px solid;
+        padding: 10px;
+        width: auto;
+        height: auto;
+        background-position: -570px -20px;
+        border-radius: 50%;
+      }
+    }
+    .sub-text {
+      font-size: 16px;
+      color: $grey;
+    }
+  }
+}
+.img-shadow {
+  box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16);
+}
+
+//Class improvement Rules examination
+.cls-improvmnt {
+  .bg-wrapper {
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.16);
+    background: $whitelight;
+    width: 85%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .bgheader {
+    background: $white;
+    padding: 15px 30px;
+    .page-heading {
+      margin-bottom: 0;
+    }
+  }
+  .bgcontent {
+    padding: 30px 50px;
+  }
+  .imprv-list {
+    position: relative;
+    padding-left: 55px;
+    li {
+      font-family: "Fira Sans", sans-serif;
+      color: $black;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      padding: 0 0 25px 20px;
+      &:before {
+        content: "";
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/1.svg);
+        left: 0;
+      }
+      &:nth-child(2) {
+        &:before {
+          background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/2.svg);
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/3.svg);
+        }
+      }
+      &:nth-child(4) {
+        &:before {
+          background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/4.svg);
+        }
+      }
+      &:nth-child(5) {
+        &:before {
+          background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/5.svg);
+        }
+      }
+      &:nth-child(6) {
+        &:before {
+          background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/6.svg);
+        }
+      }
+    }
+  }
+}
+
+//Convocation page in examination
+.exmconvo-main {
+  width: 100%;
+  float: left;
+  .convo-intro {
+    margin: 30px 0 40px 0;
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .img-gallry {
+    margin-bottom: 70px;
+  }
+  .oath-prayer {
+    width: 70%;
+    margin: 0 auto;
+    p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+  .exam-ov-main {
+    .ov-rulesbox {
+      padding: 0;
+      background: $white;
+      margin: 0 0 50px 0;
+      .rules-content {
+        background: $whitelight;
+      }
+    }
+  }
+}
+
+//Examination Structure
+.exm-structure-main {
+  margin-bottom: 40px;
+  width: 100%;
+  float: left;
+  .structure-intro {
+    margin: 30px 0 70px 0;
+    .bold-para {
+      font-family: FiraSans-Medium;
+      color: $black;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .struct-contentbox {
+    .page-subheading {
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 20px;
+      &.note {
+        color: $black;
+        font-family: FiraSans-Medium;
+        font-size: 20px;
+      }
+      b {
+        font-family: "FiraSans-Bold";
+        color: $grey;
+      }
+    }
+    table {
+      width: 70%;
+      float: none;
+      margin: 0 auto;
+      &.grade-table {
+        width: 60%;
+      }
+      tr {
+        th,
+        td {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+//Ordinance Rules
+.ordinance-rules-main {
+  table {
+    th,
+    td {
+      padding: 20px 30px;
+      font-size: 20px;
+    }
+    td {
+    }
+  }
+  .need-helpbox {
+    background-color: #f5f6f6;
+    padding: 30px;
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    img {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      margin-top: 6px;
+      font-size: 14px;
+      font-family: "FiraSans-Medium";
+      word-break: break-word;
+    }
+    .needp22 {
+      color: $black;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 30px;
+    }
+    .needp20 {
+      font-size: 20px;
+      line-height: 30px;
+      color: $grey;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+    }
+    .needno {
+      font-size: 14px;
+      line-height: 21px;
+      color: #000;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 300;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+  }
+}
+
+//FAQS
+.exam-faqs-main {
+  .category-btn {
+    background-color: #f5f6f6;
+    padding: 15px 20px 15px 30px;
+    font-size: 16px;
+    font-family: FiraSans-Medium;
+    color: $black;
+    width: 90%;
+    display: block;
+
+    &::after {
+      content: "";
+      width: 65px;
+      height: 100%;
+      position: absolute;
+      background-image: url(/assets/default_asset/img/icons/grey-triangle.svg);
+      right: -65px;
+      top: -2px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .options {
+    border: solid 1px rgba(112, 112, 112, 0.2);
+    background-color: #fafbfb;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #000;
+    font-family: FiraSans-Medium;
+    width: auto;
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .quick-links-box {
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+    padding-top: 30px;
+    background: #f5f6f6;
+
+    .quicklinks {
+      float: left;
+      width: 100%;
+      font-size: 16px;
+      font-family: "FiraSans-Medium";
+      color: $black;
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+    .nav-tabs {
+      position: relative;
+      z-index: 10;
+      overflow: visible;
+      width: 100%;
+      transition: all ease 0.5s;
+      border-bottom: none;
+      li {
+        border-bottom: 1px solid #e3e3e3;
+        display: block;
+        width: 100%;
+        float: left;
+        margin-bottom: 0;
+        &:last-child {
+          border-bottom: none;
+        }
+        a {
+          font-size: 16px;
+          line-height: 24px;
+          font-family: "Fira Sans", sans-serif;
+          padding: 18px 15px 18px 40px;
+          width: 100%;
+          float: left;
+          text-align: left;
+          color: #58595b;
+          text-decoration: underline;
+          color: #069;
+          img {
+            margin-left: 10px;
+          }
+        }
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.result-analysmain {
+  margin-bottom: 40px;
+  .analys0box {
+    margin-top: 20px;
+  }
+  .grey-select {
+    background: url(/assets/default_asset/img/downwhite-arrow.svg) no-repeat
+      #58595b;
+    color: $white;
+    background-position: right;
+    -webkit-appearance: none;
+    padding: 8px 20px;
+    width: 175px;
+    background-position: 150px 18px;
+
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+  }
+}
+
+//Junior college Examination pages
+.evalsystm-main {
+  .eval-list {
+    margin: 0;
+    li {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 20px;
+      list-style-type: none;
+      padding-left: 35px;
+      position: relative;
+      &::before {
+        content: "";
+        background: url(/assets/kjsscsr/img/examination/junior-college/tick-circle.svg)
+          no-repeat;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        left: 0;
+        top: 5px;
+      }
+    }
+  }
+  .medm-para {
+    color: #68696b;
+    font-family: "FiraSans-Medium";
+  }
+  .parabold {
+    color: $black;
+    font-family: "FiraSans-Medium";
+  }
+  .evlcontwrapper {
+    padding: 0 0 20px 30px;
+  }
+}
+
+.exm-acdactvities-main {
+  .activity-card {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 40px;
+    &:hover {
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+    }
+  }
+  .actv-imgbox {
+    padding: 0;
+    img {
+      width: 100%;
+    }
+  }
+  .actv-contentbox {
+    padding: 0 0 0 40px;
+  }
+}
+.acdexe-main {
+  table {
+    th,
+    td {
+      padding: 1rem;
+    }
+  }
+  .topper-card {
+    img {
+      width: 100%;
+      max-height: 210px;
+    }
+    &:hover {
+      cursor: auto;
+      .topper-contbox {
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+  .topper-contbox {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 20px 10px;
+    .page-subheading {
+      line-height: 28px;
+      margin-bottom: 10px;
+    }
+    .stream {
+      font-size: 20px;
+    }
+  }
+}
+/************Alumni Overview Page********************/
+.martopbot50 {
+  margin: 50px 0;
+}
+.alumni-ovmain {
+  margin: 50px 0;
+  .aln-heading {
+    @extend %herotitle;
+    margin-bottom: 15px;
+  }
+  .aln-subheading {
+    font-size: 20px;
+    font-family: "FiraSans-Medium";
+    color: $black;
+    margin-bottom: 15px;
+    line-height: 30px;
+  }
+  .al-highlights {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 47%;
+    padding: 20px;
+    margin-right: 15px;
+    margin-top: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .imgwrap {
+      width: 20%;
+      float: left;
+    }
+    .aln-subheading {
+      margin-bottom: 0;
+    }
+    .blue-link {
+      font-family: "FiraSans-Medium";
+    }
+  }
+
+  .al-members {
+    background: $whitelight;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 50px 0 80px 0;
+    &:before {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0;
+    }
+    .aln-heading {
+      margin-top: 50px;
+    }
+    .Ldots {
+      bottom: -40px;
+      top: auto;
+    }
+    .membs-list {
+      li {
+        width: calc(100% / 3);
+        float: left;
+        padding: 10px;
+        &:nth-child(2) {
+          margin-top: 60px;
+        }
+        &:nth-child(4) {
+          margin-top: 10px;
+        }
+        &:nth-child(5) {
+          margin-top: -43%;
+        }
+        &:nth-child(6) {
+          margin-top: -35%;
+        }
+      }
+      .mebimgcard {
+        width: 100%;
+        float: left;
+        img {
+          width: 100%;
+        }
+      }
+
+      .mebcontentcard {
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+        background: $white;
+        padding: 10px;
+        text-align: center;
+        min-height: 135px;
+        min-height: 100px;
+        width: 100%;
+        float: left;
+        .member-name {
+          color: $black;
+          font-family: "FiraSans-Medium";
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 5px;
+        }
+        p {
+          color: $black;
+          font-family: "FiraSans-Medium";
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+  }
+
+  .al-intiatives {
+    .intiatives-slider {
+      margin-top: 30px;
+      margin-bottom: 0;
+      overflow: hidden;
+      padding-bottom: 30px;
+      width: 100%;
+      .slick-list {
+        overflow: visible;
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+    .talks-card {
+      margin-right: 40px;
+
+      &:hover {
+        .talkscontwrap {
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          border-bottom: 2px solid $darkred;
+        }
+      }
+    }
+    .talksimgwrap {
+      width: 100%;
+      float: left;
+      img {
+        width: 100%;
+        max-height: 225px;
+      }
+    }
+    sup {
+      font-size: 12px;
+    }
+    .talkscontwrap {
+      background: $white;
+      padding: 20px;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+      width: 100%;
+      float: left;
+      height: 230px;
+
+      border-bottom: 2px solid transparent;
+    }
+    .talks-date {
+      font-size: 16px;
+      line-height: 19px;
+      color: $grey;
+      font-weight: 500;
+      font-family: "FiraSans-Medium";
+      margin-bottom: 10px;
+    }
+    .talks-title {
+      font-size: 18px;
+      line-height: 27px;
+      color: $black;
+      font-weight: 500;
+      font-family: "FiraSans-Medium";
+      margin-bottom: 10px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        color: rgba(88, 89, 91, 0.8);
+        margin-right: 5px;
+      }
+    }
+    .slick-dots {
+      position: relative;
+      margin-top: 20px;
+      li {
+        width: 10px;
+        height: 10px;
+        &.slick-active {
+          button:before {
+            opacity: 9;
+            color: $darkred;
+            background: $darkred !important;
+            border: 1px solid $darkred;
+          }
+        }
+        button:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 0;
+          background: $grey;
+        }
+      }
+    }
+  }
+
+  .al-events {
+    padding: 50px 0;
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 0;
+
+    background: $whitelight;
+    &:before {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0;
+    }
+  }
+  .events-card {
+    .dates {
+      background-color: #b7202e;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      font-family: FiraSans-Bold;
+      left: 30px;
+      top: 15px;
+      padding: 8px 0px 8px 0px;
+      width: 55px;
+      text-align: center;
+      line-height: 17px;
+      height: 55px;
+      span {
+        &.number {
+          line-height: 20px;
+          font-size: 25px;
+          width: 100%;
+          float: left;
+          margin-bottom: 2px;
+        }
+        &.text {
+          line-height: 20px;
+          font-size: 15px;
+          width: 100%;
+          float: left;
+        }
+      }
+    }
+    a:hover {
+      text-decoration: none;
+      .aln-subheading,
+      p {
+        text-decoration: none;
+      }
+    }
+    .aln-subheading {
+      margin-bottom: 10px;
+    }
+
+    .contwrap {
+      background: $white;
+      padding: 30px;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    }
+  }
+  .location {
+    color: $linkblue;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "FiraSans-Medium";
+    &:before {
+      content: "\f041";
+      font-family: "FontAwesome";
+      margin-right: 5px;
+      text-decoration: none;
+    }
+  }
+  .event-item {
+    background: $white;
+    padding: 20px;
+    border-right: 4px solid transparent;
+    margin-bottom: 30px;
+    width: 100%;
+    float: left;
+    &:hover {
+      border-right: 4px solid $darkred;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+      .datesbox {
+        background: $darkred;
+        span {
+          color: $white;
+        }
+      }
+      .aln-subheading {
+        text-decoration: underline;
+        color: $linkbluehvr;
+      }
+    }
+    .datesbox {
+      width: 15%;
+      float: left;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      padding: 20px;
+      background: $whitelight;
+      text-align: center;
+
+      span {
+        font-family: "FiraSans-Medium";
+
+        &.number {
+          line-height: 20px;
+          font-size: 25px;
+          width: 100%;
+          float: left;
+          margin-bottom: 2px;
+        }
+        &.text {
+          line-height: 20px;
+          font-size: 15px;
+          width: 100%;
+          float: left;
+        }
+      }
+    }
+    .contbox {
+      width: 80%;
+      float: left;
+      padding-left: 30px;
+      .aln-subheading {
+        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .al-awards {
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .awdSlider {
+    margin: 0 0 30px 0;
+    height: auto;
+    img {
+      position: relative;
+    }
+    .carousel-inner {
+      height: 550px;
+
+      overflow: visible;
+    }
+    .awd-caption {
+      min-height: 60px;
+      background-color: $white;
+      padding: 20px;
+      width: 35%;
+      position: absolute;
+      top: auto;
+      bottom: -50px;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      p {
+        color: $black;
+
+        font-family: FiraSans-Medium;
+        &.awards-person {
+          font-size: 28px;
+          line-height: 30px;
+          margin-bottom: 8px;
+        }
+        &.person-desgn {
+          font-size: 18px;
+          line-height: 30px;
+        }
+      }
+    }
+    .capcontbox {
+      width: calc(100% - 12%);
+      float: left;
+    }
+    .captnimgbox {
+      width: 12%;
+      float: left;
+    }
+    .controls-wrapper {
+      width: 8%;
+      float: right;
+      position: relative;
+      bottom: 54px;
+      top: auto;
+      right: 0;
+      a {
+        width: 45px;
+        height: 40px;
+      }
+    }
+  }
+  .giving {
+    margin: 0 0 70px 0;
+    float: left;
+    position: relative;
+    background: $grey;
+    padding: 50px 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: $grey;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: $grey;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0;
+    }
+    p {
+      color: $white;
+      font-size: 24px;
+      line-height: 36px;
+      padding-right: 40px;
+    }
+    .outline-grey-btn {
+      margin-top: 8px;
+      display: block;
+      float: left;
+      padding: 12px 55px;
+      background: transparent;
+      color: #fff;
+      border: 1px solid;
+    }
+  }
+
+  .al-imprints {
+    margin-top: 0;
+    .aln-heading {
+      text-align: left;
+    }
+    .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 15px;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .imprintsbox {
+      background: $white;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      padding: 20px;
+      width: 100%;
+      float: left;
+      border-bottom: 3px solid transparent;
+      &:hover {
+        border-bottom: 3px solid $darkred;
+      }
+    }
+    .blue-link {
+      font-family: "FiraSans-Medium";
+      float: right;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+      &:before {
+        content: "";
+        background-image: url(/assets/kjsscsr/img/alumni/download-pdf.svg);
+        width: 30px;
+        height: 30px;
+        position: relative;
+        background-repeat: no-repeat;
+        display: inline-block;
+        float: left;
+      }
+    }
+  }
+
+  .al-getintouch {
+    background: $whitelight;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 50px 0 50px 0;
+    &:before {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0;
+    }
+    .aln-subheading {
+      font-size: 24px;
+      line-height: 50px;
+    }
+    p {
+      &.locations,
+      &.email,
+      &.follow {
+        color: $black;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 10px;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        float: left;
+        img {
+          margin-right: 15px;
+          margin-top: 5px;
+        }
+      }
+      &.follow {
+        width: auto;
+      }
+    }
+  }
+
+  .form-control {
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: $black;
+    font-family: "FiraSans-Medium";
+    font-size: 16px;
+    line-height: 24px;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #b0afaf;
+    opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #b0afaf;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #b0afaf;
+  }
+  select option:disabled {
+    color: #b0afaf;
+  }
+  .followrap {
+    img {
+      margin-left: 15px;
+      width: 13px;
+      margin-top: 5px;
+    }
+  }
+}
+.error {
+  font-size: 12px !important;
+  color: #ed1c24 !important;
+}
+.no-underline-link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#formSuccess {
+  .modal-body {
+    text-align: center;
+    padding: 30px 30px;
+    p.title {
+      font-family: Marcellus-Regular;
+      font-size: 28px;
+      color: #b7202e;
+      margin: 0px 0px 15px 0px;
+    }
+    p.para {
+      font-family: FiraSans-Regular;
+      font-size: 18px;
+      line-height: 25px;
+      color: #58595b;
+      margin: 0px 0px 5px 0px;
+    }
+  }
+}
+
+
+
+/*****************Alumni Relations Team page *********************/
+.alrelteams-main {
+  margin: 50px 0;
+  .aln-heading {
+    @extend %herotitle;
+    margin-bottom: 15px;
+  }
+  .aln-subheading {
+    font-size: 24px;
+    font-family: "FiraSans-Medium";
+    color: $black;
+    margin-bottom: 10px;
+
+    line-height: 28px;
+  }
+  .caa-tmsec {
+    background: $whitelight;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 50px 0 50px 0;
+    margin: 70px 0 0 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: $whitelight;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0;
+    }
+  }
+  .teams-imgbox {
+    width: 100%;
+    float: left;
+    img {
+      width: 100%;
+    }
+  }
+  .teams-contbox {
+    padding: 20px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    float: left;
+    border-bottom: 3px solid transparent;
+    background: $white;
+  }
+
+  p.intropara {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  p.desgn {
+    font-family: "FiraSans-Medium";
+  }
+
+  .teams-card {
+    height: 100%;
+    .alemail {
+      color: $linkblue;
+      font-family: "FiraSans-Medium";
+      text-decoration: underline;
+      width: 100%;
+      float: left;
+      &:before {
+        content: "";
+        background-image: url(/assets/default_asset/img/social/small-icons/mail.svg);
+        width: 30px;
+        height: 20px;
+        position: relative;
+        background-repeat: no-repeat;
+        display: inline-block;
+
+        top: 6px;
+        float: none;
+      }
+    }
+
+    &:hover {
+      .teams-contbox {
+        box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+        border-bottom: 3px solid $darkred;
+      }
+    }
+  }
+  .bearers {
+    .teams-card {
+      .teams-contbox {
+        min-height: 130px;
+        margin-bottom: 40px;
+        border-bottom: none;
+        &:hover {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .aln-subheading {
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+}
+
+/**********************IQAC Page************************/
+.iqac-main{
+  .bannersec{
+    margin-bottom: 50px;
+  }
+  .composition-table{
+      th{
+       background:#DEE2E6;
+      }
+      td,th{
+        padding:1rem;
+        font-size: 16px;
+        line-height: 25px;
+        border-right: 1px solid #cfcece;
+
+      }
+  }
+  .iqac-introsec{
+    p{
+      margin-bottom: 20px;
+    }
+    .Llist-main li{
+      margin-bottom: 20px;
+    }
+  }
+  .iqlist{
+    margin-top: 70px;
+  }
+ 
+  .iqcard{
+    box-shadow: 0px 8px 16px #00000026;
+    width:100%;
+    float: left;
+    padding:30px;
+    margin-bottom: 50px;
+
+    .imgbox{
+      text-align: center;
+    }
+  }
+  .iq-subhead{
+    font-size: 18px;
+    color: $darkred;
+
+    line-height: 27px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+  }
+}
+
+
+@media (max-width: 1920px) {
+  .principal-msgmain {
+    .princi-pic {
+      width: 80% !important;
+      margin-bottom: 30px;
+    }
+    .colorwrap {
+      &:before {
+        left: -310px;
+        border-right: solid 115px #f58220;
+        border-bottom: solid 110px transparent;
+        border-top: solid 110px transparent;
+      }
+      &:after {
+        right: -167px;
+        width: 140%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .alumni-ovmain {
+    .awdSlider .carousel-inner {
+      height: 530px;
+    }
+  }
+  .principal-msgmain {
+    .princi-pic {
+      width: 100% !important;
+      margin-bottom: 30px;
+    }
+    .colorwrap {
+      &:before {
+        border-right: solid 125px #f58220;
+        border-bottom: solid 138px transparent;
+        border-top: solid 138px transparent;
+        left: -180px;
+      }
+      &:after {
+        width: 135%;
+        right: -180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .alumni-ovmain {
+    .awdSlider .carousel-inner {
+      height: 500px;
+    }
+  }
+  .principal-msgmain {
+    .colorwrap {
+      &:after {
+        position: absolute;
+        width: 131%;
+        right: -125px;
+        float: right;
+        height: 100%;
+      }
+      &:before {
+        border-right: solid 115px $orange;
+        border-bottom: solid 145px transparent;
+        border-top: solid 158px transparent;
+
+        left: -185px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .alumni-ovmain .awdSlider .controls-wrapper {
+    bottom: 77px;
+  }
+  .principal-msgmain {
+    .colorwrap::after {
+      width: 133%;
+      right: -126px;
+    }
+  }
+  .acdexe-main .topper-contbox .page-subheading {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 1024px) {
+    .iqac-main{
+      .iqac-introsec  {
+        img{
+          width: 100%;
+        }
+       
+      }
+      .iqvissionobjsbox{
+        margin-bottom: 0;
+      }
+      p ,.Llist-main li{
+        margin-bottom: 10px;
+        font-size:16px;
+        line-height: 24px;
+      }
+    }
+  .alrelteams-main {
+    .teams-contbox {
+      padding: 15px;
+    }
+    p.desgn {
+      font-size: 16px;
+    }
+    .teams-card .alemail {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .aln-subheading {
+      font-size: 20px;
+      line-height: 22px;
+    }
+    .bearers .aln-subheading {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+  .alumni-ovmain {
+    .al-highlights {
+      width: 70%;
+    }
+
+    .al-intiatives {
+      .talks-title {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .al-members {
+      .membs-list {
+        .mebcontentcard {
+          min-height: 135px;
+        }
+        li:nth-child(2) {
+          margin-top: 0;
+        }
+        li:nth-child(4),
+        li:nth-child(5),
+        li:nth-child(6) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  .exmconvo-main {
+    .img-gallry {
+      margin-bottom: 50px;
+    }
+    .oath-prayer {
+      width: 85%;
+      p {
+        font-size: 18px;
+      }
+    }
+    .exam-ov-main {
+      .ov-rulesbox {
+        .rules-content {
+          padding: 20px;
+          .page-subheading {
+            margin-bottom: 0px;
+          }
+        }
+        p {
+          margin: 10px 0;
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+      .popular-box {
+        padding: 20px;
+        .page-subheading {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+  .ordinance-rules-main {
+    table th,
+    table td {
+      padding: 15px 25px;
+      font-size: 18px;
+    }
+    .Llist-main li {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .exm-structure-main {
+    .struct-contentbox {
+      margin: 0 0 30px 0;
+    }
+    .structure-intro {
+      margin: 30px 0 30px 0;
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .cls-improvmnt .bg-wrapper {
+    width: 100%;
+  }
+  .evalsystm-main {
+    .cmtriangle-tabslist .nav-item a {
+      padding: 15px 10px 15px 10px;
+
+      &:before {
+        display: none;
+      }
+    }
+    .cmtritabs-content {
+      margin-left: 20px;
+    }
+    .evals-right {
+      img {
+        width: 100% !important;
+      }
+    }
+    .eval-list {
+      li {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .exm-acdactvities-main {
+    .page-subheading {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .result-analysmain .grey-select {
+    width: 160px;
+    padding: 6px 15px;
+    background-position: 140px 16px;
+    font-size: 16px;
+  }
+  .page-subheading {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .acdexe-main {
+    .topper-card img {
+      min-height: 200px;
+    }
+    .topper-contbox {
+      height: 150px;
+
+      .page-subheading {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .stream {
+        font-size: 18px;
+      }
+    }
+  }
+  .principal-msgmain {
+    .princi-herosec .contents {
+      padding: 30px 0;
+      width: 100%;
+    }
+    .colorwrap:after {
+      width: 142%;
+      right: -128px;
+    }
+  }
+
+  .vismis-main {
+    .inner-contentwrapper {
+      width: 100%;
+    }
+  }
+  .exam-ov-main {
+    .hallticket-box {
+      .steps p {
+        position: relative;
+        padding-left: 40px;
+        .no {
+          position: absolute;
+          left: 0;
+          padding: 0px 10px;
+        }
+      }
+    }
+    .helpbox {
+      p {
+        font-size: 22px;
+        line-height: 36px;
+      }
+      .outline-grey-btn {
+        top: 10px;
+      }
+    }
+
+    .convos {
+      margin-bottom: 0;
+      .convs-caption p {
+        font-size: 20px;
+      }
+      .controls-wrapper {
+        width: 11%;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .exmconvo-main .exam-ov-main .popular-box {
+    margin-top: 30px;
+  }
+  .principal-msgmain {
+    .slider-wrapper .university-slider .carousel-caption .uni-banner-heading {
+      font-size: 30px;
+    }
+    .princi-introbox {
+      margin: 50px 0;
+    }
+    .princi-herosec {
+      .right-content {
+        width: 100%;
+        padding: 0;
+        img {
+          display: none !important;
+        }
+      }
+      .contents {
+        padding: 44px 0;
+      }
+    }
+
+    .colorwrap {
+      &:before {
+        display: none;
+      }
+      &:after {
+        width: 146%;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .alrelteams-main {
+    .caa-tmsec {
+      margin: 40px 0 0 0;
+    }
+    .teams-contbox {
+      min-height: 130px;
+    }
+    .bearers {
+      .aln-subheading {
+        font-size: 18px;
+        line-height: 27px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  .alumni-ovmain {
+    .al-getintouch {
+      p.locations,
+      p.email,
+      p.follow {
+        font-size: 16px;
+      }
+    }
+    .al-events {
+      padding: 30px 0;
+    }
+    .al-member {
+      padding: 30px 0 80px 0;
+    }
+    .giving {
+      p {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+      }
+      .outline-grey-btn {
+        font-size: 16px;
+        padding: 10px 30px;
+      }
+    }
+    .aln-subheading {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .awdSlider {
+      .carousel-inner {
+        height: auto;
+      }
+      .awd-caption {
+        width: 50%;
+        p.awards-person {
+          font-size: 24px;
+        }
+      }
+      .controls-wrapper {
+        bottom: 20px;
+        width: 13%;
+      }
+    }
+    .events-card .contwrap {
+      padding: 20px;
+    }
+    .event-item {
+      .datesbox {
+        padding: 10px;
+        span.number {
+          font-size: 20px;
+        }
+      }
+      .contbox .aln-subheading {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+    .al-intiatives .talkscontwrap {
+      height: auto;
+    }
+    .al-highlights {
+      width: 100%;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .al-members .membs-list .mebcontentcard .member-name {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .al-introsec {
+      .mt-5,
+      .my-5 {
+        margin-top: 1rem !important;
+      }
+    }
+  }
+  .exmconvo-main {
+    .img-gallry {
+      margin-bottom: 30px;
+    }
+    .convo-intro p {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .page-heading38 {
+      margin-bottom: 20px;
+    }
+  }
+  .exm-structure-main {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .struct-contentbox {
+      .page-subheading {
+        margin-bottom: 15px;
+      }
+      p {
+        margin-bottom: 10px;
+      }
+      table {
+        width: 100%;
+        &.grade-table {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .evalsystm-main {
+    .eval-list li {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      &:before {
+        background-size: 70%;
+      }
+    }
+  }
+  .acdexe-main .topper-card img {
+    min-height: 165px;
+  }
+  .mainherotitle-38,
+  .link-left-section h2 {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .exam-ov-main {
+    .intro-sec p {
+      margin-bottom: 10px;
+    }
+    .hallticket-box .steps p .no {
+      padding: 2px 10px;
+    }
+    .convos .controls-wrapper {
+      width: 11%;
+      a {
+        width: 37px;
+        height: 35px;
+      }
+    }
+    #chartdiv {
+      width: 100%;
+      height: 400px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .hallticket-box {
+      padding: 30px 30px;
+    }
+    .popular-box {
+      height: auto;
+      margin-top: 30px;
+    }
+  }
+  .principal-msgmain {
+    p {
+      font-size: 16px;
+    }
+    .princi-herosec .contents {
+      padding: 20px 0;
+    }
+    .slider-wrapper .university-slider .carousel-caption {
+      width: 95%;
+      height: 145px;
+    }
+    .princi-introbox {
+      margin-top: 135px;
+    }
+    .princi-pic {
+      margin-top: 20px;
+    }
+    .colorwrap {
+      width: 100%;
+      &:after {
+        width: 180%;
+        right: -125px;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .exmconvo-main {
+    .convo-intro {
+      margin: 0px 0 40px 0;
+      img {
+        margin-top: 20px;
+      }
+    }
+    .img-gallry {
+      margin-bottom: 0;
+      padding: 0px 15px;
+      img {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .slider-wrapper
+    .university-slider
+    .carousel-caption
+    .uni-banner-heading.underline-banner-heading {
+    &:after {
+      height: 2px;
+      bottom: -2px;
+    }
+  }
+  .vismis-main {
+    .slider-wrapper .university-slider .carousel-caption {
+      height: 70px;
+      top: 87%;
+      .uni-banner-heading.underline-banner-heading {
+        border-bottom: none;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    .inner-contentwrapper {
+      width: 100%;
+      margin-top: 20px;
+      clear: both;
+      float: left;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .iqac-main{
+   .iqac-introsec{
+    img{
+      width: auto;
+      margin: 0 auto 30px auto;
+      display: block;
+      text-align: center;
+    }
+    p{
+      margin-bottom:10px;
+
+    }
+   } 
+    .page-subheading{
+      text-align:center
+    }
+    p,.Llist-main li{
+      margin-bottom:10px;
+    }
+    p{
+      text-align:center
+    }
+    .iq-subhead{
+      margin:20px 0 10px 0;
+      text-align:center;
+    }
+    .iqvissionobjsbox{
+     
+    }
+  }
+  .alrelteams-main {
+    .caa-tmsec {
+      margin: 0;
+      padding: 30px 0 30px 0;
+    }
+    p.intropara {
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .bearers .teams-card .teams-contbox {
+      margin-bottom: 0px;
+      min-height: auto;
+    }
+    .teams-contbox {
+      min-height: auto;
+    }
+    .teams-card {
+      height: 100%;
+      margin-bottom: 40px;
+      width: 100%;
+      float: left;
+    }
+  }
+  .alumni-ovmain {
+    .al-imprints .grid-wrapper:first-child {
+      margin-top: 30px;
+    }
+    .al-contactform {
+      margin-top: 30px;
+      .grey-btn {
+        padding: 10px 25px;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+    .al-members {
+      padding: 0 0 80px 0;
+      .aln-heading {
+        text-align: center !important;
+      }
+      p {
+        text-align: center;
+      }
+      .membs-list {
+        margin-top: 30px;
+        .mebcontentcard {
+          min-height: 105px;
+        }
+      }
+    }
+    .giving {
+      text-align: center;
+      p {
+        padding: 0 30px;
+      }
+      .outline-grey-btn {
+        float: none;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }
+    .al-events {
+      .mt-5,
+      .my-5 {
+        margin-top: 2rem !important;
+      }
+      .events-slider {
+        margin-top: 30px;
+      }
+    }
+    .al-introsec {
+      margin-bottom: 0;
+      img {
+        width: auto !important;
+        text-align: center;
+        display: block;
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+    }
+    .al-highlights {
+      padding: 10px;
+      img {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .exam-faqs-main {
+    .quick-links-box {
+      display: none;
+    }
+    .width-40,
+    .width-30 {
+      width: 50%;
+      float: left;
+    }
+    .Laccordins {
+      margin-top: 40px;
+    }
+  }
+  .result-analysmain {
+    .text-right {
+      text-align: center !important;
+    }
+  }
+  .ordinance-rules-main {
+    .need-helpbox {
+      display: none;
+    }
+    .ordinance-tabsmain {
+      margin: 0;
+    }
+    table th,
+    table td {
+      text-align: center;
+      padding: 10px 10px;
+      font-size: 16px;
+    }
+    .Llist-main {
+      padding-right: 20px;
+    }
+  }
+  .exm-structure-main {
+    .structure-intro {
+      margin: 0 0 30px 0;
+      img {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+    .struct-contentbox p.note {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .evalsystm-main {
+    .page-heading {
+      margin-bottom: 0px;
+    }
+    .evals-right img {
+      margin-bottom: 30px;
+      margin: 0 auto 30px auto;
+      display: block;
+    }
+    .cmtritabs-content {
+      margin-left: 0;
+    }
+    .tr-tabs {
+      margin: 30px 0 0 0;
+    }
+    .evlcontwrapper {
+      padding: 0 0 20px 0px;
+    }
+  }
+
+  .exm-acdactvities-main {
+    margin: 30px 0 0 0;
+    .activity-card {
+      margin: 0 0px 40px 0px;
+      padding: 20px;
+    }
+    .actv-imgbox img {
+      margin-bottom: 20px;
+    }
+    .actv-contentbox {
+      padding: 0;
+    }
+  }
+  .acdexe-main {
+    .mt-3,
+    .mt-5 {
+      margin-top: 0 !important;
+    }
+    .toppers-heading {
+      margin-top: 2rem !important;
+      margin-bottom: 1rem;
+    }
+    .topper-card {
+      margin-bottom: 40px;
+      img {
+        max-height: 200px;
+        min-height: auto;
+      }
+    }
+    .sub0introsec {
+      text-align: center !important;
+      .text-right {
+        text-align: center !important;
+      }
+    }
+    table th,
+    table td {
+      padding: 0.8rem;
+    }
+  }
+  .result-analysmain .grey-select {
+    margin-bottom: 15px;
+  }
+  .link-right-section {
+    width: 100%;
+    right: 0;
+    position: relative;
+    text-align: center;
+  }
+  .exam-ov-main {
+    .intro-sec {
+      margin-top: 15px;
+
+      p {
+        margin-bottom: 10px;
+      }
+      img {
+        margin-top: 30px;
+      }
+    }
+    .ov-rulesbox {
+      .pad-left-0 {
+        padding-left: 15px;
+      }
+      .pad-right-0 {
+        padding-right: 15px;
+      }
+      img {
+        width: auto !important;
+        margin: 30px auto 0 auto;
+        text-align: center;
+        display: block;
+      }
+    }
+    .helpbox {
+      p {
+        text-align: center;
+      }
+      .outline-grey-btn {
+        width: max-content;
+        display: flex;
+        text-align: center;
+        margin: 10px auto 0 auto;
+        float: none;
+      }
+    }
+  }
+
+  .principal-msgmain {
+    .princi-greetings img {
+      margin: 15px auto;
+      display: block;
+    }
+
+    p {
+      text-align: center;
+    }
+    .colorwrap:before {
+      content: "";
+      background: #f58220;
+      display: block;
+      height: 200px;
+      top: -190px;
+
+      position: absolute;
+      width: 122%;
+      left: -35px;
+
+      right: 0;
+      z-index: -1;
+    }
+    .slider-wrapper .university-slider .carousel-caption {
+      top: 90%;
+      p.bannersub-text {
+        text-align: left;
+      }
+    }
+    .princi-herosec {
+      margin: 0 0 30px 0;
+
+      .right-content {
+        margin-bottom: 35px;
+      }
+    }
+    .princi-introbox {
+      margin-top: 160px;
+    }
+    .princi-pic {
+      width: auto !important;
+      margin: 0 auto;
+
+      z-index: 77777;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+
+  .iqac-main{
+    .composition-table{
+      margin-top: 15px;
+
+    }
+    .bannersec {
+      margin-bottom: 30px;
+  }
+    .iqac-introsec img {
+      width:100%;
+    }
+    .iqlist {
+      margin-top: 35px;
+  }
+    .page-heading38,.page-subheading {
+      margin-bottom: 10px;
+    }
+    .iqvissionobjsbox{
+      margin:0;
+    }
+     .iqcard {
+      padding: 22px;
+      margin-bottom: 30px;
+  
+    }
+    .Llist-main li{
+      padding-right: 20px;
+    }
+  }
+  #formSuccess {
+    .modal-body {
+      padding: 20px;
+      p.title {
+        font-size: 20px;
+
+        margin: 0px 0px 15px 0px;
+      }
+      p.para {
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+  .alumni-ovmain {
+    .al-intiatives {
+      .talks-card {
+        margin-right: 0;
+      }
+
+      .slick-dots {
+        margin-top: 0;
+      }
+    }
+    .awdSlider {
+      .controls-wrapper a {
+        width: 35px;
+        height: 35px;
+      }
+      .awd-caption {
+        width: 70%;
+        p.awards-person {
+          font-size: 20px;
+          line-height: 22px;
+        }
+        p.person-desgn {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+    .al-members .membs-list {
+      li {
+        width: calc(100% / 1);
+      }
+      .mebcontentcard {
+        min-height: auto;
+
+        .member-name {
+          width: 100%;
+          float: left;
+          text-align: left;
+        }
+        p {
+          width: 100%;
+          float: left;
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .exam-faqs-main {
+    .width-40,
+    .width-30 {
+      width: 100%;
+      float: left;
+    }
+    .options {
+      margin: 10px 0;
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+    .Laccordins .card .card-header .btn-link {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+  .exam-forms-main {
+    margin-top: 0;
+    table th,
+    table td {
+      padding: 15px 15px;
+      .simple-link:before {
+        display: none;
+      }
+    }
+  }
+  .exmconvo-main {
+    .oath-sec {
+      margin: 0 0 20px 0;
+    }
+    .convo-intro p {
+      text-align: center;
+    }
+    .oath-prayer {
+      width: 100%;
+      p {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 27px;
+      }
+    }
+    .exam-ov-main .ov-rulesbox {
+      margin: 0 0 30px 0;
+    }
+  }
+  .page-subheading {
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    float: left;
+    word-break: break-word;
+  }
+  .cls-improvmnt {
+    margin: 0;
+    .bgheader {
+      padding: 15px;
+    }
+    .bgcontent {
+      padding: 20px 20px;
+    }
+    .imprv-list li {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 0 20px 0px;
+
+      &:before {
+        background-size: 75%;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  .acdexe-main {
+    .toppers-heading {
+      margin-bottom: 0;
+    }
+    .topper-card {
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+      padding: 15px;
+      margin: 20px;
+      // &:first-child{
+      //   margin:0 20px 20px 20px;
+      // }
+
+      .topper-contbox {
+        height: auto;
+        box-shadow: none;
+        padding: 15px 0 0 0;
+
+        &:hover {
+          box-shadow: none;
+        }
+        .page-subheading {
+          font-size: 18px;
+          line-height: 27px;
+        }
+      }
+      img {
+        max-height: initial;
+        min-height: auto;
+        width: auto;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+  .exam-ov-main {
+    .ov-rulesbox {
+      img {
+        display: none;
+      }
+    }
+    #chartdiv {
+      width: 100%;
+      height: 400px;
+      padding: 20px 0;
+    }
+    .result-analys .graph-box {
+      padding: 10px;
+    }
+    .helpbox {
+      margin: 0 0 30px 0;
+      p {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    .convos {
+      .convs-caption {
+        display: none;
+      }
+      .convSlider {
+        margin: 30px 0 50px 0;
+        height: auto;
+      }
+      .controls-wrapper {
+        width: 12%;
+        a {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+  .principal-msgmain {
+    .princi-introbox {
+      margin-top: 130px;
+      margin-bottom: 0;
+    }
+    .slider-wrapper .university-slider .carousel-caption {
+      top: 80%;
+      height: 125px;
+
+      .uni-banner-heading {
+        font-size: 26px;
+        margin-bottom: 10px;
+        &:after {
+          height: 2px;
+          bottom: -2px;
+        }
+      }
+      p.bannersub-text {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-ovmain {
+    .al-imprints .grid-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 30px;
+    }
+  }
+  .exam-ov-main {
+    .convos .controls-wrapper {
+      width: 20%;
+    }
+    .ov-rulesbox img {
+      width: 100% !important;
+    }
+  }
+
+  .vismis-main .inner-contentwrapper {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,2494 @@
+body, html {
+  overflow-x: hidden; }
+
+/**New classes**/
+.page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+  color: #b7202e;
+  font-size: 48px;
+  font-family: 'Marcellus-Regular';
+  line-height: 60px;
+  text-align: center; }
+
+.page-heading38 {
+  color: #b7202e;
+  font-size: 38px;
+  font-family: 'Marcellus-Regular';
+  line-height: 48px;
+  text-align: center; }
+
+/*Base classes End*/
+@media (max-width: 1024px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 40px;
+    line-height: 60px; }
+
+  .page-heading38 {
+    font-size: 30px;
+    line-height: 35px; } }
+@media (max-width: 768px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 34px;
+    line-height: 50px; }
+
+  .page-heading38 {
+    font-size: 24px;
+    line-height: 32px; } }
+@media (max-width: 767px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 36px;
+    line-height: 42px; } }
+@media (max-width: 550px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 30px;
+    line-height: 42px; }
+
+  .page-heading38 {
+    font-size: 22px;
+    line-height: 30px; } }
+@media (max-width: 480px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 26px;
+    line-height: 38px; } }
+@media (max-width: 375px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 24px;
+    line-height: 30px; } }
+@media (max-width: 320px) {
+  .page-heading, .alumni-ovmain .aln-heading, .alrelteams-main .aln-heading {
+    font-size: 22px;
+    line-height: 28px; } }
+.exam-top-main {
+  margin: 0; }
+  .exam-top-main .exambanner {
+    float: left;
+    width: 100%;
+    display: block;
+    height: 450px;
+    overflow: hidden;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(/assets/kjsscsr/img/examination/senior-college/overview-banner.jpg); }
+    .exam-top-main .exambanner.overview-banner, .exam-top-main .exambanner.examstructure-banner, .exam-top-main .exambanner.resultanalys-banner {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/overview-banner.jpg); }
+    .exam-top-main .exambanner.forms-banner {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/forms-banner.jpg); }
+    .exam-top-main .exambanner.convocation-banner {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/convocation/convocation-banner.jpg); }
+    .exam-top-main .exambanner.classimprv-banner {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improvement-banner.jpg); }
+    .exam-top-main .exambanner.ordinance-banner {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/ordinance-rules-banner.jpg); }
+    .exam-top-main .exambanner.faqs-banner {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/faqs-banner.jpg); }
+    .exam-top-main .exambanner img {
+      width: 100%;
+      visibility: hidden; }
+  .exam-top-main .main_menu {
+    margin: -165px 0px 45px 0px; }
+  .exam-top-main .menu span.toggle {
+    display: none; }
+  .exam-top-main .menu nav.navbar {
+    padding: 0px;
+    margin: 0px;
+    border-bottom: 10px solid #eeefef; }
+    .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu {
+      position: absolute !important;
+      margin-top: 9px;
+      border-radius: 0;
+      padding: 0; }
+      .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu li {
+        width: 100%;
+        float: left;
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 5px 10px 20px;
+        min-height: auto; }
+        .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu li:last-child {
+          border-bottom: none; }
+        .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu li:before {
+          display: none; }
+        .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu li a {
+          color: #58595b;
+          font-size: 16px;
+          font-family: "Fira Sans", sans-serif;
+          line-height: 20px;
+          float: left;
+          width: 100%;
+          display: block;
+          text-align: left; }
+          .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu li a:before {
+            content: "\f111";
+            font-family: fontAwesome;
+            font-size: 6px;
+            position: absolute;
+            left: -12px;
+            top: -0px; }
+          .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu li a:after {
+            content: ""; }
+  .exam-top-main .menu ul.nav.navbar-nav {
+    float: left;
+    width: 100%;
+    display: block;
+    background-color: #fafbfb; }
+    .exam-top-main .menu ul.nav.navbar-nav li {
+      width: calc(100% / 6);
+      float: left;
+      display: inline-block;
+      padding: 30px 0px 30px 0px;
+      position: relative;
+      min-height: 150px; }
+      .exam-top-main .menu ul.nav.navbar-nav li.dropdown a:after {
+        content: "\f078";
+        font-family: fontAwesome;
+        font-size: 12px;
+        position: absolute;
+        bottom: -5px;
+        left: 46%;
+        border: none; }
+      .exam-top-main .menu ul.nav.navbar-nav li:before {
+        content: "";
+        width: 1px;
+        height: 70px;
+        position: absolute;
+        right: 0px;
+        top: 32%;
+        background: #ddd; }
+      .exam-top-main .menu ul.nav.navbar-nav li:last-child::before {
+        display: none; }
+      .exam-top-main .menu ul.nav.navbar-nav li.actives {
+        background-color: #eeefef; }
+        .exam-top-main .menu ul.nav.navbar-nav li.actives a {
+          color: #000; }
+          .exam-top-main .menu ul.nav.navbar-nav li.actives a img {
+            opacity: 1; }
+        .exam-top-main .menu ul.nav.navbar-nav li.actives:after {
+          content: "";
+          width: 100%;
+          height: 10px;
+          background-color: #000;
+          position: absolute;
+          bottom: -13px;
+          left: 0px; }
+      .exam-top-main .menu ul.nav.navbar-nav li:hover {
+        background-color: #eeefef; }
+        .exam-top-main .menu ul.nav.navbar-nav li:hover a {
+          color: #000; }
+          .exam-top-main .menu ul.nav.navbar-nav li:hover a img {
+            opacity: 1; }
+      .exam-top-main .menu ul.nav.navbar-nav li .red-icon {
+        display: none; }
+      .exam-top-main .menu ul.nav.navbar-nav li .grey-icon {
+        opacity: 0.5; }
+      .exam-top-main .menu ul.nav.navbar-nav li a {
+        font-family: FiraSans-Medium;
+        font-size: 18px;
+        color: #58595b;
+        line-height: 20px;
+        width: 100%;
+        text-align: center;
+        display: block;
+        float: left;
+        position: relative;
+        text-decoration: none; }
+        .exam-top-main .menu ul.nav.navbar-nav li a span.img {
+          float: left;
+          width: 100%;
+          text-align: center;
+          margin: 0px 0px 12px 0px;
+          min-height: 60px; }
+
+.cmtriangle-tabslist .nav-item {
+  margin-bottom: -4px; }
+  .cmtriangle-tabslist .nav-item a {
+    border-radius: 0;
+    border: none;
+    padding: 15px 20px 15px 30px;
+    font-size: 16px;
+    font-family: FiraSans-Medium;
+    color: #58595b;
+    opacity: 0.7;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #ddd;
+    width: 98%; }
+    .cmtriangle-tabslist .nav-item a:hover {
+      background-color: #fff;
+      border: 1px solid transparent;
+      background-color: #f5f6f6; }
+    .cmtriangle-tabslist .nav-item a.active {
+      color: #000;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      background-color: #f5f6f6;
+      color: #000;
+      opacity: 1; }
+      .cmtriangle-tabslist .nav-item a.active:after {
+        content: "";
+        width: 43px;
+        height: 100%;
+        position: absolute;
+        background-image: url(/assets/default_asset/img/icons/grey-triangle.svg);
+        right: -41px;
+        top: 0px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center; }
+      .cmtriangle-tabslist .nav-item a.active:before {
+        color: #000;
+        opacity: 1; }
+    .cmtriangle-tabslist .nav-item a:before {
+      font-family: fontAwesome;
+      font-size: 6px;
+      position: absolute;
+      content: "\f111";
+      color: #58595b;
+      left: 15px;
+      opacity: 0.7;
+      top: 25px; }
+
+.cmtritabs-content {
+  border-left: 1px solid #e3e3e3;
+  width: 100%;
+  float: left;
+  height: 100%; }
+  .cmtritabs-content .card-body {
+    padding: 10px 20px 0 20px; }
+
+@media (min-width: 768px) {
+  .tr-tabs .nav-tabs {
+    display: flex;
+    flex-flow: column nowrap;
+    border-bottom: none; }
+  .tr-tabs .nav-tabs .nav-item + .nav-item {
+    margin-top: 0; }
+  .tr-tabs .card {
+    border: none; }
+    .tr-tabs .card .card-body .card-header {
+      display: block; }
+    .tr-tabs .card .card-body .collapse {
+      display: none; }
+      .tr-tabs .card .card-body .collapse.show {
+        display: block; }
+  .tr-tabs .card .card-header {
+    display: none; }
+  .tr-tabs .card .collapse {
+    display: block; } }
+@media (max-width: 1200px) {
+  .exam-top-main .main_menu {
+    margin: -200px 0px 45px 0px; } }
+@media (max-width: 1024px) {
+  .exam-top-main .exambanner {
+    height: 400px; }
+  .exam-top-main .menu ul.nav.navbar-nav li:before {
+    top: 15%;
+    height: 115px; } }
+@media (max-width: 800px) {
+  .exam-top-main .exambanner {
+    height: 340px; }
+  .exam-top-main .menu nav.navbar {
+    border-bottom: 5px solid #eeefef; }
+  .exam-top-main .menu ul.nav.navbar-nav li {
+    padding: 20px 0px 20px 0px; }
+    .exam-top-main .menu ul.nav.navbar-nav li.actives::after {
+      height: 5px;
+      bottom: -5px; }
+    .exam-top-main .menu ul.nav.navbar-nav li a {
+      padding: 0 10px;
+      font-size: 16px; } }
+@media (max-width: 767px) {
+  .tr-tabs .nav-tabs {
+    display: none; }
+  .tr-tabs .tab-pane.fade.selected {
+    display: block !important;
+    opacity: 1;
+    margin-bottom: 30px; }
+    .tr-tabs .tab-pane.fade.selected .collapse.show {
+      display: flex;
+      width: 100%; }
+  .tr-tabs .tab-content > .tab-pane {
+    display: block;
+    display: block !important;
+    opacity: 1;
+    margin-bottom: 30px; }
+  .tr-tabs .card-header {
+    background: #fff;
+    border-radius: 0; }
+    .tr-tabs .card-header a {
+      font-family: FiraSans-Medium;
+      color: #58595b;
+      font-size: 18px;
+      text-decoration: none;
+      width: 100%;
+      display: block;
+      padding-right: 15px; }
+      .tr-tabs .card-header a:after {
+        background-image: url(/assets/default_asset/img/red-plus.svg);
+        background-size: 100%;
+        content: "";
+        width: 15px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: 0px 5px;
+        position: absolute;
+        right: 0;
+        top: -2px;
+        z-index: 999; }
+    .tr-tabs .card-header a[aria-expanded="true"] {
+      text-decoration: none;
+      color: #b7202e; }
+      .tr-tabs .card-header a[aria-expanded="true"]:after {
+        background-image: url(/assets/university/img/icons/minus.svg);
+        top: 6px; }
+
+  .cmtritabs-content {
+    border-left: none; } }
+@media (max-width: 575px) {
+  .exam-top-main .exambanner {
+    height: 200px; }
+  .exam-top-main .main_menu {
+    margin: -108px 0px 45px 0px; }
+  .exam-top-main .menu span.toggle {
+    width: 30px;
+    height: 30px;
+    display: block;
+    /* border: 1px solid; */
+    text-align: center;
+    float: right;
+    margin: 10px 0px 0px 0px;
+    display: block;
+    background-color: #fff;
+    width: 55px;
+    padding-top: 5px; }
+    .exam-top-main .menu span.toggle i {
+      font-size: 20px;
+      display: block;
+      color: #b7202e; }
+  .exam-top-main .menu nav.navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border-bottom: none; }
+    .exam-top-main .menu nav.navbar .nav li ul.dropdown-menu {
+      margin-top: 0;
+      width: 100%; }
+  .exam-top-main .menu ul.nav.navbar-nav.togglethis li {
+    display: block; }
+  .exam-top-main .menu ul.nav.navbar-nav li {
+    width: calc(100% / 1);
+    padding: 10px 15px 10px 15px;
+    min-height: auto;
+    display: none; }
+    .exam-top-main .menu ul.nav.navbar-nav li:before {
+      display: none; }
+    .exam-top-main .menu ul.nav.navbar-nav li.actives {
+      display: block; }
+      .exam-top-main .menu ul.nav.navbar-nav li.actives:after {
+        height: 1px;
+        bottom: 0px;
+        left: 0px; }
+    .exam-top-main .menu ul.nav.navbar-nav li.dropdown a:after {
+      bottom: 20px;
+      left: inherit;
+      border: none;
+      right: 8px; }
+    .exam-top-main .menu ul.nav.navbar-nav li a {
+      text-align: left; }
+      .exam-top-main .menu ul.nav.navbar-nav li a span.img {
+        display: none; }
+    .exam-top-main .menu ul.nav.navbar-nav li .grey-icon {
+      display: none; } }
+@media (max-width: 480px) {
+  .exam-top-main .exambanner {
+    height: 160px; }
+  .exam-top-main .main_menu {
+    margin: -95px 0px 30px 0px; } }
+@media (max-width: 375px) {
+  .exam-top-main .main_menu {
+    margin: -115px 0px 30px 0px; } }
+.principal-msgmain .slider-wrapper .university-slider .carousel-caption {
+  width: 45%; }
+  .principal-msgmain .slider-wrapper .university-slider .carousel-caption .uni-banner-heading {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px; }
+    .principal-msgmain .slider-wrapper .university-slider .carousel-caption .uni-banner-heading:after {
+      content: "";
+      width: 210px;
+      height: 4px;
+      background: #b7202e;
+      position: absolute;
+      bottom: -3px;
+      left: 0px; }
+.principal-msgmain .princi-introbox {
+  margin: 60px 0; }
+  .principal-msgmain .princi-introbox p {
+    margin-bottom: 15px; }
+.principal-msgmain .colorwrap {
+  position: relative;
+  width: 95%;
+  float: left; }
+  .principal-msgmain .colorwrap:after {
+    position: absolute;
+    width: 131%;
+    right: -125px;
+    float: right;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    top: 0;
+    background-color: #f58220; }
+  .principal-msgmain .colorwrap:before {
+    content: "";
+    width: 100px;
+    height: 100%;
+    border-right: solid 115px #f58220;
+    border-bottom: solid 145px transparent;
+    border-top: solid 158px transparent;
+    position: absolute;
+    left: -185px; }
+.principal-msgmain .princi-herosec {
+  margin: 0 0 50px 0;
+  position: relative; }
+  .principal-msgmain .princi-herosec .right-content {
+    width: 85%;
+    float: right;
+    padding-top: 30px;
+    margin-bottom: 50px; }
+    .principal-msgmain .princi-herosec .right-content img {
+      margin-bottom: 5px; }
+  .principal-msgmain .princi-herosec .contents {
+    background-color: #f58220;
+    padding: 30px 30px 30px 10px;
+    width: 88%; }
+    .principal-msgmain .princi-herosec .contents p {
+      color: #fff; }
+  .principal-msgmain .princi-herosec .descpbpx p {
+    margin-bottom: 20px; }
+.principal-msgmain .princi-greetings {
+  margin: 0;
+  margin-bottom: -20px;
+  padding: 50px 0;
+  background-image: url(/assets/kjsscsr/img/principal-message/shapes-bg.svg);
+  background-size: cover; }
+  .principal-msgmain .princi-greetings img {
+    margin: 15px 0; }
+.principal-msgmain .greet-para {
+  font-family: "FiraSans-Medium"; }
+
+.slider-wrapper
+.university-slider
+.carousel-caption
+.uni-banner-heading.underline-banner-heading {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 35px; }
+  .slider-wrapper
+  .university-slider
+  .carousel-caption
+  .uni-banner-heading.underline-banner-heading:after {
+    content: "";
+    width: 210px;
+    height: 6px;
+    background: #b7202e;
+    position: absolute;
+    bottom: -4px;
+    left: 0px; }
+
+/******************************Vission Mission Page Css******************************/
+.vismis-main {
+  width: 100%;
+  background-image: url(/assets/kjsscsr/img/vission-mission/vission-mission-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  float: left;
+  height: 100%; }
+  .vismis-main .inner-contentwrapper {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    padding: 50px 0;
+    clear: both; }
+  .vismis-main .vmsubheading {
+    color: #fff;
+    font-size: 22px;
+    font-family: "FiraSans-Medium";
+    margin: 20px 0; }
+  .vismis-main p,
+  .vismis-main .Llist-main li {
+    font-size: 16px;
+    line-height: 28px; }
+  .vismis-main .missionbox,
+  .vismis-main .vissionbox,
+  .vismis-main .goalsbox {
+    background: #f58220;
+    padding: 30px;
+    width: 100%;
+    float: left;
+    margin: 20px 0; }
+    .vismis-main .missionbox p,
+    .vismis-main .vissionbox p,
+    .vismis-main .goalsbox p {
+      color: #fff; }
+  .vismis-main .vissionbox {
+    background: #ffcb05; }
+    .vismis-main .vissionbox p,
+    .vismis-main .vissionbox .vmsubheading {
+      color: #000; }
+  .vismis-main .holisticbox {
+    background: #603312; }
+  .vismis-main .Llist-main {
+    margin-left: 0; }
+    .vismis-main .Llist-main li {
+      list-style-type: none;
+      position: relative;
+      padding-left: 20px;
+      height: 100%; }
+      .vismis-main .Llist-main li:before {
+        content: "";
+        background-image: url(/assets/kjsscsr/img/vission-mission/black-arrow.svg);
+        width: 20px;
+        height: 15px;
+        position: absolute;
+        background-repeat: no-repeat;
+        z-index: 9;
+        left: 0px;
+        top: 8px;
+        display: inline-block;
+        vertical-align: middle; }
+  .vismis-main .goalsbox {
+    background-color: #a25723;
+    margin-top: 0; }
+    .vismis-main .goalsbox p,
+    .vismis-main .goalsbox .Llist-main li {
+      color: #fff; }
+    .vismis-main .goalsbox .Llist-main li::before {
+      background-image: url(/assets/kjsscsr/img/vission-mission/white-arrow.svg); }
+  .vismis-main .fndcontentbox {
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 30px;
+    width: 100%;
+    float: left;
+    display: block;
+    background: #fff; }
+  .vismis-main .founder-link {
+    background-color: #b7202e;
+    color: #fff;
+    padding: 15px;
+    float: left;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 20px;
+    padding-left: 35px; }
+    .vismis-main .founder-link:hover {
+      text-decoration: none;
+      background-color: #db2f3f; }
+    .vismis-main .founder-link:before {
+      content: "";
+      background-image: url(/assets/kjsscsr/img/vission-mission/white-arrow.svg);
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      background-repeat: no-repeat;
+      z-index: 9;
+      left: 15px;
+      top: 20px; }
+
+/**************Examination Pages CSS Starts*************/
+.page-heading {
+  margin-bottom: 20px; }
+
+.page-heading38 {
+  margin-bottom: 30px; }
+
+.page-subheading {
+  color: #000;
+  font-size: 24px;
+  font-family: FiraSans-Medium;
+  margin-bottom: 20px;
+  line-height: 36px; }
+
+.exam-ov-main .intro-sec {
+  margin-top: 30px; }
+  .exam-ov-main .intro-sec p {
+    margin-bottom: 20px; }
+  .exam-ov-main .intro-sec img {
+    box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16); }
+.exam-ov-main .ov-rulesbox {
+  margin: 70px 0 30px 0;
+  background-color: #f5f6f6;
+  padding: 50px 0 70px 0; }
+  .exam-ov-main .ov-rulesbox .rules-content {
+    background: #fff;
+    padding: 30px;
+    height: 100%;
+    float: left; }
+  .exam-ov-main .ov-rulesbox p {
+    margin-bottom: 20px; }
+.exam-ov-main .popular-box {
+  background: #58595b;
+  width: 100%;
+  float: left;
+  padding: 30px;
+  height: 100%; }
+  .exam-ov-main .popular-box ul.list li {
+    position: relative; }
+    .exam-ov-main .popular-box ul.list li a {
+      font-family: FiraSans-Medium;
+      font-size: 16px;
+      line-height: 27px;
+      color: #fff;
+      padding: 15px 10px 5px 0;
+      float: left;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #ffffff75;
+      text-decoration: none;
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      position: relative;
+      overflow: hidden; }
+      .exam-ov-main .popular-box ul.list li a:hover:before {
+        right: 0; }
+      .exam-ov-main .popular-box ul.list li a::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        height: 4px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        background: #ffffff;
+        height: 1px;
+        margin-top: -1px !important; }
+      .exam-ov-main .popular-box ul.list li a:after {
+        content: "";
+        width: 25px;
+        height: 30px;
+        background-image: url(/assets/default_asset/img/arrow-white-next.svg);
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-repeat: no-repeat;
+        background-size: 12px;
+        background-position: 0px 22px;
+        transition: all ease 0.5s; }
+  .exam-ov-main .popular-box .page-subheading,
+  .exam-ov-main .popular-box ul.li a {
+    color: #fff; }
+.exam-ov-main .hallticket-box {
+  background: #fff;
+  padding: 30px 130px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.16);
+  margin-top: 30px; }
+  .exam-ov-main .hallticket-box .inst-para {
+    color: #58595b;
+    font-family: FiraSans-Medium;
+    text-align: center; }
+  .exam-ov-main .hallticket-box .steps {
+    padding-bottom: 15px; }
+    .exam-ov-main .hallticket-box .steps p {
+      font-size: 18px;
+      font-family: FiraSans-Medium;
+      color: #000; }
+      .exam-ov-main .hallticket-box .steps p .no {
+        background-color: #58595bb3;
+        color: #fff;
+        font-size: 14px;
+        font-family: FiraSans-Medium;
+        padding: 7px 12px;
+        border-radius: 50%;
+        margin-right: 10px; }
+  .exam-ov-main .hallticket-box .btnwrapper {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding-top: 10px; }
+.exam-ov-main .result-analys {
+  margin: 0; }
+  .exam-ov-main .result-analys .graph-box {
+    box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16);
+    margin: 30px 0 70px 0;
+    padding: 30px; }
+.exam-ov-main .helpbox {
+  background-color: #58595b;
+  padding: 40px 0; }
+  .exam-ov-main .helpbox p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px; }
+  .exam-ov-main .helpbox .outline-grey-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    float: right; }
+.exam-ov-main .convos .convSlider {
+  margin: 30px 0 70px 0;
+  height: auto; }
+  .exam-ov-main .convos .convSlider img {
+    position: relative; }
+.exam-ov-main .convos .convs-caption {
+  min-height: 60px;
+  background-color: #58595b;
+  padding: 20px;
+  width: 20%;
+  position: absolute;
+  top: auto;
+  bottom: 0; }
+  .exam-ov-main .convos .convs-caption p {
+    color: #fff;
+    font-size: 24px;
+    font-family: FiraSans-Medium; }
+.exam-ov-main .convos .controls-wrapper {
+  width: 8%;
+  float: right;
+  position: relative;
+  bottom: 20px;
+  top: auto;
+  right: 0; }
+  .exam-ov-main .convos .controls-wrapper a {
+    width: 45px;
+    height: 40px; }
+.exam-ov-main #chartdiv {
+  width: 80%;
+  height: 500px;
+  background-color: #fff;
+  padding-top: 30px;
+  margin: 0 auto; }
+  .exam-ov-main #chartdiv * {
+    font-family: "Fira Sans", sans-serif; }
+
+.exam-forms-main table th,
+.exam-forms-main table td {
+  padding: 20px 40px; }
+  .exam-forms-main table th .simple-link:before,
+  .exam-forms-main table td .simple-link:before {
+    float: left;
+    transform: rotate(90deg);
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 2px;
+    border: 1px solid;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-position: -570px -20px;
+    border-radius: 50%; }
+.exam-forms-main table .sub-text {
+  font-size: 16px;
+  color: #58595b; }
+
+.img-shadow {
+  box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16); }
+
+.cls-improvmnt .bg-wrapper {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.16);
+  background: #f5f6f6;
+  width: 85%;
+  float: none;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+.cls-improvmnt .bgheader {
+  background: #fff;
+  padding: 15px 30px; }
+  .cls-improvmnt .bgheader .page-heading {
+    margin-bottom: 0; }
+.cls-improvmnt .bgcontent {
+  padding: 30px 50px; }
+.cls-improvmnt .imprv-list {
+  position: relative;
+  padding-left: 55px; }
+  .cls-improvmnt .imprv-list li {
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0 0 25px 20px; }
+    .cls-improvmnt .imprv-list li:before {
+      content: "";
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/1.svg);
+      left: 0; }
+    .cls-improvmnt .imprv-list li:nth-child(2):before {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/2.svg); }
+    .cls-improvmnt .imprv-list li:nth-child(3):before {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/3.svg); }
+    .cls-improvmnt .imprv-list li:nth-child(4):before {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/4.svg); }
+    .cls-improvmnt .imprv-list li:nth-child(5):before {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/5.svg); }
+    .cls-improvmnt .imprv-list li:nth-child(6):before {
+      background-image: url(/assets/kjsscsr/img/examination/senior-college/class-improv-icons/6.svg); }
+
+.exmconvo-main {
+  width: 100%;
+  float: left; }
+  .exmconvo-main .convo-intro {
+    margin: 30px 0 40px 0; }
+    .exmconvo-main .convo-intro p {
+      margin-bottom: 20px; }
+  .exmconvo-main .img-gallry {
+    margin-bottom: 70px; }
+  .exmconvo-main .oath-prayer {
+    width: 70%;
+    margin: 0 auto; }
+    .exmconvo-main .oath-prayer p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 400; }
+  .exmconvo-main .exam-ov-main .ov-rulesbox {
+    padding: 0;
+    background: #fff;
+    margin: 0 0 50px 0; }
+    .exmconvo-main .exam-ov-main .ov-rulesbox .rules-content {
+      background: #f5f6f6; }
+
+.exm-structure-main {
+  margin-bottom: 40px;
+  width: 100%;
+  float: left; }
+  .exm-structure-main .structure-intro {
+    margin: 30px 0 70px 0; }
+    .exm-structure-main .structure-intro .bold-para {
+      font-family: FiraSans-Medium;
+      color: #000; }
+    .exm-structure-main .structure-intro p {
+      margin-bottom: 20px; }
+    .exm-structure-main .structure-intro img {
+      width: 100%; }
+  .exm-structure-main .struct-contentbox .page-subheading {
+    margin-bottom: 30px; }
+  .exm-structure-main .struct-contentbox p {
+    margin-bottom: 20px; }
+    .exm-structure-main .struct-contentbox p.note {
+      color: #000;
+      font-family: FiraSans-Medium;
+      font-size: 20px; }
+    .exm-structure-main .struct-contentbox p b {
+      font-family: "FiraSans-Bold";
+      color: #58595b; }
+  .exm-structure-main .struct-contentbox table {
+    width: 70%;
+    float: none;
+    margin: 0 auto; }
+    .exm-structure-main .struct-contentbox table.grade-table {
+      width: 60%; }
+    .exm-structure-main .struct-contentbox table tr th,
+    .exm-structure-main .struct-contentbox table tr td {
+      padding: 20px; }
+
+.ordinance-rules-main table th,
+.ordinance-rules-main table td {
+  padding: 20px 30px;
+  font-size: 20px; }
+.ordinance-rules-main .need-helpbox {
+  background-color: #f5f6f6;
+  padding: 30px;
+  margin-top: 40px;
+  width: 100%;
+  float: left; }
+  .ordinance-rules-main .need-helpbox img {
+    margin-bottom: 20px; }
+  .ordinance-rules-main .need-helpbox a {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    font-family: "FiraSans-Medium";
+    word-break: break-word; }
+  .ordinance-rules-main .need-helpbox .needp22 {
+    color: #000;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px; }
+  .ordinance-rules-main .need-helpbox .needp20 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #58595b;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400; }
+  .ordinance-rules-main .need-helpbox .needno {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-weight: 400;
+    margin-top: 20px; }
+
+.exam-faqs-main .category-btn {
+  background-color: #f5f6f6;
+  padding: 15px 20px 15px 30px;
+  font-size: 16px;
+  font-family: FiraSans-Medium;
+  color: #000;
+  width: 90%;
+  display: block; }
+  .exam-faqs-main .category-btn::after {
+    content: "";
+    width: 65px;
+    height: 100%;
+    position: absolute;
+    background-image: url(/assets/default_asset/img/icons/grey-triangle.svg);
+    right: -65px;
+    top: -2px;
+    background-size: contain;
+    background-repeat: no-repeat; }
+.exam-faqs-main .options {
+  border: solid 1px rgba(112, 112, 112, 0.2);
+  background-color: #fafbfb;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #000;
+  font-family: FiraSans-Medium;
+  width: auto;
+  display: inline-block;
+  margin: 20px 0; }
+.exam-faqs-main .quick-links-box {
+  margin-top: 50px;
+  width: 100%;
+  float: left;
+  padding-top: 30px;
+  background: #f5f6f6; }
+  .exam-faqs-main .quick-links-box .quicklinks {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    font-family: "FiraSans-Medium";
+    color: #000;
+    padding-left: 20px;
+    padding-bottom: 10px; }
+  .exam-faqs-main .quick-links-box .nav-tabs {
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+    width: 100%;
+    transition: all ease 0.5s;
+    border-bottom: none; }
+    .exam-faqs-main .quick-links-box .nav-tabs li {
+      border-bottom: 1px solid #e3e3e3;
+      display: block;
+      width: 100%;
+      float: left;
+      margin-bottom: 0; }
+      .exam-faqs-main .quick-links-box .nav-tabs li:last-child {
+        border-bottom: none; }
+      .exam-faqs-main .quick-links-box .nav-tabs li a {
+        font-size: 16px;
+        line-height: 24px;
+        font-family: "Fira Sans", sans-serif;
+        padding: 18px 15px 18px 40px;
+        width: 100%;
+        float: left;
+        text-align: left;
+        color: #58595b;
+        text-decoration: underline;
+        color: #069; }
+        .exam-faqs-main .quick-links-box .nav-tabs li a img {
+          margin-left: 10px; }
+    .exam-faqs-main .quick-links-box .nav-tabs li:last-child {
+      border-bottom: none; }
+
+.result-analysmain {
+  margin-bottom: 40px; }
+  .result-analysmain .analys0box {
+    margin-top: 20px; }
+  .result-analysmain .grey-select {
+    background: url(/assets/default_asset/img/downwhite-arrow.svg) no-repeat #58595b;
+    color: #fff;
+    background-position: right;
+    -webkit-appearance: none;
+    padding: 8px 20px;
+    width: 175px;
+    background-position: 150px 18px;
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif; }
+
+.evalsystm-main .eval-list {
+  margin: 0; }
+  .evalsystm-main .eval-list li {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding-left: 35px;
+    position: relative; }
+    .evalsystm-main .eval-list li::before {
+      content: "";
+      background: url(/assets/kjsscsr/img/examination/junior-college/tick-circle.svg) no-repeat;
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: 0;
+      top: 5px; }
+.evalsystm-main .medm-para {
+  color: #68696b;
+  font-family: "FiraSans-Medium"; }
+.evalsystm-main .parabold {
+  color: #000;
+  font-family: "FiraSans-Medium"; }
+.evalsystm-main .evlcontwrapper {
+  padding: 0 0 20px 30px; }
+
+.exm-acdactvities-main .activity-card {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin-bottom: 40px; }
+  .exm-acdactvities-main .activity-card:hover {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16); }
+.exm-acdactvities-main .actv-imgbox {
+  padding: 0; }
+  .exm-acdactvities-main .actv-imgbox img {
+    width: 100%; }
+.exm-acdactvities-main .actv-contentbox {
+  padding: 0 0 0 40px; }
+
+.acdexe-main table th,
+.acdexe-main table td {
+  padding: 1rem; }
+.acdexe-main .topper-card img {
+  width: 100%;
+  max-height: 210px; }
+.acdexe-main .topper-card:hover {
+  cursor: auto; }
+  .acdexe-main .topper-card:hover .topper-contbox {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16); }
+.acdexe-main .topper-contbox {
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px 10px; }
+  .acdexe-main .topper-contbox .page-subheading {
+    line-height: 28px;
+    margin-bottom: 10px; }
+  .acdexe-main .topper-contbox .stream {
+    font-size: 20px; }
+
+/************Alumni Overview Page********************/
+.martopbot50 {
+  margin: 50px 0; }
+
+.alumni-ovmain {
+  margin: 50px 0; }
+  .alumni-ovmain .aln-heading {
+    margin-bottom: 15px; }
+  .alumni-ovmain .aln-subheading {
+    font-size: 20px;
+    font-family: "FiraSans-Medium";
+    color: #000;
+    margin-bottom: 15px;
+    line-height: 30px; }
+  .alumni-ovmain .al-highlights {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    width: 47%;
+    padding: 20px;
+    margin-right: 15px;
+    margin-top: 30px; }
+    .alumni-ovmain .al-highlights:last-child {
+      margin-right: 0; }
+    .alumni-ovmain .al-highlights .imgwrap {
+      width: 20%;
+      float: left; }
+    .alumni-ovmain .al-highlights .aln-subheading {
+      margin-bottom: 0; }
+    .alumni-ovmain .al-highlights .blue-link {
+      font-family: "FiraSans-Medium"; }
+  .alumni-ovmain .al-members {
+    background: #f5f6f6;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 50px 0 80px 0; }
+    .alumni-ovmain .al-members:before {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .al-members:after {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .al-members .aln-heading {
+      margin-top: 50px; }
+    .alumni-ovmain .al-members .Ldots {
+      bottom: -40px;
+      top: auto; }
+    .alumni-ovmain .al-members .membs-list li {
+      width: calc(100% / 3);
+      float: left;
+      padding: 10px; }
+      .alumni-ovmain .al-members .membs-list li:nth-child(2) {
+        margin-top: 60px; }
+      .alumni-ovmain .al-members .membs-list li:nth-child(4) {
+        margin-top: 10px; }
+      .alumni-ovmain .al-members .membs-list li:nth-child(5) {
+        margin-top: -43%; }
+      .alumni-ovmain .al-members .membs-list li:nth-child(6) {
+        margin-top: -35%; }
+    .alumni-ovmain .al-members .membs-list .mebimgcard {
+      width: 100%;
+      float: left; }
+      .alumni-ovmain .al-members .membs-list .mebimgcard img {
+        width: 100%; }
+    .alumni-ovmain .al-members .membs-list .mebcontentcard {
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      background: #fff;
+      padding: 10px;
+      text-align: center;
+      min-height: 135px;
+      min-height: 100px;
+      width: 100%;
+      float: left; }
+      .alumni-ovmain .al-members .membs-list .mebcontentcard .member-name {
+        color: #000;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 5px; }
+      .alumni-ovmain .al-members .membs-list .mebcontentcard p {
+        color: #000;
+        font-family: "FiraSans-Medium";
+        font-size: 14px;
+        line-height: 18px; }
+  .alumni-ovmain .al-intiatives .intiatives-slider {
+    margin-top: 30px;
+    margin-bottom: 0;
+    overflow: hidden;
+    padding-bottom: 30px;
+    width: 100%; }
+    .alumni-ovmain .al-intiatives .intiatives-slider .slick-list {
+      overflow: visible;
+      width: 100%;
+      margin: 0 auto; }
+  .alumni-ovmain .al-intiatives .talks-card {
+    margin-right: 40px; }
+    .alumni-ovmain .al-intiatives .talks-card:hover .talkscontwrap {
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      border-bottom: 2px solid #b7202e; }
+  .alumni-ovmain .al-intiatives .talksimgwrap {
+    width: 100%;
+    float: left; }
+    .alumni-ovmain .al-intiatives .talksimgwrap img {
+      width: 100%;
+      max-height: 225px; }
+  .alumni-ovmain .al-intiatives sup {
+    font-size: 12px; }
+  .alumni-ovmain .al-intiatives .talkscontwrap {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    float: left;
+    height: 230px;
+    border-bottom: 2px solid transparent; }
+  .alumni-ovmain .al-intiatives .talks-date {
+    font-size: 16px;
+    line-height: 19px;
+    color: #58595b;
+    font-weight: 500;
+    font-family: "FiraSans-Medium";
+    margin-bottom: 10px; }
+  .alumni-ovmain .al-intiatives .talks-title {
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+    font-weight: 500;
+    font-family: "FiraSans-Medium";
+    margin-bottom: 10px; }
+    .alumni-ovmain .al-intiatives .talks-title:last-child {
+      margin-bottom: 0; }
+    .alumni-ovmain .al-intiatives .talks-title span {
+      color: rgba(88, 89, 91, 0.8);
+      margin-right: 5px; }
+  .alumni-ovmain .al-intiatives .slick-dots {
+    position: relative;
+    margin-top: 20px; }
+    .alumni-ovmain .al-intiatives .slick-dots li {
+      width: 10px;
+      height: 10px; }
+      .alumni-ovmain .al-intiatives .slick-dots li.slick-active button:before {
+        opacity: 9;
+        color: #b7202e;
+        background: #b7202e !important;
+        border: 1px solid #b7202e; }
+      .alumni-ovmain .al-intiatives .slick-dots li button:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+        background: #58595b; }
+  .alumni-ovmain .al-events {
+    padding: 50px 0;
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 0;
+    background: #f5f6f6; }
+    .alumni-ovmain .al-events:before {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .al-events:after {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0; }
+  .alumni-ovmain .events-card .dates {
+    background-color: #b7202e;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    font-family: FiraSans-Bold;
+    left: 30px;
+    top: 15px;
+    padding: 8px 0px 8px 0px;
+    width: 55px;
+    text-align: center;
+    line-height: 17px;
+    height: 55px; }
+    .alumni-ovmain .events-card .dates span.number {
+      line-height: 20px;
+      font-size: 25px;
+      width: 100%;
+      float: left;
+      margin-bottom: 2px; }
+    .alumni-ovmain .events-card .dates span.text {
+      line-height: 20px;
+      font-size: 15px;
+      width: 100%;
+      float: left; }
+  .alumni-ovmain .events-card a:hover {
+    text-decoration: none; }
+    .alumni-ovmain .events-card a:hover .aln-subheading,
+    .alumni-ovmain .events-card a:hover p {
+      text-decoration: none; }
+  .alumni-ovmain .events-card .aln-subheading {
+    margin-bottom: 10px; }
+  .alumni-ovmain .events-card .contwrap {
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08); }
+  .alumni-ovmain .location {
+    color: #006699;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "FiraSans-Medium"; }
+    .alumni-ovmain .location:before {
+      content: "\f041";
+      font-family: "FontAwesome";
+      margin-right: 5px;
+      text-decoration: none; }
+  .alumni-ovmain .event-item {
+    background: #fff;
+    padding: 20px;
+    border-right: 4px solid transparent;
+    margin-bottom: 30px;
+    width: 100%;
+    float: left; }
+    .alumni-ovmain .event-item:hover {
+      border-right: 4px solid #b7202e;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2); }
+      .alumni-ovmain .event-item:hover .datesbox {
+        background: #b7202e; }
+        .alumni-ovmain .event-item:hover .datesbox span {
+          color: #fff; }
+      .alumni-ovmain .event-item:hover .aln-subheading {
+        text-decoration: underline;
+        color: #004466; }
+    .alumni-ovmain .event-item .datesbox {
+      width: 15%;
+      float: left;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+      padding: 20px;
+      background: #f5f6f6;
+      text-align: center; }
+      .alumni-ovmain .event-item .datesbox span {
+        font-family: "FiraSans-Medium"; }
+        .alumni-ovmain .event-item .datesbox span.number {
+          line-height: 20px;
+          font-size: 25px;
+          width: 100%;
+          float: left;
+          margin-bottom: 2px; }
+        .alumni-ovmain .event-item .datesbox span.text {
+          line-height: 20px;
+          font-size: 15px;
+          width: 100%;
+          float: left; }
+    .alumni-ovmain .event-item .contbox {
+      width: 80%;
+      float: left;
+      padding-left: 30px; }
+      .alumni-ovmain .event-item .contbox .aln-subheading {
+        margin-bottom: 5px;
+        font-size: 18px;
+        line-height: 27px; }
+  .alumni-ovmain .al-awards {
+    overflow: hidden;
+    margin-top: 0; }
+  .alumni-ovmain .awdSlider {
+    margin: 0 0 30px 0;
+    height: auto; }
+    .alumni-ovmain .awdSlider img {
+      position: relative; }
+    .alumni-ovmain .awdSlider .carousel-inner {
+      height: 550px;
+      overflow: visible; }
+    .alumni-ovmain .awdSlider .awd-caption {
+      min-height: 60px;
+      background-color: #fff;
+      padding: 20px;
+      width: 35%;
+      position: absolute;
+      top: auto;
+      bottom: -50px;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16); }
+      .alumni-ovmain .awdSlider .awd-caption p {
+        color: #000;
+        font-family: FiraSans-Medium; }
+        .alumni-ovmain .awdSlider .awd-caption p.awards-person {
+          font-size: 28px;
+          line-height: 30px;
+          margin-bottom: 8px; }
+        .alumni-ovmain .awdSlider .awd-caption p.person-desgn {
+          font-size: 18px;
+          line-height: 30px; }
+    .alumni-ovmain .awdSlider .capcontbox {
+      width: calc(100% - 12%);
+      float: left; }
+    .alumni-ovmain .awdSlider .captnimgbox {
+      width: 12%;
+      float: left; }
+    .alumni-ovmain .awdSlider .controls-wrapper {
+      width: 8%;
+      float: right;
+      position: relative;
+      bottom: 54px;
+      top: auto;
+      right: 0; }
+      .alumni-ovmain .awdSlider .controls-wrapper a {
+        width: 45px;
+        height: 40px; }
+  .alumni-ovmain .giving {
+    margin: 0 0 70px 0;
+    float: left;
+    position: relative;
+    background: #58595b;
+    padding: 50px 0; }
+    .alumni-ovmain .giving:before {
+      content: "";
+      position: absolute;
+      background: #58595b;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .giving:after {
+      content: "";
+      position: absolute;
+      background: #58595b;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .giving p {
+      color: #fff;
+      font-size: 24px;
+      line-height: 36px;
+      padding-right: 40px; }
+    .alumni-ovmain .giving .outline-grey-btn {
+      margin-top: 8px;
+      display: block;
+      float: left;
+      padding: 12px 55px;
+      background: transparent;
+      color: #fff;
+      border: 1px solid; }
+  .alumni-ovmain .al-imprints {
+    margin-top: 0; }
+    .alumni-ovmain .al-imprints .aln-heading {
+      text-align: left; }
+    .alumni-ovmain .al-imprints .grid-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 15px;
+      margin-bottom: 30px; }
+      .alumni-ovmain .al-imprints .grid-wrapper:last-child {
+        margin-bottom: 0; }
+    .alumni-ovmain .al-imprints .imprintsbox {
+      background: #fff;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      padding: 20px;
+      width: 100%;
+      float: left;
+      border-bottom: 3px solid transparent; }
+      .alumni-ovmain .al-imprints .imprintsbox:hover {
+        border-bottom: 3px solid #b7202e; }
+    .alumni-ovmain .al-imprints .blue-link {
+      font-family: "FiraSans-Medium";
+      float: right;
+      text-decoration: underline; }
+      .alumni-ovmain .al-imprints .blue-link:hover {
+        text-decoration: none; }
+      .alumni-ovmain .al-imprints .blue-link:before {
+        content: "";
+        background-image: url(/assets/kjsscsr/img/alumni/download-pdf.svg);
+        width: 30px;
+        height: 30px;
+        position: relative;
+        background-repeat: no-repeat;
+        display: inline-block;
+        float: left; }
+  .alumni-ovmain .al-getintouch {
+    background: #f5f6f6;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 50px 0 50px 0; }
+    .alumni-ovmain .al-getintouch:before {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .al-getintouch:after {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0; }
+    .alumni-ovmain .al-getintouch .aln-subheading {
+      font-size: 24px;
+      line-height: 50px; }
+    .alumni-ovmain .al-getintouch p.locations, .alumni-ovmain .al-getintouch p.email, .alumni-ovmain .al-getintouch p.follow {
+      color: #000;
+      font-family: "FiraSans-Medium";
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 10px;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      float: left; }
+      .alumni-ovmain .al-getintouch p.locations img, .alumni-ovmain .al-getintouch p.email img, .alumni-ovmain .al-getintouch p.follow img {
+        margin-right: 15px;
+        margin-top: 5px; }
+    .alumni-ovmain .al-getintouch p.follow {
+      width: auto; }
+  .alumni-ovmain .form-control {
+    border-radius: 0;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #000;
+    font-family: "FiraSans-Medium";
+    font-size: 16px;
+    line-height: 24px; }
+  .alumni-ovmain ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #b0afaf;
+    opacity: 1;
+    /* Firefox */ }
+  .alumni-ovmain :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #b0afaf; }
+  .alumni-ovmain ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #b0afaf; }
+  .alumni-ovmain select option:disabled {
+    color: #b0afaf; }
+  .alumni-ovmain .followrap img {
+    margin-left: 15px;
+    width: 13px;
+    margin-top: 5px; }
+
+.error {
+  font-size: 12px !important;
+  color: #ed1c24 !important; }
+
+.no-underline-link {
+  text-decoration: none; }
+  .no-underline-link:hover {
+    text-decoration: none; }
+
+#formSuccess .modal-body {
+  text-align: center;
+  padding: 30px 30px; }
+  #formSuccess .modal-body p.title {
+    font-family: Marcellus-Regular;
+    font-size: 28px;
+    color: #b7202e;
+    margin: 0px 0px 15px 0px; }
+  #formSuccess .modal-body p.para {
+    font-family: FiraSans-Regular;
+    font-size: 18px;
+    line-height: 25px;
+    color: #58595b;
+    margin: 0px 0px 5px 0px; }
+
+/*****************Alumni Relations Team page *********************/
+.alrelteams-main {
+  margin: 50px 0; }
+  .alrelteams-main .aln-heading {
+    margin-bottom: 15px; }
+  .alrelteams-main .aln-subheading {
+    font-size: 24px;
+    font-family: "FiraSans-Medium";
+    color: #000;
+    margin-bottom: 10px;
+    line-height: 28px; }
+  .alrelteams-main .caa-tmsec {
+    background: #f5f6f6;
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 50px 0 50px 0;
+    margin: 70px 0 0 0; }
+    .alrelteams-main .caa-tmsec:before {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: -20%;
+      float: left;
+      z-index: -1;
+      right: auto;
+      height: 100%;
+      top: 0; }
+    .alrelteams-main .caa-tmsec:after {
+      content: "";
+      position: absolute;
+      background: #f5f6f6;
+      width: 70%;
+      left: auto;
+      float: left;
+      z-index: -1;
+      right: -20%;
+      height: 100%;
+      top: 0; }
+  .alrelteams-main .teams-imgbox {
+    width: 100%;
+    float: left; }
+    .alrelteams-main .teams-imgbox img {
+      width: 100%; }
+  .alrelteams-main .teams-contbox {
+    padding: 20px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    float: left;
+    border-bottom: 3px solid transparent;
+    background: #fff; }
+  .alrelteams-main p.intropara {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; }
+  .alrelteams-main p.desgn {
+    font-family: "FiraSans-Medium"; }
+  .alrelteams-main .teams-card {
+    height: 100%; }
+    .alrelteams-main .teams-card .alemail {
+      color: #006699;
+      font-family: "FiraSans-Medium";
+      text-decoration: underline;
+      width: 100%;
+      float: left; }
+      .alrelteams-main .teams-card .alemail:before {
+        content: "";
+        background-image: url(/assets/default_asset/img/social/small-icons/mail.svg);
+        width: 30px;
+        height: 20px;
+        position: relative;
+        background-repeat: no-repeat;
+        display: inline-block;
+        top: 6px;
+        float: none; }
+    .alrelteams-main .teams-card:hover .teams-contbox {
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      border-bottom: 3px solid #b7202e; }
+  .alrelteams-main .bearers .teams-card .teams-contbox {
+    min-height: 130px;
+    margin-bottom: 40px;
+    border-bottom: none; }
+    .alrelteams-main .bearers .teams-card .teams-contbox:hover {
+      border-bottom: none; }
+  .alrelteams-main .bearers .aln-subheading {
+    font-size: 22px;
+    line-height: 27px; }
+
+/**********************IQAC Page************************/
+.iqac-main .bannersec {
+  margin-bottom: 50px; }
+.iqac-main .composition-table th {
+  background: #DEE2E6; }
+.iqac-main .composition-table td, .iqac-main .composition-table th {
+  padding: 1rem;
+  font-size: 16px;
+  line-height: 25px;
+  border-right: 1px solid #cfcece; }
+.iqac-main .iqac-introsec p {
+  margin-bottom: 20px; }
+.iqac-main .iqac-introsec .Llist-main li {
+  margin-bottom: 20px; }
+.iqac-main .iqlist {
+  margin-top: 70px; }
+.iqac-main .iqcard {
+  box-shadow: 0px 8px 16px #00000026;
+  width: 100%;
+  float: left;
+  padding: 30px;
+  margin-bottom: 50px; }
+  .iqac-main .iqcard .imgbox {
+    text-align: center; }
+.iqac-main .iq-subhead {
+  font-size: 18px;
+  color: #b7202e;
+  line-height: 27px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px; }
+
+@media (max-width: 1920px) {
+  .principal-msgmain .princi-pic {
+    width: 80% !important;
+    margin-bottom: 30px; }
+  .principal-msgmain .colorwrap:before {
+    left: -310px;
+    border-right: solid 115px #f58220;
+    border-bottom: solid 110px transparent;
+    border-top: solid 110px transparent; }
+  .principal-msgmain .colorwrap:after {
+    right: -167px;
+    width: 140%; } }
+@media (max-width: 1440px) {
+  .alumni-ovmain .awdSlider .carousel-inner {
+    height: 530px; }
+
+  .principal-msgmain .princi-pic {
+    width: 100% !important;
+    margin-bottom: 30px; }
+  .principal-msgmain .colorwrap:before {
+    border-right: solid 125px #f58220;
+    border-bottom: solid 138px transparent;
+    border-top: solid 138px transparent;
+    left: -180px; }
+  .principal-msgmain .colorwrap:after {
+    width: 135%;
+    right: -180px; } }
+@media (max-width: 1366px) {
+  .alumni-ovmain .awdSlider .carousel-inner {
+    height: 500px; }
+
+  .principal-msgmain .colorwrap:after {
+    position: absolute;
+    width: 131%;
+    right: -125px;
+    float: right;
+    height: 100%; }
+  .principal-msgmain .colorwrap:before {
+    border-right: solid 115px #f58220;
+    border-bottom: solid 145px transparent;
+    border-top: solid 158px transparent;
+    left: -185px; } }
+@media (max-width: 1280px) {
+  .alumni-ovmain .awdSlider .controls-wrapper {
+    bottom: 77px; }
+
+  .principal-msgmain .colorwrap::after {
+    width: 133%;
+    right: -126px; }
+
+  .acdexe-main .topper-contbox .page-subheading {
+    font-size: 22px;
+    line-height: 26px; } }
+@media (max-width: 1024px) {
+  .iqac-main .iqac-introsec img {
+    width: 100%; }
+  .iqac-main .iqvissionobjsbox {
+    margin-bottom: 0; }
+  .iqac-main p, .iqac-main .Llist-main li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px; }
+
+  .alrelteams-main .teams-contbox {
+    padding: 15px; }
+  .alrelteams-main p.desgn {
+    font-size: 16px; }
+  .alrelteams-main .teams-card .alemail {
+    font-size: 16px;
+    line-height: 24px; }
+  .alrelteams-main .aln-subheading {
+    font-size: 20px;
+    line-height: 22px; }
+  .alrelteams-main .bearers .aln-subheading {
+    font-size: 20px;
+    line-height: 27px; }
+
+  .alumni-ovmain .al-highlights {
+    width: 70%; }
+  .alumni-ovmain .al-intiatives .talks-title {
+    font-size: 16px;
+    line-height: 24px; }
+  .alumni-ovmain .al-members .membs-list .mebcontentcard {
+    min-height: 135px; }
+  .alumni-ovmain .al-members .membs-list li:nth-child(2) {
+    margin-top: 0; }
+  .alumni-ovmain .al-members .membs-list li:nth-child(4),
+  .alumni-ovmain .al-members .membs-list li:nth-child(5),
+  .alumni-ovmain .al-members .membs-list li:nth-child(6) {
+    margin-top: 0; }
+
+  .exmconvo-main .img-gallry {
+    margin-bottom: 50px; }
+  .exmconvo-main .oath-prayer {
+    width: 85%; }
+    .exmconvo-main .oath-prayer p {
+      font-size: 18px; }
+  .exmconvo-main .exam-ov-main .ov-rulesbox .rules-content {
+    padding: 20px; }
+    .exmconvo-main .exam-ov-main .ov-rulesbox .rules-content .page-subheading {
+      margin-bottom: 0px; }
+  .exmconvo-main .exam-ov-main .ov-rulesbox p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 24px; }
+  .exmconvo-main .exam-ov-main .popular-box {
+    padding: 20px; }
+    .exmconvo-main .exam-ov-main .popular-box .page-subheading {
+      margin-bottom: 0px; }
+
+  .ordinance-rules-main table th,
+  .ordinance-rules-main table td {
+    padding: 15px 25px;
+    font-size: 18px; }
+  .ordinance-rules-main .Llist-main li {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .exm-structure-main .struct-contentbox {
+    margin: 0 0 30px 0; }
+  .exm-structure-main .structure-intro {
+    margin: 30px 0 30px 0; }
+    .exm-structure-main .structure-intro p {
+      margin-bottom: 10px; }
+
+  .cls-improvmnt .bg-wrapper {
+    width: 100%; }
+
+  .evalsystm-main .cmtriangle-tabslist .nav-item a {
+    padding: 15px 10px 15px 10px; }
+    .evalsystm-main .cmtriangle-tabslist .nav-item a:before {
+      display: none; }
+  .evalsystm-main .cmtritabs-content {
+    margin-left: 20px; }
+  .evalsystm-main .evals-right img {
+    width: 100% !important; }
+  .evalsystm-main .eval-list li {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px; }
+
+  .exm-acdactvities-main .page-subheading {
+    margin-bottom: 10px; }
+  .exm-acdactvities-main p {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .result-analysmain .grey-select {
+    width: 160px;
+    padding: 6px 15px;
+    background-position: 140px 16px;
+    font-size: 16px; }
+
+  .page-subheading {
+    font-size: 22px;
+    line-height: 36px; }
+
+  .acdexe-main .topper-card img {
+    min-height: 200px; }
+  .acdexe-main .topper-contbox {
+    height: 150px; }
+    .acdexe-main .topper-contbox .page-subheading {
+      font-size: 20px;
+      line-height: 24px; }
+    .acdexe-main .topper-contbox .stream {
+      font-size: 18px; }
+
+  .principal-msgmain .princi-herosec .contents {
+    padding: 30px 0;
+    width: 100%; }
+  .principal-msgmain .colorwrap:after {
+    width: 142%;
+    right: -128px; }
+
+  .vismis-main .inner-contentwrapper {
+    width: 100%; }
+
+  .exam-ov-main .hallticket-box .steps p {
+    position: relative;
+    padding-left: 40px; }
+    .exam-ov-main .hallticket-box .steps p .no {
+      position: absolute;
+      left: 0;
+      padding: 0px 10px; }
+  .exam-ov-main .helpbox p {
+    font-size: 22px;
+    line-height: 36px; }
+  .exam-ov-main .helpbox .outline-grey-btn {
+    top: 10px; }
+  .exam-ov-main .convos {
+    margin-bottom: 0; }
+    .exam-ov-main .convos .convs-caption p {
+      font-size: 20px; }
+    .exam-ov-main .convos .controls-wrapper {
+      width: 11%; } }
+@media (max-width: 991px) {
+  .exmconvo-main .exam-ov-main .popular-box {
+    margin-top: 30px; }
+
+  .principal-msgmain .slider-wrapper .university-slider .carousel-caption .uni-banner-heading {
+    font-size: 30px; }
+  .principal-msgmain .princi-introbox {
+    margin: 50px 0; }
+  .principal-msgmain .princi-herosec .right-content {
+    width: 100%;
+    padding: 0; }
+    .principal-msgmain .princi-herosec .right-content img {
+      display: none !important; }
+  .principal-msgmain .princi-herosec .contents {
+    padding: 44px 0; }
+  .principal-msgmain .colorwrap:before {
+    display: none; }
+  .principal-msgmain .colorwrap:after {
+    width: 146%; } }
+@media (max-width: 800px) {
+  .alrelteams-main .caa-tmsec {
+    margin: 40px 0 0 0; }
+  .alrelteams-main .teams-contbox {
+    min-height: 130px; }
+  .alrelteams-main .bearers .aln-subheading {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 5px; }
+
+  .alumni-ovmain .al-getintouch p.locations,
+  .alumni-ovmain .al-getintouch p.email,
+  .alumni-ovmain .al-getintouch p.follow {
+    font-size: 16px; }
+  .alumni-ovmain .al-events {
+    padding: 30px 0; }
+  .alumni-ovmain .al-member {
+    padding: 30px 0 80px 0; }
+  .alumni-ovmain .giving p {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 20px; }
+  .alumni-ovmain .giving .outline-grey-btn {
+    font-size: 16px;
+    padding: 10px 30px; }
+  .alumni-ovmain .aln-subheading {
+    font-size: 18px;
+    line-height: 27px; }
+  .alumni-ovmain .awdSlider .carousel-inner {
+    height: auto; }
+  .alumni-ovmain .awdSlider .awd-caption {
+    width: 50%; }
+    .alumni-ovmain .awdSlider .awd-caption p.awards-person {
+      font-size: 24px; }
+  .alumni-ovmain .awdSlider .controls-wrapper {
+    bottom: 20px;
+    width: 13%; }
+  .alumni-ovmain .events-card .contwrap {
+    padding: 20px; }
+  .alumni-ovmain .event-item .datesbox {
+    padding: 10px; }
+    .alumni-ovmain .event-item .datesbox span.number {
+      font-size: 20px; }
+  .alumni-ovmain .event-item .contbox .aln-subheading {
+    font-size: 18px;
+    line-height: 27px; }
+  .alumni-ovmain .al-intiatives .talkscontwrap {
+    height: auto; }
+  .alumni-ovmain .al-highlights {
+    width: 100%; }
+  .alumni-ovmain p {
+    font-size: 16px;
+    line-height: 24px; }
+  .alumni-ovmain .al-members .membs-list .mebcontentcard .member-name {
+    font-size: 16px;
+    line-height: 24px; }
+  .alumni-ovmain .al-introsec .mt-5,
+  .alumni-ovmain .al-introsec .my-5 {
+    margin-top: 1rem !important; }
+
+  .exmconvo-main .img-gallry {
+    margin-bottom: 30px; }
+  .exmconvo-main .convo-intro p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 24px; }
+  .exmconvo-main .page-heading38 {
+    margin-bottom: 20px; }
+
+  .exm-structure-main p {
+    font-size: 16px;
+    line-height: 24px; }
+  .exm-structure-main .struct-contentbox .page-subheading {
+    margin-bottom: 15px; }
+  .exm-structure-main .struct-contentbox p {
+    margin-bottom: 10px; }
+  .exm-structure-main .struct-contentbox table {
+    width: 100%; }
+    .exm-structure-main .struct-contentbox table.grade-table {
+      width: 100%; }
+
+  .evalsystm-main .eval-list li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px; }
+    .evalsystm-main .eval-list li:before {
+      background-size: 70%; }
+
+  .acdexe-main .topper-card img {
+    min-height: 165px; }
+
+  .mainherotitle-38,
+  .link-left-section h2 {
+    font-size: 30px;
+    line-height: 32px; }
+
+  .exam-ov-main .intro-sec p {
+    margin-bottom: 10px; }
+  .exam-ov-main .hallticket-box .steps p .no {
+    padding: 2px 10px; }
+  .exam-ov-main .convos .controls-wrapper {
+    width: 11%; }
+    .exam-ov-main .convos .controls-wrapper a {
+      width: 37px;
+      height: 35px; }
+  .exam-ov-main #chartdiv {
+    width: 100%;
+    height: 400px; }
+  .exam-ov-main p {
+    font-size: 16px;
+    line-height: 24px; }
+  .exam-ov-main .hallticket-box {
+    padding: 30px 30px; }
+  .exam-ov-main .popular-box {
+    height: auto;
+    margin-top: 30px; }
+
+  .principal-msgmain p {
+    font-size: 16px; }
+  .principal-msgmain .princi-herosec .contents {
+    padding: 20px 0; }
+  .principal-msgmain .slider-wrapper .university-slider .carousel-caption {
+    width: 95%;
+    height: 145px; }
+  .principal-msgmain .princi-introbox {
+    margin-top: 135px; }
+  .principal-msgmain .princi-pic {
+    margin-top: 20px; }
+  .principal-msgmain .colorwrap {
+    width: 100%; }
+    .principal-msgmain .colorwrap:after {
+      width: 180%;
+      right: -125px; } }
+@media (max-width: 769px) {
+  .exmconvo-main .convo-intro {
+    margin: 0px 0 40px 0; }
+    .exmconvo-main .convo-intro img {
+      margin-top: 20px; }
+  .exmconvo-main .img-gallry {
+    margin-bottom: 0;
+    padding: 0px 15px; }
+    .exmconvo-main .img-gallry img {
+      margin-bottom: 30px; }
+
+  .slider-wrapper
+  .university-slider
+  .carousel-caption
+  .uni-banner-heading.underline-banner-heading:after {
+    height: 2px;
+    bottom: -2px; }
+
+  .vismis-main .slider-wrapper .university-slider .carousel-caption {
+    height: 70px;
+    top: 87%; }
+    .vismis-main .slider-wrapper .university-slider .carousel-caption .uni-banner-heading.underline-banner-heading {
+      border-bottom: none; }
+      .vismis-main .slider-wrapper .university-slider .carousel-caption .uni-banner-heading.underline-banner-heading:after {
+        display: none; }
+  .vismis-main .inner-contentwrapper {
+    width: 100%;
+    margin-top: 20px;
+    clear: both;
+    float: left; } }
+@media (max-width: 767px) {
+  .iqac-main .iqac-introsec img {
+    width: auto;
+    margin: 0 auto 30px auto;
+    display: block;
+    text-align: center; }
+  .iqac-main .iqac-introsec p {
+    margin-bottom: 10px; }
+  .iqac-main .page-subheading {
+    text-align: center; }
+  .iqac-main p, .iqac-main .Llist-main li {
+    margin-bottom: 10px; }
+  .iqac-main p {
+    text-align: center; }
+  .iqac-main .iq-subhead {
+    margin: 20px 0 10px 0;
+    text-align: center; }
+
+  .alrelteams-main .caa-tmsec {
+    margin: 0;
+    padding: 30px 0 30px 0; }
+  .alrelteams-main p.intropara {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 24px; }
+  .alrelteams-main .bearers .teams-card .teams-contbox {
+    margin-bottom: 0px;
+    min-height: auto; }
+  .alrelteams-main .teams-contbox {
+    min-height: auto; }
+  .alrelteams-main .teams-card {
+    height: 100%;
+    margin-bottom: 40px;
+    width: 100%;
+    float: left; }
+
+  .alumni-ovmain .al-imprints .grid-wrapper:first-child {
+    margin-top: 30px; }
+  .alumni-ovmain .al-contactform {
+    margin-top: 30px; }
+    .alumni-ovmain .al-contactform .grey-btn {
+      padding: 10px 25px;
+      font-size: 16px;
+      margin-bottom: 0; }
+  .alumni-ovmain .al-members {
+    padding: 0 0 80px 0; }
+    .alumni-ovmain .al-members .aln-heading {
+      text-align: center !important; }
+    .alumni-ovmain .al-members p {
+      text-align: center; }
+    .alumni-ovmain .al-members .membs-list {
+      margin-top: 30px; }
+      .alumni-ovmain .al-members .membs-list .mebcontentcard {
+        min-height: 105px; }
+  .alumni-ovmain .giving {
+    text-align: center; }
+    .alumni-ovmain .giving p {
+      padding: 0 30px; }
+    .alumni-ovmain .giving .outline-grey-btn {
+      float: none;
+      text-align: center;
+      display: inline-block;
+      margin: 0 auto; }
+  .alumni-ovmain .al-events .mt-5,
+  .alumni-ovmain .al-events .my-5 {
+    margin-top: 2rem !important; }
+  .alumni-ovmain .al-events .events-slider {
+    margin-top: 30px; }
+  .alumni-ovmain .al-introsec {
+    margin-bottom: 0; }
+    .alumni-ovmain .al-introsec img {
+      width: auto !important;
+      text-align: center;
+      display: block;
+      float: none;
+      margin: 0 auto;
+      margin-bottom: 30px; }
+  .alumni-ovmain .al-highlights {
+    padding: 10px; }
+    .alumni-ovmain .al-highlights img {
+      margin-bottom: 0; }
+
+  .exam-faqs-main .quick-links-box {
+    display: none; }
+  .exam-faqs-main .width-40,
+  .exam-faqs-main .width-30 {
+    width: 50%;
+    float: left; }
+  .exam-faqs-main .Laccordins {
+    margin-top: 40px; }
+
+  .result-analysmain .text-right {
+    text-align: center !important; }
+
+  .ordinance-rules-main .need-helpbox {
+    display: none; }
+  .ordinance-rules-main .ordinance-tabsmain {
+    margin: 0; }
+  .ordinance-rules-main table th,
+  .ordinance-rules-main table td {
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 16px; }
+  .ordinance-rules-main .Llist-main {
+    padding-right: 20px; }
+
+  .exm-structure-main .structure-intro {
+    margin: 0 0 30px 0; }
+    .exm-structure-main .structure-intro img {
+      width: 100%;
+      margin: 20px 0; }
+  .exm-structure-main .struct-contentbox p.note {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .evalsystm-main .page-heading {
+    margin-bottom: 0px; }
+  .evalsystm-main .evals-right img {
+    margin-bottom: 30px;
+    margin: 0 auto 30px auto;
+    display: block; }
+  .evalsystm-main .cmtritabs-content {
+    margin-left: 0; }
+  .evalsystm-main .tr-tabs {
+    margin: 30px 0 0 0; }
+  .evalsystm-main .evlcontwrapper {
+    padding: 0 0 20px 0px; }
+
+  .exm-acdactvities-main {
+    margin: 30px 0 0 0; }
+    .exm-acdactvities-main .activity-card {
+      margin: 0 0px 40px 0px;
+      padding: 20px; }
+    .exm-acdactvities-main .actv-imgbox img {
+      margin-bottom: 20px; }
+    .exm-acdactvities-main .actv-contentbox {
+      padding: 0; }
+
+  .acdexe-main .mt-3,
+  .acdexe-main .mt-5 {
+    margin-top: 0 !important; }
+  .acdexe-main .toppers-heading {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem; }
+  .acdexe-main .topper-card {
+    margin-bottom: 40px; }
+    .acdexe-main .topper-card img {
+      max-height: 200px;
+      min-height: auto; }
+  .acdexe-main .sub0introsec {
+    text-align: center !important; }
+    .acdexe-main .sub0introsec .text-right {
+      text-align: center !important; }
+  .acdexe-main table th,
+  .acdexe-main table td {
+    padding: 0.8rem; }
+
+  .result-analysmain .grey-select {
+    margin-bottom: 15px; }
+
+  .link-right-section {
+    width: 100%;
+    right: 0;
+    position: relative;
+    text-align: center; }
+
+  .exam-ov-main .intro-sec {
+    margin-top: 15px; }
+    .exam-ov-main .intro-sec p {
+      margin-bottom: 10px; }
+    .exam-ov-main .intro-sec img {
+      margin-top: 30px; }
+  .exam-ov-main .ov-rulesbox .pad-left-0 {
+    padding-left: 15px; }
+  .exam-ov-main .ov-rulesbox .pad-right-0 {
+    padding-right: 15px; }
+  .exam-ov-main .ov-rulesbox img {
+    width: auto !important;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    display: block; }
+  .exam-ov-main .helpbox p {
+    text-align: center; }
+  .exam-ov-main .helpbox .outline-grey-btn {
+    width: max-content;
+    display: flex;
+    text-align: center;
+    margin: 10px auto 0 auto;
+    float: none; }
+
+  .principal-msgmain .princi-greetings img {
+    margin: 15px auto;
+    display: block; }
+  .principal-msgmain p {
+    text-align: center; }
+  .principal-msgmain .colorwrap:before {
+    content: "";
+    background: #f58220;
+    display: block;
+    height: 200px;
+    top: -190px;
+    position: absolute;
+    width: 122%;
+    left: -35px;
+    right: 0;
+    z-index: -1; }
+  .principal-msgmain .slider-wrapper .university-slider .carousel-caption {
+    top: 90%; }
+    .principal-msgmain .slider-wrapper .university-slider .carousel-caption p.bannersub-text {
+      text-align: left; }
+  .principal-msgmain .princi-herosec {
+    margin: 0 0 30px 0; }
+    .principal-msgmain .princi-herosec .right-content {
+      margin-bottom: 35px; }
+  .principal-msgmain .princi-introbox {
+    margin-top: 160px; }
+  .principal-msgmain .princi-pic {
+    width: auto !important;
+    margin: 0 auto;
+    z-index: 77777; } }
+@media (max-width: 575px) {
+  .iqac-main .composition-table {
+    margin-top: 15px; }
+  .iqac-main .bannersec {
+    margin-bottom: 30px; }
+  .iqac-main .iqac-introsec img {
+    width: 100%; }
+  .iqac-main .iqlist {
+    margin-top: 35px; }
+  .iqac-main .page-heading38, .iqac-main .page-subheading {
+    margin-bottom: 10px; }
+  .iqac-main .iqvissionobjsbox {
+    margin: 0; }
+  .iqac-main .iqcard {
+    padding: 22px;
+    margin-bottom: 30px; }
+  .iqac-main .Llist-main li {
+    padding-right: 20px; }
+
+  #formSuccess .modal-body {
+    padding: 20px; }
+    #formSuccess .modal-body p.title {
+      font-size: 20px;
+      margin: 0px 0px 15px 0px; }
+    #formSuccess .modal-body p.para {
+      font-size: 16px;
+      line-height: 25px; }
+
+  .alumni-ovmain .al-intiatives .talks-card {
+    margin-right: 0; }
+  .alumni-ovmain .al-intiatives .slick-dots {
+    margin-top: 0; }
+  .alumni-ovmain .awdSlider .controls-wrapper a {
+    width: 35px;
+    height: 35px; }
+  .alumni-ovmain .awdSlider .awd-caption {
+    width: 70%; }
+    .alumni-ovmain .awdSlider .awd-caption p.awards-person {
+      font-size: 20px;
+      line-height: 22px; }
+    .alumni-ovmain .awdSlider .awd-caption p.person-desgn {
+      font-size: 16px;
+      line-height: 24px; }
+  .alumni-ovmain .al-members .membs-list li {
+    width: calc(100% / 1); }
+  .alumni-ovmain .al-members .membs-list .mebcontentcard {
+    min-height: auto; }
+    .alumni-ovmain .al-members .membs-list .mebcontentcard .member-name {
+      width: 100%;
+      float: left;
+      text-align: left; }
+    .alumni-ovmain .al-members .membs-list .mebcontentcard p {
+      width: 100%;
+      float: left;
+      display: block;
+      text-align: left; }
+
+  .exam-faqs-main .width-40,
+  .exam-faqs-main .width-30 {
+    width: 100%;
+    float: left; }
+  .exam-faqs-main .options {
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px 15px; }
+  .exam-faqs-main .Laccordins .card .card-header .btn-link {
+    font-size: 18px;
+    line-height: 27px; }
+
+  .exam-forms-main {
+    margin-top: 0; }
+    .exam-forms-main table th,
+    .exam-forms-main table td {
+      padding: 15px 15px; }
+      .exam-forms-main table th .simple-link:before,
+      .exam-forms-main table td .simple-link:before {
+        display: none; }
+
+  .exmconvo-main .oath-sec {
+    margin: 0 0 20px 0; }
+  .exmconvo-main .convo-intro p {
+    text-align: center; }
+  .exmconvo-main .oath-prayer {
+    width: 100%; }
+    .exmconvo-main .oath-prayer p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 27px; }
+  .exmconvo-main .exam-ov-main .ov-rulesbox {
+    margin: 0 0 30px 0; }
+
+  .page-subheading {
+    font-size: 18px;
+    line-height: 30px;
+    width: 100%;
+    float: left;
+    word-break: break-word; }
+
+  .cls-improvmnt {
+    margin: 0; }
+    .cls-improvmnt .bgheader {
+      padding: 15px; }
+    .cls-improvmnt .bgcontent {
+      padding: 20px 20px; }
+    .cls-improvmnt .imprv-list li {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 0 20px 0px; }
+      .cls-improvmnt .imprv-list li:before {
+        background-size: 75%;
+        background-repeat: no-repeat; }
+
+  .acdexe-main .toppers-heading {
+    margin-bottom: 0; }
+  .acdexe-main .topper-card {
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    margin: 20px; }
+    .acdexe-main .topper-card .topper-contbox {
+      height: auto;
+      box-shadow: none;
+      padding: 15px 0 0 0; }
+      .acdexe-main .topper-card .topper-contbox:hover {
+        box-shadow: none; }
+      .acdexe-main .topper-card .topper-contbox .page-subheading {
+        font-size: 18px;
+        line-height: 27px; }
+    .acdexe-main .topper-card img {
+      max-height: initial;
+      min-height: auto;
+      width: auto;
+      display: block;
+      text-align: center;
+      margin: 0 auto; }
+
+  .exam-ov-main .ov-rulesbox img {
+    display: none; }
+  .exam-ov-main #chartdiv {
+    width: 100%;
+    height: 400px;
+    padding: 20px 0; }
+  .exam-ov-main .result-analys .graph-box {
+    padding: 10px; }
+  .exam-ov-main .helpbox {
+    margin: 0 0 30px 0; }
+    .exam-ov-main .helpbox p {
+      font-size: 18px;
+      line-height: 30px; }
+  .exam-ov-main .convos .convs-caption {
+    display: none; }
+  .exam-ov-main .convos .convSlider {
+    margin: 30px 0 50px 0;
+    height: auto; }
+  .exam-ov-main .convos .controls-wrapper {
+    width: 12%; }
+    .exam-ov-main .convos .controls-wrapper a {
+      width: 30px;
+      height: 30px; }
+
+  .principal-msgmain .princi-introbox {
+    margin-top: 130px;
+    margin-bottom: 0; }
+  .principal-msgmain .slider-wrapper .university-slider .carousel-caption {
+    top: 80%;
+    height: 125px; }
+    .principal-msgmain .slider-wrapper .university-slider .carousel-caption .uni-banner-heading {
+      font-size: 26px;
+      margin-bottom: 10px; }
+      .principal-msgmain .slider-wrapper .university-slider .carousel-caption .uni-banner-heading:after {
+        height: 2px;
+        bottom: -2px; }
+    .principal-msgmain .slider-wrapper .university-slider .carousel-caption p.bannersub-text {
+      font-size: 18px; } }
+@media (max-width: 480px) {
+  .alumni-ovmain .al-imprints .grid-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 30px; }
+
+  .exam-ov-main .convos .controls-wrapper {
+    width: 20%; }
+  .exam-ov-main .ov-rulesbox img {
+    width: 100% !important; }
+
+  .vismis-main .inner-contentwrapper {
+    margin-top: 30px; } }
+
+/*# sourceMappingURL=app.css.map */

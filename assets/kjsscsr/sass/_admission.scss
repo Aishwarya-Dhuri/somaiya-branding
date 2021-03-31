@@ -1,0 +1,507 @@
+//_admission.scss
+//@extend-elements
+
+%extend_1 {
+	background: transparent;
+}
+
+//original selectors
+%extend_2 {
+	right: 0;
+}
+
+
+.addmission {
+	.progtab {
+		.titles {
+			padding: 30px 0 35px;
+			float: left;
+			width: 100%;
+			.capital {
+				padding: 0;
+				margin: 0;
+				font-family: proxima-nova-bold;
+				text-transform: inherit !important;
+				font-size: 38px;
+				font-weight: bold;
+				font-style: normal;
+				font-stretch: normal;
+				line-height: 1.32;
+				letter-spacing: normal;
+				text-align: center;
+				color: #9b2928;
+			}
+			.sub_heading {
+				margin: 0;
+				padding: 0;
+				border: none;
+				float: left;
+				width: 100%;
+				.capital {
+					text-transform: capitalize;
+					font-family: ProximaNova-Semibold;
+					color: #162443;
+					font-size: 28px;
+					margin-bottom: -15px;
+					margin-top: 0;
+				}
+			}
+		}
+		.rightindicatior {
+			font-size: 25px;
+			color: #e30013;
+			padding-right: 10px;
+			font-family: proxima-nova-bold;
+			padding-left: 8px;
+			font-weight: normal !important;
+			letter-spacing: 0;
+			position: relative;
+			top: -3px;
+		}
+		#pgdm_overview {
+			li {
+				position: relative;
+				float: left;
+				padding: 13px 10px;
+				padding-left: 0;
+				overflow: hidden;
+				min-height: 147px;
+				width: calc(100%/3);
+				border-bottom: 0;
+				padding-top: 0 !important;
+				&:hover .viewbtn {
+					cursor: pointer;
+					background: #162343 !important;
+					color: #fff;
+				}
+			}
+			h4 {
+				font-family: ProximaNova-Semibold;
+				font-size: 16px;
+				padding-left: 15px;
+				margin-top: 0;
+				margin-bottom: 0;
+				padding-top: 15px;
+				padding-bottom: 10px;
+				color: #162443;
+				padding: 15px;
+				margin: 0;
+			}
+			hr {
+				margin-top: 0;
+				margin-bottom: 13px;
+				border-top: 1px solid #ccc;
+			}
+			.intake {
+				font-size: 14px;
+				font-family: FrutigerLTStd-Roman;
+				line-height: 24px;
+				padding-left: 15px;
+			}
+			.posbtn {
+				margin-top: 14px;
+				margin-left: 13px;
+				position: absolute;
+				bottom: 24px;
+			}
+			.viewbtn {
+				background: #f4f2f3;
+				border: 1px solid #333;
+				padding: 6px 36px 7px 20px;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 9px;
+				font-size: 13px;
+				font-family: FrutigerLTStd-Roman;
+				line-height: 24px;
+				color: #333;
+				//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: all ease 0.5s;
+				text-decoration: none;
+				.fa {
+					position: absolute;
+					right: 8%;
+					top: 17%;
+					font-size: 16px;
+				}
+			}
+		}
+		.overbg {
+			background: #f4f2f3;
+			min-height: 147px;
+			border: 1px solid #dddddd75;
+		}
+		.sub_heading {
+			border-bottom: 1px solid #d2d2d2;
+			float: left;
+			width: 100%;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+			h5.capital {
+				font-family: proxima-nova-bold;
+				font-size: 28px;
+				color: #162443;
+			}
+		}
+		table {
+			margin: 0 0 40px 0 !important;
+			width: 100% !important;
+			float: left;
+			tr {
+				&:nth-of-type(odd) {
+					background: #fff;
+				}
+				&:nth-of-type(even) {
+					background: #eee;
+				}
+			}
+			th {
+				background: #162343;
+				color: white;
+				padding: 10px;
+				font-size: 18px;
+				font-family: ProximaNova-Semibold;
+			}
+			td {
+				padding: 10px;
+				border: 1px solid #ccc;
+				text-align: left;
+				font-size: 15px;
+				font-family: FrutigerLTStd-Roman;
+			}
+		}
+		.qlink h5 {
+			text-transform: uppercase;
+			padding: 22px 22px 0 22px;
+			color: #162443;
+			font-size: 24px;
+			padding-top: 20px;
+			padding-left: 20px;
+			font-family: ProximaNova-Semibold;
+		}
+		div#pgdm_overview {
+			width: 100%;
+			float: left;
+		}
+		#important_dates h5 {
+			font-family: proxima-nova-bold;
+			font-size: 25px;
+			margin-top: 3px;
+			color: #d73c37;
+			text-transform: capitalize;
+		}
+		ul.lists {
+			float: left;
+			width: 100%;
+		}
+		li:hover .overbg {
+			cursor: pointer;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 1px 3px 5px 0 #c5bec2;
+			background: #ffffff !important;
+		}
+	}
+	.btn-wrapper {
+		width: 100%;
+		text-align: center;
+		padding: 0 0 20px;
+		float: left;
+		.imp_buttons {
+			float: none;
+			width: auto;
+			margin: 0 auto;
+			li {
+				display: inline-block;
+				border: none;
+				padding: 0;
+				width: calc(85% / 3);
+				a {
+					background-image: linear-gradient(#162443 2.2%, #162443 3.4%, #162443 4.5%, #162443 5.7%, #2a395d 47.1%, #40527a 98.8%, transparent 98.8%);
+					width: 100%;
+					padding: 15px 10px 10px;
+					display: block;
+					//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+					border-radius: 15px;
+					position: relative;
+					top: 4px;
+					font-family: ProximaNova-Semibold;
+					font-size: 17px;
+					color: #fff;
+					line-height: inherit;
+					text-decoration: none;
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: all ease 0.5s;
+					min-height: 55px;
+				}
+			}
+		}
+	}
+	.cream {
+		background: #fff;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 3px 0 6px rgba(105, 97, 97, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+	}
+	.tabs-left {
+		border-right: 1px solid #ddd;
+		border-left: 1px solid #ddd;
+		> li.active > a {
+			font-size: 17px;
+			border: 1px solid transparent;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 4px 4px 0 0;
+			color: #162443;
+			background-color: transparent;
+			border-bottom: 1px solid #ddd;
+			font-family: proxima-nova-bold;
+			display: block;
+			float: left;
+			width: 100%;
+		}
+	}
+	.responsive_tabs {
+		position: relative;
+		z-index: 10;
+		overflow: visible;
+		border-bottom: none;
+		li {
+			width: 100%;
+			float: none;
+			display: block;
+			background-color: #fff;
+			border-bottom: none !important;
+			margin-bottom: 0;
+			a {
+				border-color: transparent;
+				background: transparent;
+				border-bottom: 1px solid #f7ebe4;
+				padding-left: 15px;
+				margin-right: 0 !important;
+				padding-right: 0;
+				font-family: ProximaNova-Semibold;
+				font-size: 17px;
+				color: #004f9f;
+				line-height: 38px;
+				padding: 12px 15px;
+				text-align: left;
+				float: left;
+				display: block;
+				width: 100%;
+				span {
+					display: block;
+					float: left;
+				}
+			}
+		}
+	}
+	.para {
+		font-family: FrutigerLTStd-Roman;
+		font-size: 18px;
+		font-weight: normal;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 1.94;
+		letter-spacing: normal;
+		text-align: left;
+		color: #666666;
+		float: left;
+		width: 100%;
+		&.bold {
+			font-family: FrutigerLTStd-Bold;
+			font-size: 18px;
+			text-transform: capitalize;
+			margin-top: 0;
+			color: #333;
+			float: left;
+			width: 100%;
+		}
+	}
+	.nav-tabs > li.active > a {
+		@extend %extend_1;
+		&:focus {
+			@extend %extend_1;
+		}
+	}
+	#impotant_instruction .cust_row .box {
+		min-height: 150px;
+		width: 100%;
+		background-color: #fff;
+		padding: 25px;
+		margin-bottom: 30px;
+		position: relative;
+		border: 1px solid #eee;
+		.count {
+			background-color: #fff;
+			position: absolute;
+			width: 40px;
+			font-size: 24px;
+			text-align: center;
+			left: 0;
+			color: #d59494 !important;
+			height: 40px;
+			padding-top: 5px;
+			font-family: FrutigerLTStd-Roman;
+			&.one {
+				color: #4568a0;
+			}
+		}
+		p {
+			font-family: FrutigerLTStd-Roman;
+			font-size: 16px;
+			font-weight: normal;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.56;
+			letter-spacing: normal;
+			text-align: center;
+			color: #666666;
+			padding-left: 25px;
+		}
+	}
+	.hvr-underline-from-left:before {
+		height: 2px;
+		background: #4568a0;
+	}
+	.lists li {
+		width: 100%;
+		padding-left: 19px;
+		min-height: auto;
+		background-position: 0 8px;
+		background-image: url(https://simsr.somaiya.edu/assets/simsr/img/Homepage/menu-arrow.png);
+		font-size: 17px;
+		line-height: 30px;
+		font-family: FrutigerLTStd-Roman;
+		border-bottom: 0;
+		background-repeat: no-repeat;
+		margin-bottom: 10px;
+	}
+}
+.hvr-underline-from-left {
+	display: inline-block;
+	vertical-align: middle;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: perspective(1px) translateZ(0);
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: 100%;
+		bottom: 0;
+		background: #2098d1;
+		height: 4px;
+		//Instead of the line below you could use @include transition-property($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10)
+		transition-property: right;
+		//Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+		transition-duration: 0.3s;
+		//Instead of the line below you could use @include transition-timing-function($function-1, $function-2, $function-3, $function-4, $function-5, $function-6, $function-7, $function-8, $function-9, $function-10)
+		transition-timing-function: ease-out;
+	}
+	&:hover:before {
+		@extend %extend_2;
+	}
+	&:focus:before {
+		@extend %extend_2;
+	}
+	&:active:before {
+		@extend %extend_2;
+	}
+}
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.resource_box {
+	.guideline_box {
+		border: 1px solid #e1e1e1;
+		float: left;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+		background-color: #ffffff;
+		&:hover {
+			background: #f5f9f2;
+			//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.07);
+			.content {
+				border-left: 4px solid #069844;
+			}
+		}
+	}
+	.content {
+		min-height: 100px;
+		border-left: 4px solid ;
+		display: table;
+		p {
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+			font-family: Roboto-Light;
+			padding-right: 10px;
+			padding-left: 40px;
+			font-size: 16px;
+			font-weight: 300;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 1.27;
+			letter-spacing: normal;
+			text-align: left;
+			color: #333333;
+		}
+		.rightarrow {
+			background-position: 0 22px;
+			position: relative;
+			background-image: none;
+			&:before {
+				background-image: url(https://www.somaiya.edu/assets/physiotherapy/img/library/rightarrow.png);
+				content: "";
+				width: 23px;
+				height: 21px;
+				position: absolute;
+				background-size: 100%;
+				background-position: 0 0;
+				left: 10px;
+			}
+		}
+	}
+}
+.pfc .rightarrow {
+	background-image: url(../img/library/rightarrow.png);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	background-position: 15px 8px;
+	background-size: 22px;
+}
+ul.imp_buttons li a span {
+    color: #f69518;
+}
+.addmission .btn-wrapper .imp_buttons li a.btn_gredient:after {
+        color: #f69518;
+}
+@media (max-width: 660px){
+.addmission .btn-wrapper .imp_buttons li {
+    width: 100%;
+}
+.addmission .btn-wrapper li.border {
+    border-left: 0px solid #ccc;
+    height: 65px;
+    border-right: 0px solid #ccc;
+    margin: 0 10px;
+    padding: 0 10px;
+    margin: 0 0%;
+    padding: 0 0%;
+    position: relative;
+    top: 5px;
+}
+.addmission .progtab #pgdm_overview li {
+    width: calc(100%/1) !important;
+}
+}
