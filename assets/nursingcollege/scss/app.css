@@ -1,0 +1,400 @@
+body, html {
+  overflow-x: hidden; }
+
+/**New classes**/
+/*Base classes End*/
+.library.ayurvihar .wrapper .img {
+  width: 100%; }
+  .library.ayurvihar .wrapper .img.overview {
+    background-image: url(/assets/nursingcollege/img/library/overview-banner.png); }
+  .library.ayurvihar .wrapper .img.resources {
+    background-image: url(/assets/nursingcollege/img/library/resources/resources-banner.png); }
+  .library.ayurvihar .wrapper .img.services {
+    background-image: url(/assets/nursingcollege/img/library/services-banner.png); }
+  .library.ayurvihar .wrapper .img.facilities {
+    background-image: url(/assets/nursingcollege/img/library/facilities-banner.png); }
+  .library.ayurvihar .wrapper .img.printresources {
+    background-image: url(/assets/nursingcollege/img/library/print-resources-banner.png); }
+  .library.ayurvihar .wrapper .img.eresourcess {
+    background-image: url(/assets/nursingcollege/img/library/resources/eresources-banner.png); }
+.library.ayurvihar .menu nav.navbar {
+  border-bottom: none; }
+  .library.ayurvihar .menu nav.navbar .nav li {
+    width: calc(100% / 5);
+    padding: 30px 0 40px 0;
+    min-height: auto;
+    background: #f6f7f7; }
+    .library.ayurvihar .menu nav.navbar .nav li.actives {
+      background: #e8e8e8; }
+      .library.ayurvihar .menu nav.navbar .nav li.actives:after {
+        display: none; }
+    .library.ayurvihar .menu nav.navbar .nav li:before {
+      height: 100%;
+      top: 0; }
+    .library.ayurvihar .menu nav.navbar .nav li a {
+      opacity: 1; }
+      .library.ayurvihar .menu nav.navbar .nav li a span.img {
+        min-height: 50px;
+        margin: 0px 0px 10px 0px;
+        opacity: 1; }
+    .library.ayurvihar .menu nav.navbar .nav li ul.dropdown-menu {
+      margin-top: 0;
+      border: 1px solid #ddd;
+      padding: 0px 0;
+      background: #f6f7f7;
+      border-radius: 0;
+      border-top: none; }
+      .library.ayurvihar .menu nav.navbar .nav li ul.dropdown-menu li {
+        padding-left: 30px; }
+  .library.ayurvihar .menu nav.navbar .nav li li {
+    width: 100%;
+    padding: 15px; }
+
+.library-subhead {
+  font-family: "FiraSans-Medium";
+  color: #58595b;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  width: 100%;
+  float: left; }
+
+.lib-timings {
+  margin: 0 0 70px 0; }
+  .lib-timings img {
+    width: 100%; }
+  .lib-timings .row {
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+  .lib-timings .timing-intro {
+    margin: 20px 0; }
+
+.issue {
+  font-size: 18px;
+  font-family: "FiraSans-Medium";
+  color: #58595b;
+  line-height: 27px; }
+
+.lib-collections {
+  margin: 0 0 70px 0;
+  background: #f5f6f6;
+  padding: 30px 0; }
+  .lib-collections .collection-card {
+    background: #e6e7e7;
+    padding: 20px;
+    margin-bottom: 20px; }
+  .lib-collections .label {
+    font-size: 16px;
+    line-height: 27px;
+    color: #58595b;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px; }
+  .lib-collections .counter-value {
+    font-size: 24px;
+    font-family: "FiraSans-Medium";
+    color: #58595b;
+    line-height: 27px; }
+
+.library .library_look.lib-lookshappn {
+  margin: 0 0 70px 0;
+  background: #f5f6f6; }
+  .library .library_look.lib-lookshappn .container {
+    padding: 30px 20px; }
+  .library .library_look.lib-lookshappn #myCarousel .carousel-indicators > li {
+    width: calc(100% / 4) !important;
+    float: left;
+    padding: 5px;
+    max-height: 110px;
+    overflow: hidden;
+    margin: 0;
+    background: none;
+    opacity: 1; }
+    .library .library_look.lib-lookshappn #myCarousel .carousel-indicators > li.active img {
+      opacity: 1; }
+    .library .library_look.lib-lookshappn #myCarousel .carousel-indicators > li img {
+      max-height: 100px;
+      object-fit: cover;
+      opacity: 1; }
+  .library .library_look.lib-lookshappn .slider .w75,
+  .library .library_look.lib-lookshappn .slider .w25 {
+    width: 100%; }
+  .library .library_look.lib-lookshappn .slider .carousel-item {
+    max-height: 430px; }
+  .library .library_look.lib-lookshappn .slider .w25 {
+    margin-top: -120px; }
+    .library .library_look.lib-lookshappn .slider .w25 ul li a {
+      border: 3px solid #fff; }
+      .library .library_look.lib-lookshappn .slider .w25 ul li a:after {
+        background: transparent; }
+
+.happn-wrapper {
+  background: #e6e7e7;
+  padding: 30px; }
+  .happn-wrapper .list li {
+    width: 100%;
+    margin-bottom: 20px;
+    float: left; }
+  .happn-wrapper .date {
+    font-size: 18px;
+    font-family: "FiraSans-Medium";
+    color: #58595b;
+    line-height: 27px; }
+  .happn-wrapper p {
+    font-size: 16px;
+    line-height: 24px; }
+
+.lib-resources {
+  margin: 0 0 70px 0; }
+  .lib-resources.eresources {
+    margin: 0 0 40px 0; }
+  .lib-resources .facilities-row {
+    background: #f6f7f7;
+    padding: 20px;
+    margin: 0px 0px;
+    text-align: center; }
+    .lib-resources .facilities-row p {
+      margin: 20px 0 10px 0; }
+  .lib-resources .imgarea {
+    margin-bottom: 20px;
+    height: 50px; }
+  .lib-resources .shadow_box {
+    box-shadow: 0px 0px 6px #00000029;
+    padding: 30px;
+    margin-bottom: 50px;
+    display: flex; }
+    .lib-resources .shadow_box p {
+      margin-bottom: 20px; }
+    .lib-resources .shadow_box .simple-link:before {
+      float: left;
+      background-image: url(/assets/nursingcollege/img/library/resources/eresarrow.svg);
+      background-position: center;
+      margin: 3px 10px 0 0; }
+  .lib-resources .greyprint {
+    background: #f6f7f7;
+    padding: 30px 0; }
+    .lib-resources .greyprint .lib-table th {
+      background-color: #e5e5e5; }
+    .lib-resources .greyprint .lib-table td {
+      background: #fff; }
+
+.lib-table {
+  margin-bottom: 30px; }
+  .lib-table th,
+  .lib-table td {
+    padding: 10px 20px; }
+  .lib-table th {
+    background-color: #f5f6f6; }
+
+.para-row p {
+  margin-bottom: 20px; }
+
+.subheading {
+  color: #58595b; }
+
+.minor-head {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "FiraSans-Medium";
+  color: #58595b;
+  float: left;
+  width: 100%;
+  margin-bottom: 10px; }
+
+.facsnos {
+  font-size: 24px;
+  line-height: 27px;
+  font-family: "FiraSans-Medium";
+  color: #58595b; }
+
+.library .sc-libteam .subtitle {
+  text-align: left;
+  margin: 20px 0 10px 0; }
+
+.mainherotitle-48 {
+  margin-bottom: 30px; }
+
+.library .library_team .box .img {
+  padding: 20px 20px 0 20px; }
+
+.whats-libcontainer {
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  max-height: 360px; }
+
+.exam-main .bannersec {
+  margin-bottom: 50px; }
+  .exam-main .bannersec .bannerimg {
+    width: 100%; }
+.exam-main .exmsubtext {
+  color: #58595b;
+  font-family: "FiraSans-Medium";
+  font-size: 18px;
+  line-height: 27px; }
+.exam-main .descsec {
+  margin: 0 0 50px 0; }
+.exam-main .mainherotitle-48 {
+  text-align: left; }
+.exam-main .examtable {
+  margin-bottom: 30px; }
+  .exam-main .examtable .wt {
+    width: 100%;
+    float: left; }
+  .exam-main .examtable th {
+    background-color: #f6f7f7;
+    padding: 10px;
+    font-size: 18px;
+    color: #58595b; }
+  .exam-main .examtable td {
+    padding: 10px;
+    text-align: center;
+    color: #58595b; }
+    .exam-main .examtable td:first-child {
+      text-align: left; }
+.exam-main .codebox {
+  background-color: #f1f1f1;
+  padding: 30px;
+  margin: 20px 0 0 0;
+  width: 100%;
+  float: left;
+  height: 100%; }
+.exam-main .examdownloadlink {
+  font-size: 18px;
+  color: #006699;
+  text-decoration: underline;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  padding-left: 25px; }
+  .exam-main .examdownloadlink::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/nursingcollege/img/examination/download-icon.svg);
+    width: 30px;
+    height: 30px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: 55%; }
+  .exam-main .examdownloadlink:hover {
+    text-decoration: none;
+    color: #004466; }
+.exam-main .codehead {
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 30px; }
+  .exam-main .codehead.notallowed::before {
+    background-image: url(/assets/nursingcollege/img/examination/notallowed.svg); }
+  .exam-main .codehead::before {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/nursingcollege/img/examination/allowed.svg);
+    width: 40px;
+    height: 40px;
+    left: 0;
+    background-repeat: no-repeat; }
+
+@media screen and (max-width: 800px) {
+  .library .library_look.lib-lookshappn .slider .w25 {
+    margin-top: -85px; }
+
+  .exam-main .descsec {
+    margin: 0 0 30px 0; }
+  .exam-main .bannersec {
+    margin-bottom: 30px; } }
+@media screen and (max-width: 767px) {
+  .lib-resources.eresources {
+    margin: 0 0 0 0; }
+
+  .library .library_look.lib-lookshappn .slider .w25 {
+    margin-top: 0;
+    margin-bottom: 30px; }
+
+  .whats-libcontainer {
+    max-height: fit-content;
+    overflow: visible; }
+    .whats-libcontainer li:last-child {
+      margin-bottom: 0; }
+
+  .lib-timings img {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: auto;
+    display: block; }
+  .lib-timings .width-20,
+  .lib-timings .width-80 {
+    width: 100%; }
+
+  .lib-resources .width-20,
+  .lib-resources .width-80 {
+    width: 100%; }
+
+  .lib-collections {
+    margin: 0 0 30px 0; }
+    .lib-collections img {
+      display: none; } }
+@media screen and (max-width: 575px) {
+  .exam-main .examtable td,
+  .exam-main .examtable th {
+    font-size: 14px;
+    line-height: 24px; }
+  .exam-main .Llist-main li {
+    padding-right: 20px; }
+  .exam-main .library-subhead {
+    font-size: 20px;
+    line-height: 30px; }
+    .exam-main .library-subhead.mtop40 {
+      margin-top: 10px; }
+
+  p {
+    font-size: 16px;
+    line-height: 24px; }
+
+  .lib-resources {
+    margin: 0 0 40px 0; }
+    .lib-resources .right_img_cont img,
+    .lib-resources .left_img_cont img {
+      margin-bottom: 20px; }
+    .lib-resources .simple-link {
+      word-break: break-all; }
+
+  .mainherotitle-48 {
+    margin-bottom: 15px; } }
+@media screen and (max-width: 480px) {
+  .lib-resources {
+    margin: -25px 0 40px 0; }
+
+  .library .library_team {
+    margin: -25px 0 20px 0; }
+
+  .library-guidelines {
+    margin: -25px 0 30px 0; }
+    .library-guidelines .Llist-main {
+      margin-top: 10px;
+      padding-right: 25px; }
+
+  .happn-wrapper {
+    padding: 20px;
+    margin: 30px 15px 0 15px; }
+
+  .library.ayurvihar section.main_menu {
+    margin: -120px 0px 50px 0px; }
+
+  .library.ayurvihar .menu nav.navbar .nav li {
+    width: 100%;
+    padding: 15px 15px 15px 15px; }
+
+  .library .menu ul.nav.navbar-nav.togglethis {
+    margin-bottom: 25px; }
+
+  .library .top_section {
+    margin-top: -25px; }
+
+  .library.ayurvihar .menu nav.navbar .nav li ul.dropdown-menu {
+    margin-top: 30px;
+    border: none;
+    background-color: transparent; }
+    .library.ayurvihar .menu nav.navbar .nav li ul.dropdown-menu li {
+      background-color: transparent; } }
+
+/*# sourceMappingURL=app.css.map */

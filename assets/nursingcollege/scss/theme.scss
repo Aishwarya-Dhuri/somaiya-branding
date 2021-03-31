@@ -1,0 +1,711 @@
+.nursing {
+	.slider-wrapper {
+		margin: 0px 0px 70px 0px;
+
+		.university-slider {
+			img {
+				padding-left: 15.4%;
+			}
+
+			.carousel-caption {
+				padding: 45px 45px;
+				width: 35%;
+
+				p {
+					padding-bottom: 0px;
+				}
+
+			}
+
+		}
+
+		.banner-red-lef-alt {
+			left: 12%;
+		}
+
+		.banner-red-left {
+			width: 12%;
+		}
+
+	}
+
+	h2 {
+		&.maintitle {
+			font-family: 'Marcellus-Regular';
+			font-size: 48px;
+			line-height: 50px;
+			color: #b7202e;
+			margin: 0px 0px 20px 0px;
+		}
+
+	}
+
+	section {
+		&.welcome {
+			float: left;
+			width: 100%;
+			margin: 0px 0px 70px 0px;
+
+			.img {
+				float: left;
+				width: 100%;
+
+				img {
+					width: 100%;
+					float: left;
+				}
+
+			}
+
+		}
+
+		&.explore {
+			float: left;
+			width: 100%;
+			margin: 0px 0px 70px 0px;
+
+			.box {
+				box-shadow: 0px 0px 10px #00000021;
+				opacity: 1;
+				padding: 30px 35px;
+				float: left;
+				width: calc(50% - 30px);
+				min-height: 300px;
+				margin: 0px 30px 30px 0px;
+
+				.img {
+					margin: 0px 0px 15px 0px;
+				}
+
+				p {
+					&.title {
+						color: #707070;
+						font-family: "FiraSans-Medium";
+						font-size: 18px;
+						line-height: 22px;
+						margin: 0px 0px 8px 0px;
+					}
+
+				}
+
+				.para {
+					font-weight: normal;
+					color: #58595B;
+				}
+
+			}
+
+			.imgwrap {
+				.img {
+					float: left;
+					width: 100%;
+
+					img {
+						float: left;
+						width: 100%;
+					}
+
+				}
+
+			}
+
+		}
+
+		&.media {
+			float: left;
+			width: 100%;
+			margin: 0px 0px 70px 0px;
+
+			.img {
+				float: left;
+				width: 100%;
+
+				img {
+					float: left;
+					width: 100%;
+					float: left;
+					width: 100%;
+				}
+
+			}
+
+			.evnt-wrap {
+				float: left;
+				width: 100%;
+
+				.title {
+					float: left;
+					width: 100%;
+					margin: 0px 0px 30px 0px;
+
+					.img {
+						float: left;
+						width: auto;
+						margin: 0px 20px 0px 0px;
+					}
+
+					span {
+						color: #707070;
+						font-family: "FiraSans-Medium";
+						font-size: 24px;
+						line-height: 36px;
+						margin: 0px 0px 15px 0px;
+						position: relative;
+						top: 6px;
+					}
+
+				}
+
+			}
+
+			.slider {
+				&.autoplay {
+					float: left;
+					width: 100%;
+					float: left;
+					width: 100%;
+
+					.slick-list {
+						&.draggable {
+							float: left;
+							width: 100%;
+							float: left;
+							width: 100%;
+						}
+
+					}
+
+					p {
+						&.date {
+							font-family: FiraSans-Bold;
+							font-size: 16px;
+							color: #58595B;
+							margin: 0px 0px 0px 0px;
+						}
+
+						&.title {
+							font-size: 16px;
+							font-family: "Fira Sans", sans-serif;
+							color: #58595B;
+							font-weight: normal;
+							margin: 0px 0px 0px 0px;
+							position: relative;
+							top: 4px;
+						}
+
+					}
+
+					a {
+						&.link {
+							color: #006699;
+							font-family: "FiraSans-Medium";
+							font-size: 18px;
+							line-height: 36px;
+							margin: 0px 0px 15px 0px;
+							text-decoration: underline;
+						}
+
+					}
+
+				}
+
+			}
+
+			.slick-vertical {
+				.slick-slide {
+					margin: 0px 0px 30px 0px;
+				}
+
+			}
+
+			a {
+				&.linkbtn {
+					padding: 10px 18px;
+					color: #fff;
+					font-family: "FiraSans-Medium";
+					font-size: 18px;
+					line-height: 36px;
+					background-color: #58595B;
+					min-width: 38%;
+					display: block;
+					float: left;
+					position: relative;
+
+					&:after {
+						content: "\f105";
+						font-family: fontAwesome;
+						position: absolute;
+						right: 15px;
+						font-size: 20px;
+						top: 9px;
+					}
+
+				}
+
+			}
+
+		}
+
+		&.whatsnew {
+			&.media {
+				background-color: #F1F1F1;
+
+				.slider {
+					&.whats-new {
+						float: left;
+						width: 100%;
+					}
+
+				}
+
+				.evnt-wrap {
+					padding: 50px 0px;
+				}
+
+				p {
+					&.date {
+						font-family: FiraSans-Bold;
+						font-size: 16px;
+						color: #58595B;
+						margin: 0px 0px 0px 0px;
+					}
+
+					&.title {
+						font-size: 16px;
+						font-family: "Fira Sans", sans-serif;
+						color: #58595B;
+						font-weight: normal;
+						margin: 0px 0px 0px 0px;
+						position: relative;
+						top: 4px;
+					}
+
+				}
+
+				a {
+					&.link {
+						color: #006699;
+						font-family: "FiraSans-Medium";
+						font-size: 18px;
+						line-height: 36px;
+						margin: 0px 0px 15px 0px;
+						text-decoration: underline;
+					}
+
+				}
+
+				.slick-vertical {
+					.slick-slide {
+						margin: 0px 0px 20px 0px;
+						border-bottom: 3px dotted #cbc6c6;
+						padding: 0px 0px 15px 0px;
+					}
+
+				}
+
+				.progwrap {
+					float: left;
+					width: 100%;
+					background-color: #E4E4E4;
+					padding: 50px 30px;
+					padding: 50px 30px 30px 30px;
+
+					.img {
+						float: left;
+						width: auto;
+						margin: 0px 20px 0px 0px;
+
+						&.book {
+							float: left;
+							width: 100%;
+							text-align: center;
+							margin: 0px 0px 20px 0px;
+
+							img {
+								width: 80%;
+								margin: 0 auto;
+								float: none;
+							}
+
+						}
+
+					}
+
+					.title {
+						float: left;
+						width: 100%;
+						margin: 0px;
+						padding: 0px;
+						margin: 0px 0px 30px 0px;
+
+						span {
+							color: #707070;
+							font-family: "FiraSans-Medium";
+							font-size: 24px;
+							line-height: 36px;
+							margin: 0px 0px 15px 0px;
+							position: relative;
+							top: 6px;
+						}
+
+					}
+
+					.book {
+						width: 100%;
+						text-align: center;
+						float: left;
+						width: 100%;
+						text-align: center;
+
+						img {
+							width: 80%;
+							margin: 0 auto;
+							float: none;
+							width: 80%;
+							margin: 0 auto;
+							float: none;
+						}
+
+					}
+
+					p {
+						&.title {
+							margin: 0px;
+						}
+
+					}
+
+					.programme {
+						float: left;
+						width: 100%;
+						border-bottom: 3px dotted #cbc6c6;
+						padding: 0px 0px 15px 0px;
+						margin: 0px 0px 15px 0px;
+
+						&:last-child {
+							border: none;
+						}
+
+					}
+
+				}
+
+				.programme {
+					float: left;
+					width: 100%;
+					margin: 0px 0px 15px 0px;
+					padding: 0px 0px 15px 0px;
+					border-bottom: 3px dotted #cbc6c6;
+
+					&:last-child {
+						border: none;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and (max-width:1445px) {
+	.nursing .slider-wrapper .university-slider .carousel-caption {
+		bottom: -5px;
+	}
+
+	.nursing section.whatsnew.media .evnt-wrap {
+		padding: 45px 0px;
+	}
+
+}
+
+@media only screen and (max-width:1370px) {
+	.nursing section.whatsnew.media .evnt-wrap {
+		padding: 40px 0px;
+	}
+
+	.nursing section.media .slick-vertical .slick-slide {
+		margin: 0px 0px 20px 0px;
+	}
+
+}
+
+@media only screen and (max-width:1280px) {
+	.nursing section.explore .box {
+		min-height: 320px;
+	}
+
+	.nursing section.whatsnew.media .progwrap .title span {
+		font-size: 22px;
+	}
+
+}
+
+@media only screen and (max-width:1025px) {
+	.nursing h2.maintitle {
+		font-size: 38px;
+	}
+
+	.nursing .slider-wrapper {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.nursing section.welcome {
+		margin: 0px 0px 50px 0px;
+	}
+
+	section.whatsnew.media .col-md-8 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	section.whatsnew.media .col-md-4 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.nursing section.media {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.nursing section.explore {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.nursing section.media {
+		margin: 0px 0px 50px 0px;
+	}
+
+	.nursing section.explore .box {
+		min-height: 305px;
+		padding: 20px 15px !important;
+	}
+
+	.nursing section.explore .box .para {
+		font-size: 16px;
+	}
+
+}
+
+@media only screen and (max-width:769px) {
+	.nursing .slider-wrapper .university-slider .carousel-caption {
+		padding: 25px 25px;
+		width: 90%;
+		height: 100px;
+		position: relative;
+		bottom: 50px !important;
+	}
+
+	.slider-wrapper .banner-red-left {
+		height: 80%;
+	}
+
+	.slider-wrapper .banner-red-lef-alt {
+		height: 80%;
+	}
+
+	.nursing .slider-wrapper {
+		margin: 0px 0px 0px 0px;
+	}
+
+	.nursing h2.maintitle {
+		font-size: 34px;
+	}
+
+	.nursing h2.maintitle {
+		font-size: 34px;
+	}
+
+	.nursing section.welcome p {
+		font-size: 16px;
+		line-height: 27px;
+	}
+
+	.nursing section.whatsnew.media .progwrap .title span {
+		font-size: 20px;
+		float: left;
+		width: auto;
+		display: block;
+	}
+
+	.nursing section.media .evnt-wrap .title span {
+		font-size: 20px;
+	}
+
+	.nursing section.whatsnew.media .slick-vertical .slick-slide {
+		margin: 0px 0px 15px 0px;
+		border-bottom: 3px dotted #cbc6c6;
+		padding: 0px 0px 15px 0px;
+	}
+
+	.nursing section.explore .box {
+		padding: 30px 35px;
+		width: calc(50% - 15px);
+		margin: 0px 15px 20px 0px;
+		min-height: 355px;
+	}
+
+	.megamenu .menus-container .menus {
+		display: flex;
+		justify-content: left;
+		height: 70px;
+	}
+
+	.megamenu .menu-mobile.large-mobileham {
+		top: 0px;
+	}
+
+}
+
+@media only screen and (max-width:767.5px) {
+	.nursing section.welcome {
+		margin: -20px 0px 30px 0px;
+	}
+
+	.nursing section.welcome p {
+		font-size: 16px;
+		line-height: 27px;
+		margin: 0px 0px 15px 0px;
+	}
+
+	section.whatsnew.media .col-md-8 {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	section.whatsnew.media .col-md-4 {
+	
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+	.nursing section.media .evnt-wrap .title {
+		margin: 0px 0px 20px 0px;
+	}
+
+	.nursing section.media a.linkbtn {
+		padding: 6px 18px;
+		font-size: 18px;
+		line-height: 36px;
+		min-width: 30%;
+	}
+
+	.nursing section.whatsnew.media .progwrap .img.book img {
+		width: 50%;
+	}
+
+	.nursing section.explore .imgwrap .img img {
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.nursing section.explore .imgwrap .img {
+		text-align: center;
+	}
+
+	.nursing section.media .img {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.nursing section.welcome .img img {
+		width: 60%;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.nursing section.welcome .img {
+		text-align: center;
+	}
+
+	.nursing section.media .img img {
+		float: none;
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.nursing section.media .img {
+		margin: 0px 0px 15px 0px;
+		text-align: center;
+	}
+
+	.megamenu .menu-mobile.large-mobileham {
+		top: 0px;
+	}
+
+}
+
+@media only screen and (max-width:555px) {
+	.nursing .slider-wrapper .university-slider .carousel-caption {
+		height: 125px;
+	}
+
+	.nursing h2.maintitle {
+		font-size: 30px;
+	}
+
+	.nursing section.welcome .img img {
+		width: 80%;
+	}
+
+	.nursing section.media .img img {
+		width: 80%;
+	}
+
+	.nursing section.explore .imgwrap .img img {
+		width: 80%;
+	}
+
+	.nursing section.media a.linkbtn {
+		min-width: 45%;
+	}
+
+	.nursing section.media .evnt-wrap .title span {
+		top: 0px;
+	}
+
+}
+
+@media only screen and (max-width:485px) {
+	.nursing section.welcome .img img {
+		width: 100%;
+	}
+
+	.nursing section.media .img img {
+		width: 100%;
+	}
+
+	.nursing section.explore .imgwrap .img img {
+		width: 100%;
+	}
+
+	.nursing .slider-wrapper .university-slider .carousel-caption {
+		bottom: 30px !important;
+	}
+
+	.nursing h2.maintitle {
+		margin: 0px 0px 10px 0px;
+	}
+
+	.nursing section.media a.linkbtn {
+		min-width: 65%;
+	}
+
+	.nursing section.explore .box {
+		padding: 30px 35px;
+		width: calc(100% - 0px);
+		margin: 0px 0px 15px 0px;
+		min-height: auto;
+	}
+
+}
