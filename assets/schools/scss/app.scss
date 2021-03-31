@@ -1,0 +1,1074 @@
+@import "../../default_asset/uni-scss/base";
+.backtopbtn {
+  background-color: $grey;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
+  &:hover {
+    background-color: $darkred;
+    &:after {
+      color: $white;
+    }
+  }
+  &:after {
+    color: $white;
+  }
+}
+.slider-wrapper.schools-sliderwrapper {
+  .carousel-caption.box {
+    left: auto;
+    right: 30px;
+    top: 30px;
+    bottom: inherit;
+    padding: 30px 35px;
+    height: auto;
+    width: 35%;
+  }
+  .slideroverlay {
+    background: #ffffff2b;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    opacity: 0.65;
+    backdrop-filter: blur(30px);
+  }
+  img {
+    max-height: 620px;
+    padding-left: 85px;
+  }
+  .carousel-indicators-numbers {
+    right: auto;
+    left: 20px;
+    li {
+      margin: 15px 15px;
+      width: 8px;
+      height: 8px;
+      &.active {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+}
+.hm-stepper {
+  margin-top: -70px;
+  width: 100%;
+  float: left;
+  .btnswrapper {
+    width: 93%;
+    margin: 0 auto;
+    padding-left: 85px;
+  }
+  .grey-btn {
+    background-color: $white;
+    color: $grey;
+    &:hover {
+      color: $white;
+    }
+  }
+  .btn1,
+  .btn2,
+  .btn3,
+  .btn4 {
+    padding: 0;
+  }
+  .btn2 {
+    margin-top: -42px;
+  }
+  .btn3 {
+    margin-top: -83px;
+  }
+  .btn4 {
+    margin-top: -125px;
+  }
+}
+.hm-notices {
+  margin: 60px 0;
+  .mainherotitle-48 {
+    text-align: left;
+  }
+  .noticeboardlist {
+    li {
+      width: 50%;
+      float: left;
+      border-right: 1px solid #ddd;
+      padding: 20px 10px 0 30px;
+    }
+  }
+
+  .dateno,
+  .datetext {
+    padding: 8px;
+    color: $white;
+    background-color: $grey;
+    display: inline-block;
+    margin: 0;
+    float: left;
+    margin-bottom: 15px;
+  }
+  .datetext {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "FiraSans-Medium";
+  }
+  .dateno {
+    font-family: "FiraSans-Bold";
+    font-size: 24px;
+    line-height: 20px;
+    background-color: #6d6e70;
+  }
+  .noticetype {
+    font-size: 16px;
+    line-height: 25px;
+    font-family: "FiraSans-Medium";
+    color: $black;
+    text-transform: uppercase;
+  }
+  .noticelink {
+    font-size: 22px;
+    line-height: 33px;
+    font-family: "FiraSans-Medium";
+    color: $black;
+    &:hover {
+      text-decoration: underline;
+      color: $linkblue;
+    }
+  }
+  .notice-prev,
+  .notice-next {
+    position: absolute;
+    display: inline-flex;
+    width: fit-content;
+    float: right;
+    top: auto;
+    bottom: -70px;
+    right: 0;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: $grey;
+
+    &:focus,
+    &:hover {
+      border-radius: 0;
+      outline: none;
+      border: none;
+      background-color: $darkred;
+    }
+    &::before {
+      line-height: 20px;
+      color: $white;
+      padding: 8px 15px;
+      opacity: 1;
+      border: none;
+      outline: none;
+      font-size: 25px;
+    }
+  }
+  .notice-next {
+    right: 39px;
+  }
+  .notice-prev:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+  }
+  .notice-next::before {
+    content: "\f104";
+    font-family: "FontAwesome";
+  }
+}
+.hm-whyjoin {
+  background-color: $whitelight;
+  padding: 70px 0;
+  margin: 30px 0 50px 0;
+
+  .mainherotitle-48 {
+    text-align: left;
+  }
+  .thumbnail-video {
+    position: relative;
+    display: block;
+    margin-right: -100px;
+
+    &:after {
+      content: "";
+      width: 65px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      height: 100%;
+      background-image: url(/assets/kjsce/img/homepage/transparent-video-play.svg);
+      background-position: center;
+      background-size: 77px;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+    }
+    &:hover {
+      &:after {
+        background-image: url(/assets/kjsce/img/homepage/video-play-red.svg);
+      }
+    }
+    img {
+      display: block;
+      position: relative;
+    }
+  }
+}
+.subtext {
+  font-size: 22px;
+  line-height: 33px;
+  color: $black;
+  font-family: "FiraSans-Medium";
+  margin-bottom: 20px;
+}
+.nounderlinelink {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+.hmbalanced-schooling {
+  margin-bottom: 0;
+  .mainherotitle-48 {
+    text-align: left;
+  }
+  .iconswrap {
+    width: 30%;
+    float: left;
+  }
+  .Balancedschoolingimg {
+    display: none;
+  }
+  .boyimg {
+    width: 70%;
+    float: left;
+  }
+  .classroomimg {
+    margin-top: 57px;
+    animation: glow 0.8s infinite alternate;
+    border-radius: 50%;
+  }
+  .curricularimg {
+    right: -50px;
+    border-radius: 50%;
+    margin-top: 15px;
+
+    position: relative;
+    animation: glow 0.8s infinite alternate;
+  }
+}
+.hm-campus {
+  background-color: $whitelight;
+  padding: 70px 0;
+  margin: 0 0 70px 0;
+  .campusimg {
+    position: relative;
+    width: 100%;
+  }
+  .featureimg {
+    display: block;
+  }
+  .featurehvrimg {
+    display: none;
+  }
+  .grid {
+    height: 50px;
+    width: 100%;
+    float: left;
+    img {
+      width: 100%;
+      height: 30px;
+    }
+  }
+  .highlights {
+    width: 60%;
+    background-color: $darkred;
+    float: left;
+    padding: 20px;
+    margin-top: -70px;
+    color: $white;
+    position: relative;
+    font-size: 22px;
+    font-family: "FiraSans-Medium";
+    z-index: 1;
+  }
+  .gridwrapper {
+    width: 100%;
+    float: right;
+    overflow: hidden;
+    &:after {
+      background-image: url(/assets/schools/img/homepage/repeat-grid.png);
+      content: "";
+      position: absolute;
+      width: 95.5%;
+      height: 70px;
+      background-repeat: repeat;
+      left: 15px;
+      bottom: 0;
+      z-index: 0;
+    }
+  }
+  .features-list {
+    margin-top: 40px;
+    .ft {
+      float: left;
+      text-align: center;
+      background-color: $white;
+      padding: 20px;
+      border-bottom: 3px solid transparent;
+      // animation: glow 1s infinite alternate;
+
+      &.yellow:hover {
+        border-bottom: 3px solid $yellow;
+      }
+      &.brown:hover {
+        border-bottom: 3px solid $lightbrown;
+      }
+      &:hover {
+        border-bottom: 3px solid $orange;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
+
+        .featurehvrimg {
+          display: block;
+        }
+        .featureimg {
+          display: none;
+        }
+      }
+    }
+    img {
+      width: auto;
+      margin: 0 auto 20px auto;
+    }
+    .subtext {
+      float: left;
+      font-size: 20px;
+      width: 100%;
+    }
+  }
+}
+.pencilsec {
+  text-align: right;
+  .pencilimg {
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  }
+}
+.hmparent-connect {
+  margin: 70px 0 0 0;
+  position: relative;
+  .topsec {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .mainherotitle-48 {
+    text-align: left;
+  }
+  .parentslider {
+    width: 100%;
+    float: left;
+    display: block;
+    clear: both;
+    top: 40px;
+  }
+  .bottomsec {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    float: left;
+    bottom: 0;
+    left: 0;
+    padding: 30px 40px;
+    background: $whitelight;
+    text-align: left;
+    position: relative;
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      font-style: italic;
+      font-weight: 400;
+    }
+    .parentsname {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 30px 0 0 0;
+      &:after {
+        content: "";
+        border-top: 3px solid $yellow;
+        flex: 1 0 20px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .crprev,
+  .crnext {
+    background-color: $grey;
+    padding: 0px 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+
+    &:hover {
+      background-color: $darkred;
+      text-decoration: none;
+    }
+    &::before {
+      color: $white;
+    }
+  }
+  .crnext {
+    right: -15px;
+  }
+  .crprev {
+    left: -15px;
+  }
+  .crprev:before {
+    content: "\f104";
+    font-family: "FontAwesome";
+  }
+  .crnext:before {
+    content: "\f105";
+    font-family: "FontAwesome";
+  }
+}
+.prcolorwrapper {
+  width: 100%;
+  float: left;
+  height: auto;
+  position: relative;
+  &:before {
+    background-image: url(/assets/schools/img/homepage/yellow-grid.svg);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-repeat: repeat;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  &:after {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    height: 150px;
+    content: "";
+    z-index: -1;
+    top: auto;
+    background-color: $yellow;
+    opacity: 0.4;
+    bottom: 0;
+  }
+}
+.hm-events {
+  padding: 70px 0 100px 0;
+  background-image: url(/assets/schools/img/homepage/eventsbg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+  margin: 50px 0 40px 0;
+  color: $white;
+  &::before {
+    content: "";
+    background-image: url(/assets/schools/img/homepage/Ltopgrid.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  li:first-child:hover {
+    .eventscard {
+      border-bottom: 4px solid $orange;
+    }
+  }
+  li:nth-child(2):hover {
+    .eventscard {
+      border-bottom: 4px solid $yellow;
+    }
+  }
+  li:last-child:hover {
+    .eventscard {
+      border-bottom: 4px solid $lightbrown;
+    }
+  }
+  &:after {
+    content: "";
+    background-image: url(/assets/schools/img/homepage/Lbottomgrid.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .grey-btn:hover {
+    color: $white;
+  }
+  .dates {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    text-align: center;
+
+    color: #fff;
+    .number {
+      width: 100%;
+      float: left;
+      background-color: #6d6e70;
+      padding: 5px 0;
+      font-size: 20px;
+      font-family: "FiraSans-Bold";
+    }
+    .text {
+      width: 100%;
+      float: left;
+      background-color: $grey;
+      padding: 5px 0;
+      font-size: 14px;
+      font-family: "FiraSans-Medium";
+    }
+  }
+  .eventsbuttonwrap {
+    margin-top: 50px;
+    a {
+      color: $black;
+      background: $white;
+      z-index: 1;
+    }
+  }
+  .mainherotitle-48 {
+    color: $white;
+  }
+  .intropara {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: $white;
+  }
+
+  .eventscard {
+    margin-top: 20px;
+    border-bottom: 4px solid transparent;
+    position: relative;
+  }
+  .eventsimg {
+    width: 100%;
+  }
+  .eventstitle {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "FiraSans-Medium";
+    background-color: $white;
+    color: $black;
+    padding: 15px;
+  }
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #eee;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #eee;
+  }
+}
+@media (min-width: 768px) {
+  .jointabsec {
+    margin-top: -150px;
+    .descpcont {
+      border-top: 3px solid $orange;
+      padding: 20px;
+      background: $white;
+      height: 100%;
+    }
+    .jn-navtabs {
+      padding-top: 40px;
+    }
+    img {
+      width: 100%;
+    }
+
+    .nav-tabs {
+      display: flex;
+      flex-flow: column nowrap;
+
+      border-bottom: none;
+      &.jn-navtabs {
+        .nav-item {
+          &:nth-child(2) {
+            .nav-link.active {
+              border-left: 5px solid $yellow;
+            }
+          }
+          &:nth-child(3) {
+            .nav-link.active {
+              border-left: 5px solid $lightbrown;
+            }
+          }
+          &:last-child {
+            .nav-link {
+              border-bottom: none;
+            }
+          }
+        }
+        .nav-link {
+          position: relative;
+          padding: 12px 0 12px 30px;
+          border-left: 3px solid transparent;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          &:hover {
+            border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+          }
+          &.active {
+            border-left: 5px solid $orange;
+            &:hover {
+              border-bottom: 1px solid transparent;
+            }
+            &::before {
+              opacity: 1;
+            }
+            &:after {
+              content: "";
+              width: 70px;
+              height: 100%;
+              position: absolute;
+              background-image: url(/assets/schools/img/homepage/tab-triangle.png);
+              right: -30px;
+              top: 0px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+          &:before {
+            font-family: fontAwesome;
+            font-size: 6px;
+            position: absolute;
+            content: "\f111";
+            color: #58595b;
+            left: 15px;
+            opacity: 0.7;
+            top: auto;
+          }
+        }
+      }
+      .nav-link {
+        border: none;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        line-height: 30px;
+        border-bottom: 1px solid #ddd;
+        color: $grey;
+        opacity: 0.8;
+        &.active {
+          border: none;
+          background-color: #e7e8e9;
+          border-radius: 0;
+          color: $black;
+          opacity: 1;
+        }
+      }
+    }
+    .nav-tabs .nav-item + .nav-item {
+      margin-top: 0;
+    }
+    .jn-tabcontent {
+      .card-body {
+        padding: 0 0 0 30px;
+      }
+    }
+    .card {
+      border: none;
+      border-radius: 0;
+      background: transparent;
+
+      .card-body {
+        .card-header {
+          display: block;
+        }
+        .collapse {
+          display: none;
+          &.show {
+            display: block;
+          }
+        }
+      }
+    }
+    .card .card-header {
+      display: none;
+    }
+    .card .collapse {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hmparent-connect {
+    .topsec,
+    .bottomsec {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .slider-wrapper.schools-sliderwrapper {
+    img {
+      padding-left: 50px;
+    }
+    .carousel-indicators-numbers {
+      left: 5px;
+    }
+  }
+  .subtext,
+  .hm-campus .features-list .subtext {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .hm-stepper {
+    .btnswrapper {
+      padding-left: 50px;
+      width: 95%;
+    }
+    .btn1,
+    .btn2,
+    .btn3,
+    .btn4 {
+      padding: 5px;
+      margin: 0;
+    }
+  }
+  .hm-notices {
+    margin: 40px 0;
+    .noticeboardlist {
+      margin-top: 30px;
+    }
+    .noticelink {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .notice-next,
+    .notice-prev {
+      bottom: -50px;
+    }
+    .dateno {
+      font-size: 16px;
+    }
+    .noticeboardlist li {
+      padding: 0;
+      border: none;
+    }
+    .noticetype {
+      font-size: 14px;
+    }
+  }
+  .hm-whyjoin {
+    .thumbnail-video {
+      margin: 20px 0 0 0;
+    }
+  }
+  .jointabsec {
+    margin-top: 50px;
+    .descpcont {
+      border-bottom: 3px solid #f58220;
+      border-top: none;
+    }
+  }
+
+  .hm-campus {
+    padding: 40px 0;
+    .highlights {
+      width: 90%;
+      margin-top: -35px;
+      font-size: 16px;
+      padding: 10px;
+    }
+    .gridwrapper:after {
+      display: none;
+    }
+    .features-list {
+      justify-content: center;
+      .ft {
+        padding: 10px 0;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .hmbalanced-schooling {
+    .boyimg,
+    .classroomimg,
+    .curricularimg {
+      display: none;
+    }
+    .Balancedschoolingimg {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .hm-notices,
+  .hm-whyjoin,
+  .hmbalanced-schooling,
+  .hm-campus,
+  .hmparent-connect,
+  .hm-events {
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .subtext {
+      margin-bottom: 10px;
+    }
+  }
+  .hmbalanced-schooling {
+    margin: 0;
+    .Balancedschoolingimg {
+      margin-top: 80px;
+    }
+  }
+  .hmparent-connect {
+    padding-bottom: 50px;
+    .carousel-caption {
+      .parentsname {
+        margin: 20px 0 0 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+      }
+    }
+    .bottomsec img {
+      width: 100%;
+      bottom: -50px;
+      position: absolute;
+      left: 0;
+    }
+    .parentslider {
+      top: 20px;
+    }
+  }
+  .hm-events {
+    padding: 30px 0 60px 0;
+    .eventstitle {
+      font-size: 16px;
+      line-height: 26px;
+      padding: 10px;
+    }
+  }
+  .slider-wrapper.schools-sliderwrapper {
+    .carousel-caption.box {
+      width: 95%;
+      padding: 30px;
+      top: -45px;
+      right: 0;
+    }
+
+    .slideroverlay {
+      display: none;
+    }
+    img {
+      padding-left: 0;
+    }
+  }
+
+  .hm-stepper {
+    background-color: $lightbrown;
+    margin-top: 0;
+    .btnswrapper {
+      padding-left: 0;
+      padding: 20px 0 10px 0;
+    }
+
+    .grey-btn {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hm-events {
+    ul li:nth-child(n + 2) {
+      display: none;
+    }
+  }
+  .jointabsec {
+    .nav-tabs {
+      display: none;
+    }
+
+    .tab-pane.fade.selected {
+      display: block !important;
+      opacity: 1;
+      margin-bottom: 30px;
+      .collapse.show {
+        display: flex;
+        width: 100%;
+      }
+    }
+    .tab-content > .tab-pane {
+      display: block;
+      display: block !important;
+      opacity: 1;
+      margin-bottom: 30px;
+    }
+    .card-header {
+      background: $white;
+      border-radius: 0;
+      a {
+        font-family: FiraSans-Medium;
+        color: #58595b;
+        font-size: 18px;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        padding-right: 15px;
+        &:after {
+          background-image: url(/assets/default_asset/img/red-plus.svg);
+          background-size: 100%;
+          content: "";
+          width: 12px;
+          height: 25px;
+          background-repeat: no-repeat;
+          background-position: 0px 5px;
+          position: absolute;
+          right: 0;
+          top: -2px;
+          z-index: 999;
+        }
+      }
+      a[aria-expanded="true"] {
+        text-decoration: none;
+        color: $darkred;
+        &:after {
+          background-image: url(/assets/university/img/icons/minus.svg);
+          top: 6px;
+        }
+      }
+    }
+  }
+  .hm-whyjoin {
+    padding: 40px 0 30px 0;
+    margin: 50px 0 50px 0;
+    .card-body {
+      padding: 20px;
+      img {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .padding0 {
+        padding: 0 15px;
+      }
+    }
+  }
+  .hm-campus {
+    .campusimg {
+      margin-bottom: 50px;
+    }
+    .highlights {
+      margin-top: -75px;
+    }
+  }
+  .jointabsec .descpcont {
+    border: none;
+  }
+  .hmparent-connect {
+    .bottomsec img {
+      width: auto;
+      bottom: -50px;
+      position: relative;
+      left: 0;
+      margin: 0 auto;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .backtopbtn:after {
+    line-height: 32px;
+  }
+  .hm-notices {
+    .noticelink {
+      font-size: 16px;
+      line-height: 26px;
+      padding-right: 10px;
+      display: block;
+    }
+    .dateno,
+    .datetext {
+      float: none;
+    }
+    .notice-next,
+    .notice-prev {
+      background: transparent;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 5;
+      display: block;
+      &:hover {
+        background: transparent;
+      }
+
+      &:before {
+        font-size: 20px;
+        padding: 5px 10px;
+      }
+    }
+    .notice-next {
+      right: auto;
+    }
+    .noticeboardlist li {
+      text-align: center;
+      padding: 0 30px;
+      .fullwidth {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .hm-stepper .btnswrapper {
+    padding: 20px;
+  }
+  .mainherotitle-48 {
+    text-align: center !important;
+  }
+  p.intropara {
+    text-align: center;
+  }
+  .hm-whyjoin {
+    margin: 10px 0 50px 0;
+  }
+}
