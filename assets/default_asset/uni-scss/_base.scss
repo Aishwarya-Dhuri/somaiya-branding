@@ -1,0 +1,305 @@
+@import "../../default_asset/uni-scss/variables";
+@import "../../default_asset/uni-scss/mixins";
+
+%imgcaptionwrap {
+  padding: 35px 25px;
+  width: 100%;
+  float: left;
+}
+
+%bannerheading {
+  color: $darkred;
+  font-size: 48px;
+  font-family: "Marcellus-Regular";
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+%bannersubheading {
+  color: $grey;
+  font-size: $font28;
+  font-family: "Marcellus-Regular";
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+%bannerpara {
+  color: $grey;
+  font-size: $font20;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 25px;
+  line-height: 30px;
+}
+%greybtn {
+  background: #58595b;
+  padding: 15px 35px;
+  color: rgb(243, 226, 226);
+  font-size: 18px;
+  font-family: "FiraSans-Medium";
+  margin-bottom: 10px;
+  line-height: initial;
+  text-align: center;
+  border: none;
+}
+%outlinegreybtn {
+  background: $white;
+  padding: 10px 35px;
+  color: $grey;
+  font-size: 18px;
+  font-family: "FiraSans-Medium";
+  margin-bottom: 10px;
+  line-height: initial;
+  text-align: center;
+  border: 1px solid $grey;
+}
+%redbtn {
+  background: $darkred;
+  padding: 10px 35px;
+  color: $white;
+  font-size: 18px;
+  font-family: "FiraSans-Medium";
+  margin-bottom: 10px;
+  line-height: initial;
+  text-align: center;
+  border: 1px solid $darkred;
+}
+%mainheading {
+  font-family: "Marcellus-Regular";
+  font-size: 38px;
+  line-height: 50px;
+  color: $darkred;
+}
+%main-para {
+  color: $grey;
+  font-size: $font18;
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 10px;
+  line-height: 27px;
+}
+%prev-img-arrow {
+  content: "....";
+  background-image: url("../../default_asset/img/arrow-white-prev.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 15px;
+
+  color: transparent;
+
+  background-position: center;
+}
+%next-img-arrow {
+  content: "....";
+  background-image: url("../../default_asset/img/arrow-white-next.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 15px;
+  color: transparent;
+  background-position: center;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+/**New classes**/
+%herotitle {
+  color: $darkred;
+  font-size: 48px;
+  font-family: "Marcellus-Regular";
+  line-height: 60px;
+  text-align: center;
+}
+
+%herotitle38 {
+  color: $darkred;
+  font-size: 38px;
+  font-family: "Marcellus-Regular";
+  line-height: 48px;
+  text-align: center;
+}
+%herotitle45 {
+  color: $darkred;
+  font-size: 45px;
+  font-family: "Marcellus-Regular";
+  line-height: 57px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+%para14 {
+  font-size: 14px;
+  line-height: 21px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%para28 {
+  font-size: 28px;
+  line-height: 30px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%mpara28 {
+  font-size: 28px;
+  line-height: 35px;
+  color: $paracolor;
+  font-family: "Marcellus-Regular";
+}
+%mpara24 {
+  font-size: 24px;
+  line-height: 30px;
+  color: $grey;
+  font-family: "Marcellus-Regular";
+}
+%para18 {
+  font-size: 18px;
+  line-height: 27px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%para20 {
+  font-size: 20px;
+  line-height: 30px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%para16 {
+  font-size: 16px;
+  line-height: 24px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%para22 {
+  font-size: 22px;
+  line-height: 36px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%para22m {
+  font-size: 22px;
+  line-height: 33px;
+  color: $grey;
+  font-family: "FiraSans-Medium";
+}
+%para38 {
+  font-size: 38px;
+  line-height: 57px;
+  color: $paracolor;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+%marathiheading35 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 45px;
+  color: $grey;
+}
+/*Base classes End*/
+
+@media (max-width: 1024px) {
+  %mainheading {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  %herotitle,
+  %herotitle45 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  %para28 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  %herotitle38 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  %para22 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  %mpara24 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  %herotitle,
+  %herotitle45 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  %herotitle38,
+  %mainheading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  %mainheading {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  %para28 {
+    font-size: 22px;
+
+    line-height: 36px;
+  }
+}
+@media (max-width: 767px) {
+  %herotitle,
+  %herotitle45 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  %mpara24 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 550px) {
+  %mainheading {
+    font-size: 30px;
+  }
+  %herotitle,
+  %herotitle45 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  %herotitle38 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 480px) {
+  %mainheading {
+    font-size: 28px;
+  }
+  %herotitle,
+  %herotitle45 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 375px) {
+  %mainheading {
+    font-size: 22px;
+  }
+  %herotitle,
+  %herotitle45 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 320px) {
+  %herotitle,
+  %herotitle45 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

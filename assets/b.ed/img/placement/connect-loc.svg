@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101">
+    <defs>
+        <filter id="Ellipse_1221" width="101" height="101" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="8"/>
+            <feGaussianBlur result="blur" stdDeviation="10"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{stroke:#000}
+        </style>
+    </defs>
+    <g id="Group_8032" transform="translate(-950 -4825.1)">
+        <g filter="url(#Ellipse_1221)" transform="translate(950 4825.1)">
+            <circle id="Ellipse_1221-2" cx="20.5" cy="20.5" r="20.5" fill="#fff" transform="translate(30 22)"/>
+        </g>
+        <g id="Group_7474" transform="translate(887.785 4824.311)">
+            <g id="Group_7473" transform="translate(105.215 32.788)">
+                <g id="Group_7471">
+                    <path id="Path_14327" d="M112.6 54.681a.147.147 0 0 1-.129-.076c-.37-.666-.929-1.6-1.576-2.671-2.263-3.764-5.683-9.451-5.683-11.758a7.394 7.394 0 0 1 14.789 0c0 2.3-3.418 7.977-5.68 11.732-.655 1.087-1.221 2.026-1.593 2.7a.147.147 0 0 1-.128.073zm0-21.6a7.1 7.1 0 0 0-7.093 7.093c0 2.226 3.395 7.871 5.641 11.607.578.961 1.085 1.8 1.452 2.451.371-.653.885-1.506 1.47-2.478 2.245-3.727 5.638-9.36 5.638-11.58a7.108 7.108 0 0 0-7.108-7.092z" class="cls-2" transform="translate(-105.215 -32.788)"/>
+                </g>
+                <g id="Group_7472" transform="translate(3.332 3.332)">
+                    <path id="Path_14328" d="M122.74 54.368a4.055 4.055 0 1 1 4.055-4.055 4.059 4.059 0 0 1-4.055 4.055zm0-7.815a3.761 3.761 0 1 0 3.761 3.761 3.765 3.765 0 0 0-3.761-3.762z" class="cls-2" transform="translate(-118.685 -46.258)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

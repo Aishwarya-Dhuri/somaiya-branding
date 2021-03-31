@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.445" height="90.263" viewBox="0 0 66.445 90.263">
+    <defs>
+        <style>
+            .cls-2{fill:#58595b}.cls-3{fill:#fff}.cls-4{fill:none;stroke:#000;stroke-miterlimit:10}
+        </style>
+    </defs>
+    <g id="Group_7979" opacity="0.6">
+        <rect id="Rectangle_5063" width="66.445" height="82.508" class="cls-2" rx="1.491" transform="translate(0 7.755)"/>
+        <rect id="Rectangle_5064" width="56.567" height="71.786" class="cls-3" rx="1.224" transform="translate(4.939 12.935)"/>
+        <path id="Path_16858" d="M371.436 347.1a1.168 1.168 0 0 1-1.124-.861 5.514 5.514 0 0 0-10.631 0 1.169 1.169 0 0 1-1.124.861h-2.665a1.175 1.175 0 0 0-1.176 1.176v7.68a1.175 1.175 0 0 0 1.176 1.176h18.1a1.175 1.175 0 0 0 1.176-1.176v-7.68a1.175 1.175 0 0 0-1.176-1.176zM365 349.874a2.134 2.134 0 1 1 2.135-2.135 2.134 2.134 0 0 1-2.135 2.135z" class="cls-2" transform="translate(-331.631 -342.19)"/>
+        <g id="Group_7957" transform="translate(11.738 22.492)">
+            <rect id="Rectangle_5065" width="16.505" height="16.504" rx=".69"/>
+            <path id="Path_16859" d="M354.758 364.012a2.205 2.205 0 1 1-2.206-2.2 2.205 2.205 0 0 1 2.206 2.2z" class="cls-3" transform="translate(-344.619 -359.068)"/>
+            <path id="Rectangle_5066" d="M1.009 0h4.2a1.009 1.009 0 0 1 1.005 1.009v4.858H0V1.009A1.009 1.009 0 0 1 1.009 0z" class="cls-3" transform="translate(4.88 8.031)"/>
+        </g>
+        <g id="Group_7958" transform="translate(35.072 27.446)">
+            <path id="Line_1068" d="M0 0L11.454 0" class="cls-4"/>
+            <path id="Line_1069" d="M0 0L17.927 0" class="cls-4" transform="translate(0 7.683)"/>
+        </g>
+        <g id="Group_7959" transform="translate(12.129 48.017)">
+            <path id="Line_1070" d="M0 0L41.084 0" class="cls-4"/>
+            <path id="Line_1071" d="M0 0L41.084 0" class="cls-4" transform="translate(0 8.235)"/>
+            <path id="Line_1072" d="M0 0L41.084 0" class="cls-4" transform="translate(0 16.47)"/>
+            <path id="Line_1073" d="M0 0L41.084 0" class="cls-4" transform="translate(0 24.705)"/>
+        </g>
+    </g>
+</svg>

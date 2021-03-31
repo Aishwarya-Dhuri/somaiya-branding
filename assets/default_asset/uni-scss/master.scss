@@ -1,0 +1,1770 @@
+@import "../../default_asset/uni-scss/variables";
+@import "../../default_asset/uni-scss/mixins";
+@import "../../default_asset/uni-scss/base";
+
+//Fonts
+@font-face {
+  font-family: "Marcellus-Regular";
+  src: url("../fonts/Marcellus/Marcellus-Regular.ttf");
+}
+
+// @font-face {
+//   font-family: 'Fira Sans', sans-serif;
+//     src: url('../fonts/Fira-sans-paragraph/FiraSans-Regular.ttf');
+// }
+@font-face {
+  font-family: "FiraSans-Bold";
+  src: url("../fonts/Fira-sans-paragraph/FiraSans-Bold.ttf");
+}
+@font-face {
+  font-family: "FiraSans-Light";
+  src: url("../fonts/Fira-sans-paragraph/FiraSans-Light.ttf");
+}
+@font-face {
+  font-family: "FiraSans-Thin";
+  src: url("../fonts/Fira-sans-paragraph/FiraSans-Thin.ttf");
+}
+@font-face {
+  font-family: "FiraSans-SemiBold";
+  src: url("../fonts/Fira-sans-paragraph/FiraSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: "FiraSans-Medium";
+  src: url("../fonts/Fira-sans-paragraph/FiraSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneSxf6TF0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneQhf6TF0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneShf6TF0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneRRf6TF0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneSRf6TF0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneSBf6TF0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Fira Sans ExtraLight'), local('FiraSans-ExtraLight'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnWKneRhf6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreSxf6TF0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreQhf6TF0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreShf6TF0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreRRf6TF0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreSRf6TF0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreSBf6TF0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Fira Sans Light'), local('FiraSans-Light'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnPKreRhf6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5VvmojLeTY.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvk4jLeTY.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvm4jLeTY.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5VvlIjLeTY.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url(https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvl4jL.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveSxf6TF0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveQhf6TF0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveShf6TF0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveRRf6TF0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveSRf6TF0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveSBf6TF0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Fira Sans Medium'), local('FiraSans-Medium'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeSxf6TF0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeQhf6TF0.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeShf6TF0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeRRf6TF0.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeSRf6TF0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeSBf6TF0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Fira Sans SemiBold'), local('FiraSans-SemiBold'), url(https://fonts.gstatic.com/s/firasans/v10/va9B4kDNxMZdWfMOD5VnSKzeRhf6.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+//Reset Css
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,
+ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,
+th,td {
+  border: none;
+  outline: 0;
+  font-size: 100%;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.bkeditor {
+  sup{
+    font-size: 15px !important;
+  }
+  * {
+    font-size: 18px !important;
+    line-height: 27px;
+    color: #000;
+    font-family: "Fira Sans", sans-serif !important;
+   
+  }
+  h1,h2,h3, h4,h5,h6 {
+    color: $darkred;
+    font-weight: 400;
+    font-size: 20px;
+
+    margin-bottom: 10px;
+  }
+  img {
+    margin: 10px 0 10px 0;
+    width: 100%;
+  }
+  a{
+    color:$linkblue;
+    text-decoration: underline;
+    font-family: "Fira Sans", sans-serif !important;
+    font-weight: 500;
+    &:hover{
+      color: $linkbluehvr;
+      text-decoration: none;
+    }
+    *{
+      color:$linkblue;
+      text-decoration: underline;
+      font-family: "Fira Sans", sans-serif !important;
+      font-weight: 500;
+    }
+  }
+  ul li{
+    list-style-type:disc;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+    color: #000;
+ 
+  }
+ ol{
+   li{
+     font-weight: 300;
+     font-family: "Fira Sans", sans-serif;
+     color: #000;
+   }
+ }
+ 
+  table {
+    border: 1px solid #d2d2d2;
+    width: 100%;
+    margin: 20px 0;
+
+    tr {
+      border-bottom: 1px solid #d2d2d2;
+      width: 100%;
+      &:last-child {
+        border-bottom: 0;
+      }
+      th,
+      td {
+        border-right: 1px solid #d2d2d2;
+        width: auto !important;
+        height: auto !important;
+        float: none !important;
+
+        &:last-child {
+          border-right: 0;
+        }
+        strong,
+        b {
+          font-weight: bolder;
+        }
+      }
+      p {
+        margin: 0 !important;
+      }
+      th {
+        font-size: 20px !important;
+        padding: 10px 10px;
+
+        font-family: "FiraSans-Medium" !important;
+       
+        line-height: 27px;
+      }
+      td {
+        padding: 10px 10px;
+        font-weight: 300;
+        font-family: "Fira Sans", sans-serif;
+        color: #000;
+        font-size: 16px;
+        line-height: 27px;
+      }
+    }
+  }
+  
+  p{float: left;margin-bottom: 15px;width: 100%;}
+}
+ 
+
+table {
+  // border-collapse: separate;
+  border-spacing: 0;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+ol,ul {
+  list-style: none;
+}
+blockquote,q {
+  quotes: none;
+}
+:focus {
+  outline: 0;
+}
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  position: relative;
+  color: #000;
+}
+audio,video,canvas {
+  max-width: 100%;
+}
+.form-control:focus {
+  outline: none;
+  border: inherit;
+  box-shadow: none;
+}
+a:hover {
+  cursor: pointer;
+}
+.cursor-auto{
+  cursor: auto !important;
+}
+p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+section {
+  margin: 30px 0;
+
+  width: 100%;
+  float: left;
+}
+section[role="main"] {
+  margin: 0;
+}
+.fullwidth {
+  width: 100%;
+  float: left;
+}
+.width-50 {
+  width: 50%;
+  float: left;
+}
+.width-55 {
+  width: 55%;
+  float: left;
+}
+.width-45 {
+  width: 45%;
+  float: left;
+}
+.width-60 {
+  width: 60%;
+  float: left;
+}
+.width-10 {
+  width: 10%;
+  float: left;
+}
+.width-80 {
+  width: 80%;
+  float: left;
+}
+.width-90 {
+  width: 90%;
+  float: left;
+}
+.width-70 {
+  width: 70%;
+  float: left;
+}
+.width-75 {
+  width: 75%;
+  float: left;
+}
+.width-40 {
+  width: 40%;
+  float: left;
+}
+.width-30 {
+  width: 30%;
+  float: left;
+}
+.width-20 {
+  width: 20%;
+  float: left;
+}
+.width-25 {
+  width: 25%;
+  float: left;
+}
+.space20 {
+  padding-top: 20px;
+  width: 100%;
+  float: left;
+}
+.text-darkred {
+  color: $darkred !important;
+}
+.pad-right-0 {
+  padding-right: 0;
+}
+.padding0 {
+  padding: 0;
+}
+.margin0 {
+  margin: 0 !important;
+}
+.pad-left-0 {
+  padding-left: 0;
+}
+.mar-left-0 {
+  margin-left: 0;
+}
+.mar-right-0 {
+  margin-right: 0 !important;
+}
+.martopneg70{
+  margin-top: -70px !important;
+}
+.mar-top-0 {
+  margin-top: 0;
+}
+.mar-bottom-0 {
+  margin-bottom: 0;
+}
+.clear {
+  clear: both;
+}
+.mtop40 {
+  margin-top: 40px;
+}
+sup{font-size:12px;}
+.li-none {
+  list-style-type: none !important;
+  width:100%;
+  float: left;
+  &:before{
+    content:'' !important;
+  }
+}
+.li-lower-roman {
+  list-style-type: lower-roman !important;
+  
+}
+.mobile-more-links-section {
+  display: none;
+}
+.space30 {
+  width: 100%;
+  float: left;
+  padding-top: 30px;
+}
+.space10 {
+  width: 100%;
+  float: left;
+  padding-top: 10px;
+}
+.mtopbtm70 {
+  margin: 70px 0;
+}
+.mtop70 {
+  margin-top: 70px;
+}
+.mbottom70 {
+  margin-bottom: 70px;
+}
+.mtop20 {
+  margin-top: 20px;
+}
+.mtop15 {
+  margin-top: 15px !important;
+}
+.mbottom20 {
+  margin-bottom: 20px;
+}
+.mbottom15 {
+  margin-bottom: 15px;
+}
+.mtop10 {
+  margin-top: 10px;
+}
+.mbottom10 {
+  margin-bottom: 10px;
+}
+.mtopbtm30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mtop30 {
+  margin-top: 30px;
+}
+.mbottom30 {
+  margin-bottom: 30px;
+}
+.mtopbtm50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.mtop50 {
+  margin-top: 50px;
+}
+.mbottom50 {
+  margin-bottom: 50px;
+}
+.mtopbtm40 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.mtop40 {
+  margin-top: 40px;
+}
+.mbottom40 {
+  margin-bottom: 40px;
+}
+.top_section .mainherotitle-45{ 
+  margin: 50px 0px;
+
+}
+.mainherotitle-45{
+  @extend %herotitle45;
+}
+.mainherotitle-48{
+  @extend %herotitle;
+  margin-bottom:20px;
+}
+.mainherotitle-38{
+  @extend %herotitle38;
+  margin-bottom:20px;
+}
+.main-para18{
+  @extend %para18;
+}
+.main-para16{
+  @extend %para16;
+}
+.main-para18.bold{
+  @extend %para18;
+  font-family: 'FiraSans-Medium';
+  color: $grey;
+}
+.main-para16.bold{
+  @extend %para16;
+  font-family: 'FiraSans-Medium';
+  color: $grey;
+}
+
+.wrapper95{
+  width:95%;
+  float: left;
+}
+
+.hvr-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b7202e;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-right:hover:before,
+.hvr-right:focus:before,
+.hvr-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.backpatch_left {
+  position: relative;
+  padding: 0 0 70px 0;
+  margin: 0px;
+}
+.backpatch_left:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  left: 0;
+  top: 0;
+  background-color: #b7202e;
+  height: 100%;
+  z-index: 0;
+}
+.backpatch_left:after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  left: 20%;
+  top: 0;
+  background-color: #ed1c24;
+  height: 100%;
+      z-index: -1;
+}
+//Right patch css
+.backpatch_right {
+  position: relative;
+  padding: 0 0 70px 0;
+  margin: 0px;
+}
+
+.backpatch_right:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  right: 0;
+  top: 0;
+  background-color: #b7202e;
+  height: 100%;
+  z-index: 0;
+}
+.backpatch_right:after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  right: 20%;
+  top: 0;
+  background-color: #ed1c24;
+  height: 100%;
+}
+.fullLpatch {
+  position: relative;
+}
+.fullLpatch:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  right: 0%;
+  background-color: #ed1c24;
+  height: 10px;
+  height: 130px;
+  left: inherit;
+}
+.fullLpatch:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  left: 0;
+  background-color: #b7202e;
+  height: 120vh;
+  height: 130px;
+  z-index: 0;
+}
+.topleftL:before {
+  content: "";
+  position: absolute;
+  width: 6%;
+  left: 0;
+  background-color: #b7202e;
+  height: 53%;
+  height: 350px;//if heading is on Lpatch height
+  height: 450px;
+
+  z-index: 0;
+}
+//Common classes
+.simple-link {
+  width: auto;
+  display: inline-block;
+
+  @include bluelink;
+  font-weight: 400;
+  i {
+    padding-left: 15px;
+  }
+
+}
+.grey-btn {
+  @extend %greybtn;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+.outline-grey-btn {
+  @extend %outlinegreybtn;
+  &:hover {
+    text-decoration: none;
+    color: $darkred;
+    border: 1px solid $darkred;
+  }
+}
+.controls-wrapper a {
+  background-color: #58595b;
+  color: #fff;
+  width: 30px;
+  height: 35px;
+  padding: 10px;
+  margin-left: 1px;
+  opacity: 1;
+}
+.prev-img-btn{
+  &:after{
+      @extend %prev-img-arrow;        
+  }
+ 
+}
+.common-table {
+  border:1px solid #ddd;
+  th{
+    font-family: FiraSans-Medium;
+    font-size: 20px;
+    color: $black;
+    line-height: 27px;
+    font-weight: initial;
+
+  }
+  td{
+    font-family: "Fira Sans", sans-serif;
+    color: $black;
+    font-weight: 400;
+    line-height: 27px;
+
+  }
+  th,td{
+    padding: 1.4rem;
+
+  }
+}
+.unitable-striped{
+   tbody tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+tbody tr:nth-of-type(even) {
+  background-color: rgba(0,0,0,.05);
+}
+}
+.border-table{
+  th,td{
+    border-right:1px solid #ddd;
+
+  }
+}
+.next-img-btn{
+  &:after{
+      @extend %next-img-arrow;
+  }
+}
+.width-100 {
+  width: 100%;
+}
+.z9 {
+  z-index: 9;
+}
+.z8 {
+  z-index: 8;
+}
+.subheading {
+  font-size: 24px;
+  font-family: "FiraSans-Medium";
+  color: #b7202e;
+  margin-bottom: 10px;
+  line-height: 36px;
+}
+.backpatch-right {
+  position: relative;
+  padding: 0 0 50px 0;
+  margin: 0;
+}
+.backpatch-right:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  right: 0;
+  top: 0;
+  background-color: #b7202e;
+  height: 100%;
+  z-index: 0;
+}
+.backpatch-right:after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  right: 15%;
+  top: 0;
+  background-color: #ed1c24;
+  height: 100%;
+}
+
+.top_section.backpatch-right {
+  &:before,
+  &::after {
+    height: 70%;
+  }
+}
+.backtopbtn {
+  display: inline-block;
+  background-color: $darkred;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: inherit;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s,opacity 0.5s,visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  &:hover{
+    background-color: lighten($color: $darkred, $amount: 10%);
+  }
+  &::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #fff;
+  }
+}
+
+
+.backtopbtn.show {
+  opacity: 1;
+  visibility: visible;
+}
+.backpatch-left {
+  position: relative;
+  padding: 0 0 70px 0;
+  margin: 0px;
+}
+.backpatch-left:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  left: 0;
+  top: 0;
+  background-color: #b7202e;
+  height: 100%;
+  z-index: 0;
+}
+.backpatch-left:after {
+  content: "";
+  position: absolute;
+  width: 5%;
+  left: 20%;
+  top: 0;
+  background-color: #ed1c24;
+  height: 100%;
+}
+.Lrespimgbox{
+  display: none;
+}
+.Ldots{
+  li{
+    text-indent: 0;
+    margin: 6px 6px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    line-height: 30px;
+    color: #58595b;
+    background-color: #58595b;
+    border: 1px solid #58595b;
+    transition: all 0.25s ease;
+    &:hover{
+      cursor:pointer;
+      background-color: $brightred;
+      border: 1px solid $brightred;
+    }
+  }
+  li.active{
+    background-color: $brightred;
+    border: 1px solid $brightred;
+  }
+}
+.link-left-section h2{
+  @extend %herotitle38;
+  margin-bottom: 20px;
+}
+.link-right-section {
+  text-align: right;
+  float: right;
+  position: absolute;
+  margin-top: 15px;
+  right: 80px;
+  width: auto;
+}
+.show-morebtn {
+  display: inline-block;
+  font-family: "Fira Sans", sans-serif;
+  color: $linkblue;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-top: 10px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.Llist-main {
+  width: 100%;
+  float: left;
+  margin-left: 20px;
+  li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    font-family: "Fira Sans", sans-serif;
+    color: $black;
+    font-size: 18px;
+    width: 100%;
+    float: left;
+    line-height: 27px;
+    font-weight:300;
+  }
+}
+.imagelabelbox {
+  position: relative;
+  img {
+    border-bottom: 25px solid #fff;
+  }
+  .label {
+    font-family: FiraSans-Medium;
+    font-size: 18px;
+    color: #b7202e;
+    padding: 8px 30px 8px 30px;
+
+    position: absolute;
+    left: 0;
+    background: #fff;
+    z-index: 9;
+    bottom: 0;
+    a {
+      font-size: 28px;
+      img {
+        margin-left: 10px;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+//Common tab css
+.commonL-tabs {
+  display: flex;
+  border-bottom: 1px solid transparent;
+  justify-content: center;
+
+.nav-tabs{
+  border-bottom: 1px solid transparent;
+}
+  .nav-item {
+    padding: 0 50px;
+    border-right: 1px solid rgba(128, 128, 128, 0.5);
+    a {
+      color: $grey;
+      font-weight: 500;
+      font-size: $font22;
+      font-family: "FiraSans-Medium";
+      border-bottom: 2px solid transparent;
+      line-height: 33px;
+
+      border: none;
+      padding: 0;
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 0px;
+        bottom: -2px;
+
+        position: absolute;
+        border-bottom: 2px solid $grey;
+        display: inline-block;
+        left: 0;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.15s ease-in;
+      }
+      &:hover::after {
+        visibility: visible;
+        transform: scaleX(1);
+        transition: all 0.25s ease-out;
+      }
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
+
+    a.active {
+      color: $darkred;
+
+      border-color: transparent;
+      border-bottom: 2px solid $darkred;
+      &:after {
+        content: "";
+        border-bottom: none;
+      }
+      &:hover::after {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.left-tabs {
+  .card-body {
+    padding-left: 0;
+  }
+  .nav-item:first-child {
+    padding-left: 10px;
+  }
+}
+
+
+.Laccordins{
+  .card {
+    margin-bottom: 30px;
+    width: 100%;
+    float: left;
+    border-radius: 0;
+    border: none;
+    .card-header {
+      padding: 0;
+      border: none;
+      font-family: "FiraSans-Medium";
+      font-size: 20px;
+      line-height: 30px;
+      color: $grey;
+      .btn-link {
+        color: $grey;
+        width: 100%;
+        float: left;
+        display: block;
+        white-space: normal;
+        text-align: left;
+        border-radius: 0;
+        background: #f5f6f6;
+        font-size: 20px;
+        padding: 12px;
+        padding-right: 45px;
+        line-height: 30px;
+        text-decoration: none;
+        &:after {
+          content: "";
+          width: 15px;
+          height: 25px;
+          background-repeat: no-repeat;
+          background-position: 0px 5px;
+          position: absolute;
+          right: 20px;
+          top: 15px;
+
+          background-image: url(../../default_asset/img/menu/plus.svg);
+        }
+      }
+
+      .btn-link[aria-expanded="true"] {
+        background: #fff;
+        border: 1px solid transparent;
+        border-radius: 0;
+        color: $black;
+        text-decoration: none;
+        border-bottom: none;
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.1);
+
+        &:after {
+          background-image: url(../../default_asset/img/menu/minus.svg);
+        }
+      }
+    }
+
+    .card-body {
+      width: 100%;
+      float: left;
+      // border: 1px solid #ddd;
+      border-top: none;
+      font-family: "Fira Sans", sans-serif !important;
+
+      a:hover {
+        color: #000;
+      }
+
+      .fclist {
+        li {
+          @extend %para18;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .collapse.show,
+    .collapse {
+      .card-body {
+       
+        padding-bottom: 0;
+        margin-bottom: 30px;
+       
+      }
+    }
+    .collapse.show {
+      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.1);
+      .card-body {
+        border-color: transparent;
+      }
+    }
+}
+//Video css
+.Lvideo-mainbox {
+  // height:150px;
+  .video-icon-box {
+    min-height: 100%;
+    video {
+      min-height: 100%;
+      width: 100%;
+      object-fit: fill;
+    }
+    img {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      min-height: auto;
+      z-index: 9;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+    img.hide-play {
+      display: none;
+    }
+  }
+}
+.lazyloadimg {
+  opacity: 0;
+  transition: all 500ms;
+}
+.fade {
+  opacity: 1;
+  transition: all 500ms;
+}
+.youtube {
+  background-color: #000;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.youtube img {
+  width: 100%;
+  top: -16.84%;
+  left: 0;
+  opacity: 0.7;
+}
+.youtube .play-button {
+  width: 90px;
+  height: 60px;
+  background-color: #333;
+  box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 6px;
+}
+.youtube .play-button:before {
+  content: "";
+  border-style: solid;
+  border-width: 15px 0 15px 26.0px;
+  border-color: transparent transparent transparent #fff;
+}
+.youtube img,
+.youtube .play-button {
+  cursor: pointer;
+}
+.youtube img,
+.youtube iframe,
+.youtube .play-button,
+.youtube .play-button:before {
+  position: absolute;
+}
+.youtube .play-button,
+.youtube .play-button:before {
+  top: 50%;
+  left: 50%;
+  transform: translate3d( -50%, -50%, 0 );
+}
+.youtube iframe {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.hidebs4{
+  display: none !important;
+}
+.blue-link{
+  color:$linkblue;
+  text-decoration: underline;
+  z-index: 2;
+  font-weight: 500;
+  font-family: 'Fira Sans', sans-serif;
+
+  &:hover{
+      color:$linkbluehvr;
+      text-decoration: none;
+  }
+}
+.showbs4{
+  display: block !important;
+}
+
+.showmob{
+  display: none !important;
+}
+.showdesktop{
+  display:block !important;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .lazyloadimg {
+      opacity: 1;
+      }
+
+}
+@media only screen and (min-width: 1370px) {
+  .container {
+    width: 90%;
+    max-width: 90%;
+    float: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .common-table th, .common-table td {
+    padding: 1rem;
+}
+  .topleftL:before {
+    height: 58%;
+    height: 345px;
+  }
+  .commonL-tabs .nav-item {
+    padding: 0 30px;
+  }
+
+  .imagelabelbox {
+    .label {
+      padding: 8px 20px 8px 20px;
+
+      a {
+        font-size: 22px;
+      }
+    }
+  }
+  .Llist-main {
+    li {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 10px;
+    }
+  }
+  .tabmartop50 {
+    margin-top: 50px;
+  }
+  .tabmartop70 {
+    margin-top: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 97%;
+  }
+  .subheading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .commonL-tabcontent {
+    .card {
+      border-radius: 0;
+      border: none;
+      .card-header {
+        display: none;
+        border-radius: 0;
+      }
+      .collapse {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .topleftL:before {
+    height: 43%;
+    height: 265px;
+  }
+  .tabmartop70 {
+    margin-top: 30px;
+  }
+  .container {
+    max-width: 97%;
+  }
+  .Llist-main {
+    li {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .imagelabelbox {
+    .label {
+      padding: 8px 10px 8px 10px;
+
+      a {
+        font-size: 18px;
+        img {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .fullLpatch {
+    &:before,
+    &:after {
+      height: 80px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .showmob{
+    display:block !important;
+  }
+  .showdesktop{
+    display: none !important;
+  }
+  .common-table{
+    th{
+      font-size: 18px;
+
+    }
+  } 
+  .Lrespimgbox{
+    display: block;
+    width: calc(100% - 15%);
+    height: 546px;
+
+    overflow: hidden;
+
+    img{
+      top: -50px;
+      position: relative;
+      width:100%;
+    }
+  }
+  .fullLpatch {
+    &:after,
+    &:before {
+      height: 70px;
+    }
+  }
+  .topleftL:before {
+    height: 200px;
+
+  }
+  .mobmartop30 {
+    margin-top: 30px;
+  }
+  .mobdnone {
+    display: none !important ;
+  }
+  .mobile-more-links-section {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    clear: both;
+  }
+  .d-767none {
+    display: none !important;
+  }
+  .top_section.backpatch-right:before,
+  .top_section.backpatch-right::after {
+    //height: 47%;
+    height: 50vh;
+  }
+  .commonL-tabcontent > .tab-pane {
+    display: block !important;
+    opacity: 1;
+    margin-bottom: 30px;
+    border-radius: 0;
+    width: 100%;
+    float: left;
+    &.show{
+      .card-header {
+        border-bottom: 1px solid rgba(0,0,0,.125);
+
+      }
+    }
+    .card-header {
+      background: #fff;
+      border-radius: 0;
+      padding: 10px 15px;
+      border-bottom: none;
+
+      a {
+        color: #58595b;
+        font-family: FiraSans-Medium;
+        font-size: 20px;
+        text-decoration: none;
+        &:after {
+          content: "\f067";
+          font-size: 16px;
+          margin-top: 3px;
+          font-family: FontAwesome;
+          float: right;
+        }
+      }
+      a[aria-expanded="true"] {
+        color: $darkred;
+        text-decoration: none;
+        &:after {
+          content: "\f068";
+          font-family: FontAwesome;
+          float: right;
+          font-size: 16px;
+          margin-top: 3px;
+        }
+      }
+    }
+    .card-body {
+      img {
+        width: auto !important;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .commonL-tabs {
+    display: none;
+  }
+}
+@media screen and (max-width: 660px) {
+  .top_section.backpatch-right {
+    &:after,
+    &::before {
+      height: 292px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .topleftL:before {
+    height: 37%;
+
+
+  }
+}
+@media (max-width: 480px) {
+  .backpatch-right:before {
+    width: 15%;
+  }
+  .backpatch-right:after {
+    right: 15%;
+  }
+  .top_section.backpatch-right:after,
+  .top_section.backpatch-right::before {
+    height: 281px;
+    height: 170px;
+  }
+  .backtopbtn{
+    width: 35px;
+    height: 35px;    right: 10px;
+    &:after{
+      font-size: 14px;
+    line-height: 32px;
+    }
+  }
+  .commonL-tabcontent>.tab-pane .card-header a{
+    font-size:18px;
+    line-height:27px;
+  }
+}
+@media (max-width: 414px) {
+  .topleftL:before {
+    height: 29%;
+
+  }
+}
+@media (max-width: 411px) {
+  .topleftL:before {
+    height: 30%;
+  }
+  .commonL-tabcontent > .tab-pane {
+    .card-body {
+      padding: 15px 0;
+
+      img {
+        width: 100% !important;
+      }
+      p.schol-para {
+        display: block;
+        text-align: left;
+      }
+      .schol-head {
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .topleftL:before {
+    height: 212px;
+
+
+  }
+  .top_section.backpatch-right:after,
+  .top_section.backpatch-right::before {
+    height: 30vh;
+  }
+
+  .backpatch-right:before {
+    width: 14%;
+  }
+  .backpatch-right::after {
+    right: 14%;
+    width: 4%;
+  }
+}
+@media (max-width: 360px) {
+  .topleftL:before {
+    height: 40%;
+  }
+}
+@media (max-width: 320px) {
+  .topleftL:before {
+    height: 190px;
+
+
+  }
+}

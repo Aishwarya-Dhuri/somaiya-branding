@@ -1,0 +1,810 @@
+/************Video , Gallery Common module BS4 css goes here**********/
+@import "../../default_asset/uni-scss/base";
+.common-title {
+  h2 {
+    margin-bottom: 50px;
+    float: left;
+    width: 100%;
+    @extend %herotitle;
+  }
+  img {
+    display: none;
+  }
+}
+.select2-results__options{
+  font-family: "Fira Sans", sans-serif;
+
+}
+
+.searchbars4 {
+  margin-top: 10px;
+  .input-group {
+    border: 1px solid #ccc;
+
+    border-radius: 0;
+    .form-control:first-child {
+      border-radius: 0;
+      padding-top: 9px;
+      height: 42px;
+      border: none;
+      font-family: "Fira Sans", sans-serif;
+    }
+    .input-group-addon {
+      border-radius: 0;
+      background: 0 0;
+      border: 0;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      color: #555;
+      text-align: center;
+      button {
+        border: transparent;
+        background: #fff;
+
+        &:focus,
+        &:hover {
+          outline: none;
+          cursor: pointer;
+        }
+        img {
+          padding-top: 5px;
+          height: auto;
+          width: 20px;
+          float: left;
+        }
+      }
+    }
+  }
+  .stylish-input-group {
+    .form-control {
+      border: none;
+      &:focus {
+        border: none;
+      }
+    }
+  }
+}
+/**Video Page **/
+.video-result {
+  .videogrid {
+    margin-bottom: 30px;
+    iframe {
+      width: 100%;
+    }
+  }
+  .vtitle {
+    margin-top: 0;
+    color: $darkred;
+    font-family: "FiraSans-Medium";
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .vdate {
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+    margin-top: 10px;
+    color: $grey;
+    &:before {
+      content: "\f274";
+      font-family: FontAwesome;
+    }
+  }
+}
+
+/**Gallery Listing**/
+
+/****Sidebar css****/
+.g-bdrleft{
+  border-left: 1px solid #ddd;
+  padding-left: 0;
+
+}
+.showing-page {
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+}
+// .detailbs4row {
+//   margin-top: 50px;
+// }
+.refheadbs4 {
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+  color: $grey;
+  font-family: "FiraSans-Medium";
+
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.relabelbs4 {
+  margin-bottom: 4px;
+  margin-top: 15px;
+  text-transform: capitalize;
+  color: $black;
+  font-family: "Fira Sans", sans-serif;
+
+  font-size: 16px;
+}
+
+.sidefilter {
+  .contactuslist {
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+  }
+  .fullwidth {
+    margin-bottom: 10px;
+  }
+  .form-control {
+    border-radius: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 14px;
+    &:focus {
+      border: 1px solid #ced4da;
+    }
+  }
+  .relabel {
+    margin-bottom: 4px;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-size: 16px;
+
+    color: $black;
+    font-family: "Fira Sans", sans-serif;
+  }
+  .select2-selection__rendered,
+  .select2-container--default .select2-selection--multiple {
+    border-radius: 0;
+  }
+  .select2-container {
+    font-family: "Fira Sans", sans-serif;
+  }
+  select {
+    margin-bottom: 20px !important;
+  }
+  .select2-container--default .select2-results > .select2-results__options {
+    font-family: "Fira Sans", sans-serif;
+  }
+  .select2-container--default .select2-selection--single {
+    min-height: 41px;
+    border-radius: 0;
+    border: solid #ddd 1px;
+    line-height: 41px;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 41px;
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 41px;
+  }
+  select option {
+    font-family: "Fira Sans", sans-serif;
+  }
+  .select2-selection--multiple:before {
+    content: "";
+    background-image: url(/assets/default_asset/img/icons/dropdown-arrow-red.svg);
+    position: absolute;
+    right: 7px;
+    top: 42%;
+    width: 20px;
+    height: 10px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .select2-container--open{
+    .select2-selection--multiple:before , .select2-selection__arrow:before{
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      right: 10px;
+      top: 42%;
+    }
+  }
+  .brand-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    content: "";
+    background-image: url(/assets/default_asset/img/icons/dropdown-arrow-red.svg);
+
+    width: 100%;
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    // background-position: 247px;
+    min-height: 41px;
+    background-position: right;
+    background-position-x: 95%;
+
+  }
+  .select2-container--default
+    .select2-selection--multiple
+    .select2-selection__rendered {
+    width: 90%;
+  }
+  .select2-selection__arrow {
+    &:before {
+      content: "";
+      background-image: url(/assets/default_asset/img/icons/dropdown-arrow-red.svg);
+      position: absolute;
+      right: 7px;
+      top: 42%;
+      width: 20px;
+      height: 10px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+    b {
+      display: none;
+    }
+  }
+}
+
+.clearbtn {
+  font-size: 20px;
+  font-family: "FiraSans-Medium";
+  color: $brightred;
+  text-transform: capitalize;
+  background: #fff;
+
+  border: 0;
+
+  margin-left: 0;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 20px;
+}
+.bs4clear {
+  right: 0;
+  text-align: right;
+  float: right;
+  color: #000;
+  font-size: 16px;
+  border-radius: 21px;
+  border: solid 0.3px #58595b;
+  background-color: #fafbfb;
+  padding: 2px 23px;
+  margin-top: 5px;
+  &:before {
+    content: "\f00d";
+    font-family: FontAwesome;
+  }
+}
+
+.searchmsgbs4 {
+  padding-bottom: 10px;
+  border-bottom: 8px solid #f5f6f6;
+
+  margin-bottom: 25px;
+  color: $grey;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 20px;
+  b {
+    font-family: "FiraSans-Medium";
+    color: #000;
+    letter-spacing: 1px;
+  }
+}
+.pagination {
+  float: right;
+  font-size: 16px;
+
+  font-family: "Fira Sans", sans-serif;
+
+  margin: 0 0 !important;
+  display: inline-block;
+
+  clear: both;
+  .of_result {
+    float: left;
+    color: $grey;
+  }
+  b {
+    color: $linkbluehvr;
+    background: $darkred;
+    padding: 5px 10px;
+    border: 1px solid $darkred;
+
+    color: #fff;
+  }
+  a {
+    color: $linkblue;
+    padding: 5px 10px;
+    border: 1px solid #e2e2e2;
+
+    background: #f6f6f7;
+
+    font-family: "Fira Sans", sans-serif;
+    &:hover {
+      color: $linkbluehvr;
+    }
+  }
+}
+/***Sidebar css Ends***/
+
+.Gallery-all-list {
+  .g-view-album {
+    text-decoration: underline;
+    display: inline;
+    float: left;
+
+    &:after {
+      content: "";
+
+      background-image: url(../img/icons/more-arrow-white.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 18px;
+      float: right;
+
+      margin-top: 8px;
+      margin-left: 5px;
+    }
+  }
+  .view {
+    float: left;
+    position: relative;
+    width: 100%;
+
+    p {
+      font-family: "Fira Sans", sans-serif;
+      color: $white;
+      font-weight: 400;
+    }
+  }
+  .img-topcontent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    float: left;
+    padding: 5px 10px;
+    .gcount {
+      width: 50%;
+      float: right;
+      text-align: right;
+      font-size: 16px;
+    }
+    .gtype {
+      width: 50%;
+      float: left;
+      font-size: 16px;
+      text-align: left;
+      text-transform: capitalize;
+    }
+  }
+  .img-bottomcontent {
+    position: absolute;
+    top: auto;
+    right: 0;
+    width: 100%;
+    float: left;
+    padding: 5px 10px;
+    bottom: 0;
+
+    z-index: 99;
+    text-align: left;
+  }
+  .thumbs-listinggrd {
+    position: relative;
+    width: 100%;
+    height: 250px;
+
+    &:after {
+      display: block;
+      position: relative;
+      background-image: linear-gradient(to bottom, transparent -11%, #333 134%);
+      margin-top: -250px;
+
+      width: auto;
+      height: 250px;
+
+      margin-bottom: 30px;
+      content: "";
+    }
+  }
+
+  .full-height img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .institute-name {
+    position: relative;
+    top: 10px;
+    font-family: "Fira Sans", sans-serif;
+    color: #069;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      color: $linkbluehvr;
+    }
+  }
+  .g-bdrleft {
+    .w50float {
+      float: left;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/*Gallery Detail page*/
+.bkmediabs4 {
+  margin-top: 30px;
+
+  .simple-link {
+    width: auto;
+    display: inline-block;
+    &:before {
+      margin-top: 0;
+      margin-left: 0;
+      transform: rotate(180deg);
+      margin-right: 10px;
+      float: left;
+    }
+    i {
+      display: none;
+    }
+  }
+}
+.Gallery-all-list.details-page {
+  .imageHead {
+    border-bottom: 5px solid #f5f6f6;
+    padding-bottom: 15px;
+  }
+  .inst-gallery {
+    font-family: "FiraSans-Medium";
+    font-size: 18px;
+    &:before {
+      content: "\f19c";
+      font-family: "FontAwesome";
+      font-size: 20px;
+      margin-right: 10px;
+      color: #b7202e;
+    }
+  }
+  .social-share {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    p,
+    #pc,
+    .twitter-share-button {
+      float: left;
+      font-family: "FiraSans-Medium";
+    }
+    #pc {
+      margin-top: -5px;
+      margin-left: 10px;
+      border: 1px solid #3a5897;
+    }
+    .twitter-share-button {
+      margin-top: -5px;
+      margin-left: 10px;
+      border: 1px solid #49c9f2;
+    }
+    .fb-like {
+      margin-left: 12px;
+    }
+  }
+  .galleryView {
+    margin-top: 30px;
+    padding-left: 0;
+    figure {
+      height: 200px;
+      height: 250px;
+      padding-bottom: 10px;
+      img {
+        transition: 0.3s;
+        display: block;
+        float: left;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .img-container {
+    position: relative;
+    height: 100%;
+
+    img {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: 0.5s ease;
+      backface-visibility: hidden;
+    }
+    .middle {
+      transition: 0.5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .text {
+      background-color: #b7202e;
+      color: #ffffff;
+      font-size: 24px;
+      padding: 5px 15px;
+    }
+    &:hover {
+      img {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      .middle {
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .simsrindustrygallery {
+    .fullwidth {
+      margin-left: -15px;
+      .col-lg-12 {
+        padding-left: 0;
+      }
+    }
+    .common-title {
+      padding-left: 0;
+      h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: left;
+      }
+    }
+    .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+      opacity: 1;
+      cursor: pointer;
+    }
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      transform: translateY(-50%);
+
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      user-select: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 16px;
+      transition: all 0.6s ease 0s;
+      border-radius: 0px 3px 3px 0px;
+    }
+    .next {
+      right: 0px;
+      border-radius: 3px 0px 0px 3px;
+    }
+    .numbertext {
+      color: rgb(242, 242, 242);
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      font-size: 16px;
+      font-family: "FiraSans-Medium";
+
+      transform: translate(-50%);
+      padding: 8px 12px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+      transition: all ease 1s;
+    }
+    .modal-content {
+      position: relative;
+      background-color: #fefefe00;
+      margin: auto;
+      padding: 0;
+      width: 50%;
+      max-width: fit-content;
+      .mySlides img {
+        max-height: 700px;
+      }
+    }
+
+    img.hover-shadow {
+      transition: 0.3s;
+      display: block;
+      float: left;
+    
+    }
+  }
+
+  .related-post {
+    padding-left: 0;
+    margin-top: 20px;
+    .simple-link {
+      margin-top: 20px;
+      float: left;
+    }
+    .double-clr {
+      font-family: "FiraSans-Medium";
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #b7202e;
+      width: auto;
+    }
+    .thumbs-listinggrd:after {
+      margin-top: -210px;
+    }
+    ul {
+      li {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .refheadbs4 {
+    font-size: 20px;
+    line-height: 22px;
+}
+}
+@media (max-width: 767px) {
+  .video-result {
+    margin-top: 30px;
+  }
+  .refheadbs4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+  .clearbtn {
+    margin-left: 0px;
+  }
+  .Gallery-all-list {
+    .g-bdrleft {
+      padding: 0;
+      margin-top: 40px;
+      border-left: none;
+    }
+  }
+  .aboutpanel .common-title h2,
+  .contact-headingbs4 .title h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+
+  }
+  .Gallery-all-list.details-page {
+    .simsrindustrygallery {
+      .common-title h2 {
+        padding: 15px 0;
+        padding-left: 0;
+      }
+      .prev,
+      .next {
+        font-size: 16px;
+        padding: 10px;
+      }
+      .modal-content {
+        width: 70%;
+      }
+    }
+    .shareImage {
+      padding-left: 0;
+    }
+    .social-share {
+      justify-content: flex-start;
+      margin-top: 25px;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .video-result {
+    .vtitle {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .videogrid {
+      margin-bottom: 10px;
+    }
+    .video-contentgrid {
+      margin-bottom: 50px;
+    }
+  }
+  .Gallery-all-list.details-page {
+    .bkmediabs4 {
+      margin-left: 0;
+    }
+    .social-share {
+      a,
+      #pc {
+        width: 30px;
+        height: 30px;
+        margin-top: 0 !important;
+        img {
+          width: 30px;
+        }
+      }
+    }
+    .inst-gallery {
+      font-size: 16px;
+
+      &:before {
+        font-size: 15px;
+        margin-right: 5px;
+      }
+    }
+    .simsrindustrygallery {
+      width: 100%;
+      float: left;
+      padding: 10px;
+      .modal {
+        padding-top: 50px;
+      }
+      .common-title h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Gallery-all-list.details-page {
+    .simsrindustrygallery .common-title h2 {
+      font-size: 24px;
+      margin-bottom: 0;
+      line-height: 34px;
+      padding: 10px 0;
+    }
+    .inst-gallery {
+      font-size: 14px;
+      line-height: 20px;
+      &:before {
+        font-size: 15px;
+        margin-right: 10px;
+        display: block;
+        float: left;
+        height: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .Gallery-all-list.details-page .related-post .thumbs-listinggrd:after {
+    margin-top: -250px;
+  }
+}

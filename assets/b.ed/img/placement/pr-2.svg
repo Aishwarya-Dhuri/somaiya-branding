@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68.22" height="79.28" viewBox="0 0 68.22 79.28">
+    <defs>
+        <style>
+            .cls-2{fill:#58595b}
+        </style>
+    </defs>
+    <g id="Group_7936" opacity="0.6">
+        <g id="Group_7934">
+            <g id="Group_7933" transform="translate(0 50.228)">
+                <path id="Path_16842" d="M340.536 242.608l-2.466-1.756a2.487 2.487 0 0 1-.582-3.468l16.592-23.366 6.516 4.644L344 242.026a2.487 2.487 0 0 1-3.464.582z" class="cls-2" transform="translate(-337.026 -214.017)"/>
+                <path id="Path_16843" d="M351.7 228.751l7.134-10.091-6.516-4.643-7.28 10.3z" class="cls-2" transform="translate(-335.267 -214.017)"/>
+            </g>
+            <path id="Path_16844" d="M372.539 172.831a31.918 31.918 0 1 0 31.919 31.918 31.917 31.917 0 0 0-31.919-31.918zm0 56.258a24.341 24.341 0 1 1 24.342-24.341 24.341 24.341 0 0 1-24.342 24.341z" class="cls-2" transform="translate(-336.237 -172.831)"/>
+        </g>
+        <g id="Group_7935" transform="translate(28.736 17.907)">
+            <circle id="Ellipse_1413" cx="5.391" cy="5.391" r="5.391" transform="translate(2.075)"/>
+            <path id="Rectangle_5056" d="M3.041 0h9.111a3.042 3.042 0 0 1 3.042 3.042v10.5a.807.807 0 0 1-.807.807H.807A.807.807 0 0 1 0 13.538V3.041A3.041 3.041 0 0 1 3.041 0z" transform="translate(0 12.939)"/>
+        </g>
+    </g>
+</svg>

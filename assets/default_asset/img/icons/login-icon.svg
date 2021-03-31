@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.835" height="17.835" viewBox="0 0 17.835 17.835">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#fff;stroke-width:.6px}
+        </style>
+    </defs>
+    <g id="noun_Login_2136070" transform="translate(-4.7 -4.7)">
+        <g id="Group_9159" transform="translate(5 5)">
+            <path id="Path_17979" d="M14.2 22.578a.456.456 0 0 0 .322.776.465.465 0 0 0 .322-.132l2.724-2.722a.452.452 0 0 0 0-.639l-2.722-2.721a.452.452 0 1 0-.639.639l1.946 1.946H5.454a.454.454 0 0 0 0 .907h10.7z" class="cls-1" transform="translate(-5 -11.562)"/>
+            <path id="Path_17980" d="M28.339 5H17.454a.455.455 0 0 0-.454.454v3.989a.454.454 0 0 0 .907 0V5.907h9.978v15.42h-9.978v-3.535a.454.454 0 1 0-.907 0v3.989a.455.455 0 0 0 .454.454h10.885a.455.455 0 0 0 .454-.454V5.454A.455.455 0 0 0 28.339 5z" class="cls-1" transform="translate(-11.557 -5)"/>
+        </g>
+    </g>
+</svg>

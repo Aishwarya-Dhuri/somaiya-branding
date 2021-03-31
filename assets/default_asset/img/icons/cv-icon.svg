@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.057" height="16.5" viewBox="0 0 16.057 16.5">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke:#fff;fill-rule:evenodd}
+        </style>
+    </defs>
+    <g id="noun_Download_3509609" transform="translate(-3 -3)">
+        <path id="Path_17975" d="M11.741 16.869a.443.443 0 0 1-.625 0L7.13 12.894a.443.443 0 1 1 .625-.627l3.673 3.663 3.672-3.663a.443.443 0 0 1 .625.627z" class="cls-1" transform="translate(-.4 -.987)"/>
+        <path id="Path_17976" d="M11.943 16.011a.443.443 0 0 1-.443-.443V3.943a.443.443 0 1 1 .886 0v11.625a.443.443 0 0 1-.443.443z" class="cls-1" transform="translate(-.914)"/>
+        <path id="Path_17977" d="M3.943 15.5a.443.443 0 0 1 .443.443v3.543h13.285v-3.543a.443.443 0 1 1 .886 0v3.986a.443.443 0 0 1-.443.443H3.943a.443.443 0 0 1-.443-.443v-3.986a.443.443 0 0 1 .443-.443z" class="cls-1" transform="translate(0 -1.371)"/>
+    </g>
+</svg>

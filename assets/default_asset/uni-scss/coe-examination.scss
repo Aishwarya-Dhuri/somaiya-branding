@@ -1,0 +1,550 @@
+@import "../../default_asset/uni-scss/base";
+
+/****COE examination page for 6 branding university website***/
+.top_section .coexm-title {
+  margin: 50px 0px;
+  @extend %herotitle;
+}
+.sup-text {
+  font-size: 12px;
+}
+.schol-head {
+  @extend %herotitle38;
+}
+.coexm-top {
+  .coexm-resp-imgbox {
+    display: none;
+  }
+  .coexm-left {
+    padding-right: 50px;
+
+    .main-para {
+      @extend %para28;
+      margin-bottom: 20px;
+    }
+    .awsubheading {
+      @extend %herotitle38;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+  }
+}
+.preamble-main {
+  width: 100%;
+  float: left;
+
+  &.bs3-coexm {
+    .coexm-title {
+      font-size: 38px;
+      font-family: proxima-nova-bold;
+      color: #9b2928;
+      margin: 30px 0px;
+    }
+    .coexm-right {
+      width: 100%;
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+    .blue-link {
+      color: #069;
+    }
+    p {
+      &.name {
+        font-family: ProximaNova-Semibold;
+      }
+    }
+    .text-white {
+      color: $white;
+    }
+    .schol-head {
+      font-family: proxima-nova-bold;
+      margin-bottom: 40px;
+    }
+    .quick-links {
+      margin-bottom: 70px;
+      .simple-link {
+        width: auto;
+        display: inline-block;
+        font-family: proxima-nova-bold;
+        font-size: 18px;
+        color: #069;
+        text-decoration: underline;
+        font-weight: 400;
+        border-bottom: 1px solid #b1b1b1;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        text-align: left;
+        &:before {
+          content: "";
+          background-image: url(../../default_asset/img/social/Sprite-icon.svg);
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 18px;
+          float: right;
+          background-position: -572px -24px;
+          margin-top: 8px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .backpatch-right {
+    padding: 0 0 30px 0;
+  }
+
+  .examembcard {
+    width: 100%;
+    float: left;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .membrcontentbox {
+      position: relative;
+      background-color: #707070;
+      border-right: 10px solid $grey;
+      width: calc(100% - 20%);
+      float: left;
+      padding: 30px;
+      &:after {
+        background-color: #707070;
+        position: absolute;
+        width: 22%;
+        right: 0;
+        height: 100%;
+        content: "";
+        z-index: 0;
+        top: 0;
+        top: 0;
+        left: -20%;
+      }
+    }
+    .membrimgbox {
+      width: 25%;
+      float: left;
+      position: relative;
+      z-index: 1;
+
+      img {
+        width: 100%;
+
+        position: relative;
+        z-index: 3;
+      }
+    }
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+  p.para22 {
+    font-size: 20px;
+    line-height: 30px;
+    color: $black;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .preamble-colorwrapper {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 20px 0 0 0;
+    &:after {
+      position: absolute;
+      width: 100%;
+      right: 0;
+      height: 87%;
+      content: "";
+      z-index: -1;
+      top: -50px;
+      background: $whitelight;
+    }
+  }
+  .onemembrimgbox {
+    width: 40%;
+    float: right;
+    margin-right: -50px;
+    z-index: 9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      position: relative;
+    }
+  }
+  .prmble-signaturebox {
+    background: #707070;
+    padding: 30px 50px;
+    position: relative;
+    color: $white;
+    // margin: 0 0 40px 0;
+    &:after {
+      position: absolute;
+      content: "";
+      width: 105px;
+      height: 100%;
+      background-color: #58595b;
+      right: -101px;
+      top: 0;
+    }
+  }
+  p {
+    &.name,
+    &.designation,
+    &.address,
+    &.phone,
+    &.email {
+      color: $white;
+      margin-bottom: 10px;
+    }
+    &.name {
+      font-family: "FiraSans-Medium";
+      font-size: 24px;
+    }
+    &.designation {
+      font-size: 20px;
+    }
+    &.address,
+    &.phone,
+    &.email {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+  .quick-links {
+    margin-top: 50px;
+
+    a {
+      border-bottom: 1px solid #b1b1b1;
+      display: inline-block;
+      width: 100%;
+      text-decoration: none;
+      text-align: left;
+
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 1px;
+        background: #004466;
+        transition: width 0.3s;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .preamble-main {
+    p.para22 {
+      font-size: 22px;
+      line-height: 33px;
+    }
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .preamble-main {
+    p.para22 {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .preamble-main p.para22 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .coexm-top {
+    .coexm-left {
+      padding-right: 0;
+
+      .main-para,
+      .awsubheading {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .preamble-main {
+    .onemembrimgbox {
+      width: 50%;
+    }
+    .examembcard .membrcontentbox {
+      padding: 20px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      &.designation {
+        font-size: 18px;
+      }
+      &.name {
+        font-size: 22px;
+      }
+    }
+
+    .preamble-colorwrapper {
+      padding: 40px 0 0 0;
+
+      &:after {
+        top: 0;
+        height: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .preamble-main {
+    .top_section.backpatch-right:before,
+    .top_section.backpatch-right::after {
+      height: 55%;
+    }
+    p.para22 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .onemembrimgbox {
+      width: 70%;
+    }
+  }
+  .coexm-top {
+    .coexm-left {
+      blockquote {
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .preamble-main {
+    .preamble-colorwrapper {
+      top: 0;
+      padding: 40px 0 40px 0;
+
+      &:after {
+        height: 100%;
+      }
+    }
+    .onemembrimgbox {
+      width: 100%;
+      margin: 0;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      text-align: center;
+      background: #707070;
+      padding-top: 20px;
+      img {
+        width: 25%;
+        text-align: center;
+        display: inline-block;
+      }
+    }
+    .examembcard {
+      margin-bottom: 30px;
+      // .membrimgbox{
+      //   width: 18%;
+      // }
+      .membrcontentbox {
+        &:after {
+          width: 12%;
+          left: -12%;
+        }
+      }
+    }
+
+    .coexm-top .coexm-content-resp {
+      max-width: 96%;
+      left: 2%;
+      padding: 0;
+    }
+    .coexm-top .coexm-left {
+      padding: 0 20px;
+    }
+    .backpatch-right {
+      padding: 0 0 00;
+    }
+    .prmble-signaturebox {
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+
+      &:after {
+        display: none;
+      }
+    }
+    .preamble-colorwrapper {
+      top: -30px;
+    }
+    .quick-links {
+      .mtopbtm30 {
+        margin-top: 0;
+      }
+      a {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .coexm-top {
+    .coexm-resp-imgbox {
+      display: block;
+      width: calc(100% - 15%);
+      overflow: hidden;
+      height: 45%;
+      img {
+        object-fit: fill;
+        object-fit: cover;
+
+        height: 50vh;
+      }
+    }
+    .coexm-content-resp {
+      position: relative;
+      background: #fff;
+      width: 100%;
+      float: left;
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+      top: 30%;
+      left: 5%;
+      transform: translate(0, -10%);
+      z-index: 1;
+    }
+    .coexm-left {
+      padding: 0 35px;
+    }
+    .coexm-right {
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coexm-top .coexm-left {
+    blockquote:before {
+      top: 14px;
+      background-size: 15px;
+    }
+    blockquote:after {
+      top: 2px;
+      background-size: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .schol-head,
+  .coexm-top .coexm-left .awsubheading {
+    margin-bottom: 25px;
+  }
+  .preamble-main {
+    &.bs3-coexm {
+      .coexm-title {
+        font-size: 24px;
+
+      }
+      .coexm-top .coexm-resp-imgbox{
+        width: 100%;
+        img{
+          width: 100%;
+
+        }
+      }
+    }
+    .quick-links {
+      margin-top: 10px;
+    }
+    .onemembrimgbox img {
+      width: 40%;
+    }
+    .examembcard {
+      display: block;
+      .membrimgbox {
+        width: 100%;
+        background: #707070;
+        padding-top: 30px;
+        img {
+          width: 40%;
+          text-align: center;
+          display: block;
+          float: none;
+          margin: 0 auto;
+        }
+      }
+      .membrcontentbox {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 10px solid #58595b;
+        text-align: center;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .quick-links {
+    margin-bottom: 0;
+  }
+  .simple-link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .top_section .coexm-title {
+    font-size: 26px;
+    line-height: 39px;
+    margin: 15px 0px;
+  }
+  .coexm-top {
+    .coexm-resp-imgbox {
+      width: calc(100% - 20%);
+
+      img {
+        object-fit: cover;
+        height: 30vh;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 375px) {
+  .coexm-top .coexm-resp-imgbox {
+    width: calc(100% - 18%);
+  }
+  .preamble-main {
+    .top_section.backpatch-right:after,
+    .top_section.backpatch-right::before {
+      height: 30vh;
+    }
+    .examembcard .membrimgbox img {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,492 @@
+@import "../../default_asset/uni-scss/variables";
+
+.rightftpatch:after {
+  content: "";
+  width: 5%;
+  background-color: $darkred;
+  height: 30%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.brightredbg {
+  width: 20%;
+  background-color: $brightred;
+  height: 60px;
+  float: left;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+}
+.copysymbol {
+  font-size: 20px;
+}
+.darkredbg {
+  width: 80%;
+  background-color: $darkred;
+  height: 60px;
+  float: left;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+}
+.brandfooter {
+  width: 100%;
+  float: left;
+  bottom: 0;
+  position: relative;
+  background-color: #fafbfb;
+  .container {
+    background-color: #fafbfb;
+    padding-top: 20px;
+    z-index: 2;
+  }
+  .ft-logo img {
+    max-width: 250px;
+    margin-bottom: 20px;
+    &.kjsiet-logo {
+      max-width: 370px;
+    }
+  }
+  .addressblock {
+    p {
+      font-size: 14px;
+    }
+    .blue-link {
+      color: $linkblue;
+    }
+  }
+  .ft-heading {
+    font-family: "FiraSans-Medium";
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .backpatch_right::after {
+    width: 20%;
+    height: 17.5%;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
+  .backpatch_right::before {
+    width: 80%;
+    height: 40%;
+    bottom: 0;
+    top: auto;
+    z-index: 1;
+  }
+  a {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    color: #58595b;
+    &:hover {
+      color: $black;
+      text-decoration: underline;
+    }
+    line-height: 35px;
+    &.outline-grey-btn {
+      display: block;
+      line-height: initial;
+      padding: 10px 20px;
+      font-family: "FiraSans-Medium";
+      font-size: 18px;
+      max-width: 160px;
+
+      &:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.shfooter .collapse {
+  display: inherit;
+}
+.ftinline-grid {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: 30px auto;
+}
+.copyrightsec {
+  width: 60%;
+  float: none;
+  margin: 0 auto;
+  padding: 30px 0 30px 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  ul {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .copyright {
+    width: 50%;
+    float: left;
+    top: 8px;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 12px;
+    color: #58595b;
+    position: relative;
+  }
+}
+
+.unisocial_link {
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  width: 100%;
+  text-align: center;
+  float: none;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  li {
+    float: left;
+  }
+  .fwarp {
+    height: 35px;
+    padding-right: 43px;
+    width: 100%;
+    float: left;
+  }
+
+  .ufacebook {
+    background: url(../../default_asset/img/social/Sprite-icon.svg) -108px -13px
+      no-repeat;
+    padding-right: 34px;
+    &:hover {
+      background: url(../../default_asset/img/social/Sprite-icon.svg)-145px -13px
+        no-repeat;
+    }
+  }
+
+  .utwitter {
+    background: url(../../default_asset/img/social/Sprite-icon.svg)-195px -13px no-repeat;
+    &:hover {
+      background: url(../../default_asset/img/social/Sprite-icon.svg)-246px -13px
+        no-repeat;
+    }
+  }
+
+  .uinstagram {
+    background: url(../../default_asset/img/social/Sprite-icon.svg)-311px -11px no-repeat;
+    &:hover {
+      background: url(../../default_asset/img/social/Sprite-icon.svg)-355px -12px
+        no-repeat;
+    }
+  }
+
+  .uyoutube {
+    background: url(../../default_asset/img/social/Sprite-icon.svg)-419px -11px no-repeat;
+    &:hover {
+      background: url(../../default_asset/img/social/Sprite-icon.svg)-472px -11px
+        no-repeat;
+    }
+  }
+  .ulinkedin {
+    background: url(../../default_asset/img/social/Sprite-icon.svg) -98px -60px
+      no-repeat;
+    margin-left: 5px;
+    &:hover {
+      background: url(../../default_asset/img/social/Sprite-icon.svg)-140px -60px
+        no-repeat;
+    }
+  }
+
+  .unisocial_link .ugmail {
+    background: url(../../default_asset/img/social/Sprite-icon.svg)-152px -45px no-repeat;
+    background-size: 470px;
+    &:hover {
+      background: url(../../default_asset/img/social/Sprite-icon.svg) -194px -46px
+        no-repeat;
+      background-size: 470px;
+    }
+  }
+}
+@media (max-width: 860px) {
+  .brandfooter {
+    .ftinline-grid,
+    .copyrightsec {
+      width: 75%;
+    }
+    .copyrightsec {
+      padding: 20px 0 40px 0;
+    }
+    .ft-logo img {
+      width: 35%;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .show-mob {
+    display: block !important;
+  }
+  #morelinks {
+    margin-top: 20px;
+  }
+  .hidden-mob {
+    display: none !important;
+  }
+  .notifystrip {
+    display: none;
+  }
+  .brandfooter {
+    .mobftlogo {
+      margin-bottom: 20px;
+    }
+    .col {
+      flex-basis: inherit;
+    }
+
+    .ftinline-grid,
+    .copyrightsec {
+      width: 100%;
+      justify-content: center;
+      li {
+        padding: 0 10px;
+      }
+      .copyrightsec ul {
+        justify-content: center;
+      }
+    }
+    a.outline-grey-btn {
+      max-width: 180px;
+      padding: 10px 20px;
+      margin-right: 10px;
+      float: left;
+      font-size: 16px;
+    }
+    .ft-heading {
+      margin-bottom: 0;
+    }
+    .unisocial_link {
+      margin-top: 0px;
+      float: left;
+      justify-content: flex-start;
+      margin-bottom: 100px;
+    }
+  }
+  .shfooter ul {
+    margin-bottom: 0;
+  }
+
+  .shfooter .collapse {
+    display: none;
+  }
+
+  .shfooter .collapse.show {
+    display: block;
+  }
+
+  .shfooter .title .fa-angle-up,
+  .shfooter .title[aria-expanded="true"] .fa-angle-down {
+    display: none;
+  }
+
+  .shfooter .title[aria-expanded="true"] .fa-angle-up {
+    display: block;
+  }
+
+  .shfooter .navbar-toggler {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.resize {
+  text-align: center;
+}
+.resize {
+  margin-top: 3rem;
+  font-size: 1.25rem;
+}
+/*RESIZESCREEN ANIMATION*/
+.fa-angle-double-right {
+  animation: rightanime 1s linear infinite;
+}
+
+.fa-angle-double-left {
+  animation: leftanime 1s linear infinite;
+}
+@keyframes rightanime {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+@keyframes leftanime {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+@media (max-width: 575px) {
+  .brandfooter .ftinline-grid,
+  .brandfooter .copyrightsec {
+    display: block;
+    li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .brandfooter .ft-logo img {
+    width: 50%;
+  }
+  .brandfooter .copyrightsec {
+    padding: 0 0 100px 0;
+
+    .copyright {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .rightftpatch:after {
+    width: 10%;
+    height: 20%;
+  }
+  .brandfooter .unisocial_link {
+    margin-bottom: 75px;
+    margin-top: 30px;
+  }
+  .brightredbg,
+  .darkredbg {
+    height: 50px;
+  }
+  .brandfooter {
+    .container {
+      padding: 0 40px 0 20px;
+    }
+    a.outline-grey-btn {
+      padding: 10px 10px;
+      font-size: 14px;
+      max-width: 150px;
+    }
+    .ft-logo img {
+      width: 75%;
+      margin-top: 31px;
+    }
+    .ftinline-grid {
+      margin: 20px 0 0 0;
+    }
+    .copyrightsec {
+      padding: 0 0 160px 0;
+      ul {
+        display: block;
+      }
+    }
+  }
+}
+
+.content-High {
+  color: #fff;
+  background: #ffcb05;
+}
+.content-Medium {
+  color: #fff;
+  background: #ffcb05;
+}
+.content-Low {
+  color: #fff;
+  background: #f58220;
+}
+
+.notice-msg {
+  display: block;
+  z-index: 999;
+  float: right;
+  padding-top: 10px;
+  border: 0;
+  font-family: "FiraSans-Medium";
+  color: #fff;
+  margin-top: 0px;
+  position: relative;
+  cursor: pointer;
+}
+.emer_p {
+  padding-bottom: 18px;
+}
+.fruit p {
+  padding-top: 20px;
+  position: relative;
+}
+.fruit p:before {
+  content: "\f071";
+  background-repeat: no-repeat;
+  font-family: fontawesome;
+  height: 18px;
+  float: left;
+  margin-top: 0px;
+  left: -30px;
+  position: absolute;
+  font-size: 25px;
+}
+
+.fira-medium {
+  font-family: FiraSans-Medium;
+}
+.font22 {
+  font-size: 22px;
+}
+.font14 {
+  font-size: 14px;
+}
+ul.comlist li {
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  list-style-type: disc;
+}
+.mleft30 {
+  margin-left: 30px;
+}
+
+/* Newletter pop up CSS*/
+.emma-show {overflow-y: overlay!important;}
+ .emma-show {background-color: rgba(0, 0, 0, 0.6)!important;}
+.emma-show header{box-shadow: none!important;}
+.emma-show label{ font-family: "FiraSans-Medium"!important; font-weight: normal!important;}
+
+#emma-form-485d6477690ab6ddc44a1cc499dbf955{
+form header h1 { margin-bottom: 10px; font-size: 18px; text-align: center; font-family: 'FiraSans-Medium'!important;  font-size: 24px; color: #000!important;}
+form header h2 {  font-size: 16px;  font-weight: normal; color: #58595b!important; text-align: center;}
+button#close { background: #f5f6f6!important; color: #000!important; border: 0!important; box-shadow: 0 0px 0px #9fa4a7;}
+input{width: 100%!important;}
+form button{border-radius: 0!important; width: 198px; display: initial; background-color: #58595b;}
+ul#subscriber_consent_email li input { width: auto!important;  position: relative; top: 2px;}
+form img { position: relative; float: right; top: -159px; right: -6px;}
+ h1{font-family: "FiraSans-Medium"!important; font-weight: normal!important;}
+ h2{    font-family: "Fira Sans", sans-serif!important; font-weight: 400!important; font-size: 16px!important;    margin-bottom: 8px!important;}
+
+form{ width: auto!important; border-radius: 0!important; background: #fff!important; margin-top: 210px !important;
+        position: absolute; left: 35%;  padding: 25px !important; text-align: center;}
+form:before {
+    content: ""; position: absolute; height: 200px; background: url(/assets/default_asset/img/event/newsletter.png); left: 0;  top: -180px; background-position: center; 
+     width: 100%; background-repeat: no-repeat; background-size: 100%;}
+.signup-form-error {font-family: "Fira Sans", sans-serif!important; font-weight: 400!important;}
+@media (min-width: 320px) and (max-width: 767px){
+  form{ left: 0;text-align: center;width: 100%!important;}
+  form button { width: 146px;  margin-left: 7px;}
+  form:before { content: "";  top: -180px; background-position: 45% 69%; width: 100%; background-size: 100%; background-repeat: no-repeat;}
+ img {top: -138px;}
+}
+}
+/* End Newletter pop up CSS*/

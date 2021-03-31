@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.308" height="19.308" viewBox="0 0 19.308 19.308">
+    <g>
+        <g>
+            <path fill="#3c3d3d" d="M35.955-16.016a1.434 1.434 0 0 1-1.49 1.384 1.434 1.434 0 0 1-1.49-1.384 1.434 1.434 0 0 1 1.49-1.384 1.434 1.434 0 0 1 1.49 1.384z" transform="translate(.5 .5) translate(-20.201 19.848)"/>
+            <path fill="none" stroke="#3c3d3d" stroke-miterlimit="10" d="M37.012-1.392H28.5a4.953 4.953 0 0 1-4.9-4.9V-14.8a4.953 4.953 0 0 1 4.9-4.9h8.516a4.953 4.953 0 0 1 4.9 4.9v8.515a4.953 4.953 0 0 1-4.9 4.9z" transform="translate(.5 .5) translate(-23.6 19.7)"/>
+        </g>
+        <g fill="none" stroke="#3c3d3d" transform="translate(.5 .5) translate(4.402 5.241)">
+            <circle cx="4.24" cy="4.24" r="4.24" stroke="none"/>
+            <circle cx="4.24" cy="4.24" r="3.74"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,522 @@
+@import "../../default_asset/uni-scss/base";
+/*Contact Us page*/
+.aboutpanel {
+  &.emergencyhead {
+    margin-bottom: 0;
+    .common-title h2 {
+      margin-bottom: 0;
+    }
+  }
+  .common-title {
+    h2 {
+      margin-bottom: 50px;
+      float: left;
+      width: 100%;
+      @extend %herotitle;
+    }
+    img {
+      display: none;
+    }
+  }
+}
+a.blue-link {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  color: $linkblue;
+  &:hover {
+    color: $linkbluehvr;
+  }
+}
+.select2-container--default .select2-results > .select2-results__options {
+  font-family: "Fira Sans", sans-serif;
+}
+.select2-container {
+  font-family: "Fira Sans", sans-serif;
+}
+.contact-us {
+  .seeall {
+    text-align: right;
+    margin-bottom: 20px;
+  }
+}
+.getintouch {
+  margin-bottom: 70px;
+  .select2-container--default .select2-selection--single {
+    border: none;
+    height: 50px;
+    border-radius: 0;
+  }
+  .select2-container--open .select2-dropdown--below {
+    top: 20px;
+  }
+  .select2-container--default .select2-results > .select2-results__options {
+    font-family: "Fira Sans", sans-serif;
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    width: 100%;
+    word-wrap: break-word;
+    height: auto;
+    max-width: 475px;
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: block;
+    padding: 12px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s,
+      -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    border: 1px solid transparent;
+    font-family: "FiraSans-Medium";
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 9px;
+    right: 1px;
+    width: 20px;
+  }
+  .control-label {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: $grey;
+    font-family: "FiraSans-Medium";
+  }
+  .input-group {
+    width: 100%;
+  }
+  .form-control {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .grey-btn {
+    float: right;
+    &:hover {
+      background: $darkred;
+      cursor: pointer;
+    }
+  }
+  .blue-bg {
+    background: $greybg;
+    padding: 30px;
+    float: left;
+    h3 {
+      font-size: 28px;
+      line-height: 36px;
+      color: $darkred !important;
+      font-family: "Marcellus-Regular";
+      margin-bottom: 20px;
+    }
+    #imaginary_container {
+      margin: 30px 0;
+      margin-bottom: 10px;
+    }
+    .otheremillinks {
+      li {
+        @extend %para18;
+        font-weight: 400;
+        margin-bottom: 20px;
+        .email-contacts {
+          color: $linkblue;
+          text-decoration: underline;
+          font-weight: 400;
+          &:hover {
+            text-decoration: none;
+            color: $linkbluehvr;
+          }
+        }
+        span {
+          @extend %para16;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+.instutute-nav {
+  .commonL-tabs {
+    .nav-item {
+      padding: 0 20px;
+    }
+  }
+}
+.home-who-can-donate {
+  .show-grid {
+    width: 100%;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    .faqtop {
+      margin-bottom: 30px;
+      .accordion-toggle {
+        cursor: pointer;
+        margin: 0;
+        position: relative;
+        background: #f5f6f6;
+
+        padding-top: 30px;
+        padding-bottom: 2px;
+
+        padding: 20px 15px;
+        line-height: 28px;
+        color: #0f1d3d;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        padding-right: 40px;
+        &:after {
+          content: "";
+          width: 15px;
+          height: 25px;
+          background-repeat: no-repeat;
+          background-position: 0px 5px;
+          position: absolute;
+          right: 20px;
+          top: 21px;
+
+          background-image: url(../../default_asset/img/menu/plus.svg);
+        }
+      }
+      .accordion-toggle.active {
+        &:after {
+          top: 27px;
+
+          background-image: url(../../default_asset/img/menu/minus.svg);
+        }
+      }
+      .accordion-content {
+        @extend %para18;
+        margin-bottom: 2%;
+        background: #fff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+    .accordion-content {
+      display: none;
+    }
+  }
+
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+    border: 0px solid gray;
+    border-radius: 0px;
+    position: relative;
+    overflow: hidden;
+    height: 634px;
+    margin-bottom: 40px;
+    iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+}
+
+/**Emergency Page css**/
+.emergency-page {
+  // .show-grid{
+  //   margin-top:30px;
+  // }
+  .emno {
+    color: #b72034;
+    font-weight: 400;
+  }
+  .bdrright-list,
+  .bdrright-list-2 {
+    li {
+      list-style-type: none;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 300;
+      margin-bottom: 10px;
+      span {
+        float: right;
+        font-weight: 400;
+      }
+    }
+  }
+  .bdrright-list {
+    border-right: 1px solid #e5e5e5;
+  }
+  .emergency-heading {
+    color: #58595b;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 10px;
+    &:before {
+      content: "\f098";
+      font-family: "FontAwesome";
+      margin-right: 10px;
+
+      font-size: 20px;
+    }
+  }
+}
+.resource-guide {
+  .bg-clr {
+    background: #f5f6f6;
+    padding: 20px 30px;
+  }
+  .resource-heading {
+    color: #b7202e;
+    font-size: 28px;
+    font-family: "Marcellus-Regular";
+    line-height: 60px;
+  }
+  .resource-list {
+    li {
+      font-size: 18px;
+      line-height: 27px;
+      color: #000;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 300;
+      margin-bottom: 10px;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+  .resource-class {
+    .whatdo-head {
+      color: #58595b;
+      font-weight: 400;
+      font-size: 26px;
+
+      font-family: "Fira Sans", sans-serif;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .stroke {
+      background: #f5f6f6;
+      padding: 10px;
+      a.blue-link {
+        color: $linkblue;
+        &:hover {
+          color: $linkbluehvr;
+        }
+      }
+      &:hover {
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+          0 3px 1px -4px rgba(133, 132, 132, 0.2),
+          0 1px 5px 0 rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+}
+.showbs4 {
+  display: block !important;
+}
+.hidebs4,
+.cutsidelbl,
+.faclabel {
+  display: none !important;
+}
+@media (max-width: 1280px) {
+  .instutute-nav .commonL-tabs .nav-item {
+    padding: 0 15px;
+    a{
+      font-size:20px;
+    }
+}
+}
+@media (max-width: 1024px) {
+  .instutute-nav .commonL-tabs .nav-item {
+    padding: 0 12px;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    a {
+      font-size: 18px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .emergency-page {
+    .show-grid {
+      margin-top: 0;
+    }
+    .emno {
+      float: left;
+      width: 40%;
+      margin-bottom: 20px;
+    }
+    .bdrright-list {
+      border-right: 0;
+    }
+  }
+  .resource-guide {
+    margin: 0;
+    margin-bottom: 50px;
+    .bg-clr {
+      margin-bottom: 50px;
+    }
+  }
+  .instutute-nav .commonL-tabs .nav-item {
+    margin-bottom: 20px;
+  }
+  .emergency-page {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  .aboutpanel.emergencyhead {
+    margin-bottom: 30px;
+}
+  .getintouch {
+    margin-bottom: 40px;
+    .blue-bg {
+      .getintouch {
+        margin-bottom: 0;
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 27px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      #imaginary_container {
+        margin: 15px 0 0 0;
+      }
+    }
+  }
+  .contact-us {
+    &.aboutpanel .common-title h2 {
+      margin-bottom: 20px;
+    }
+    .seeall {
+      text-align: center;
+    }
+  }
+  .getintouch .blue-bg {
+    margin-top: 50px;
+  }
+  .instutute-nav {
+    margin: 0;
+
+    .commonL-tabs {
+      display: flex;
+      .nav-item {
+        padding: 0 10px;
+        margin-bottom: 10px;
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .emergency-nav {
+    .commonL-tabs {
+      display: none;
+    }
+  }
+  .emergency-page {
+    .show-grid {
+      padding: 10px 15px;
+    }
+    .emno {
+      width: 50%;
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+  .emergency-page,
+  .resource-guide {
+    padding: 0px 15px 20px 15px;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-who-can-donate{
+    margin-top:0;
+  }
+  .getintouch .blue-bg {
+    padding: 20px;
+  }
+  .instutute-nav .commonL-tabs .nav-item {
+    margin:0 0 15px 0;
+    &:first-child{
+      padding-left: 10px;
+
+    }
+    a {
+      font-size: 14px;
+      line-height: 20px;
+
+    }
+  }
+  .resource-guide {
+    .resource-class {
+      .stroke {
+        margin-top: 30px;
+        &:last-child {
+          margin-top: 0;
+        }
+      }
+      .whatdo-head {
+        font-size: 24px;
+      }
+    }
+    #emergency-resources {
+      margin-top: 30px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .emergency-page {
+    .show-grid {
+      padding: 10px 30px;
+    }
+    .resource-heading {
+      font-size: 24px;
+    }
+
+    .bdrright-list li span,
+    .bdrright-list-2 li span {
+      margin-left: 10px;
+      float: none;
+    }
+    .emno {
+      width: 100%;
+      &:last-child {
+        text-align: left;
+      }
+    }
+  }
+  .resource-guide .resource-list li {
+    font-size: 16px;
+  }
+}

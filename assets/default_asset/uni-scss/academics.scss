@@ -1,0 +1,1285 @@
+@import "../../default_asset/uni-scss/base";
+.height-100vh {
+  height: 100vh;
+}
+.font14 {
+  font-size: 14px;
+}
+.blue-link{
+    color:$linkblue;
+    text-decoration: underline;
+    z-index: 2;
+    &:hover{
+        color:$linkbluehvr;
+        text-decoration: none;
+    }
+}
+#bar-fixed.stickIt {
+  position: fixed;
+  top: 0px;
+  width: 20%;
+}
+.filter-box {
+  width: 100%;
+  float: left;
+  padding: 30px;
+  border: 1px solid #ddd;
+  margin-bottom: 40px;
+  display: none;
+  h3 {
+    font-family: "FiraSans-Medium";
+    font-size: 22px;
+    color: $grey;
+  }
+}
+.list-decimal {
+  li {
+    list-style-type: decimal !important;
+  }
+}
+.inner-loweralphalist {
+  li {
+    list-style: lower-alpha !important;
+  }
+}
+
+/**ADmission page css**/
+.admission-mainsection{
+    .simple-admlist {
+        float: left;
+        margin-left: 20px;
+        li {
+            font-size: 18px;
+            font-family: 'Fira Sans', sans-serif;
+            margin-bottom: 10px;
+            line-height: 27px;
+            list-style-type: disc;
+            color: #000;
+            font-weight: 300;
+        }
+        
+    }
+   
+}
+.admission-table{
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    margin-bottom: 40px;
+
+    tr{
+        border-bottom: 1px solid #e3e3e3;
+        &:nth-of-type(even){
+            background: #f5f5f5;
+
+        }
+        th{
+            padding: 15px 15px;
+            font-family: 'FiraSans-Medium';
+            font-size: 18px;
+            line-height: 27px;
+            a{
+                font-weight: 400;
+            }
+        }
+        td{
+            padding: 15px 13px;
+            font-weight: 300;
+            font-family: 'Fira Sans', sans-serif;
+            color:$paracolor;
+            font-size: 18px;
+            line-height: 27px;
+            a{
+                font-weight: 400;
+            }
+        }
+        td.fees-amt ,th.fees-amt{
+            &:before{
+                content:'\f156';
+                font-family: 'fontAwesome';
+                margin-right: 5px;
+
+            }
+        }
+        td.phase-left{
+            float: left;
+        }
+        td.phase{
+           
+            .full{
+                margin-bottom: 10px;
+                width: 100%;
+                float: left;
+            }
+        }
+    }
+}
+
+.border-table{
+      
+    th,td{
+        border-right: 1px solid #e3e3e3;
+    }
+}
+/*Checkbox css starts*/
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Fira Sans", sans-serif;
+  color: #8e8e8e;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    border: 1px solid #666666;
+    border-radius: 4px;
+    &:after {
+      left: 5px;
+      top: 2px;
+      width: 6px;
+      height: 10px;
+      border: solid #162443;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+}
+.checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+/*Checkbox css ends*/
+
+.admission-process-stepper {
+  .width-10 {
+    padding-left: 15px;
+  }
+  .width-80 {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .stepper-gapp {
+    margin-bottom: 50px;
+  }
+  .list-stepper-box {
+    vertical-align: middle;
+    height: 160px;
+    display: inline-block;
+    position: relative;
+    line-height: 75px;
+    span.stepno {
+      line-height: 0;
+    }
+  }
+  .stepper-box {
+    border: 1px solid #b7202e;
+    padding: 10px 10px;
+
+    font-family: "FiraSans-Medium";
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    background: #fff;
+    &:after {
+      content: " ";
+      position: absolute;
+      display: block;
+      top: 25%;
+      right: 50%;
+      bottom: 1px;
+      left: 35px;
+      height: 55%;
+      width: 1px;
+      transform-origin: 50% -50%;
+      background-color: rgba(0, 0, 0, 0.25);
+      z-index: -1;
+    }
+    .stepno {
+      font-size: 25px;
+      line-height: 28px;
+      width: 100%;
+      float: left;
+    }
+  }
+  .stepper-box.last::after {
+    background-color: transparent;
+    height: 0;
+    display: none;
+  }
+  .stepper-content {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .mb-stepper-heading {
+      display: none;
+    }
+  }
+}
+.top_section.backpatch_left.acd-progrm {
+  &::after,
+  &::before {
+    height: 66%;
+    z-index: -1;
+  }
+}
+.acd-progrm.ug-bannersec {
+  display: block;
+}
+.acd-progrm.minors-bannersec,
+.honours-bannersec,
+.dual-bannersec {
+  display: none;
+}
+.acd-progrm.certificate-bannersec {
+  display: none;
+}
+.acd-progrm.pg-bannersec {
+  display: none;
+}
+.acd-progrm.doctoral-bannersec {
+  display: none;
+}
+.acd-progrm.pgdiploma-bannersec {
+  display: none;
+}
+.academics-banner {
+  margin-top: 60px;
+}
+.acd-prgmbannercaption {
+  background: #fafbfb;
+
+  padding: 30px;
+  box-shadow: -15px 3px 20px 0 rgba(0, 0, 0, 0.16);
+  margin-top: -50px;
+  position: relative;
+  width: 95%;
+  .academics-banner-content {
+    .ac-prgm-head {
+      @extend %herotitle38;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    .ac-prgm-para {
+      @extend %para22;
+    }
+    .acprgm-smallhead {
+      color: $grey;
+      font-family: "Marcellus-Regular";
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 8px;
+    }
+  }
+  .bannerimgwrapper {
+    position: absolute;
+    margin-top: auto;
+    right: 0;
+    bottom: 0;
+    height: 132px;
+    .vertical-label {
+      position: absolute;
+      top: -25px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 400;
+      color: $grey;
+      display: none;
+      // transform-origin: 0 0;
+      // transform: rotate(90deg);
+    }
+    // .vertical-label.minors{
+    //     width: 50%;
+    //     text-align: center;
+
+    // }
+  }
+}
+
+.acd-prgm-main {
+  .acprgrm-tabs {
+    margin-top: 30px;
+    border-top: 1px solid #e3e3e3;
+    li {
+      padding: 15px 0;
+      border-bottom: 1px solid #e3e3e3;
+      width: 100%;
+      padding-bottom: 0;
+      ul {
+        li.page_item {
+          border-bottom: 1px solid #e3e3e3;
+        }
+      }
+      a {
+        @extend %para18;
+        color: #58595b;
+        font-weight: 400;
+        line-height: 35px;
+        height: 50px;
+
+        display: block;
+
+        .rightindicatior {
+          font-size: 20px;
+          padding-right: 10px;
+          padding-left: 8px;
+          letter-spacing: 0;
+          position: relative;
+          float: left;
+          top: 0;
+          height: 25px;
+          width: 45px;
+          color: transparent;
+          &::before {
+            content: "";
+            width: 23px;
+            height: 35px;
+            position: absolute;
+          }
+        }
+        .rightindicatior.ug-sidebaricon {
+          &::before {
+            background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/ug-grey.svg);
+          }
+        }
+        .rightindicatior.pg-sidebaricon {
+          &::before {
+            background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/pg-grey.svg);
+          }
+        }
+        .rightindicatior.crtf-sidebaricon {
+          &::before {
+            background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/certificate-grey.svg);
+          }
+        }
+
+        .rightindicatior.pgdiploma-sidebaricon {
+          padding-left: 0;
+          &::before {
+            background-image: url(/assets/kjsce/img/academic-programme/banner-icons/pgdiploma-bannericon.svg);
+            background-size: 120%;
+            margin-left: -8px;
+            filter: grayscale(100%);
+            opacity: 0.5;
+
+            width: 100%;
+          }
+        }
+
+        .rightindicatior.doct-sidebaricon {
+          &::before {
+            background-image: url(/assets/kjsce/img/academic-programme/banner-icons/doctoral-bannericon.svg);
+            filter: grayscale(100%);
+            opacity: 0.2;
+          }
+        }
+      }
+      a.active {
+        color: $darkred;
+      }
+      ul {
+        border-top: 1px solid #e3e3e3;
+
+        hr {
+          margin: 0;
+        }
+
+        li {
+          padding-left: 0;
+          border-bottom: none;
+
+          &:last-child {
+            border-bottom: none;
+          }
+          a {
+            @extend %para16;
+            color: #58595b;
+            font-weight: 400;
+            line-height: 35px;
+
+            margin-left: 10px;
+            .rightindicatior {
+              font-size: 20px;
+              padding-right: 10px;
+              padding-left: 8px;
+              letter-spacing: 0;
+              position: relative;
+              float: left;
+              top: 0;
+              height: 25px;
+              width: 45px;
+              margin-left: 20px;
+
+              color: transparent;
+              &::before {
+                content: "";
+                width: 23px;
+                height: 35px;
+                position: absolute;
+              }
+            }
+            .rightindicatior.minors-sidebaricon {
+              &::before {
+                background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/minors-grey.svg);
+              }
+            }
+            .rightindicatior.honours-sidebaricon {
+              &::before {
+                background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/honors-grey.svg);
+              }
+            }
+            .rightindicatior.dual-sidebaricon {
+              &::before {
+                background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/ug-grey.svg);
+              }
+            }
+          }
+          a.active {
+            color: $darkred;
+          }
+        }
+        li.innerlist-active {
+          background-color: #f5f6f6;
+          a {
+            color: $darkred;
+          }
+          .rightindicatior.minors-sidebaricon {
+            &:before {
+              background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/active/minor-active.svg);
+            }
+          }
+          .rightindicatior.honours-sidebaricon {
+            &:before {
+              background-image: url(/assets/kjsce/img/academic-programme/banner-icons/honurs-bannericon.svg);
+            }
+          }
+          .rightindicatior.dual-sidebaricon {
+            &:before {
+              background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/active/ug-active.svg);
+            }
+          }
+        }
+      }
+    }
+    li.list-active {
+      background-color: #f5f6f6;
+      ul {
+        background-color: $white;
+        li {
+          background-color: $white;
+        }
+      }
+      a {
+        .rightindicatior.pg-sidebaricon {
+          &:before {
+            background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/active/pg-active.svg);
+          }
+        }
+        .rightindicatior.ug-sidebaricon {
+          &:before {
+            background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/active/ug-active.svg);
+          }
+        }
+
+        .rightindicatior.crtf-sidebaricon {
+          &:before {
+            background-image: url(/assets/sksc/img/academic-programme/sidebar-icons/active/certificate-active.svg);
+          }
+        }
+        .rightindicatior.pgdiploma-sidebaricon {
+          &:before {
+            -webkit-filter: none;
+            opacity: 1;
+          }
+        }
+        .rightindicatior.doct-sidebaricon {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  .need-helpbox {
+    background-color: $whitelight;
+    padding: 30px;
+    margin-top: 40px;
+    width: 100%;
+    float: left;
+    img {
+      margin-bottom: 20px;
+    }
+    .needp22 {
+      @extend %para22;
+      color: $darkred;
+      font-weight: 400;
+    }
+    .needp20 {
+      @extend %para20;
+      font-weight: 400;
+    }
+    .needno {
+      @extend %para14;
+      font-weight: 400;
+      margin-top: 20px;
+    }
+    a {
+      display: block;
+      margin-top: 6px;
+      font-size: 14px;
+      font-family: "FiraSans-Medium";
+      word-break: break-word;
+    }
+  }
+  .button-wrapper {
+    width: 100%;
+    float: left;
+    margin-top: 40px;
+    .outline-grey-btn {
+      display: block;
+    }
+  }
+
+  .academic-mainbox {
+    margin-left: 30px;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+    float: left;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 10px;
+    }
+    .enhead {
+      @extend %herotitle38;
+      text-align: left;
+      margin-bottom: 20px;
+      .sub-text {
+        @extend %mpara24;
+      }
+    }
+    .enhead.quotes-heading {
+      &:before {
+        content: "";
+        width: 18px;
+        height: 35px;
+        background-size: auto;
+        position: relative;
+        display: inline-block;
+
+        background: url(../../default_asset/img/quotes-start-red.svg);
+        background-repeat: no-repeat;
+      }
+      &:after {
+        content: "";
+        width: 18px;
+        height: 35px;
+        background-size: auto;
+        position: relative;
+        display: inline-block;
+
+        background: url(../../default_asset/img/quotes-end-red.svg);
+        background-repeat: no-repeat;
+      }
+    }
+    .enhead.minorprgm {
+      float: left;
+    }
+    .prgm-select-container {
+      width: 22%;
+      display: none;
+      float: right;
+      select {
+        float: right;
+        display: block;
+        background: #ddd;
+        border: solid 1px #eeeeee;
+        background-color: #ededed;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        line-height: 22px;
+        color: #000;
+        padding: 8px 40px 8px 10px;
+        -webkit-appearance: none;
+        background-image: url(/assets/sksc/img/academic-programme/filter.png) !important;
+        background-repeat: no-repeat;
+        background-position: right;
+
+        right: 0;
+        background-position: calc(100% - 0.5em);
+      }
+    }
+    .enrich-para {
+      @extend %para18;
+
+      margin-bottom: 20px;
+    }
+    .enrich-para.bold {
+      @extend %para18;
+      font-family: "FiraSans-Medium";
+      margin-bottom: 20px;
+      color: $grey;
+    }
+    .who-applybox {
+      background-color: rgba(255, 203, 5, 0.05);
+      padding: 30px 30px;
+      margin: 15px 0;
+      .whoapply {
+        @extend %herotitle38;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+    }
+    .who-applybox.postgraduate-bg {
+      background-color: rgba(245, 130, 32, 0.05);
+    }
+    .who-applybox.undergraduate-bg {
+      background-color: rgba(76, 175, 80, 0.05);
+    }
+    .who-applybox.certificate-bg {
+      background-color: rgba(90, 48, 17, 0.05);
+    }
+    .who-applybox.shadow {
+      background-color: transparent;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+      padding: 30px;
+      margin: 15px 0;
+    }
+  }
+
+  .academic-mainbox.introbox {
+    width: 88%;
+  }
+  .academic-mainbox.introbox.ug-introbox {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .academic-mainbox.ug-academic-flexibility {
+    padding-top: 0;
+  }
+  .acd-prgm-right {
+    .tab-content {
+      border-left: 1px solid #e3e3e3;
+      width: 100%;
+      float: left;
+      height: 100%;
+    }
+  }
+  .ug-flexible-wrapper {
+    background-color: $whitelight;
+    padding: 40px 30px;
+    width: 100%;
+    float: left;
+    hr {
+      width: 90%;
+    }
+    p {
+      padding-right: 75px;
+    }
+    .width-50 {
+      p {
+        font-weight: 400;
+        color: $grey;
+        font-size: 22px;
+        line-height: 27px;
+        padding-right: 0;
+      }
+    }
+    a {
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+      font-family: "FiraSans-Medium";
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  .ug-flexible-wrapper.kjsce {
+    padding: 40px 60px 40px 30px;
+  }
+  .ug-flexible-imgwrapper {
+    margin-left: -68px;
+    margin-top: 25px;
+  }
+  .pursuebox {
+    position: relative;
+    width: 100%;
+    float: left;
+    padding: 30px 0 30px 30px;
+
+    .admission-mainsection {
+      background-color: $whitelight;
+      padding: 0 160px 0 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .simple-admlist {
+        margin-left: 50px;
+      }
+    }
+    .whypursue {
+      @extend %mpara28;
+      line-height: 42px;
+      margin-bottom: 20px;
+
+      color: $darkred;
+    }
+    .pursueimgbox {
+      margin-right: -55px;
+      padding: 0 0 30px 0;
+
+      &:before,
+      &:after {
+        bottom: 0;
+        height: 80%;
+        top: inherit;
+      }
+      &:before {
+        width: 80%;
+      }
+      &:after {
+        width: 20%;
+        right: 80%;
+        z-index: -1;
+      }
+
+      img {
+        position: relative;
+        left: -70px;
+        top: -30px;
+        width: auto;
+      }
+    }
+  }
+
+  .pursuebox.kj-ug {
+    .admission-mainsection {
+      padding: 20px 110px 20px 30px;
+    }
+    .pursueimgbox {
+      padding: 0 0 70px 0;
+      img {
+        top: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .acd-prgmbannercaption {
+    .academics-banner-content .acprgm-smallhead {
+      font-size: 26px;
+      line-height: 30px;
+    }
+    .bannerimgwrapper {
+      height: 117px;
+    }
+  }
+  .admission-process-stepper {
+    .width-10 {
+      width: 15%;
+    }
+    .stepper-box:after {
+      left: 44px;
+    }
+  }
+  .acd-prgm-main {
+    .button-wrapper {
+      .outline-grey-btn {
+        padding: 10px 10px;
+        font-size: 16px;
+      }
+    }
+    .academic-mainbox .enhead.quotes-heading {
+      &:before,
+      &:after {
+        background-size: 15px;
+        top: 5px;
+        width: 15px;
+      }
+    }
+    .pursuebox {
+      .admission-mainsection {
+        padding: 30px 90px 40px 30px;
+        .simple-admlist {
+          margin-left: 20px;
+        }
+      }
+      .pursueimgbox {
+        &:before,
+        &:after {
+          height: 70%;
+          top: 57%;
+        }
+        img {
+          left: -52px;
+          top: 75px;
+        }
+      }
+    }
+
+    .pursuebox {
+      padding-left: 15px;
+
+      .admission-mainsection {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 98%;
+        padding: 20px 30px 20px 30px;
+      }
+      .col-lg-3 {
+        display: none;
+      }
+    }
+    .pursuebox.kj-ug {
+      .admission-mainsection {
+        padding: 20px;
+      }
+    }
+  }
+  .acd-prgmbannercaption .bannerimgwrapper .vertical-label {
+    font-size: 16px;
+  }
+  .acd-prgm-main .acprgrm-tabs li a .rightindicatior {
+    height: 35px;
+  }
+  .acd-prgm-main .ug-flexible-imgwrapper {
+    margin-top: 60px;
+  }
+  .acd-prgm-main .acprgrm-tabs li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .acd-prgmbannercaption {
+    .academics-banner-content .acprgm-smallhead {
+      font-size: 24px;
+      line-height: 30px;
+    }
+    .bannerimgwrapper {
+      height: 86px;
+    }
+  }
+
+  .academics-banner-content .ac-prgm-head,
+  .acd-prgm-main .academic-mainbox .enhead,
+  .acd-prgm-main .academic-mainbox .who-applybox .whoapply,
+  .acd-prgm-main .pursuebox .whypursue {
+    margin-bottom: 10px;
+  }
+  .acd-prgm-main {
+    .academic-mainbox {
+      margin-left: 0;
+      padding: 20px 0;
+      table {
+        margin-top: 20px;
+      }
+    }
+    .academic-mainbox.admission-mainsection {
+      .simple-admlist {
+        margin-left: 20px;
+        width: 95%;
+      }
+    }
+    .pursuebox .pursueimgbox,
+    .who-applybox img,
+    .ug-flexible-imgwrapper {
+      display: none;
+    }
+    .ug-flexible-wrapper {
+      p {
+        padding-right: 0;
+      }
+      hr {
+        width: 100%;
+      }
+      a {
+        text-align: right;
+      }
+    }
+  }
+  .admission-process-stepper {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    .width-10 {
+      width: 20%;
+    }
+    .stepper-content {
+      margin-top: 0;
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    .stepper-box:after {
+      left: 44px;
+    }
+  }
+  .acd-prgmbannercaption .bannerimgwrapper .vertical-label {
+    font-size: 14px;
+  }
+  .acd-prgm-main .acd-prgm-right .tab-content {
+    padding-left: 20px;
+  }
+  .acd-prgm-main .academic-mainbox.introbox.ug-introbox {
+    .admission-mainsection .simple-admlist {
+      margin-left: 20px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .admission-process-stepper {
+    .width-10 {
+      display: none;
+    }
+    .width-80 {
+      width: 96%;
+
+      border: 1px solid $darkred;
+      padding: 20px 20px;
+
+      background: #fff;
+      position: relative;
+      margin: 0 auto;
+    }
+    .stepper-content {
+      &:after {
+        content: " ";
+        position: absolute;
+        display: block;
+        top: 1px;
+        right: 50%;
+        bottom: 1px;
+        left: 50%;
+        height: 80%;
+        width: 1px;
+        transform: scale(1, 2);
+        transform-origin: 50% -50%;
+        background-color: rgba(0, 0, 0, 0.25);
+        z-index: -1;
+      }
+      .mb-stepper-heading {
+        display: block;
+        font-family: "FiraSans-Medium";
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        color: $grey;
+      }
+    }
+    .stepper-content.last {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .acd-prgm-main {
+    margin-top: 20px;
+
+    .need-helpbox,
+    .button-wrapper {
+      display: none;
+    }
+    .pursuebox {
+      padding: 30px 0 30px 0;
+
+      .admission-mainsection {
+        padding: 30px;
+        width: 96%;
+        margin: 0 auto;
+      }
+    }
+    .acprgrm-tabs {
+      li {
+        ul {
+          li {
+            width: 50%;
+            width: 100%;
+            float: left;
+          }
+        }
+      }
+      li.hassubmenu {
+        padding-bottom: 0;
+      }
+    }
+    .acd-prgm-right {
+      border-left: none;
+      margin-top: 30px;
+      .tab-content {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .acd-prgm-main .academic-mainbox.introbox {
+    width: 100%;
+  }
+  .acd-prgm-main .academic-mainbox {
+    .width-80 {
+      width: 100%;
+    }
+  }
+  .acd-prgm-main .acprgrm-tabs li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .acd-prgmbannercaption .bannerimgwrapper {
+    height: 78px;
+    right: -35px;
+  }
+  .acd-prgm-main .acprgrm-tabs {
+    margin-top: 10px;
+  }
+  .acd-prgm-main .academic-mainbox .enhead .sub-text {
+    font-size: 20px;
+  }
+  .acd-prgm-main {
+    %herotitle38,
+    .pursuebox .whypursue {
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+  .acd-prgmbannercaption .bannerimgwrapper .vertical-label {
+    font-size: 12px;
+    top: -20px;
+  }
+  .admission-mainsection {
+    .admission-table{
+        tr{
+            th,td{
+                padding: 11px 25px;
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+    }
+
+  }
+
+}
+@media (max-width: 575px) {
+  .acd-prgmbannercaption {
+    margin-top: -10px;
+    padding: 20px;
+    .academics-banner-content {
+      .ac-prgm-head {
+        margin-bottom: 10px;
+        font-size: 30px;
+        line-height: 36px;
+      }
+      .acprgm-smallhead {
+        display: none;
+      }
+    }
+
+    .bannerimgwrapper {
+      position: absolute;
+      margin-top: -35px;
+      height: 25px;
+
+      float: right;
+      width: 20%;
+      text-align: right;
+      right: -35px;
+
+      .vertical-label {
+        display: none;
+      }
+    }
+  }
+  .acd-prgm-main {
+    .ug-flexible-wrapper {
+      padding: 20px;
+      .width-50 {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .acprgrm-tabs li {
+      a {
+        .rightindicatior::before {
+          width: 30px;
+          height: 31px;
+          position: absolute;
+          background-size: 60%;
+          background-repeat: no-repeat;
+        }
+      }
+
+      ul li {
+        // padding-bottom: 5px;
+
+        // padding-top: 10px;
+        a {
+          .rightindicatior::before {
+            width: 30px;
+            height: 31px;
+            position: absolute;
+            background-size: 60%;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .acd-prgm-main {
+    %herotitle38,
+    .pursuebox .whypursue {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    %para22 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    p,
+    .admission-mainsection .simple-admlist li {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .acd-progrm {
+    %para22 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .acd-prgm-main .academic-mainbox .who-applybox,
+  .acd-prgm-main .academic-mainbox .who-applybox.shadow {
+    padding: 20px 20px;
+  }
+  .acd-prgm-main .academic-mainbox .enhead .sub-text {
+    font-size: 16px;
+  }
+  .acd-prgm-main .pursuebox .admission-mainsection {
+    padding: 20px;
+    width: 93%;
+  }
+  .academic-mainbox .enhead.quotes-heading {
+    &:before,
+    &:after {
+      background-size: 10px;
+      top: 15px;
+      width: 10px;
+    }
+  }
+  .acd-prgmbannercaption .bannerimgwrapper {
+    margin-top: -2px;
+    height: 20px;
+  }
+  .acd-prgmbannercaption .academics-banner-content .ac-prgm-head {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .acd-prgmbannercaption .bannerimgwrapper {
+    height: 10px;
+  }
+  .academics-banner-content {
+    padding-top: 0;
+  }
+  .acd-prgmbannercaption .academics-banner-content .ac-prgm-head {
+    font-size: 21px;
+    line-height: 28px;
+  }
+  .acd-prgm-main .academic-mainbox .prgm-select-container select {
+    padding: 5px 37px 5px 10px;
+    font-size: 16px;
+  }
+  .acd-progrm {
+    %para22 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+  .acd-prgm-main {
+    %herotitle38,
+    .pursuebox .whypursue {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    %para22 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    p,
+    .admission-mainsection .simple-admlist li {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .ug-flexible-wrapper .width-50 {
+      a {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
+  .admission-process-stepper {
+    width: 90%;
+  }
+
+  .acd-prgm-main .academic-mainbox {
+    %para18 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .acd-prgmbannercaption .academics-banner-content .ac-prgm-head {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .acd-prgm-main .ug-flexible-wrapper .width-50 {
+    width: 100%;
+    p {
+      margin-bottom: 10px;
+    }
+    a {
+      text-align: left;
+    }
+  }
+}
