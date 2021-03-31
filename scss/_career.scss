@@ -1,0 +1,903 @@
+.fliterwrap{
+    .mob-filter ,.mob-cross{
+        display: none;
+    }
+}
+.mob-filter ,.mob-cross ,.carer-lbl {
+    display:none;
+}
+.showing-page{
+    width:100%;
+    float: left;
+}
+.sh-div{
+    display:block !important;
+}
+.career_section .result_no {
+    color: #9b2928;
+    font-family: proxima-nova-bold;
+    font-size: 24px;
+    margin: 0 0 30px;
+    margin-bottom: 20px
+}
+
+.career_section .fliterwrap li a {
+    color: #707070;
+    font-family: ProximaNova-Regular;
+    font-size: 18px
+}
+
+.career_section .fliterwrap .nav-pills>li.active>a,
+.career_section .fliterwrap .nav-pills>li.active>a:focus,
+.career_section .fliterwrap .nav-pills>li.active>a:hover {
+    color: #004f9f;
+    background-color: transparent
+}
+
+.career_section .fliterwrap .nav>li>a:focus,
+.nav>li>a:hover {
+    color: #004f9f;
+    text-decoration: none;
+    background-color: transparent
+}
+
+.career_section .tab-content {
+    background: #f8f8f8;
+    padding: 30px 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Roboto-Regular
+}
+
+.jobwrap h3 a {
+    font-family: ProximaNova-Semibold;
+    font-size: 18px
+}
+
+.jobwrap {
+    background: #fff;
+    padding: 14px 20px 30px;
+    float: left;
+    border-top: 2px solid #6a56d7;
+    width: 100%;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .08);
+    min-height: 250px;
+}
+
+.jobwrap h3 {
+    line-height: 22px;
+    text-transform: capitalize;
+    margin-top: 0;
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.job_code {
+    font-family: ProximaNova-Semibold;
+    font-size: 14px;
+
+    margin-bottom: 10px
+}
+
+.location p:after {
+    content: "\f19c";
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, .39);
+    opacity: .5;
+    font-size: 14px;
+    padding-right: 5px
+}
+
+.calender p:after {
+    content: "\f073";
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, .39);
+    opacity: .5;
+    font-size: 14px;
+    padding-right: 5px
+}
+
+.clock p:after {
+    content: "\f017";
+    font-family: fontAwesome;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(0, 0, 0, .39);
+    opacity: .5;
+    font-size: 14px;
+    padding-right: 5px
+}
+
+.calender p,
+.clock p,
+.location p {
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    color: #333;
+    padding-left: 20px;
+    position: relative;
+    float: left
+}
+
+.jobbtn {
+    border: 1px solid #162443;
+    border-radius: 4px;
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    padding: 10px 30px;
+    color: #333
+}
+
+.calender,
+.clock,
+.location {
+    float: left;
+    width: 100%
+}
+
+.location {
+    margin-top: 10px
+}
+
+.jobwrap p {
+    font-size: 15px
+}
+
+.career_section .btnsec {
+    float: left;
+    width: 100%;
+    margin-top: 20px
+}
+
+.career_section .sort_by {
+    float: left;
+    font-family: ProximaNova-Semibold;
+    font-size: 18px;
+    position: relative;
+    top: 10px
+}
+
+.career_section .filrtbtn a {
+    font-family: ProximaNova-Semibold;
+    font-size: 18px;
+    color: #333;
+    padding: 10px 40px;
+    border: 1px solid rgba(22, 36, 67, .2);
+    border-radius: 4px
+}
+
+.career_section .filrtbtn {
+    float: right;
+    position: relative;
+    top: -39px
+}
+
+.career_section .showresult {
+    float: right;
+    position: relative;
+    right: 16px;
+    font-family: ProximaNova-Semibold;
+    font-size: 18px;
+    color: #333;
+    background: 0 0;
+    border: 1px solid rgba(22, 36, 67, .2);
+    padding: 5px 30px;
+    border-radius: 4px;
+    margin-bottom: 20px
+}
+.carer-lbl{
+    display: none;
+}
+.career_section .filer_wrap {
+ 
+    margin-top: 20px;
+    padding-top: 20px;
+    .refhead {
+        font-size: 18px;
+        margin-bottom:20px;
+        text-transform: uppercase;
+        color: #666;
+        font-family: ProximaNova-Semibold;
+        padding-top: 20px;
+
+    }
+}
+
+.career_section label {
+    font-size: 16px;
+    color: #666;
+    font-family: ProximaNova-Semibold
+}
+
+.career_section .jobwrap h3 a:hover {
+    text-decoration: underline!important
+}
+
+.select2-results__option[aria-selected] {
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    font-family: Roboto-Regular
+}
+
+.form-control {
+    font-family: Roboto-Regular
+}
+
+.select2-results__option {
+    font-family: Roboto-Regular
+}
+
+section.inner_page_class.career_scetion.library_banner_wrap.career-banner {
+    background-image: url(../assets/kjsieit/images/job-detail/career-main.png)!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+    padding: 0 0;
+    background: 0 0;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 250px
+}
+
+section.inner_page_class.career_scetion.library_banner_wrap.career-banner .content {
+    padding: 70px 0;
+    text-align: left;
+    position: relative
+}
+
+section.library_banner_wrap .content .title {
+    font-family: proxima-nova-bold, sans-serif;
+    font-size: 48px;
+    color: #fff;
+    text-align: left;
+    margin: 0 0 20px;
+    padding: 0
+}
+
+section.inner_page_class.career_scetion.library_banner_wrap.career-banner .content label {
+    color: #fff!important;
+    font-family: ProximaNova-Semibold;
+    letter-spacing: .5px;
+    font-size: 16px
+}
+
+#modalLoginForm .modal-content {
+    background: #fff!important
+}
+
+#modalLoginForm {
+    position: fixed;
+    z-index: 1050;
+    display: none;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    background: #333333d6;
+    z-index: 999
+}
+
+#modalLoginForm .modal-header {
+    padding: 15px!important;
+    border-bottom: 1px solid #e5e5e5!important
+}
+
+#modalLoginForm .modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 24px;
+    color: #9b2928;
+    text-align: left
+}
+
+#modalLoginForm label {
+    margin: 0;
+    line-height: 1.42857143;
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 16px;
+    color: #777;
+    text-align: left
+}
+
+#modalLoginForm label sup {
+    color: #d73c3a
+}
+
+#modalLoginForm .modal-body {
+    padding: 30px
+}
+
+.carrer-detail-aplynowbtn {
+    background: #162443;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 4px;
+    margin-top: 25px;
+    position: absolute;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold
+}
+
+#modalLoginForm .form-control {
+    margin-bottom: 10px!important;
+    border: solid 1px #dadada;
+    height: 45px;
+    background: #fff;
+    color: #162443;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: ProximaNova-Semibold;
+    border-radius: 2px
+}
+
+#modalLoginForm .md-form {
+    margin-bottom: 10px
+}
+
+#modalLoginForm .form-control:focus {
+    box-shadow: none;
+    border: 1px solid #162443
+}
+
+#modalLoginForm button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    top: 5px;
+    position: absolute;
+    float: right;
+    right: 15px;
+    color: #333;
+    opacity: 1
+}
+
+.job-detail-bannerbox {
+    width: 100%;
+    background-image: url(../assets/kjsieit/images/job-detail/job-detail-banner.png);
+    background-size: cover;
+    position: relative;
+    clear: both
+}
+
+.jobbanner-content-box {
+    padding: 200px 22px;
+    max-width: 1300px;
+    padding-top: 90px;
+    padding-bottom: 250px;
+    clear: both
+}
+
+.jobbanner-content-box .container {
+    width: 90%;
+    max-width: 90%;
+    float: none;
+    margin: 0 auto
+}
+
+.jobbanner-content-box a {
+    color: #005baa;
+    font-family: ProximaNova-Semibold;
+    font-size: 16px;
+    font-weight: 600
+}
+
+.jobbanner-content-box a i {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px
+}
+
+#modalLoginForm::placeholder {
+    color: rgba(0, 0, 0, .39);
+    font-family: ProximaNova-Semibold;
+    opacity: 1
+}
+
+#modalLoginForm:-ms-input-placeholder {
+    color: rgba(0, 0, 0, .39);
+    font-family: ProximaNova-Semibold
+}
+
+#modalLoginForm::-ms-input-placeholder {
+    color: rgba(0, 0, 0, .39);
+    font-family: ProximaNova-Semibold
+}
+
+.carrer-popup-btn {
+    background: #162443;
+    color: #fff;
+    padding: 8px 45px;
+    border-radius: 6px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold
+}
+
+.carrer-popup-btn:after {
+    position: absolute;
+    margin-left: 10px;
+    font-family: fontAwesome;
+    content: "\f054";
+    font-size: 12px;
+    transition: all ease .5s;
+    margin-top: 4px
+}
+
+#modalLoginForm .modal-footer {
+    text-align: left
+}
+
+.jobbanner-content-box h2 {
+    font-family: ProximaNova-Semibold;
+    font-size: 28px;
+    margin-top: 18px;
+    color: #a12023;
+    margin-bottom: 20px
+}
+
+.jobbanner-content-box ul,
+.jobdetailright ul {
+    padding-left: 0
+}
+
+.jobbanner-content-box ul li,
+.jobbanner-content-box ul li span {
+    font-size: 16px;
+    color: #162443;
+    font-weight: 600;
+    font-family: ProximaNova-Semibold;
+    padding-left: 0;
+    list-style-type: none
+}
+
+.jobbanner-content-box ul li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 2px;
+    background-color: #b9b7b7
+}
+
+.jobbanner-content-box ul li:nth-child(3):after {
+    background-color: transparent;
+    display: none
+}
+
+.jobbanner-content-box ul li:nth-child(3) {
+    border-right: none
+}
+
+.jobbanner-content-box ul li i {
+    opacity: .5;
+    margin-left: 10px
+}
+
+.jobbanner-content-box ul li:first-child i {
+    margin-left: 0
+}
+
+a.banner-applynowbtn {
+    background: #162443;
+    color: #fff;
+    padding: 8px 45px;
+    border-radius: 4px;
+    margin-top: 25px;
+    position: absolute;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold
+}
+
+a.banner-applynowbtn:after {
+    position: absolute;
+    margin-left: 10px;
+    font-family: fontAwesome;
+    content: "\f054";
+    font-size: 12px;
+    transition: all ease .5s;
+    margin-top: 4px
+}
+
+a.banner-applynowbtn:hover:after {
+    margin-left: 15px
+}
+
+.job-detail-mainwrapper {
+    width: 84.5%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .08);
+    margin: 0 auto;
+    padding: 15px;
+    bottom: 100px;
+    padding-bottom: 70px
+}
+
+.job-detail-mainwrapper .share-section {
+    background: #efefef;
+    width: 100%;
+    float: left;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 15px
+}
+
+.job-detail-mainwrapper .share-section span {
+    color: #162443;
+    font-size: 20px;
+    font-family: ProximaNova-Semibold;
+    float: left;
+    margin: 10px
+}
+
+.job-detail-mainwrapper .content-section {
+    width: 100%;
+    top: 125px;
+    float: left
+}
+
+.job-detail-mainwrapper .content-section h3 {
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 24px;
+    color: #162443;
+    margin: 10px 0;
+    margin-bottom: 15px
+}
+
+ul.social_media {
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin-top: 4px
+}
+
+ul.social_media li {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: #fffefe;
+    border-radius: 40px;
+    text-align: center;
+    margin-right: 2%;
+    border: 1px solid #4c576f
+}
+
+ul.social_media li a {
+    color: #4c576f;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    float: left
+}
+
+ul.social_media li a i {
+    position: relative;
+    top: 12px;
+    font-size: 1.2em!important;
+    font-weight: 400
+}
+
+.job-detail-mainwrapper h3.main-job-heading {
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 24px;
+    color: #162443;
+    margin: 10px 0;
+    margin-bottom: 15px
+}
+
+.job-detail-mainwrapper h5.main-job-subheading {
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 20px;
+    color: #162443;
+    margin: 10px 0;
+    line-height: 35px
+}
+
+.job-detail-mainwrapper p {
+    color: #333;
+    font-family: Roboto-Light;
+    font-size: 16px;
+    line-height: 30px
+}
+
+.job-detail-mainwrapper .list-left li {
+    list-style-type: disc;
+    color: #162443;
+    font-family: ProximaNova-Regular;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px
+}
+
+.space40 {
+    padding-top: 40px
+}
+
+.job-detail-mainwrapper a.banner-applynowbtn {
+    position: relative;
+    padding: 12px 45px
+}
+
+.job-detail-mainwrapper a.banner-applynowbtn:after {
+    margin-top: 4px
+}
+
+.jobdetailright {
+    margin-top: 25px
+}
+
+.job-detail-mainwrapper .jobdetailright h3 {
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 24px;
+    color: #162443;
+    margin: 10px 0;
+    margin-bottom: 25px
+}
+
+.jobdetailright .norelatedjob {
+    list-style-type: none
+}
+
+.jobdetailright .norelatedjob h4 {
+    font-size: 18px
+}
+
+.jobdetailright .fullwidth {
+    width: 100%;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-top: 2px solid #673ab7;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
+    list-style-type: none
+}
+
+.jobdetailright .fullwidth:last-child {
+    padding: 0;
+    border: none;
+    box-shadow: none
+}
+
+.jobdetailright .fullwidth:last-child a {
+    color: #005baa;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold
+}
+
+.jobdetailright .fullwidth:last-child a:hover {
+    text-decoration: underline
+}
+
+.jobdetailright .fullwidth:last-child a::after {
+    margin-left: 10px;
+    font-family: fontAwesome;
+    content: "\f054";
+    font-size: 12px;
+    transition: all ease .5s;
+    margin-top: 4px
+}
+
+.jobdetailright .fullwidth h5 {
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 20px;
+    color: #162443;
+    margin: 10px 0;
+    margin-bottom: 25px
+}
+
+.jobdetailright .fullwidth h5 span {
+    font-family: ProximaNova-Semibold;
+    font-weight: 500;
+    font-size: 18px;
+    color: #162443;
+    margin: 10px 0;
+    float: left;
+    width: 100%
+}
+
+.jobdetailright .fullwidth p {
+    font-family: ProximaNova-Regular;
+    font-weight: 500;
+    font-size: 16px;
+    color: #162443;
+    padding-bottom: 10px;
+    line-height: 25px
+}
+
+.jobdetailright .fullwidth p.jbdate::before,
+.jobdetailright .fullwidth p.jblocation::before {
+    content: '\f19c';
+    font-family: FontAwesome;
+    color: rgba(0, 0, 0, .39);
+    opacity: .5;
+    font-size: 14px;
+    padding-right: 5px
+}
+
+.jobdetailright .fullwidth p.jbdate::before {
+    content: '\f073'
+}
+
+.file-upload {
+    display: block;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px
+}
+
+.file-upload .file-select {
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #34495e;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    background: #fff;
+    overflow: hidden;
+    position: relative
+}
+
+.file-upload .file-select .file-select-button {
+    background: #dce4ec;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px
+}
+
+.file-upload .file-select .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px
+}
+
+.file-upload .file-select:hover {
+    border-color: #34495e;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out
+}
+
+.file-upload .file-select:hover .file-select-button {
+    background: #34495e;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out
+}
+
+.file-upload.active .file-select {
+    border-color: #3fa46a;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out
+}
+
+.file-upload.active .file-select .file-select-button {
+    background: #3fa46a;
+    color: #fff;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out
+}
+
+.file-upload .file-select input[type=file] {
+    z-index: 100;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border: solid 1px #dadada
+}
+
+.file-upload .file-select.file-select-disabled {
+    opacity: .65
+}
+
+.file-upload .file-select.file-select-disabled:hover {
+    cursor: default;
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #34495e;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    text-align: left;
+    background: #fff;
+    overflow: hidden;
+    position: relative
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-button {
+    background: #dce4ec;
+    color: #666;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px
+}
+
+@media only screen and (min-width:1370px) {
+    .container {
+        width: 90%;
+        max-width: 90%;
+        float: none;
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .jobbanner-content-box ul li i {
+        margin-left: 0
+    }
+    .jobbanner-content-box ul li {
+        border-right: 0;
+        margin-bottom: 10px
+    }
+    .jobbanner-content-box {
+        padding-bottom: 300px
+    }
+    .space40 {
+        padding-top: 20px
+    }
+    .jobdetailright .fullwidth:last-child {
+        text-align: left
+    }
+}
+
+@media screen and (max-width:767px) {
+    .jobbanner-content-box {
+        padding-bottom: 235px
+    }
+    .jobdetailright {
+        clear: both;
+        float: left
+    }
+    .jobbanner-content-box h2 {
+        font-size: 25px
+    }
+}
+
+@media screen and (max-width:600px) {
+    ul.social_media li {
+        width: 40px;
+        height: 40px
+    }
+}

@@ -1,0 +1,1462 @@
+.addmission .nav-tabs>li.active>a,
+.addmission .nav-tabs>li.active>a:focus {
+    background: 0 0
+}
+
+.hvr-underline-from-left:active:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:hover:before {
+    right: 0
+}
+
+.addmission .admission_sidebar,
+.addmission .qlink {
+    box-shadow: 3px 0 6px rgba(105, 97, 97, .1), 0 3px 6px rgba(0, 0, 0, .1)
+}
+
+.addmission .nav-tabs>li.active>a,
+.addmission .nav-tabs>li.active>a:focus,
+.addmission .nav-tabs>li.active>a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border-bottom-color: 1px solid #ddd
+}
+
+.addmission .whitelist {
+    float: left;
+    width: 100%
+}
+
+.addmission .qlink h2 {
+    color: #162443;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-family: ProximaNova-Semibold
+}
+
+.addmission .desk {
+    display: block
+}
+
+.addmission .mobile {
+    display: none
+}
+.addmission .cream.qlink a {
+    color: #005baa;
+}
+.addmission p {
+    margin: 0;
+    font-family: Roboto-Light;
+    line-height: 27px;
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+    color: #333;
+    font-family: Roboto-Light;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0 0 20px 0
+}
+
+.addmission p b {
+    margin-right: 5px;
+    font-weight: 100
+}
+
+.addmission .btn-wrapper {
+    width: 100%;
+    text-align: center;
+    padding: 0 0 40px 0;
+    float: left
+}
+
+.addmission .btn-wrapper .imp_buttons {
+    float: none;
+    width: auto;
+    margin: 0 auto
+}
+
+.addmission .btn-wrapper .imp_buttons li {
+    display: inline-block;
+    width: calc(85% / 3)
+}
+
+.addmission .btn-wrapper .imp_buttons li a {
+    background-image: linear-gradient(#162443 2.2%, #162443 3.4%, #162443 4.5%, #162443 5.7%, #162443 6 47.1%, #162443 7 98.8%, transparent 98.8%);
+    width: 100%;
+    padding: 15px 10px 10px;
+    display: block;
+    border-radius: 15px;
+    position: relative;
+    top: 4px;
+    font-family: ProximaNova-Semibold;
+    font-size: 17px;
+    color: #fff;
+    line-height: inherit;
+    text-decoration: none;
+    transition: all ease .5s;
+    min-height: 55px;
+    background: linear-gradient(to bottom, #849ccf, rgba(36, 57, 98, .92));
+    background-size: 200% 200%!important;
+    background-position: 0 0!important;
+    background: linear-gradient(45deg, #162443 0, rgba(41, 53, 82, .78) 50%, #162443 100%);
+    line-height: 22px;
+    position: relative;
+    border-radius: 0;
+    float: left
+}
+
+.addmission .btn-wrapper .imp_buttons li a:hover {
+    background-position: 100% 0!important
+}
+
+.addmission .btn-wrapper .imp_buttons li a.btn_gredient:hover:after {
+    right: -10px;
+    right: -15px;
+    transition: all ease .5s
+}
+
+.addmission .btn-wrapper .imp_buttons li a.btn_gredient:after {
+    content: "\f054";
+    font-family: fontAwesome;
+    font-size: 18px;
+    content: "\f105";
+    position: relative;
+    right: -10px
+}
+
+.addmission .btn-wrapper li.border {
+    border-left: 0;
+    border-right: 0;
+    margin: 0 10px;
+    padding: 0 10px;
+    margin: 0 30px;
+    padding: 0 0
+}
+
+.addmission .progtab .rightindicatior {
+    font-size: 25px;
+    color: transparent;
+    padding-right: 10px;
+    font-family: proxima-nova-bold;
+    padding-left: 8px;
+    font-weight: 400!important;
+    letter-spacing: 0;
+    position: relative;
+    top: -4px
+}
+
+.addmission .progtab .rightindicatior:before {
+    font-family: fontAwesome;
+    font-size: 6px;
+    content: "\f105";
+    position: relative;
+    content: "\f111";
+    color: #333;
+    left: 5px
+}
+
+.addmission .progtab #pgdm_overview li {
+    position: relative;
+    float: left;
+    padding: 0;
+    padding-left: 0;
+    overflow: hidden;
+    min-height: 147px;
+    width: calc(100%/3.2);
+    border-bottom: 0;
+    padding-top: 0!important;
+    margin: 0 15px 15px 0
+}
+
+.addmission .progtab #pgdm_overview li:hover .viewbtn {
+    cursor: pointer
+}
+
+.addmission .progtab #pgdm_overview .capital {
+    font-family: ProximaNova-Semibold;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #162443;
+    padding: 20px;
+    margin: 0;
+    text-align: left;
+    line-height: 24px;
+    min-height: 90px
+}
+
+.addmission .progtab #pgdm_overview hr {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #ccc
+}
+
+.addmission .progtab #pgdm_overview .intake {
+    font-size: 18px;
+    font-family: Roboto-Regular;
+    line-height: 24px;
+    padding-left: 15px;
+    text-align: left;
+    font-style: italic;
+    line-height: 27px;
+    float: left;
+    padding: 20px 20px 20px 20px;
+    width: 100%
+}
+
+.addmission .progtab #pgdm_overview .intake .fa {
+    margin-right: 5px
+}
+
+.addmission .progtab #pgdm_overview .posbtn {
+    margin-top: 14px;
+    margin-left: 13px;
+    position: relative;
+    bottom: 0;
+    float: left;
+    padding-bottom: 20px
+}
+
+.addmission .progtab #pgdm_overview .viewbtn {
+    border: none;
+    padding: 0;
+    border-radius: 9px;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold;
+    line-height: 24px;
+    color: #005baa;
+    transition: all ease .5s;
+    text-decoration: none;
+    float: left
+}
+
+.addmission .progtab #pgdm_overview .viewbtn .fa {
+    position: absolute;
+    right: 8%;
+    top: 17%;
+    font-size: 16px
+}
+
+.addmission .progtab .overbg {
+    background-color: #fff;
+    min-height: 147px;
+    float: left;
+    width: 100%;
+    border: solid 1px #e3e3e3
+}
+
+.addmission .progtab .overbg:hover {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+    background-color: #f5f5f5
+}
+
+.addmission .progtab .sub_heading {
+    border-bottom: 1px solid #e3e3e3;
+    float: left;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 30px
+}
+
+.addmission .progtab .sub_heading .capital {
+    font-family: proxima-nova-bold;
+    color: #162443;
+    font-family: ProximaNova-Semibold;
+    font-size: 24px;
+    margin-top: 3px;
+    color: #162443;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: inherit;
+    line-height: 35px
+}
+
+.addmission .progtab table {
+    margin: 0 0 25px 0!important;
+    width: 100%!important;
+    float: left
+}
+
+.addmission .progtab table tr:nth-of-type(odd) {
+    background: #fff
+}
+
+.addmission .progtab table tr:nth-of-type(even) {
+    background: #f5f5f5
+}
+
+.addmission .progtab table th {
+    background: #f5f5f5;
+    color: #162443;
+    padding: 20px 15px;
+    font-size: 18px;
+    font-family: ProximaNova-Semibold;
+    border: 1px solid #e3e3e3;
+    line-height: 27px;
+    text-align: left
+}
+
+.addmission .progtab table td {
+    padding: 20px 15px;
+    border: 1px solid #e3e3e3;
+    text-align: left;
+    font-size: 16px;
+    font-family: Roboto-Regular;
+    line-height: 19px;
+    color: #333
+}
+
+.addmission .progtab .titles .sub_heading {
+    margin: 0;
+    padding: 0;
+    border: none;
+    float: left;
+    width: 100%;
+    float: left;
+    width: 100%;
+    display: block
+}
+
+.addmission .progtab .titles .sub_heading .capital {
+    text-transform: capitalize;
+    font-family: ProximaNova-Semibold;
+    color: #162443;
+    font-size: 24px;
+    margin-bottom: -15px;
+    margin-top: 0;
+    text-align: center;
+    line-height: 27px;
+    margin-bottom: 0;
+    text-align: center !important;
+}
+
+.addmission .progtab .qlink h5 {
+    text-transform: capitalize;
+    padding: 22px 22px 0 22px;
+    color: #162443;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-left: 15px;
+    font-family: ProximaNova-Semibold;
+    text-align: left;
+    line-height: 27px;
+    margin-bottom: 20px
+}
+
+.addmission .progtab div#pgdm_overview {
+    width: 100%;
+    float: left
+}
+
+.addmission .progtab #important_dates h5 {
+    font-family: ProximaNova-Semibold;
+    font-size: 24px;
+    margin-top: 0;
+    color: #162443;
+    text-transform: capitalize;
+    line-height: 35px
+}
+
+.addmission .progtab ul.lists {
+    float: left;
+    width: 100%
+}
+
+.addmission .progtab li:hover .overbg {
+    cursor: pointer;
+    box-shadow: 1px 3px 5px 0 #c5bec2;
+    background: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+    background-color: #f5f5f5
+}
+
+.addmission .progtab #pgdm_overview li {
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16)
+}
+
+.addmission .progtab .titles .after-borders .capital:after {
+    content: "";
+    background-image: url(../../assets/common_img/title_bar.png);
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    background-repeat: no-repeat;
+    bottom: -55px;
+    left: 48%
+}
+
+.addmission .progtab #pgdm_overview .viewbtn .fa {
+    display: none
+}
+
+.addmission .progtab #pgdm_overview .viewbtn:after {
+    font-family: fontAwesome;
+    font-size: 18px;
+    content: "\f105";
+    position: relative;
+    right: -3px;
+    transition: all ease .5s
+}
+
+.addmission .progtab #pgdm_overview .viewbtn:hover:after {
+    right: -8px;
+    transition: all ease .5s
+}
+
+.addmission .cream {
+    background: #fff;
+    box-shadow: 3px 0 6px rgba(105, 97, 97, .1), 0 3px 6px rgba(0, 0, 0, .1);
+    margin-bottom: 30px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .16);
+    float: left;
+    width: 100%
+}
+
+.addmission .tabs-left>li.active>a {
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    color: #a12023!important;
+    background-color: transparent;
+        /* font-family: proxima-nova-bold; */
+    display: block;
+    float: left;
+    width: 100%
+}
+
+.addmission .responsive_tabs {
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+    border-bottom: none
+}
+
+.addmission .responsive_tabs li {
+    float: none;
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    float: left;
+    margin-bottom: 0
+}
+
+.addmission .responsive_tabs li a {
+    border-color: transparent;
+    background: 0 0;
+    padding-left: 15px;
+    margin-right: 0!important;
+    padding-right: 0;
+    font-family: ProximaNova-Semibold;
+    font-size: 18px;
+    color: ProximaNova-Semibold;
+    line-height: 22px;
+    padding: 18px 15px;
+    text-align: left;
+    float: left;
+    display: block;
+    width: 100%
+}
+
+.addmission .responsive_tabs li a:hover {
+    background: #f5f5f5;
+    text-decoration: underline
+}
+
+.addmission .responsive_tabs li a span {
+    display: block;
+    float: left
+}
+
+.addmission .para {
+    font-family: FrutigerLTStd-Roman;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.94;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+    float: left;
+    width: 100%
+}
+
+.addmission .para.bold {
+    font-family: FrutigerLTStd-Bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-top: 0;
+    color: #333;
+    float: left;
+    width: 100%
+}
+
+.addmission .lists li {
+    width: 100%;
+    padding-left: 19px;
+    min-height: auto;
+    background-position: 0 8px;
+    background-image: url(https://simsr.somaiya.edu/assets/simsr/img/Homepage/menu-arrow.png);
+    font-size: 17px;
+    line-height: 30px;
+    font-family: FrutigerLTStd-Roman;
+    border-bottom: 0;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    text-align: left
+}
+
+.addmission .lists li.or {
+    background: 0 0
+}
+
+.addmission .lists li.or span {
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-family: proxima-nova-bold;
+    font-size: 30px;
+    color: #d73c37;
+    background: #fff;
+    z-index: 999
+}
+
+.addmission .lists .or {
+    font-family: proxima-nova-bold;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #afaaaa;
+    position: relative;
+    background: #fff
+}
+
+.addmission .lists .or:after {
+    content: "";
+    background: #bbafaf;
+    width: 80%;
+    height: 1px;
+    position: absolute;
+    left: 10%;
+    top: 13px;
+    z-index: 0
+}
+
+.addmission .small li {
+    background: url(https://simsr.somaiya.edu/assets/simsr/img/Homepage/menu-arrow.png) no-repeat top left;
+    font-size: 17px;
+    padding-left: 29px;
+    line-height: 30px;
+    font-family: FrutigerLTStd-Roman;
+    background-position: 0 10px;
+    border-bottom: 0
+}
+
+.addmission .admission h3 {
+    font-family: ProximaNova-Semibold;
+    color: #162443;
+    font-size: 28px;
+    margin-bottom: 20px
+}
+
+.addmission #impotant_instruction .cust_row .box {
+    min-height: 150px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid #eee
+}
+
+.addmission #impotant_instruction .cust_row .box .count {
+    background-color: #fff;
+    position: absolute;
+    width: 40px;
+    font-size: 24px;
+    text-align: center;
+    left: 0;
+    color: #d59494!important;
+    height: 40px;
+    padding-top: 5px;
+    font-family: FrutigerLTStd-Roman
+}
+
+.addmission #impotant_instruction .cust_row .box .count.one {
+    color: #4568a0
+}
+
+.addmission #impotant_instruction .cust_row .box p {
+    font-family: FrutigerLTStd-Roman;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666;
+    padding-left: 25px;
+    font-family: Roboto-Light
+}
+
+.addmission .hvr-underline-from-left:before {
+    height: 2px;
+    background: #9b2928
+}
+
+.addmission .responsive-tabs.nav-tabs span.glyphicon-triangle-bottom:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 20px
+}
+
+.addmission .responsive-tabs.nav-tabs span.glyphicon-triangle-top:after {
+    content: "\f078";
+    content: "\f077";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 10px;
+    top: 20px
+}
+
+
+
+.addmission .responsive-tabs.nav-tabs.open span.glyphicon-triangle-bottom {
+    display: none
+}
+
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden
+}
+
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #2098d1;
+    height: 4px;
+    transition-property: right;
+    transition-duration: .3s;
+    transition-timing-function: ease-out
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.resource_box .guideline_box {
+    border: 1px solid #e1e1e1;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff
+}
+
+.resource_box .guideline_box:hover {
+    background: #f5f9f2;
+    background: #ededed;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .07)
+}
+
+.resource_box .guideline_box:hover .content {
+    border-left: 4px solid #069844
+}
+
+.resource_box .content {
+    min-height: 100px;
+    border-left: 4px solid #fff;
+    display: table;
+    border-left: 4px solid #fff;
+    min-height: 100px!important
+}
+
+.resource_box .content p {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+    font-family: Roboto-Light;
+    padding-right: 10px;
+    padding-left: 40px;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.27;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333
+}
+
+.resource_box .content .rightarrow {
+    background-position: 0 22px;
+    position: relative;
+    background-image: none
+}
+
+.resource_box .content .rightarrow:before {
+    content: "";
+    width: 23px;
+    height: 21px;
+    position: absolute;
+    background-size: 100%;
+    background-position: 0 0;
+    left: 10px
+}
+
+section.aboutpanel {
+    padding: 0
+}
+
+.addmission ul.dot_list {
+    margin: 0
+}
+
+.addmission ul.dot_list li {
+    font-family: Roboto-Regular;
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    width: 46%;
+    float: left;
+    min-height: 60px;
+    border-bottom: 1px solid #70707052;
+    padding: 0;
+    position: relative;
+    margin: 0 30px 20px 0
+}
+
+.addmission ul.dot_list li:hover {
+    border-bottom: 1px solid #162443
+}
+
+.addmission ul.dot_list li a,
+.common_program ul.dot_list li p {
+    display: table-cell;
+    vertical-align: middle;
+    color: #333;
+    position: relative;
+    padding: 0 0 0 20px;
+    float: none;
+    font-family: Roboto-Regular;
+    font-size: 18px
+}
+
+.addmission ul.dot_list li i {
+    color: #162443;
+    font-size: 8px;
+    position: relative;
+    left: 5px;
+    top: 0;
+    margin-top: 8px;
+    float: left
+}
+
+.addmission ul.dot_list li a,
+ul.dot_list li p {
+    display: block;
+    vertical-align: middle;
+    color: #333;
+    position: relative;
+    padding: 0 0 0 20px;
+    float: none;
+    font-family: Roboto-Regular;
+    font-size: 18px
+}
+
+.addmission .bold {
+    font-family: ProximaNova-Semibold;
+    font-size: 20px;
+    color: #162443
+}
+
+.addmission .semi_bold {
+    font-family: Roboto-Regular;
+    font-size: 17px;
+    line-height: 30px
+}
+
+.addmission .red_title {
+    font-family: ProximaNova-Semibold;
+    font-size: 20px;
+    color: #d73c3a;
+    line-height: 27px
+}
+
+.addmission .bg_box {
+    border: solid 1px #e3e3e3;
+    background-color: rgba(245, 245, 245, .29);
+    padding: 15px!important;
+    float: left;
+    display: block
+}
+
+.addmission ul.dots_list li {
+    float: left;
+    text-align: left;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 15px;
+    position: relative
+}
+
+.addmission ul.dots_list li.semi_bold:before {
+    font-family: fontAwesome;
+    font-size: 6px;
+    content: "\f105";
+    position: absolute;
+    content: "\f111";
+    color: #333;
+    left: 0;
+    top: 0
+}
+
+.addmission ul.dots_list {
+    float: left;
+    width: 100%
+}
+
+.addmission a.link {
+    font-family: ProximaNova-Semibold;
+    font-size: 18px;
+    color: #005baa
+}
+
+.addmission p.bold span {
+    color: #a12023;
+    font-style: italic;
+    font-family: ProximaNova-Semibold
+}
+
+.addmission .or {
+    font-family: ProximaNova-Semibold;
+    font-size: 28px;
+    color: transparent;
+    opacity: 1;
+    text-align: center;
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 30px
+}
+
+.addmission .or:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #e3e3e3;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.addmission .or:before {
+    font-family: ProximaNova-Semibold;
+    font-size: 28px;
+    color: #16244382;
+    content: "Or";
+    width: 90px;
+    background: #fff;
+    position: relative;
+    top: -17px;
+    z-index: 9;
+    height: auto;
+    display: block;
+    margin: 0 auto
+}
+
+.addmission .ap_box {
+    float: left;
+    width: 50%;
+    padding: 20px 20px 20px 110px;
+    background-color: rgba(22, 36, 67, .06);
+    position: relative;
+    min-height: 220px
+}
+
+.addmission .ap_box img {
+    float: left;
+    width: 70px;
+    margin-right: 20px;
+    position: absolute;
+    left: 20px;
+    top: 20px
+}
+
+.addmission .ap_box.white {
+    background-color: rgba(245, 245, 245, .29)
+}
+
+.addmission .mb35 {
+    margin-bottom: 35px!important
+}
+
+.addmission .mb20 {
+    margin-bottom: 20px!important
+}
+
+.addmission .mb15 {
+    margin-bottom: 15px!important
+}
+
+.addmission .big_box {
+    float: left;
+    width: 100%;
+    border: solid 1px #e3e3e3;
+    background-color: rgba(245, 245, 245, .29);
+    padding: 25px;
+    margin-bottom: 30px
+}
+
+.addmission .big_box .title {
+    font-family: ProximaNova-Semibold;
+    font-size: 24px;
+    text-align: left;
+    margin: 0 0 30px 0;
+    padding: 0
+}
+
+.addmission .big_box .dots_list li {
+    width: 33%;
+    float: left;
+    display: block;
+    padding-right: 15px
+}
+
+.addmission .dot_list.big li {
+    min-height: 110px
+}
+
+.addmission .big_box .dots_list li span {
+    font-family: Roboto-LightItalic;
+    font-size: 15px
+}
+
+.full_width {
+    width: 100%!important;
+    min-height: auto!important
+}
+
+.addmission .big_box.col-md-6.w45 {
+    width: calc(50% - 15px);
+    min-height: 500px
+}
+
+.addmission ul.dot_list.w30 li {
+    width: 30%;
+    float: left
+}
+
+.addmission .mt30 {
+    margin-top: 30px
+}
+
+.addmission .mt40 {
+    margin-top: 40px
+}
+
+.addmission .mb30 {
+    margin-bottom: 30px
+}
+
+.addmission .mb40 {
+    margin-bottom: 40px
+}
+
+.addmission .float {
+    float: left;
+    width: 100%
+}
+
+.addmission .big_box .dots_list li span:after {
+    content: none
+}
+
+.addmission .big_box .dots_list li.semi_bold.w40 {
+    width: 40%
+}
+
+.addmission .big_box .dots_list li.semi_bold.w20 {
+    width: 20%
+}
+
+.addmission .big_box .dots_list li.semi_bold.w20:before {
+    content: none
+}
+
+.addmission .desk {
+    display: block
+}
+
+.addmission .mobile {
+    display: none;
+    margin: 0 auto
+}
+
+.addmission .progtab #pgdm_overview .big_title li h4 {
+    min-height: 88px
+}
+
+.addmission ul.imp_buttons li a span {
+    color: #f69518
+}
+
+.addmission .btn-wrapper .imp_buttons li a.btn_gredient:after {
+    color: #f69518
+}
+
+@media (max-width:1440px) {
+    .addmission .ap_box {
+        min-height: 242px
+    }
+    .addmission .big_box.col-md-6.w45 {
+        min-height: 572px
+    }
+    .addmission .progtab #pgdm_overview .big_title li h4 {
+        min-height: 112px
+    }
+    .addmission .progtab #pgdm_overview .capital {
+        padding: 15px 20px;
+        min-height: 78px
+    }
+}
+
+@media (max-width:1370px) {
+    .addmission .ap_box {
+        min-height: 272px
+    }
+    .addmission .big_box.col-md-6.w45 {
+        min-height: 602px
+    }
+    .addmission ul.dot_list.w30 li {
+        width: 29%;
+        float: left
+    }
+    .addmission ul.dots_list li {
+        margin-bottom: 20px
+    }
+}
+
+@media (max-width:1280px) {
+    .addmission .progtab #pgdm_overview .capital {
+        font-size: 18px;
+        padding: 15px 15px;
+        min-height: 80px
+    }
+    .addmission .progtab #pgdm_overview .viewbtn {
+        font-size: 16px
+    }
+    .addmission .btn-wrapper .imp_buttons li a {
+        min-height: 71px
+    }
+}
+
+@media (max-width:1024px) {
+    .addmission .progtab #pgdm_overview li {
+        width: 47%
+    }
+    .addmission ul.dot_list li {
+        width: 44%
+    }
+    .addmission .ap_box {
+        min-height: auto
+    }
+    .addmission .ap_box {
+        min-height: auto;
+        float: left;
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 0;
+        text-align: center;
+        min-height: 340px
+    }
+    .addmission .ap_box img {
+        float: left;
+        width: 90px;
+        margin-right: inherit;
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+        float: none
+    }
+    .addmission .ap_box .semi_bold {
+        font-size: 16px;
+        float: left;
+        width: 100%;
+        text-align: center
+    }
+}
+
+@media (max-width:990px) {
+    .addmission .responsive_tabs.open li a {
+        display: block
+    }
+    .addmission .responsive_tabs li a {
+        display: none
+    }
+    .addmission .responsive_tabs span.fa {
+        display: none!important
+    }
+    .addmission .custom_tab.open li a {
+        display: block
+    }
+    .addmission .custom_tab li a {
+        display: none
+    }
+    .addmission .custom_tabs.open li a {
+        display: block
+    }
+    .addmission .custom_tabs li a {
+        display: none
+    }
+    .addmission .responsive-tabs.nav-tabs span.glyphicon-triangle-bottom {
+        display: block
+    }
+    .addmission .responsive-tabs.nav-tabs span.glyphicon-triangle-top {
+        display: none
+    }
+    .progtab .responsive_tabs>li a {
+        display: none
+    }
+    .progtab .responsive_tabs>li.active a {
+        display: block
+    }
+    .progtab .responsive_tabs.open>li {
+        display: block;
+        border-bottom: 1px solid #dcd7d7
+    }
+    .addmission .tabs-left>li.active>a {
+        width: 90%
+    }
+    .addmission .btn-wrapper .imp_buttons.big_button li a {
+        min-height: 72px
+    }
+}
+
+@media (max-width:768px) {
+    .addmission .responsive-tabs.nav-tabs.open span.glyphicon-triangle-top {
+        display: block
+    }
+    .addmission .progtab #pgdm_overview li {
+        width: calc(100%/2.1)
+    }
+    .addmission .ap_box {
+        min-height: 330px
+    }
+    .addmission .semi_bold {
+        font-size: 16px
+    }
+    .addmission .btn-wrapper .imp_buttons li a {
+        min-height: 74px
+    }
+    .addmission ul.dot_list li {
+        width: 45%
+    }
+    .addmission .ap_box {
+        float: left;
+        width: 100%;
+        padding: 10px 10px;
+        margin-bottom: 15PX;
+        min-height: 330px;
+        width: 50%;
+        margin: 0
+    }
+    .addmission .btn-wrapper .imp_buttons li a {
+        min-height: 71px
+    }
+    .addmission .responsive_tabs li {
+        border-bottom: none;
+    }
+    .addmission .progtab .titles .sub_heading .capital {
+     
+        font-size: 22px;
+      
+    }
+    .progtab .titles {
+        padding: 0px 0 20px;
+       
+    }
+    .addmission .btn-wrapper {
+     
+        padding: 0 0 20px 0;}
+        .addmission .cream {
+       
+            margin-bottom: 20px;
+        
+        }
+       
+    
+}
+
+@media (max-width:765px) {
+    .mobile {
+        display: block
+    }
+    .desk {
+        display: none
+    }
+    .addmission .ap_box {
+        float: left;
+        width: 100%;
+        padding: 20px 20px 20px 110px;
+        margin-bottom: 15PX
+    }
+    .addmission .big_box.col-md-6.w45 {
+        width: 100%;
+        min-height: AUTO;
+        margin-bottom: 20px!important
+    }
+    .addmission .big_box .dots_list li.semi_bold.w40 {
+        width: 100%!important;
+        margin-bottom: 0
+    }
+    .addmission .big_box .dots_list li.semi_bold.w20 {
+        width: 100%!important;
+        min-height: 0
+    }
+    .addmission ul.dot_list.w30 li {
+        width: 100%;
+        float: left
+    }
+    .addmission .progtab table {
+        width: 100%!important;
+        float: left;
+        overflow: scroll;
+        display: block
+    }
+    .addmission .progtab .sub_heading .capital {
+        font-size: 22px;
+    }
+    .addmission .bold {
+        font-size: 18px
+    }
+    .addmission ul.dots_list li {
+        margin-bottom: 20px
+    }
+    header.megamenu {
+        min-height: 80px
+    }
+    .addmission section.progtab .col-sm-4.col-md-3.col-lg-3 {
+        width: 100%
+    }
+    .addmission section.progtab .col-sm-8.col-md-9.col-md-9 {
+        width: 100%
+    }
+}
+
+@media (max-width:660px) {
+    .addmission ul.dot_list li {
+        width: 45%
+    }
+    .addmission .btn-wrapper .imp_buttons li {
+        width: 100%
+    }
+    .addmission .btn-wrapper li.border {
+        border-left: 0 solid #ccc;
+        height: 65px;
+        border-right: 0 solid #ccc;
+        margin: 0 10px;
+        padding: 0 10px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 5px
+    }
+    .addmission .progtab #pgdm_overview li {
+        width: calc(100%/1)!important
+    }
+    .addmission .red_title {
+        font-size: 18px
+    }
+    .addmission .bold {
+        font-size: 18px
+    }
+    .addmission .progtab .sub_heading .capital {
+        font-size: 22px; font-size: 20px;
+    }
+    .addmission p {
+     
+        padding: 0 0 15px 0;
+    }
+    .addmission .ap_box img {
+    
+        width: 70px;
+      
+    }
+    .addmission .progtab .sub_heading {
+     
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .addmission ul.dot_list li {
+        width: 100%;
+        float: left;
+        min-height: auto
+    }
+    .addmission .ap_box {
+        min-height: auto !important;
+    }
+    .addmission .ap_box {
+        min-height: auto;
+        float: left;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15PX;
+        text-align: center
+    }
+    .addmission .ap_box img {
+        float: left;
+        width: 90px;
+        margin-right: inherit;
+        position: relative;
+        left: inherit;
+        top: inherit;
+        margin: 0 auto;
+        float: none
+    }
+    .addmission .ap_box .semi_bold {
+        font-size: 16px;
+        float: left;
+        width: 100%;
+        text-align: center
+    }
+    .addmission .big_box .dots_list li {
+        width: 100%;
+        min-height: auto
+    }
+    .addmission ul.dots_list li {
+        margin-bottom: 20px
+    }
+    .addmission .desk {
+        display: none
+    }
+    .addmission .mobile {
+        display: block;
+        margin: 0 auto
+    }
+    .addmission .btn-wrapper .imp_buttons li a {
+        min-height: 55px
+    }
+    .addmission .btn-wrapper .imp_buttons.big_button li a {
+        min-height: auto
+    }
+    .addmission .progtab table td {
+        padding: 12px 12px
+    }
+    .addmission .progtab table th {
+        padding: 12px 12px;
+        font-size: 16px
+    }
+    .addmission .glyphicon {
+        position: relative;
+        top: 5px
+    }
+    .addmission .progtab #pgdm_overview .capital {
+        min-height: auto
+    }
+    .addmission .ap_box.white {
+        background-color: #f1f2f4
+    }
+    span.arrow-up1.ishidden.is-hidden {
+        display: none
+    }
+    .addmission ul.dot_list li {
+        width: 100%
+    }
+    .addmission .progtab .titles .after-borders .capital:after {
+        left: 44%
+    }
+    span.arrow-up1.ishidden {
+        display: none
+    }
+    .addmission .progtab .titles .sub_heading .capital {
+     
+        font-size: 18px;
+      
+    }
+    .addmission ul.dot_list li a, ul.dot_list li p {
+        font-size: 14px;
+    }
+    .addmission li.ap_box.mb35 {
+        margin: 0px 0px 20px 0px !important;
+    }
+    .addmission ul.dots_list li {
+        margin-bottom: 10px;
+    }
+    .addmission .big_box .title {
+        font-size: 18px;
+        margin: 0 0 15px 0;
+    }
+    .addmission ul.dot_list.w30 li {
+      
+        float: left;
+        min-height: auto;
+        margin: 0 30px 10px 0;
+    }
+    .addmission ul.dot_list .fa-circle:before {
+        content: "\f111";
+        font-size: 6px;
+    }.addmission .mb40 {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .progtab .titles .capital {
+        font-size: 34px;
+        margin-bottom: 50px
+    }
+    .addmission .progtab .titles .after-borders .capital:after {
+        bottom: -50px;
+        left: 40%
+    }
+    .addmission .big_box .title {
+        font-size: 20px;
+        margin: 0 0 20px 0
+    }
+    .addmission ul.dots_list li {
+        margin-bottom: 15px
+    }
+}
+
+.pfc .rightarrow {
+    background-image: url(../img/library/rightarrow.png);
+    background-repeat: no-repeat;
+    padding-left: 35px;
+    background-position: 15px 8px;
+    background-size: 22px
+}
+
+.glyphicon:before {
+    content: "\e252";
+    display: none
+}
+
+.responsive-tabs.nav-tabs span.glyphicon {
+    display: none
+}
