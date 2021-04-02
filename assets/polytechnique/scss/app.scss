@@ -495,15 +495,69 @@
     }
   }
   .achievements {
-    padding: 40px 0;
-    background-color: $whitelight;
+    padding: 40px 0 100px 0;
     margin: 30px 0 40px 0;
-
+    background-color: $whitelight;
+    position: relative;
     background-image: url(/assets/polytechnique/images/homepage/mapbg.png);
     background-position: center center;
     background-repeat: no-repeat;
+
+    &::before {
+      content: "";
+      background-image: url(/assets/polytechnique/images/homepage/stripup.svg);
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 5%;
+      top: 20%;
+    }
+    &::after {
+      content: "";
+      background-image: url(/assets/polytechnique/images/homepage/stripdown.svg);
+      width: 100px;
+      height: 100px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 5%;
+      bottom: -20px;
+    }
     .toprow {
       margin-bottom: 30px;
+    }
+
+    .slick-arrow {
+      display: block;
+      width: 35px;
+      height: 35px;
+      background-color: $grey;
+      left: inherit;
+      border: none;
+      display: inline-block !important;
+      cursor: pointer;
+      z-index: 99;
+      &:before {
+        content: "\f104";
+        font-family: "FontAwesome";
+        font-size: 20px;
+        color: $white;
+      }
+      &:focus {
+        outline: none;
+      }
+      &.slick-prev {
+        left: -60px;
+      }
+      &.slick-next {
+        right: -60px;
+        transform: rotate(180deg);
+        color: transparent;
+        // &:before {
+        //   content: "\f105";
+        //   font-family: "FontAwesome";
+        // }
+      }
     }
   }
   .intropara {
@@ -513,26 +567,37 @@
   .achievelist {
     // width: 95%;
     // margin: 0 auto;
+
     li {
       width: 50%;
       float: left;
+      margin-right: 30px;
     }
   }
   .achvcard {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: $white;
-    padding: 30px 30px 30px 0;
-    border: 4px solid transparent;
+    background-color: transparent;
 
-    box-shadow: 0px 2px 4px #00000026;
-    &:hover {
-      border: 4px solid #985a2f66;
-    }
     .achvcontwrap {
       padding-left: 20px;
+      background-color: $white;
+      box-shadow: 0px 2px 4px #00000026;
+      padding: 30px 30px 30px 85px;
+      border: 4px solid transparent;
+
+      &:hover {
+        border: 4px solid #985a2f66;
+      }
     }
+  }
+  .trophyimg {
+    margin-right: -70px;
+    z-index: 3;
+  }
+  .aboutusimg {
+    width: 100%;
   }
   .achvhead {
     font-size: 18px;
@@ -554,8 +619,75 @@
       margin-right: 5px;
     }
   }
-  .trophyimg {
-    margin-left: -50px;
+
+  .whatshappning {
+    .toprow {
+      margin-bottom: 30px;
+    }
+    .eventslist {
+      li {
+        &:first-child,
+        &:nth-child(2) {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .eventgreybox {
+    background-color: $whitelight;
+    width: 100%;
+    float: left;
+    .eventlabel {
+      background-color: #00973d;
+      padding: 5px;
+      font-size: 12px;
+      font-family: "FiraSans-Medium";
+      color: $white;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    .eventdate {
+      font-size: 12px;
+      font-family: "FiraSans-Medium";
+      color: $grey;
+      margin-bottom: 10px;
+      opacity: 0.8;
+    }
+    .contentarea {
+      padding: 20px;
+      width: 100%;
+      float: left;
+    }
+    .eventitle {
+      font-size: 18px;
+      line-height: 27px;
+      font-family: "FiraSans-Medium";
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .eventlocation {
+      color: $linkblue;
+      text-decoration: underline;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: "FiraSans-Medium";
+      &::before {
+        content: "\f041";
+        font-family: "FontAwesome";
+        margin-right: 5px;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+    .grey-btn {
+      margin-top: 30px;
+      float: left;
+    }
+    img {
+      width: 100%;
+    }
   }
 }
 @media (min-width: 768px) {
@@ -740,8 +872,22 @@
     width: 77%;
   }
   .homemain {
+    .ftcard {
+      margin-bottom: 30px;
+    }
+    .tabimgbox {
+      display: none;
+    }
     .hm-notices {
-      margin: 40px 0;
+      margin: 0 0 70px 0;
+      padding: 0;
+      &::before,
+      &:after {
+        display: none;
+      }
+      .intropara {
+        text-align: left;
+      }
       .noticeboardlist {
         margin-top: 30px;
       }

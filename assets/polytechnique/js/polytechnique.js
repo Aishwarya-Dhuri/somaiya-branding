@@ -262,18 +262,25 @@ function initSlickSlider() {
         }
     }]
 });
-
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.achievelist'
+});
 $(".achievelist").slick({
-  vertical: false,
   slidesToShow: 2,
   slidesToScroll: 1,
+  // asNavFor: '.slider-for',
+  // dots: true,
+
   infinite: true,
   autoplay: false,
   autoplaySpeed: 2000,
-  arrows: true,
   speed: 1000,
-  prevArrow: '<button class="notice-prev" aria-label="Previous" type="button" ></button>',
-  nextArrow: '<button class="notice-next" aria-label="Next" type="button"></button>',
+  prevArrow: '<button class="slick-prev" aria-label="Previous" type="button" ></button>',
+  nextArrow: '<button class="slick-next" aria-label="Next" type="button"></button>',
   responsive: [{
       breakpoint: 576,
       settings: {
