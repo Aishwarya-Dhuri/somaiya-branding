@@ -872,6 +872,9 @@
     width: 77%;
   }
   .homemain {
+    .signatureimg {
+      display: none;
+    }
     .ftcard {
       margin-bottom: 30px;
     }
@@ -910,9 +913,64 @@
         font-size: 14px;
       }
     }
+    .achvcard {
+      flex-direction: column;
+      .achvcontwrap {
+        padding: 80px 20px 20px 20px;
+        text-align: center;
+        width: 90%;
+      }
+    }
+    .achievelist li {
+      margin-right: 0;
+    }
+    .trophyimg {
+      margin-right: 0;
+      margin-bottom: -70px;
+    }
+    .achievements {
+      &:before {
+        top: 25%;
+      }
+      .slick-arrow {
+        &.slick-prev {
+          left: -20px;
+        }
+        &.slick-next {
+          right: -20px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 800px) {
+  .homemain {
+    .vismisbox {
+      width: 100%;
+      margin: 30px 0 10px 0;
+    }
+    .eventgreybox {
+      .eventitle {
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .eventlocation {
+        font-size: 14px;
+      }
+    }
+    .hmabout {
+      margin: 40px 0 50px 0;
+
+      .row {
+        display: flex;
+        align-items: center;
+      }
+
+      .outline-grey-btn {
+        margin-top: 30px;
+      }
+    }
+  }
   .princi-middlebox.backpatch-left {
     padding-bottom: 20px;
     margin-bottom: 0;
@@ -980,6 +1038,150 @@
 }
 
 @media (max-width: 767px) {
+  .jointabsec {
+    .nav-tabs {
+      display: none;
+    }
+
+    .tab-pane.fade.selected {
+      display: block !important;
+      opacity: 1;
+      margin-bottom: 30px;
+      .collapse.show {
+        display: flex;
+        width: 100%;
+      }
+    }
+    .tab-content > .tab-pane {
+      display: block;
+      display: block !important;
+      opacity: 1;
+      margin-bottom: 30px;
+    }
+    .card-header {
+      background: $white;
+      border-radius: 0;
+      a {
+        font-family: FiraSans-Medium;
+        color: #58595b;
+        font-size: 18px;
+        text-decoration: none;
+        width: 100%;
+        display: block;
+        padding-right: 15px;
+        &:after {
+          background-image: url(/assets/default_asset/img/red-plus.svg);
+          background-size: 100%;
+          content: "";
+          width: 12px;
+          height: 25px;
+          background-repeat: no-repeat;
+          background-position: 0px 5px;
+          position: absolute;
+          right: 0;
+          top: -2px;
+          z-index: 999;
+        }
+      }
+      a[aria-expanded="true"] {
+        text-decoration: none;
+        color: $darkred;
+        &:after {
+          background-image: url(/assets/university/img/icons/minus.svg);
+          top: 6px;
+        }
+      }
+    }
+  }
+  .homemain {
+    .hm-notices .mainherotitle-48 {
+      text-align: center;
+    }
+    .achvcard .achvcontwrap {
+      width: 85%;
+    }
+    .vismisbox .heading {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .hmabout .outline-grey-btn {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+    .prgmsadmns {
+      margin: 0;
+
+      padding-top: 0;
+      .mainherotitle-48 {
+        color: $darkred;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+    }
+    .eventgreybox {
+      margin-bottom: 30px;
+      img {
+        display: none;
+      }
+      .grey-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+    .hm-notices {
+      margin: 0 0 40px 0;
+    }
+    .whatshappning {
+      margin-bottom: 0;
+    }
+    .aboutusimg {
+      margin-top: 50px;
+    }
+    .ftcard {
+      margin: 0 -15px 30px -15px;
+    }
+    .hmabout .mainherotitle-48,
+    .abtintropara,
+    .intropara,
+    .hm-notices .intropara {
+      text-align: center;
+    }
+    .whypolytech .mainherotitle-48 {
+      margin-bottom: 20px;
+    }
+    .intropara,
+    .abtintropara,
+    .whypolytech p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .studexp {
+      margin: -220px 0 10px 0;
+    }
+    .descpcont {
+      padding: 10px;
+    }
+    .hmabout {
+      margin: 0 0 50px 0;
+    }
+    .rightprgms {
+      background-color: transparent;
+      padding: 15px;
+
+      &::after {
+        display: none;
+      }
+    }
+    .blackbox {
+      background-color: transparent;
+      &::before {
+        display: none;
+      }
+    }
+    .studcard {
+      margin-bottom: 40px;
+    }
+  }
   .page-subheading {
     font-size: 18px;
     line-height: 30px;
