@@ -814,6 +814,11 @@ main.dharma {
         .uni-banner-heading {
           margin-bottom: 6px;
         }
+        .banner-btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          color: #ffffff;
+        }
       }
     }
     .controls-wrapper.home-main {
@@ -828,6 +833,37 @@ main.dharma {
           background: $darkred;
         }
       }
+    }
+  }
+  .polytech-bannerfullL {
+    &::before,
+    &:after {
+      display: none;
+    }
+  }
+  .slider-wrapper.polytech {
+    .bed-hmcontrols-wrapper {
+      width: 100%;
+      text-align: right;
+      right: 15px;
+      bottom: 5%;
+      left: inherit;
+    }
+    .university-slider.bed-college-hmslider {
+      padding-bottom: 0;
+      img {
+        min-height: 350px;
+      }
+      .carousel-caption {
+        width: 90%;
+      }
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+    .carousel-inner {
+      width: 100%;
     }
   }
 }
@@ -883,6 +919,9 @@ main.dharma {
   }
 }
 @media (max-width: 767px) {
+  .slider-wrapper.polytech .university-slider.bed-college-hmslider img {
+    min-height: 250px;
+  }
   main.dharma {
     .patch {
       &:before,
