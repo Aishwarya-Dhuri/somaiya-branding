@@ -262,19 +262,18 @@ function initSlickSlider() {
         }
     }]
 });
-$('.slider-for').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  asNavFor: '.achievelist'
-});
+// $('.slider-for').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: true,
+//   fade: true,
+//   asNavFor: '.achievelist'
+// });
 $(".achievelist").slick({
   slidesToShow: 2,
   slidesToScroll: 1,
   // asNavFor: '.slider-for',
   // dots: true,
-
   infinite: true,
   autoplay: false,
   autoplaySpeed: 2000,
