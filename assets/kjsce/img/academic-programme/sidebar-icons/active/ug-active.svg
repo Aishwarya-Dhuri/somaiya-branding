@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.16" height="35.847" viewBox="0 0 22.16 35.847">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#4caf50}
+        </style>
+    </defs>
+    <g id="prefix__Group_7504" data-name="Group 7504" transform="translate(12511 14623.951)">
+        <g id="prefix__Group_7499" data-name="Group 7499" transform="translate(-12511 -14623)">
+            <g id="prefix__Group_7496" data-name="Group 7496">
+                <g id="prefix__Group_7302" data-name="Group 7302" transform="translate(0 22.309)">
+                    <path id="prefix__Rectangle_4688" d="M0 0H22.063V6.862H0z" class="prefix__cls-1" data-name="Rectangle 4688"/>
+                    <path id="prefix__Polygon_8" d="M11.031 0l11.032 5.735H0z" class="prefix__cls-1" data-name="Polygon 8" transform="rotate(180 11.031 6.294)"/>
+                </g>
+                <path id="prefix__Line_907" d="M0 0L22.063 0" data-name="Line 907" transform="translate(.049 .049)" style="fill:none;stroke:#4caf50;stroke-width:2px;opacity:.4"/>
+                <path id="prefix__Rectangle_4687" d="M0 0H22.063V22.309H0z" data-name="Rectangle 4687" transform="translate(.097)" style="opacity:.12;fill:#4caf50"/>
+                <path id="prefix__Path_14428" d="M9.789 0H7.7l-.16-3.523q-.065-1.261-.065-2.249 0-.754.039-1.43L6.123-.949H4.108L2.626-7.2Q2.7-6.071 2.7-5.07q0 .754-.039 1.573L2.509 0H.429l.676-9.009H3.8L5.148-2.9l1.261-6.11h2.7z" data-name="Path 14428" transform="translate(5.667 16.009)" style="fill:#58595b"/>
+            </g>
+        </g>
+    </g>
+</svg>

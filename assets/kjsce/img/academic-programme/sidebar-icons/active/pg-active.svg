@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.16" height="35.847" viewBox="0 0 22.16 35.847">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#f58220}
+        </style>
+    </defs>
+    <g id="prefix__Group_7519" data-name="Group 7519" transform="translate(12511 14623.951)">
+        <g id="prefix__Group_7499" data-name="Group 7499" transform="translate(-12511 -14623)">
+            <g id="prefix__Group_7496" data-name="Group 7496">
+                <g id="prefix__Group_7302" data-name="Group 7302" transform="translate(0 22.309)">
+                    <path id="prefix__Rectangle_4688" d="M0 0H22.063V6.862H0z" class="prefix__cls-1" data-name="Rectangle 4688"/>
+                    <path id="prefix__Polygon_8" d="M11.031 0l11.032 5.735H0z" class="prefix__cls-1" data-name="Polygon 8" transform="rotate(180 11.031 6.294)"/>
+                </g>
+                <path id="prefix__Line_907" d="M0 0L22.063 0" data-name="Line 907" transform="translate(.049 .049)" style="fill:none;stroke:#f58220;stroke-width:2px;opacity:.4"/>
+                <path id="prefix__Rectangle_4687" d="M0 0H22.063V22.309H0z" data-name="Rectangle 4687" transform="translate(.097)" style="opacity:.12;fill:#f58220"/>
+                <path id="prefix__Path_14438" d="M4.745-9.23a4.405 4.405 0 0 1 3 1.1L6.669-6.994a3.9 3.9 0 0 0-.891-.526 2.542 2.542 0 0 0-.943-.163 1.907 1.907 0 0 0-1.6.786 3.923 3.923 0 0 0-.6 2.385 4.841 4.841 0 0 0 .459 2.452 1.555 1.555 0 0 0 1.417.721 2.5 2.5 0 0 0 1.222-.3v-2.04h-1.17l-.208-1.508H7.8v4.459a5.837 5.837 0 0 1-1.547.7 6 6 0 0 1-1.69.247 3.868 3.868 0 0 1-3.094-1.2 5.256 5.256 0 0 1-1.04-3.53 5.369 5.369 0 0 1 .565-2.548 3.9 3.9 0 0 1 1.548-1.618 4.413 4.413 0 0 1 2.203-.553z" data-name="Path 14438" transform="translate(6.667 15.23)" style="fill:#58595b"/>
+            </g>
+        </g>
+    </g>
+</svg>

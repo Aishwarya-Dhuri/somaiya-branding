@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.112" height="35.848" viewBox="0 0 22.112 35.848">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#c8c9c9}
+        </style>
+    </defs>
+    <g id="prefix__Group_7525" data-name="Group 7525" transform="translate(-117 -1014.249)">
+        <g id="prefix__Group_7518" data-name="Group 7518" transform="translate(12628 15579.2)">
+            <g id="prefix__Group_7506" data-name="Group 7506" transform="translate(-12511 -14564)">
+                <g id="prefix__Group_7500" data-name="Group 7500">
+                    <g id="prefix__Group_7497" data-name="Group 7497">
+                        <g id="prefix__Group_7302" data-name="Group 7302" transform="translate(0 22.309)">
+                            <path id="prefix__Rectangle_4688" d="M0 0H22.063V6.862H0z" class="prefix__cls-1" data-name="Rectangle 4688"/>
+                            <path id="prefix__Polygon_8" d="M11.032 0l11.031 5.735H0z" class="prefix__cls-1" data-name="Polygon 8" transform="rotate(180 11.031 6.294)"/>
+                        </g>
+                        <path id="prefix__Line_907" d="M0 0L22.063 0" data-name="Line 907" transform="translate(.049 .049)" style="fill:none;stroke:#c8c9c9;stroke-width:2px;opacity:.4"/>
+                        <path id="prefix__Rectangle_4687" d="M0 0H22.063V22.309H0z" data-name="Rectangle 4687" transform="translate(0 -.2)" style="opacity:.12;fill:#c8c9c9"/>
+                        <path id="prefix__Path_14430" d="M6.118 0v-4.158H3.206V0H.91v-9.7h2.3v3.75h2.908V-9.7h2.3V0z" class="prefix__cls-1" data-name="Path 14430" transform="translate(6.09 16.502)"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
