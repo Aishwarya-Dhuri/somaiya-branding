@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="plus" width="14.413" height="14.413" viewBox="0 0 14.413 14.413">
+    <defs>
+        <style>
+            .cls-1{fill-rule:evenodd}
+        </style>
+    </defs>
+    <path id="Path_228" d="M7.482.275a.8.8 0 0 1 .8.8v6.406a.8.8 0 0 1-.8.8H1.076a.8.8 0 1 1 0-1.6h5.605v-5.6a.8.8 0 0 1 .8-.8z" class="cls-1" transform="translate(-.275 -.275)"/>
+    <path id="Path_229" d="M.475 1.276a.8.8 0 0 1 .8-.8h6.407a.8.8 0 1 1 0 1.6H2.076v5.6a.8.8 0 1 1-1.6 0z" class="cls-1" transform="translate(5.931 5.931)"/>
+</svg>

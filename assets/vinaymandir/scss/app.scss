@@ -974,6 +974,93 @@
     }
   }
 }
+.excellencemain {
+  .innertabcont {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .common-table th,
+  td {
+    font-size: 18px;
+    padding: 1rem;
+  }
+  .grey-select {
+    color: #000;
+
+    padding: 8px 20px;
+    width: 175px;
+    background-position: 150px 18px;
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .cardperson {
+    margin-bottom: 40px;
+    &:hover {
+      .contentwrap {
+        border-bottom: solid 5px $black;
+      }
+    }
+  }
+
+  .contentwrap {
+    padding: 20px 0;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.2);
+  }
+  .studname {
+    color: #000;
+    font-size: 20px;
+    font-family: FiraSans-Medium;
+    line-height: 30px;
+    text-align: center;
+  }
+  .subjects {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: $grey;
+    font-weight: 400;
+  }
+  .imgwrap img {
+    width: 100%;
+  }
+  .studmarks {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .greypatch {
+    background-color: $whitelight;
+    padding: 50px 0;
+    position: relative;
+    &:before {
+      content: "";
+      background-color: $whitelight;
+      position: absolute;
+      left: -100px;
+      top: 0;
+      width: 20%;
+      height: 100%;
+    }
+    &:after {
+      content: "";
+      background-color: $whitelight;
+      position: absolute;
+      right: -100px;
+      top: 0;
+      width: 20%;
+      height: 100%;
+    }
+  }
+}
+.page-subheading {
+  color: #000;
+  font-size: 24px;
+  font-family: FiraSans-Medium;
+  margin-bottom: 20px;
+  line-height: 36px;
+}
 
 @media (min-width: 768px) {
   .maintable {
@@ -1138,6 +1225,13 @@
 @media (max-width: 767px) {
   .ruleinfographicimg {
     width: 100%;
+  }
+  .excellencemain {
+    .page-subheading {
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center !important;
+    }
   }
   .examrulesmain {
     .quickslinks {
