@@ -1,0 +1,1487 @@
+@import "../../default_asset/uni-scss/base";
+/*principal Message Page css*/
+.principal-introbox {
+  .mainherotitle-45 {
+    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+  .width-75 {
+    padding-left: 15px;
+  }
+  .width-25 {
+    padding-right: 15px;
+  }
+  .principal-greybox {
+    background-color: #f1f1f1;
+    width: 85%;
+    float: left;
+    padding: 50px;
+    margin-top: 70px;
+    position: absolute;
+    .main-para18 {
+      line-height: 30px;
+      width: 70%;
+    }
+  }
+  .principal-imgbox {
+    max-height: 320px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+}
+.princi-middlebox.backpatch-left {
+  margin-top: 30px;
+  &:before,
+  &:after {
+    height: 90%;
+  }
+}
+.princi-middlebox {
+  margin-top: 0;
+
+  p {
+    @extend %para16;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .combineimgbox {
+    position: relative;
+    z-index: 1;
+    bottom: 30px;
+  }
+  .middle-greybox {
+    background-color: #f1f1f1;
+    width: 75%;
+    left: 25%;
+    z-index: -1;
+    margin-bottom: 30px;
+    float: left;
+    padding: 34px 50px;
+
+    margin-top: 70px;
+    position: absolute;
+    p {
+      @extend %para16;
+      line-height: 28px;
+      width: 87%;
+      float: right;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.princi-signature-box {
+  .princi-name {
+    font-size: 28px;
+    line-height: 31px;
+    color: $darkred;
+    font-family: "Fira Sans", sans-serif;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 13px;
+    line-height: 25px;
+    color: $darkred;
+    font-weight: 400;
+  }
+}
+//Explore Somaiaya Section
+.explore_somaiya_wrap {
+  background-color: $whitelight;
+  padding: 50px 0;
+  h2 {
+    @extend %mainheading;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    li {
+      margin: 0px 0px 10px;
+      width: calc(100% / 4.4);
+      a {
+        width: 100%;
+        background-color: $grey;
+        height: 50px;
+        padding-left: 15px;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        font-family: "FiraSans-Medium";
+
+        span {
+          color: #ffffff;
+          min-width: calc(100% - 30px);
+          line-height: 2.7;
+          font-size: 18px;
+
+          text-align: left;
+          float: left;
+        }
+        img {
+          width: 15px;
+          /* height: 20px; */
+          height: 50px;
+          vertical-align: middle;
+          position: absolute;
+          float: right;
+        }
+      }
+    }
+  }
+}
+.maintable {
+  margin-bottom: 70px;
+
+  .nav-tabs {
+    margin: 0px 0px 30px 0px;
+    border: none;
+    .nav-link {
+      float: left;
+      width: auto;
+      border: none;
+      padding: 15px 15px 18px 15px;
+      &.active {
+        border: none;
+        border-bottom: 5px solid #b7202e;
+        float: left;
+        padding: 15px 15px 18px 15px;
+        background: transparent;
+        .img {
+          .og {
+            display: none;
+          }
+          .hvr {
+            display: block;
+          }
+        }
+        .title {
+          color: #b7202e;
+        }
+      }
+      &:hover {
+        .title {
+          color: #b7202e;
+        }
+        .img {
+          .og {
+            display: none;
+          }
+          .hvr {
+            display: block;
+          }
+        }
+      }
+    }
+    .nav-item {
+      width: 33.3%;
+    }
+  }
+  .intodet {
+    margin-bottom: 20px;
+  }
+  .card-header {
+    display: none;
+  }
+  span {
+    &.wrap {
+      float: left;
+      width: 100%;
+      .img {
+        width: 50px;
+        float: left;
+        .og {
+          display: block;
+        }
+        .hvr {
+          display: none;
+        }
+        img {
+          float: left;
+          width: 50px;
+        }
+      }
+      .title {
+        float: left;
+        width: auto;
+        font-family: FiraSans-Medium;
+        font-size: 18px;
+        line-height: 22px;
+        color: #707070;
+        padding: 3px 0px 0px 15px;
+        max-width: 165px;
+      }
+    }
+  }
+  .tab-content {
+    position: relative;
+    z-index: 9;
+    .nav-tabs {
+      margin: 0px 0px 30px 0px;
+      border: none !important;
+    }
+    .card-body {
+      padding: 0px;
+    }
+  }
+  .card-body {
+    padding: 0px;
+  }
+
+  .card {
+    background: #fff;
+    z-index: 9;
+  }
+}
+
+/**********Home page*********/
+.home-main {
+  .hmabt {
+    margin: 70px 0;
+    .iframebox {
+      position: relative;
+      width: 100%;
+      margin-bottom: 15px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .yticonbox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .abtbottom {
+    margin-top: 30px;
+  }
+  .intropara {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .whatsheading {
+    color: $black;
+    font-family: "FiraSans-Medium";
+    font-size: 38px;
+    line-height: 57px;
+    margin-bottom: 10px;
+  }
+  .whatscontainer {
+    li {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+    }
+  }
+  .whatswrapper {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+    padding: 20px 30px;
+  }
+  .whatslink {
+    &:hover {
+      text-decoration: none;
+      .whats-title {
+        text-decoration: underline;
+        color: $linkblue;
+      }
+    }
+  }
+  .whats-category {
+    font-size: 16px;
+    line-height: 25px;
+    color: $black;
+    font-family: "FiraSans-Medium";
+    text-transform: uppercase;
+  }
+  .whats-title {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    font-family: "FiraSans-Medium";
+  }
+  .whatsnew-info {
+    padding-left: 0;
+  }
+  .datewrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    .date,
+    .month {
+      padding: 8px;
+      color: $white;
+      background-color: $grey;
+      width: 50px;
+      float: left;
+      text-align: center;
+    }
+    .date {
+      background-color: #6d6e70;
+      font-size: 20px;
+      line-height: 17px;
+      font-family: "FiraSans-Bold";
+    }
+    .month {
+      font-size: 14px;
+      line-height: 17px;
+
+      font-family: "FiraSans-Medium";
+    }
+  }
+
+  .studybottom {
+    margin-top: 30px;
+  }
+  .hmstudy {
+    background-color: $grey;
+    padding: 40px 0;
+    margin: 30px 0 70px 0;
+    .simple-link {
+      color: $white;
+      &::before {
+        background-image: url(/assets/b.ed/img/homepage/more-arrow-white.svg);
+
+        background-position: 0 0;
+      }
+    }
+    .mainherotitle-48,
+    .intropara {
+      color: $white;
+    }
+    .stheading {
+      font-size: 24px;
+      line-height: 42px;
+      color: $black;
+      font-family: "FiraSans-Medium";
+    }
+    .studyimg {
+      width: 100%;
+    }
+
+    .studycard {
+      border-bottom: 4px solid transparent;
+      width: 100%;
+      float: left;
+    }
+    .studylink {
+      width: 100%;
+      float: left;
+      &:hover {
+        text-decoration: none;
+        .studycard {
+          border-bottom: 4px solid $black;
+        }
+      }
+    }
+    .admtext {
+      color: $linkblue;
+      text-decoration: underline;
+      font-size: 18px;
+      font-weight: 500;
+      font-family: "FiraSans-Medium";
+    }
+    .studycardcont {
+      background-color: $white;
+      padding: 20px;
+      width: 100%;
+      float: left;
+
+      p {
+        margin: 10px 0 15px 0;
+      }
+    }
+  }
+
+  .hmwhyjoin {
+    background-color: $whitelight;
+    padding: 40px 0 70px 0;
+    margin-top: 0;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(/assets/vinaymandir/images/homepage/reasonsbg.jpg);
+      background-position: bottom;
+      background-size: cover;
+      width: 100%;
+      height: 230px;
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+    }
+    &:before {
+      content: "";
+      background-image: url(/assets/vinaymandir/images/homepage/alumni-grid.svg);
+      background-position: bottom;
+      width: 85px;
+      height: 90px;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+    }
+    .reasonswrapper {
+      background-color: $white;
+      margin-top: 30px;
+      padding: 30px 15px 0 15px;
+      z-index: 1;
+      position: relative;
+      &:after {
+        content: "";
+        background-image: url(/assets/vinaymandir/images/homepage/alumni-grid.svg);
+        width: 100px;
+        height: 95px;
+        position: absolute;
+        left: -100px;
+        top: 55px;
+        z-index: -9999;
+      }
+    }
+
+    .reasoncard {
+      padding: 20px 0 25px 0;
+      text-align: center;
+      border-bottom: 3px solid transparent;
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+      &:after {
+        content: "";
+        width: 1px;
+        height: 100px;
+        position: absolute;
+        right: 0px;
+        top: 15%;
+        background: #ddd;
+      }
+      &:hover {
+        border-bottom: 3px solid $black;
+        .reasonhvrimg {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+        }
+        .reasonimg {
+          display: none;
+        }
+      }
+    }
+    .reasonhvrimg {
+      display: none;
+    }
+
+    .reasonhvrimg,
+    .reasonimg {
+      height: 60px;
+    }
+    .reasontext {
+      margin-top: 20px;
+      font-size: 20px;
+      color: $black;
+      font-family: "FiraSans-Medium";
+    }
+  }
+
+  .eventstabs {
+    border: none;
+    margin-top: 30px;
+    position: relative;
+    .nav-link {
+      color: $grey;
+      font-family: "FiraSans-Medium";
+      font-size: 22px;
+      line-height: 27px;
+      padding: 20px 30px;
+      border-radius: 0;
+      border-top: 5px solid transparent;
+      border: none;
+      background-color: rgba(231, 232, 233, 0.4);
+      &.active {
+        color: $black;
+        border-top: 5px solid $black;
+        background-color: $white;
+        box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .eventstabcontent {
+    padding: 30px 40px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 999;
+    background: white;
+  }
+  .eventstitle {
+    font-size: 24px;
+    line-height: 36px;
+    color: $black;
+    font-family: "FiraSans-Medium";
+    margin-bottom: 10px;
+  }
+  .evanncard {
+    float: left;
+    width: 100%;
+    text-align: left;
+    &:hover {
+      .eventstitle {
+        text-decoration: underline;
+        color: $linkbluehvr;
+      }
+      .location {
+        color: $linkbluehvr;
+      }
+    }
+    .imgsec {
+      position: relative;
+    }
+    .eventsimg {
+      max-height: 378px;
+      width: 100%;
+    }
+    .datewrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      .date,
+      .month {
+        padding: 8px;
+        color: $white;
+        background-color: $grey;
+        width: 50px;
+        float: left;
+        text-align: center;
+      }
+      .date {
+        background-color: #6d6e70;
+        font-size: 20px;
+        line-height: 17px;
+        font-family: "FiraSans-Bold";
+      }
+      .month {
+        font-size: 14px;
+        line-height: 17px;
+
+        font-family: "FiraSans-Medium";
+      }
+    }
+
+    .contentsec {
+      background-color: $whitelight;
+      padding: 20px;
+    }
+  }
+  .location {
+    text-decoration: underline;
+    color: $linkblue;
+    font-family: "FiraSans-Medium";
+    font-size: 18px;
+    position: relative;
+    padding-left: 25px;
+    &:before {
+      content: "\f041";
+      font-family: "FontAwesome";
+      color: $linkblue;
+      position: absolute;
+      left: 0px;
+    }
+  }
+  .eventscontainer {
+    max-height: 520px;
+    overflow: hidden;
+    .whats-title {
+      font-size: 18px;
+      line-height: 27px;
+    }
+    .location {
+      font-size: 16px;
+      padding-left: 20px;
+    }
+    .whatslink {
+      padding: 18px 20px;
+      background-color: $whitelight;
+      border-right: 5px solid transparent;
+      margin-bottom: 20px;
+      width: 100%;
+
+      &:hover {
+        background-color: $white;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+        border-right: 5px solid $black;
+      }
+    }
+  }
+  .morelinks {
+    text-align: right;
+    position: absolute;
+    top: -50px;
+    width: 50%;
+    float: right;
+    right: 40px;
+    .simple-link {
+      font-size: 18px;
+    }
+  }
+
+  .hmwhatshappn {
+    margin-bottom: 70px;
+  }
+
+  .hmalumni {
+    background-color: $whitelight;
+    padding: 40px 0 40px 0;
+    background-image: url(/assets/vinaymandir/images/homepage/alumni-grid.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    float: left;
+    background-size: contain;
+    position: relative;
+    background-position-y: 87.7%;
+
+    &::before {
+      content: "";
+      background-image: url(/assets/vinaymandir/images/homepage/svvemblem-transparent.svg);
+      width: 20%;
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      left: 30px;
+    }
+  }
+  .alumnislider {
+    margin-top: 40px;
+    .alumnipersonimg {
+      border: solid 8px rgba(0, 0, 0, 0.08);
+      padding: 20px 30px;
+      width: 75%;
+      z-index: 32;
+      position: relative;
+      background-color: $whitelight;
+      left: 20px;
+    }
+    .alumni-left {
+      text-align: center;
+    }
+    .alwrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .carousel-caption {
+      position: relative;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      padding: 30px 85px 70px 0;
+      text-align: left;
+      background-color: $white;
+      background-image: url(/assets/vinaymandir/images/homepage/bookmark-icon.svg);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-position-x: 95%;
+      background-position-y: -15px;
+
+      &::before {
+        content: "";
+        background-color: $white;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: -200px;
+        z-index: -1;
+        top: 0;
+      }
+    }
+    .alumniperson {
+      font-size: 28px;
+      line-height: 30px;
+      font-family: "FiraSans-Medium";
+      color: $black;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .alumnidesgn {
+      font-size: 18px;
+      font-family: "FiraSans-Medium";
+      color: $grey;
+      font-style: italic;
+      margin: 10px 0 20px 0;
+    }
+    .controls-wrapper {
+      text-align: right;
+      width: 100%;
+      position: relative;
+      bottom: 15px;
+      right: 50px;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .hmlifesom {
+    margin-bottom: 70px;
+  }
+  .sportslider {
+    .controls-wrapper {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      float: left;
+      left: 0;
+      transform: translateY(-50%);
+      a {
+        position: absolute;
+        text-decoration: none;
+        width: 35px;
+        height: 35px;
+        padding: 11px;
+        .prev-img-btn:after,
+        .next-img-btn:after {
+          background-position: top;
+        }
+      }
+    }
+    .leftarw {
+      left: -70px;
+    }
+    .righttarw {
+      right: -70px;
+    }
+  }
+  .imgcontainer .title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    position: relative;
+    width: 100%;
+
+    overflow: hidden;
+    &:hover {
+      .content-overlay {
+        opacity: 1;
+      }
+      .content-details {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+      }
+    }
+    .content-overlay {
+      background: $black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      -webkit-transition: all 0.4s ease-in-out 0s;
+      -moz-transition: all 0.4s ease-in-out 0s;
+      transition: all 0.4s ease-in-out 0s;
+    }
+  }
+
+  .content-image {
+    width: 100%;
+    height: 305px;
+    object-fit: cover;
+    &.h-100 {
+      height: 100%;
+    }
+  }
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    h3 {
+      color: #fff;
+      font-weight: 500;
+      font-family: "FiraSans-Medium";
+      margin-bottom: 0.5em;
+      font-size: 24px;
+    }
+    p {
+      color: #fff;
+      font-size: 0.8em;
+    }
+  }
+
+  .fadeIn-bottom {
+    top: 80%;
+  }
+}
+
+.examrulesmain {
+  .evalsystem {
+    padding: 40px 0;
+    background-color: $whitelight;
+    position: relative;
+    &:before,
+    &:after {
+      background-color: $whitelight;
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      z-index: -1;
+    }
+    &:before {
+      left: -20%;
+    }
+    &:after {
+      right: -20%;
+    }
+  }
+  .intropara {
+    text-align: center;
+  }
+  .accordion {
+    margin-top: 30px;
+  }
+  .card-body {
+    padding: 20px 30px;
+    background: #fff;
+  }
+  .box {
+    margin-bottom: 30px;
+  }
+  .accordion-heading {
+    font-family: "FiraSans-Medium";
+    color: $grey;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .card-header {
+    background-color: rgba(231, 232, 233, 0.4);
+    border: none;
+    padding: 20px 30px;
+    color: $black;
+    font-family: "FiraSans-Medium";
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      background-image: url(/assets/default_asset/img/plusblack.svg);
+      width: 15px;
+      height: 15px;
+      right: 20px;
+    }
+    font-size: 18px;
+    &.active-acc {
+      background: #fff;
+      &:before {
+        background-image: url(/assets/default_asset/img/minusblack.svg);
+        width: 15px;
+        height: 2px;
+        right: 20px;
+        top: 25px;
+      }
+    }
+  }
+  .examtable {
+    width: 100%;
+    tr:nth-of-type(even) {
+      background-color: $whitelight;
+    }
+    tr {
+      border-bottom: 1px solid #ddd;
+    }
+    th,
+    td {
+      padding: 0.8rem 2rem;
+      font-size: 18px;
+    }
+  }
+
+  .outlineiconbtn {
+    color: #58595b;
+    font-family: "FiraSans-Medium";
+    border: 1px solid #58595b;
+    padding: 10px;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      border: 1px solid $darkred;
+      color: $darkred;
+      .moreicon {
+        background-color: $darkred;
+      }
+    }
+    .moreicon {
+      background-color: $grey;
+      float: right;
+      height: 100%;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      top: 0px;
+    }
+  }
+  .quickslinks {
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+
+    .greybox {
+      background-color: $grey;
+      padding: 30px 0;
+      width: 105%;
+      margin-left: -20px;
+    }
+    .mainherotitle-38 {
+      color: $white;
+    }
+  }
+}
+.excellencemain {
+  .innertabcont {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .common-table th,
+  td {
+    font-size: 18px;
+    padding: 1rem;
+  }
+  .grey-select {
+    color: #000;
+
+    padding: 8px 20px;
+    width: 175px;
+    background-position: 150px 18px;
+    font-size: 18px;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .cardperson {
+    margin-bottom: 40px;
+    &:hover {
+      .contentwrap {
+        border-bottom: solid 5px $black;
+      }
+    }
+  }
+
+  .contentwrap {
+    padding: 20px 0;
+    border-bottom: solid 5px rgba(0, 0, 0, 0.2);
+  }
+  .studname {
+    color: #000;
+    font-size: 20px;
+    font-family: FiraSans-Medium;
+    line-height: 30px;
+    text-align: center;
+  }
+  .subjects {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: $grey;
+    font-weight: 400;
+  }
+  .imgwrap img {
+    width: 100%;
+  }
+  .studmarks {
+    margin: 5px 0;
+    text-align: center;
+  }
+
+  .greypatch {
+    background-color: $whitelight;
+    padding: 50px 0;
+    position: relative;
+    &:before {
+      content: "";
+      background-color: $whitelight;
+      position: absolute;
+      left: -100px;
+      top: 0;
+      width: 20%;
+      height: 100%;
+    }
+    &:after {
+      content: "";
+      background-color: $whitelight;
+      position: absolute;
+      right: -100px;
+      top: 0;
+      width: 20%;
+      height: 100%;
+    }
+  }
+}
+.page-subheading {
+  color: #000;
+  font-size: 24px;
+  font-family: FiraSans-Medium;
+  margin-bottom: 20px;
+  line-height: 36px;
+}
+
+@media (min-width: 768px) {
+  .maintable {
+    .nav-tabs {
+      display: flex;
+    }
+    .card {
+      border: none;
+      .card-header {
+        display: none;
+      }
+      .collapse {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .principal-introbox .principal-greybox {
+    padding: 30px;
+  }
+  .princi-middlebox .middle-greybox p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-main {
+    .whatsheading {
+      font-size: 32px;
+    }
+    .hmstudy .stheading {
+      font-size: 22px;
+      line-height: 36px;
+    }
+    .whatsnew-info {
+      padding-left: 30px;
+    }
+    .alumnislider .alumnipersonimg {
+      width: 100%;
+      left: 0;
+    }
+    .eventstitle {
+      font-size: 22px;
+      line-height: 33px;
+    }
+    .intropara {
+      width: 90%;
+    }
+  }
+
+  section.top_section.principal-introbox {
+    padding: 0px 0px 70px 0px;
+    .principal-greybox {
+      padding: 20px;
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+  .princi-middlebox .middle-greybox {
+    padding: 27px 50px;
+    margin-top: 0;
+    p {
+      width: 73%;
+    }
+  }
+  .explore_somaiya_wrap ul li a {
+    padding-left: 5px;
+    span {
+      min-width: calc(100% - 25px);
+      font-size: 16px;
+      line-height: 50px;
+    }
+    i {
+      width: 15px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .principal-introbox .principal-greybox .main-para18 {
+    width: 77%;
+  }
+  .home-main {
+    .hmstudy .studycard {
+      margin-bottom: 30px;
+    }
+    .eventstabcontent {
+      padding: 25px;
+    }
+    .hmwhyjoin {
+      .reasontext {
+        font-size: 16px;
+      }
+      .reasonhvrimg,
+      .reasonimg {
+        height: 45px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .princi-middlebox.backpatch-left {
+    padding-bottom: 20px;
+
+    &:before,
+    &:after {
+      height: 61%;
+    }
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 72px 0px;
+    .principal-greybox {
+      margin-top: 20px;
+    }
+  }
+  .princi-middlebox {
+    .width-25,
+    .width-75 {
+      width: 100%;
+    }
+    .combineimgbox {
+      width: 100%;
+      img {
+        width: 100%;
+        padding: 0 40px;
+      }
+    }
+    .middle-greybox {
+      position: relative;
+      width: 100%;
+      left: 0;
+      margin-top: 60px;
+      padding: 20px;
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+  .explore_somaiya_wrap {
+    margin: 0;
+
+    ul li {
+      width: calc(100% / 2);
+
+      text-align: center;
+      a {
+        width: 95%;
+        margin-bottom: 10px;
+        padding-left: 15px;
+
+        span {
+          min-width: calc(100% - 50px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ruleinfographicimg {
+    width: 100%;
+  }
+  .excellencemain {
+    .page-subheading {
+      font-size: 18px;
+      line-height: 27px;
+      text-align: center !important;
+    }
+  }
+  .examrulesmain {
+    .quickslinks {
+      padding: 0;
+      height: auto;
+      border: none;
+      .mainherotitle-38 {
+        margin-bottom: 0;
+      }
+      .greybox {
+        margin-left: 0;
+        width: 100%;
+        padding: 10px;
+
+        margin-bottom: 20px;
+      }
+    }
+    .outlineiconbtn {
+      margin-bottom: 30px;
+    }
+  }
+  .link-right-section {
+    right: 0;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+  .home-main {
+    .hmlifesom {
+      margin-bottom: 30px;
+    }
+    .hmwhyjoin {
+      padding: 40px 0 40px 0;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+      .reasonswrapper:after {
+        display: none;
+      }
+    }
+    .morelinks {
+      margin-bottom: 30px;
+      top: 0;
+      position: relative;
+      width: 100%;
+      right: 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    .hmabt {
+      margin: 30px 0;
+      .iframebox {
+        margin: 50px 0 15px 0;
+      }
+    }
+    .eventstabs .nav-link {
+      padding: 15px 20px;
+      font-size: 18px;
+    }
+    .datewrap {
+      margin-bottom: 20px;
+    }
+    .eventscontainer {
+      padding-top: 40px;
+    }
+    .eventstitle {
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    .content {
+      margin-bottom: 30px;
+    }
+    .intropara {
+      font-size: 16px;
+    }
+    .alumnislider {
+      .alumnipersonimg {
+        width: auto;
+      }
+      .alumniperson {
+        font-size: 22px;
+      }
+      .alumnidesgn {
+        font-size: 16px;
+      }
+      .carousel-caption {
+        padding: 30px;
+      }
+
+      .controls-wrapper {
+        right: 20px;
+      }
+    }
+  }
+  .maintable {
+    span.wrap .img {
+      display: none;
+    }
+    .tab-content .tab-pane.show {
+      display: block !important;
+      border: none;
+      .collapse {
+        display: block;
+      }
+    }
+    .tab-content {
+      margin-top: 30px;
+    }
+    .nav-tabs {
+      margin: 0;
+      border: none;
+      .nav-item {
+        width: 100%;
+        float: left;
+      }
+      .nav-link {
+        padding: 10px;
+        width: 100%;
+      }
+    }
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 215px 0px;
+
+    &:before,
+    &:after {
+      height: 106vh;
+    }
+    .mainherotitle-45 {
+      margin: 20px 0px;
+      margin-bottom: 0;
+    }
+    .princi-content-respbox {
+      position: relative;
+      background: #fff;
+      width: 100%;
+      float: left;
+      display: block;
+      max-width: 90%;
+      margin: 0 auto;
+      top: 30%;
+      left: 5%;
+      transform: translate(0, -30%);
+
+      z-index: 1;
+      .principal-greybox {
+        background: #fff;
+        width: 95%;
+        padding: 0;
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .explore_somaiya_wrap ul {
+    margin-top: 30px;
+    padding: 30px 0;
+
+    li {
+      width: calc(100% / 1);
+      a {
+        width: 100%;
+        padding-left: 15px;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  section.top_section.principal-introbox:before,
+  section.top_section.principal-introbox:after {
+    height: 420px;
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 220px 0px;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -280%);
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 32%;
+  }
+}
+
+@media (max-width: 375px) {
+  .princi-signature-box .princi-name {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -400%);
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  section.top_section.principal-introbox:before,
+  section.top_section.principal-introbox:after {
+    height: 375px;
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 27%;
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 90px 0px;
+  }
+}
+@media (max-width: 360px) {
+  section.top_section.principal-introbox:before,
+  section.top_section.principal-introbox:after {
+    height: 360px;
+  }
+  section.top_section.principal-introbox {
+    padding: 0px 0px 110px 0px;
+  }
+  .princi-middlebox .combineimgbox img {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media (max-width: 320px) {
+  section.top_section.principal-introbox {
+    padding: 0px 0px 60px 0px;
+
+    &:before,
+    &:after {
+      height: 312px;
+    }
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 28%;
+  }
+  section.top_section.principal-introbox .princi-content-respbox {
+    transform: translate(0, -530%);
+  }
+  .princi-middlebox.backpatch-left:before,
+  .princi-middlebox.backpatch-left:after {
+    height: 28%;
+  }
+}
